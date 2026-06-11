@@ -1,0 +1,21 @@
+@import url('./layout.css');
+@import url('./main.css');
+@import url('./variables.css');
+
+@import url('./components/forms/login.css');
+@import url('./components/buttons/boton_primario.css');
+@import url('./components/navbar/navbar_global.css');
+@import url('./components/footer/footer.css');
+@import url('./components/buttons/secondary_button.css');
+@import url('./components/forms/register_step1.css');
+@import url('./components/forms/register_step2.css');
+@import url('./components/forms/code_verify.css');
+@import url('./components/forms/forgot_password.css');
+@import url('./components/forms/reset_password.css');
+@import url('./components/cards/bankfleet_card_home.css');
+@import url('./components/siderbar/banfleet_sidebar_principal.css');
+@import url('./pages/vista_home_client.css');
+@import url('./components/transfers/bankfleet_new_transfer.css');
+@import url('./components/tables/bankfleet_employee_management_table.css');
+@import url('./components/tables/bankfleet_recipients.css');
+@import url('./components/tables/bankfleet_table_transfer_history.css');

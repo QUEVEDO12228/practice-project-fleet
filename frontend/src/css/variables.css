@@ -1,0 +1,184 @@
+:root {
+
+    /* =========================================================
+       PRIMARY COLORS
+       CORPORATE / TRUST / ENTERPRISE BLUE
+    ========================================================= */
+
+    --primary-950: #050816;
+    --primary-900: #0B1023;
+    --primary-800: #11182E;
+    --primary-700: #16203C;
+    --primary-600: #1D2B52;
+    --primary-500: #27406D;
+    --primary-400: #3A5A8C;
+    --primary-300: #5E7DB0;
+    --primary-200: #8EA7CB;
+    --primary-100: #C7D5E8;
+    --primary-50:  #EEF3FA;
+
+
+    /* =========================================================
+       SECONDARY COLORS
+       BANKFLEET BRAND / FUTURISTIC PURPLE
+    ========================================================= */
+
+    --secondary-950: #14051F;
+    --secondary-900: #1E0830;
+    --secondary-800: #2A0D45;
+    --secondary-700: #3B1461;
+    --secondary-600: #52208A;
+    --secondary-500: #6D28D9;
+    --secondary-400: #8B5CF6;
+    --secondary-300: #A78BFA;
+    --secondary-200: #C4B5FD;
+    --secondary-100: #E9DDFF;
+    --secondary-50:  #F5F0FF;
+
+
+    /* =========================================================
+       TERTIARY COLORS
+       SUCCESS / SECURITY / VERIFIED
+    ========================================================= */
+
+    --tertiary-950: #04140D;
+    --tertiary-900: #072018;
+    --tertiary-800: #0B3023;
+    --tertiary-700: #104232;
+    --tertiary-600: #145A44;
+    --tertiary-500: #1A7A5C;
+    --tertiary-400: #22A06B;
+    --tertiary-300: #4CC38A;
+    --tertiary-200: #8FE0B7;
+    --tertiary-100: #C9F3DD;
+    --tertiary-50:  #EDFFF5;
+
+
+    /* =========================================================
+       NEUTRAL COLORS
+       PREMIUM DARK SCALE
+    ========================================================= */
+
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --gray-950: #050505;
+    --gray-900: #0F1115;
+    --gray-800: #181B20;
+    --gray-700: #23262D;
+    --gray-600: #31353F;
+    --gray-500: #4B5260;
+    --gray-400: #6B7280;
+    --gray-300: #9AA0AE;
+    --gray-200: #C7CCD6;
+    --gray-100: #E5E7EB;
+    --gray-50:  #F5F7FA;
+
+
+    /* =========================================================
+       EXTRA COLORS
+    ========================================================= */
+
+    --success-color: #22C55E;
+    --warning-color: #F59E0B;
+    --danger-color: #EF4444;
+    --info-color: #3B82F6;
+
+    --glass-color: rgba(255, 255, 255, 0.04);
+    --border-color: rgba(255, 255, 255, 0.08);
+
+    --shadow-primary:
+        0px 10px 30px rgba(0, 0, 0, 0.35);
+
+    --shadow-secondary:
+        0px 0px 25px rgba(139, 92, 246, 0.25);
+
+
+    /* =========================================================
+       TYPOGRAPHY
+    ========================================================= */
+
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+
+    --font-primary-regular: 'Inter-Regular', sans-serif;
+    --font-primary-semibold: 'Inter-SemiBold', sans-serif;
+    --font-primary-bold: 'Inter-Bold', sans-serif;
+
+    --font-secondary-medium: 'Roboto-Medium', sans-serif;
+    --font-secondary-semibold: 'Roboto-SemiBold', sans-serif;
+    --font-secondary-italic: 'Roboto-Italic', sans-serif;
+
+
+    /* =========================================================
+       FONT SIZE SYSTEM
+    ========================================================= */
+
+    --fs-xxxxl: 8rem;
+    --fs-xxxl: 6.4rem;
+    --fs-xxl: 4.8rem;
+    --fs-xl: 4rem;
+    --fs-lg: 3.2rem;
+    --fs-md: 2.4rem;
+    --fs-sm: 2rem;
+    --fs-xs: 1.6rem;
+    --fs-xxs: 1.4rem;
+    --fs-xxxs: 1.2rem;
+    --fs-xxxxs: 10px;
+
+
+    /* =========================================================
+       BORDER RADIUS
+    ========================================================= */
+
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+    --radius-xxl: 32px;
+    --radius-full: 999px;
+
+
+    /* =========================================================
+       SPACING SYSTEM
+    ========================================================= */
+
+    --gap-xxs: 4px;
+    --gap-xs: 8px;
+    --gap-sm: 12px;
+    --gap-md: 16px;
+    --gap-lg: 24px;
+    --gap-xl: 32px;
+    --gap-xxl: 48px;
+    --gap-xxxl: 64px;
+
+
+    /* =========================================================
+       BUTTON SYSTEM
+    ========================================================= */
+
+    --button-padding-y: 12px;
+    --button-padding-x: 18px;
+
+    --button-secondary-padding-y: 10px;
+    --button-secondary-padding-x: 16px;
+
+
+    /* =========================================================
+       INPUT SYSTEM
+    ========================================================= */
+
+    --input-padding-y: 16px;
+    --input-padding-x: 16px;
+
+
+    /* =========================================================
+       TRANSITIONS
+    ========================================================= */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+}

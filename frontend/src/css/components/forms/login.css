@@ -1,0 +1,811 @@
+.bankfleet-login-page {
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            135deg,
+            #050816 0%,
+            #0B1020 100%
+        );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-primary);
+}
+.bankfleet-login-page__glow {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.12;
+    pointer-events: none;
+}
+.bankfleet-login-page__glow--left {
+    top: -120px;
+    left: -120px;
+    background: var(--secondary-500);
+}
+.bankfleet-login-page__glow--right {
+    right: -120px;
+    bottom: -120px;
+    background: var(--primary-500);
+}
+.bankfleet-login-layout {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    display: flex;
+}
+.bankfleet-login {
+    position: relative;
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:
+        var(--gap-lg);
+    box-sizing: border-box;
+}
+.bankfleet-login__link {
+    position: relative;
+
+    width: fit-content;
+    font-size: var(--fs-xxxs);
+
+    color: var(--gray-300);
+
+    text-decoration: none;
+
+    transition: var(--transition-normal);
+    margin-left: 12rem;
+}
+
+.bankfleet-login__link::after {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    bottom: -4px;
+
+    width: 0%;
+    height: 1px;
+
+    background: var(--secondary-400);
+
+    transition: var(--transition-normal);
+}
+
+.bankfleet-login__link:hover {
+    color: var(--white);
+}
+
+.bankfleet-login__link:hover::after {
+    width: 100%;
+}
+
+/* =========================================================
+TOPBAR
+========================================================= */
+
+
+
+
+/* =========================================================
+CARD
+========================================================= */
+
+.bankfleet-login__card {
+    width: 100%;
+    max-width: 432px;
+
+    padding:
+        24px;
+
+    border-radius: 32px;
+    background: var(--primary-800);
+
+    backdrop-filter: blur(60px);
+
+    border:
+        2px solid rgba(255,255,255,.08);
+
+    transition: .3s;
+}
+
+.bankfleet-login__card:hover{
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(139,92,246,.35);
+
+}
+.bankfleet-login__card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+    right: -100px;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+
+    opacity: .3;
+
+}
+.bankfleet-login__topbar {
+    position: absolute;
+
+    top: 8px;
+    left: 12px;
+
+    z-index: 9999;
+}
+/* =========================================================
+BRAND
+========================================================= */
+
+.bankfleet-login__brand {
+    display: flex;
+    align-items: center;
+
+    gap: var(--gap-md);
+
+    margin-bottom: var(--gap-lg);
+}
+
+.bankfleet-login__brand-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 62px;
+    height: 62px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--secondary-500),
+            var(--primary-500)
+        );
+
+    color: var(--white);
+
+    font-size: var(--fs-sm);
+
+    font-family: var(--font-primary-bold);
+
+    box-shadow:
+        0 12px 30px rgba(139,92,246,0.3);
+}
+
+.bankfleet-login__brand-title {
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+}
+
+.bankfleet-login__brand-subtitle {
+    color: var(--secondary-300);
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+HEADER
+========================================================= */
+
+.bankfleet-login__header {
+    margin-bottom: var(--gap-sm);
+    text-align: center;
+}
+
+.bankfleet-login__title {
+    margin-bottom: var(--gap-xs);
+
+    color: var(--white);
+
+    font-size: 1.6rem;
+
+    font-family: var(--font-primary-bold);
+}
+
+.bankfleet-login__subtitle {
+    color: var(--gray-300);
+
+    line-height: 1.8;
+
+    font-size: var(--fs-xxxs);
+}
+
+.bankfleet-login__highlight {
+    color: var(--secondary-300);
+}
+
+
+/* =========================================================
+FORM
+========================================================= */
+
+.bankfleet-login__form {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--gap-lg);
+}
+
+
+/* =========================================================
+FIELDS
+========================================================= */
+
+.bankfleet-login__field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.bankfleet-login__label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bankfleet-login__label {
+    color: var(--white);
+
+    font-size: var(--fs-xxxxs);
+}
+
+.bankfleet-login__forgot-link {
+    color: var(--secondary-300);
+
+    text-decoration: none;
+
+    font-size: var(--fs-xxxxs);
+}
+
+
+/* =========================================================
+INPUTS
+========================================================= */
+
+.bankfleet-login__input-wrapper {
+    position: relative;
+}
+
+.bankfleet-login__input-icon {
+    position: absolute;
+
+    left: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 20px;
+    height: 20px;
+
+    z-index: 2;
+}
+
+.bankfleet-login__input {
+    width: 100%;
+    height: 48px;
+
+    padding:
+        0
+        48px;
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,0.04);
+
+    backdrop-filter: blur(10px);
+
+    color: var(--white);
+
+    font-size: var(--fs-xxxs);
+
+    outline: none;
+
+    transition: var(--transition-normal);
+
+    box-sizing: border-box;
+}
+
+.bankfleet-login__input::placeholder {
+    color: var(--gray-500);
+}
+
+.bankfleet-login__input:focus {
+    border-color:
+        rgba(139,92,246,0.45);
+
+    background:
+        rgba(255,255,255,0.06);
+
+    box-shadow:
+        0 0 0 4px rgba(139,92,246,0.15);
+}
+
+
+/* =========================================================
+PASSWORD BUTTON
+========================================================= */
+
+.bankfleet-login__toggle-password {
+    position: absolute;
+
+    right: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+OPTIONS
+========================================================= */
+
+.bankfleet-login__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bankfleet-login__checkbox {
+    display: flex;
+    align-items: center;
+
+    gap: var(--gap-xs);
+
+    cursor: pointer;
+}
+
+.bankfleet-login__checkbox input {
+    display: none;
+}
+
+.bankfleet-login__checkbox-custom {
+    width: 18px;
+    height: 18px;
+
+    border:
+        1px solid rgba(255,255,255,0.2);
+
+    border-radius: 6px;
+
+    background:
+        rgba(255,255,255,0.03);
+}
+.bankfleet-login__checkbox-custom:focus{
+    background: var(--secondary-400);
+
+}
+.bankfleet-login__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.bankfleet-login__checkbox input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bankfleet-login__checkbox-custom {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--secondary-400);
+    border-radius: 4px;
+    background: transparent;
+    transition: all .25s ease;
+    flex-shrink: 0;
+}
+
+.bankfleet-login__checkbox input:checked + .bankfleet-login__checkbox-custom {
+    background: var(--secondary-600);
+    border-color: var(--secondary-600);
+}
+
+.bankfleet-login__checkbox input:checked + .bankfleet-login__checkbox-custom::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin: 2px 0 0 5px;
+}
+
+.bankfleet-login__checkbox-text {
+    color: var(--gray-300);
+
+    font-size: var(--fs-xxxxs);
+}
+
+
+/* =========================================================
+SUBMIT
+========================================================= */
+
+.bankfleet-login__button-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================================
+DIVIDER
+========================================================= */
+
+.bankfleet-login__divider {
+    position: relative;
+
+    text-align: center;
+}
+
+.bankfleet-login__divider::before {
+    content: '';
+
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background:
+        rgba(255,255,255,0.08);
+}
+
+.bankfleet-login__divider span {
+    position: relative;
+
+    padding:
+        0
+        14px;
+
+    background:
+        #0B1020;
+
+    color: var(--gray-400);
+
+    font-size: var(--fs-xxxxs);
+}
+
+
+/* =========================================================
+SOCIALS
+========================================================= */
+
+.bankfleet-login__socials {
+    display: flex;
+
+    gap: var(--gap-lg);
+}
+
+.bankfleet-login__social-button {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: var(--gap-sm);
+
+    height: 40px;
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 16px;
+
+    background:
+        rgba(255,255,255,0.03);
+
+    color: var(--white);
+
+    cursor: pointer;
+
+    transition: var(--transition-normal);
+}
+.bankfleet-btn__icon-social-media{
+    height: 18px;
+    width: 18px;
+}
+.bankfleet-login__social-button:hover {
+    transform: translateY(-3px);
+
+    border-color:
+        rgba(139,92,246,0.35);
+
+    background:
+        rgba(139,92,246,0.06);
+}
+
+
+/* =========================================================
+login
+========================================================= */
+
+.bankfleet-login__login {
+    text-align: center;
+}
+
+.bankfleet-login__login-text {
+    color: var(--gray-400);
+
+    font-size: var(--fs-xxxxs);
+}
+.bankfleet-login__footer-text{
+    font-size: var(--fs-xxxs);
+    color: var(--white);
+    text-align: center;
+}
+.bankfleet-login__register-link{
+    position: relative;
+
+    width: fit-content;
+    font-size: var(--fs-xxxs);
+
+    color: var(--gray-300);
+
+    text-decoration: none;
+
+    transition: var(--transition-normal);
+}
+
+.bankfleet-login__register-link::after {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    bottom: -4px;
+
+    width: 0%;
+    height: 1px;
+
+    background: var(--secondary-400);
+
+    transition: var(--transition-normal);
+}
+
+.bankfleet-login__register-link:hover {
+    color: var(--white);
+}
+
+.bankfleet-login__register-link:hover::after {
+    width: 100%;
+}
+
+/* =========================================================
+RIGHT SIDE
+========================================================= */
+
+.bankfleet-login-banner {
+    position: relative;
+
+    width: 58%;
+
+    overflow: hidden;
+}
+
+.bankfleet-login-banner__image {
+    width: 100%;
+    height: 100%;
+    max-height: 624px;
+    object-fit: cover;
+
+    transition: transform 1.2s ease;
+}
+
+.bankfleet-login-banner:hover
+.bankfleet-login-banner__image {
+    transform: scale(1.05);
+}
+
+.bankfleet-login-banner__overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.7)
+        );
+}
+
+
+/* =========================================================
+FLOATING CARD
+========================================================= */
+
+.bankfleet-login-banner__card {
+    position: absolute;
+
+    left: 60px;
+    bottom: 60px;
+
+    z-index: 2;
+
+    max-width: 500px;
+
+    padding: 40px;
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 28px;
+
+    background:
+        rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(20px);
+}
+
+.bankfleet-login-banner__badge {
+    display: inline-flex;
+
+    margin-bottom: var(--gap-md);
+
+    padding:
+        8px
+        14px;
+
+    border-radius: var(--radius-full);
+
+    background:
+        rgba(139,92,246,0.14);
+
+    color: var(--secondary-300);
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+.bankfleet-login-banner__title {
+    margin-bottom: var(--gap-md);
+
+    color: var(--white);
+
+    font-size: 4rem;
+
+    line-height: 1.1;
+
+    font-family: var(--font-primary-bold);
+}
+
+.bankfleet-login-banner__text {
+    color: var(--gray-200);
+
+    line-height: 1.8;
+
+    font-size: var(--fs-xxs);
+}
+
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .bankfleet-login {
+        width: 50%;
+    }
+
+    .bankfleet-login-banner {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 980px) {
+
+    .bankfleet-login-layout {
+        flex-direction: column;
+    }
+
+    .bankfleet-login,
+    .bankfleet-login-banner {
+        width: 100%;
+    }
+
+    .bankfleet-login {
+        min-height: 100vh;
+    }
+
+    .bankfleet-login-banner {
+        min-height: 420px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .bankfleet-login {
+        padding:
+            120px
+            var(--gap-lg)
+            var(--gap-xl);
+    }
+
+    .bankfleet-login__card {
+        padding: 32px;
+    }
+
+    .bankfleet-login-banner__card {
+        left: 24px;
+        right: 24px;
+        bottom: 24px;
+
+        padding: 28px;
+    }
+
+    .bankfleet-login-banner__title {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .bankfleet-login-banner {
+        display: none;
+    }
+
+    .bankfleet-login {
+        width: 100%;
+    }
+
+    .bankfleet-login__card {
+        padding: 24px;
+
+        border-radius: 24px;
+    }
+
+    .bankfleet-login__title {
+        font-size: 2.6rem;
+    }
+
+    .bankfleet-login__socials {
+        flex-direction: column;
+    }
+
+}

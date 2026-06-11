@@ -1,0 +1,861 @@
+/* =========================================================
+register-step2 PAGE
+========================================================= */
+
+.bankfleet-register-step2-page {
+    position: relative;
+
+    /* min-height: 100vh; */
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #050816 0%,
+            #0B1020 100%
+        );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-primary);
+}
+
+
+/* =========================================================
+BACKGROUND GLOW
+========================================================= */
+
+.bankfleet-register-step2-page__glow {
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: 0.12;
+
+    pointer-events: none;
+}
+
+.bankfleet-register-step2-page__glow--left {
+    top: -120px;
+    left: -120px;
+
+    background: var(--secondary-500);
+}
+
+.bankfleet-register-step2-page__glow--right {
+    right: -120px;
+    bottom: -120px;
+
+    background: var(--primary-500);
+}
+
+
+/* =========================================================
+LAYOUT
+========================================================= */
+
+.bankfleet-register-step2-layout {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1600px;
+
+    min-height: 100vh;
+
+    display: flex;
+}
+
+
+/* =========================================================
+LEFT
+========================================================= */
+
+.bankfleet-register-step2 {
+    position: relative;
+
+    width: 42%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding:
+        var(--gap-xs);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+TOPBAR
+========================================================= */
+
+
+
+
+/* =========================================================
+CARD
+========================================================= */
+
+.bankfleet-register-step2__card {
+    width: 100%;
+    max-width: 432px;
+
+    padding:
+        24px;
+
+    border:
+        2px solid rgba(255,255,255,0.08);
+
+    border-radius: 32px;
+    background: var(--primary-800);
+
+    backdrop-filter: blur(24px);
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.45);
+}
+
+.bankfleet-register-step2__card:hover{
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(139,92,246,.35);
+
+}
+.bankfleet-register-step2__topbar {
+    position: absolute;
+
+    top: 8px;
+    left: 12px;
+
+    z-index: 9999;
+}
+/* =========================================================
+BRAND
+========================================================= */
+
+.bankfleet-register-step2__brand {
+    display: flex;
+    align-items: center;
+
+    gap: var(--gap-md);
+
+    margin-bottom: var(--gap-lg);
+}
+
+.bankfleet-register-step2__brand-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 62px;
+    height: 62px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--secondary-500),
+            var(--primary-500)
+        );
+
+    color: var(--white);
+
+    font-size: var(--fs-sm);
+
+    font-family: var(--font-primary-bold);
+
+    box-shadow:
+        0 12px 30px rgba(139,92,246,0.3);
+}
+
+.bankfleet-register-step2__brand-title {
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+}
+
+.bankfleet-register-step2__brand-subtitle {
+    color: var(--secondary-300);
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+HEADER
+========================================================= */
+
+.bankfleet-register-step2__header {
+    margin-bottom: var(--gap-sm);
+    text-align: center;
+}
+
+.bankfleet-register-step2__title {
+    margin-bottom: var(--gap-xs);
+
+    color: var(--white);
+
+    font-size: 1.6rem;
+
+    font-family: var(--font-primary-bold);
+}
+
+.bankfleet-register-step2__subtitle {
+    color: var(--gray-300);
+
+    line-height: 1.8;
+
+    font-size: var(--fs-xxxs);
+}
+
+.bankfleet-register-step2__highlight {
+    color: var(--secondary-300);
+}
+
+
+/* =========================================================
+FORM
+========================================================= */
+
+.bankfleet-register-step2__form {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--gap-lg);
+}
+
+/* =========================================================
+PHOTO UPLOAD (PROFESSIONAL BANK STYLE)
+========================================================= */
+
+.bankfleet-register-step2__photo-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.bankfleet-register-step2__photo-preview {
+    position: relative;
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(255,255,255,0.08);
+
+    background: rgba(255,255,255,0.04);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(10px);
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.bankfleet-register-step2__photo-preview:hover {
+    border-color: rgba(139,92,246,0.45);
+    box-shadow: 0 0 0 6px rgba(139,92,246,0.12);
+    transform: translateY(-2px);
+}
+
+.bankfleet-register-step2__photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* BOTÓN CAMARA */
+.bankfleet-register-step2__photo-btn {
+    position: absolute;
+
+    bottom: 6px;
+    right: 6px;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    background: rgba(11, 16, 32, 0.85);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.bankfleet-register-step2__photo-btn:hover {
+    background: rgba(139,92,246,0.25);
+    border-color: rgba(139,92,246,0.5);
+    transform: scale(1.05);
+}
+
+.bankfleet-register-step2__photo-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+/* INPUT OCULTO */
+.bankfleet-register-step2__photo-input {
+    display: none;
+}
+
+/* TEXTO AYUDA */
+.bankfleet-register-step2__photo-hint {
+    color: var(--gray-500);
+    font-size: var(--fs-xxxxs);
+    text-align: center;
+}
+/* =========================================================
+FIELDS
+========================================================= */
+
+.bankfleet-register-step2__field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.bankfleet-register-step2__label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bankfleet-register-step2__label {
+    color: var(--white);
+
+    font-size: var(--fs-xxxxs);
+}
+
+.bankfleet-register-step2__forgot-link {
+    color: var(--secondary-300);
+
+    text-decoration: none;
+
+    font-size: var(--fs-xxxxs);
+}
+
+
+/* =========================================================
+INPUTS
+========================================================= */
+
+.bankfleet-register-step2__input-wrapper {
+    position: relative;
+}
+
+.bankfleet-register-step2__input-icon {
+    position: absolute;
+
+    left: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 20px;
+    height: 20px;
+
+    z-index: 2;
+}
+
+.bankfleet-register-step2__input {
+    width: 100%;
+    height: 48px;
+
+    padding:
+        0
+        48px;
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,0.04);
+
+    backdrop-filter: blur(10px);
+
+    color: var(--white);
+
+    font-size: var(--fs-xxxs);
+
+    outline: none;
+
+    transition: var(--transition-normal);
+
+    box-sizing: border-box;
+}
+
+.bankfleet-register-step2__input::placeholder {
+    color: var(--gray-500);
+}
+
+.bankfleet-register-step2__input:focus {
+    border-color:
+        rgba(139,92,246,0.45);
+
+    background:
+        rgba(255,255,255,0.06);
+
+    box-shadow:
+        0 0 0 4px rgba(139,92,246,0.15);
+}
+
+
+/* =========================================================
+PASSWORD BUTTON
+========================================================= */
+
+.bankfleet-register-step2__toggle-password {
+    position: absolute;
+
+    right: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+OPTIONS
+========================================================= */
+
+.bankfleet-register-step2__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bankfleet-register-step2__checkbox {
+    display: flex;
+    align-items: center;
+
+    gap: var(--gap-xs);
+
+    cursor: pointer;
+}
+
+.bankfleet-register-step2__checkbox input {
+    display: none;
+}
+
+.bankfleet-register-step2__checkbox-custom {
+    width: 18px;
+    height: 18px;
+
+    border:
+        1px solid rgba(255,255,255,0.2);
+
+    border-radius: 6px;
+
+    background:
+        rgba(255,255,255,0.03);
+}
+.bankfleet-register-step2__checkbox-custom:focus{
+    background: var(--secondary-400);
+
+}
+.bankfleet-register-step2__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.bankfleet-register-step2__checkbox input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bankfleet-register-step2__checkbox-custom {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--secondary-400);
+    border-radius: 4px;
+    background: transparent;
+    transition: all .25s ease;
+    flex-shrink: 0;
+}
+
+.bankfleet-register-step2__checkbox input:checked + .bankfleet-register-step2__checkbox-custom {
+    background: var(--secondary-600);
+    border-color: var(--secondary-600);
+}
+
+.bankfleet-register-step2__checkbox input:checked + .bankfleet-register-step2__checkbox-custom::after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin: 2px 0 0 5px;
+}
+
+.bankfleet-register-step2__checkbox-text {
+    color: var(--gray-300);
+
+    font-size: var(--fs-xxxxs);
+}
+
+
+/* =========================================================
+SUBMIT
+========================================================= */
+
+.bankfleet-register-step2__button-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================================
+DIVIDER
+========================================================= */
+
+.bankfleet-register-step2__divider {
+    position: relative;
+
+    text-align: center;
+}
+
+.bankfleet-register-step2__divider::before {
+    content: '';
+
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background:
+        rgba(255,255,255,0.08);
+}
+
+.bankfleet-register-step2__divider span {
+    position: relative;
+
+    padding:
+        0
+        14px;
+
+    background:
+        #0B1020;
+
+    color: var(--gray-400);
+
+    font-size: var(--fs-xxxxs);
+}
+
+
+/* =========================================================
+SOCIALS
+========================================================= */
+
+.bankfleet-register-step2__socials {
+    display: flex;
+
+    gap: var(--gap-lg);
+}
+
+.bankfleet-register-step2__social-button {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: var(--gap-sm);
+
+    height: 40px;
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 16px;
+
+    background:
+        rgba(255,255,255,0.03);
+
+    color: var(--white);
+
+    cursor: pointer;
+
+    transition: var(--transition-normal);
+}
+.bankfleet-btn__icon-social-media{
+    height: 18px;
+    width: 18px;
+}
+.bankfleet-register-step2__social-button:hover {
+    transform: translateY(-3px);
+
+    border-color:
+        rgba(139,92,246,0.35);
+
+    background:
+        rgba(139,92,246,0.06);
+}
+
+
+/* =========================================================
+FOOTER
+========================================================= */
+
+.bankfleet-register-step2__footer {
+    text-align: center;
+}
+
+.bankfleet-register-step2__footer-text {
+    color: var(--gray-400);
+
+    font-size: var(--fs-xxxxs);
+}
+
+.bankfleet-register-step2__register-link {
+    color: var(--secondary-300);
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+RIGHT SIDE
+========================================================= */
+
+.bankfleet-register-step2-banner {
+    position: relative;
+
+    width: 58%;
+
+    overflow: hidden;
+}
+
+.bankfleet-register-step2-banner__image {
+    width: 100%;
+    height: 100%;
+    max-height: 624px;
+    object-fit: cover;
+
+    transition: transform 1.2s ease;
+}
+
+.bankfleet-register-step2-banner:hover
+.bankfleet-register-step2-banner__image {
+    transform: scale(1.05);
+}
+
+.bankfleet-register-step2-banner__overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.7)
+        );
+}
+
+
+/* =========================================================
+FLOATING CARD
+========================================================= */
+
+.bankfleet-register-step2-banner__card {
+    position: absolute;
+
+    left: 60px;
+    bottom: 60px;
+
+    z-index: 2;
+
+    max-width: 500px;
+
+    padding: 40px;
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 28px;
+
+    background:
+        rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(20px);
+}
+
+.bankfleet-register-step2-banner__badge {
+    display: inline-flex;
+
+    margin-bottom: var(--gap-md);
+
+    padding:
+        8px
+        14px;
+
+    border-radius: var(--radius-full);
+
+    background:
+        rgba(139,92,246,0.14);
+
+    color: var(--secondary-300);
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+.bankfleet-register-step2-banner__title {
+    margin-bottom: var(--gap-md);
+
+    color: var(--white);
+
+    font-size: 4rem;
+
+    line-height: 1.1;
+
+    font-family: var(--font-primary-bold);
+}
+
+.bankfleet-register-step2-banner__text {
+    color: var(--gray-200);
+
+    line-height: 1.8;
+
+    font-size: var(--fs-xxs);
+}
+
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .bankfleet-register-step2 {
+        width: 50%;
+    }
+
+    .bankfleet-register-step2-banner {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 980px) {
+
+    .bankfleet-register-step2-layout {
+        flex-direction: column;
+    }
+
+    .bankfleet-register-step2,
+    .bankfleet-register-step2-banner {
+        width: 100%;
+    }
+
+    .bankfleet-register-step2 {
+        min-height: 100vh;
+    }
+
+    .bankfleet-register-step2-banner {
+        min-height: 420px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .bankfleet-register-step2 {
+        padding:
+            120px
+            var(--gap-lg)
+            var(--gap-xl);
+    }
+
+    .bankfleet-register-step2__card {
+        padding: 32px;
+    }
+
+    .bankfleet-register-step2-banner__card {
+        left: 24px;
+        right: 24px;
+        bottom: 24px;
+
+        padding: 28px;
+    }
+
+    .bankfleet-register-step2-banner__title {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .bankfleet-register-step2-banner {
+        display: none;
+    }
+
+    .bankfleet-register-step2 {
+        width: 100%;
+    }
+
+    .bankfleet-register-step2__card {
+        padding: 24px;
+
+        border-radius: 24px;
+    }
+
+    .bankfleet-register-step2__title {
+        font-size: 2.6rem;
+    }
+
+    .bankfleet-register-step2__socials {
+        flex-direction: column;
+    }
+
+}

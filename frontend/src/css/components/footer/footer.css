@@ -1,0 +1,498 @@
+/* =========================================================
+BANKFLEET FOOTER
+========================================================= */
+
+.bankfleet-footer {
+    position: relative;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-900) 0%,
+        var(--primary-800) 100%
+    );
+
+    border-top:
+        1px solid var(--border-color);
+
+    padding-top: var(--gap-xxxl);
+
+    font-family: var(--font-primary);
+}
+
+
+/* =========================================================
+GLOW EFFECTS
+========================================================= */
+
+.bankfleet-footer__glow {
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: 0.12;
+
+    pointer-events: none;
+}
+
+.bankfleet-footer__glow--left {
+    top: -120px;
+    left: -120px;
+
+    background: var(--secondary-500);
+}
+
+.bankfleet-footer__glow--right {
+    right: -120px;
+    bottom: -120px;
+
+    background: var(--primary-500);
+}
+
+
+/* =========================================================
+CONTAINER
+========================================================= */
+
+.bankfleet-footer__container {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1.2fr;
+
+    gap: var(--gap-xxxl);
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding:
+        0
+        var(--gap-xl)
+        var(--gap-xxxl);
+}
+
+
+/* =========================================================
+BRAND
+========================================================= */
+
+.bankfleet-footer__brand {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--gap-lg);
+}
+
+.bankfleet-footer__brand-wrapper {
+    display: flex;
+    align-items: center;
+
+    gap: var(--gap-md);
+
+    text-decoration: none;
+}
+
+.bankfleet-footer__brand-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 64px;
+    height: 64px;
+
+    border-radius: var(--radius-xl);
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--secondary-500),
+            var(--primary-500)
+        );
+
+    color: var(--white);
+
+    font-size: var(--fs-md);
+
+    font-family: var(--font-primary-bold);
+
+    box-shadow: var(--shadow-secondary);
+}
+
+.bankfleet-footer__brand-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--gap-xxs);
+}
+
+.bankfleet-footer__brand-title {
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 2.4rem;
+
+    letter-spacing: 2px;
+
+    font-family: var(--font-primary-bold);
+}
+
+.bankfleet-footer__brand-badge {
+    width: fit-content;
+
+    padding:
+        4px
+        10px;
+
+    border:
+        1px solid rgba(139, 92, 246, 0.25);
+
+    border-radius: var(--radius-full);
+
+    background:
+        rgba(139, 92, 246, 0.08);
+
+    color: var(--secondary-300);
+
+    font-size: var(--fs-xxxxs);
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.bankfleet-footer__description {
+    max-width: 420px;
+
+    color: var(--gray-300);
+
+    line-height: 1.8;
+
+    font-size: var(--fs-xxs);
+}
+
+
+/* =========================================================
+METRICS
+========================================================= */
+
+.bankfleet-footer__metrics {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: var(--gap-md);
+}
+
+.bankfleet-footer__metric {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+
+    padding:
+        14px
+        18px;
+
+    border:
+        1px solid rgba(255,255,255,0.06);
+
+    border-radius: var(--radius-lg);
+
+    background: rgba(255,255,255,0.03);
+
+    backdrop-filter: blur(10px);
+}
+
+.bankfleet-footer__metric strong {
+    color: var(--white);
+
+    font-size: var(--fs-xs);
+}
+
+.bankfleet-footer__metric span {
+    color: var(--gray-400);
+
+    font-size: var(--fs-xxxxs);
+}
+
+
+/* =========================================================
+SECTIONS
+========================================================= */
+
+.bankfleet-footer__section {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--gap-lg);
+}
+
+.bankfleet-footer__title {
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: var(--fs-xs);
+
+    font-family: var(--font-primary-semibold);
+}
+
+
+/* =========================================================
+LISTS
+========================================================= */
+
+.bankfleet-footer__list,
+.bankfleet-footer__contact-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--gap-md);
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.bankfleet-footer__link {
+    position: relative;
+
+    width: fit-content;
+
+    color: var(--gray-300);
+
+    text-decoration: none;
+
+    transition: var(--transition-normal);
+}
+
+.bankfleet-footer__link::after {
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+    bottom: -4px;
+
+    width: 0%;
+    height: 1px;
+
+    background: var(--secondary-400);
+
+    transition: var(--transition-normal);
+}
+
+.bankfleet-footer__link:hover {
+    color: var(--white);
+}
+
+.bankfleet-footer__link:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+CONTACT
+========================================================= */
+
+.bankfleet-footer__contact-item {
+    display: flex;
+    align-items: center;
+
+    gap: var(--gap-sm);
+}
+
+.bankfleet-footer__contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: var(--radius-md);
+
+    background:
+        rgba(139, 92, 246, 0.1);
+
+    font-size: var(--fs-xxxs);
+}
+
+.bankfleet-footer__contact-text {
+    color: var(--gray-300);
+
+    font-size: var(--fs-xxs);
+}
+
+
+/* =========================================================
+BOTTOM
+========================================================= */
+
+.bankfleet-footer__bottom {
+    border-top:
+        1px solid rgba(255,255,255,0.06);
+
+    background:
+        rgba(255,255,255,0.02);
+
+    backdrop-filter: blur(10px);
+}
+
+.bankfleet-footer__bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: var(--gap-lg);
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding:
+        var(--gap-lg)
+        var(--gap-xl);
+}
+
+.bankfleet-footer__copyright {
+    color: var(--gray-400);
+
+    font-size: var(--fs-xxxs);
+}
+
+
+/* =========================================================
+SOCIALS
+========================================================= */
+
+.bankfleet-footer__socials {
+    display: flex;
+    align-items: center;
+
+    gap: var(--gap-sm);
+}
+
+.bankfleet-footer__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 42px;
+    height: 42px;
+
+    border:
+        1px solid rgba(255,255,255,0.06);
+
+    border-radius: var(--radius-md);
+
+    background:
+        rgba(255,255,255,0.03);
+
+    transition: var(--transition-normal);
+}
+
+.bankfleet-footer__social-link img {
+    width: 18px;
+    height: 18px;
+
+    object-fit: contain;
+}
+
+.bankfleet-footer__social-link:hover {
+    transform: translateY(-4px);
+
+    border-color:
+        rgba(139, 92, 246, 0.4);
+
+    background:
+        rgba(139, 92, 246, 0.08);
+
+    box-shadow:
+        0 10px 30px rgba(139, 92, 246, 0.15);
+}
+
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .bankfleet-footer__container {
+        grid-template-columns:
+            1fr
+            1fr;
+
+        gap: var(--gap-xxl);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .bankfleet-footer__container {
+        grid-template-columns: 1fr;
+    }
+
+    .bankfleet-footer__bottom-container {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .bankfleet-footer__metrics {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .bankfleet-footer {
+        padding-top: var(--gap-xxl);
+    }
+
+    .bankfleet-footer__container {
+        padding:
+            0
+            var(--gap-lg)
+            var(--gap-xxl);
+    }
+
+    .bankfleet-footer__brand-wrapper {
+        align-items: flex-start;
+    }
+
+    .bankfleet-footer__brand-title {
+        font-size: 2rem;
+    }
+
+}
+
+.bankfleet-navbar__letter {
+  display: inline-block;
+
+  font-size: var(--fs-xs);
+
+  font-family: var(--font-primary-bold);
+
+  color: var(--white);
+
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--secondary-400);
+}

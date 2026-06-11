@@ -1,0 +1,315 @@
+.bankfleet-products {
+
+    width: 100%;
+
+    padding: var(--gap-xl);
+
+}
+
+.bankfleet-products__grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill,minmax(320px,1fr));
+
+    gap: var(--gap-lg);
+
+}
+.bankfleet-card-home {
+
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 220px;
+
+    padding: 24px;
+
+    border-radius: 28px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    backdrop-filter: blur(24px);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    transition:
+        all .35s ease;
+
+    cursor: pointer;
+
+}
+.bankfleet-card-home:hover {
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(139,92,246,.4);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.4);
+
+}
+.bankfleet-card-home::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+    right: -100px;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+
+    opacity: .25;
+
+}
+.bankfleet-card-home--purple::before {
+
+    background:
+        var(--secondary-500);
+
+}
+
+.bankfleet-card-home--blue::before {
+
+    background:
+        var(--info-color);
+
+}
+
+.bankfleet-card-home--green::before {
+
+    background:
+        var(--success-color);
+
+}
+.bankfleet-card-home__status {
+
+    padding:
+        6px 12px;
+
+    border-radius:
+        var(--radius-full);
+
+    font-size:
+        var(--fs-xxxxs);
+
+    text-transform:
+        uppercase;
+
+}
+.bankfleet-card-home__status--active {
+
+    background:
+        rgba(34,197,94,.15);
+
+    color:
+        var(--success-color);
+
+}
+
+.bankfleet-card-home__status--pending {
+
+    background:
+        rgba(245,158,11,.15);
+
+    color:
+        var(--warning-color);
+
+}
+.bankfleet-card-home__amount {
+
+    color:
+        var(--white);
+
+    font-size:
+        var(--fs-md);
+
+    font-family:
+        var(--font-primary-bold);
+
+}
+.bankfleet-products {
+
+    width: 100%;
+
+    padding: 24px;
+
+}
+
+.bankfleet-products__grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill,minmax(300px,1fr));
+
+    gap: 24px;
+
+}
+
+.bankfleet-card-home {
+
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 220px;
+
+    padding: 24px;
+
+    border-radius: 28px;
+
+    background: var(--primary-800);
+
+    backdrop-filter: blur(20px);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    transition: .3s;
+
+}
+
+.bankfleet-card-home:hover {
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(139,92,246,.4);
+
+}
+
+.bankfleet-card-home::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+    right: -100px;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    filter: blur(80px);
+
+    opacity: .3;
+
+}
+
+.bankfleet-card-home--purple::before {
+
+    background:
+        var(--secondary-500);
+
+}
+
+.bankfleet-card-home--blue::before {
+
+    background:
+        var(--info-color);
+
+}
+
+.bankfleet-card-home--green::before {
+
+    background:
+        var(--success-color);
+
+}
+
+.bankfleet-card-home__top {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+}
+
+.bankfleet-card-home__status {
+
+    padding:
+        6px 12px;
+
+    border-radius: 999px;
+
+    font-size: 10px;
+
+}
+
+.bankfleet-card-home__status--active {
+
+    background:
+        rgba(34,197,94,.15);
+
+    color:
+        #22C55E;
+
+}
+
+.bankfleet-card-home__status--pending {
+
+    background:
+        rgba(245,158,11,.15);
+
+    color:
+        #F59E0B;
+
+}
+
+.bankfleet-card-home__body {
+
+    margin-top: 30px;
+
+}
+
+.bankfleet-card-home__title {
+
+    color:var(--tertiary-200);
+
+    font-size:var(--fs-xs);
+
+}
+
+.bankfleet-card-home__number {
+
+    color:
+        var(--tertiary-300);
+
+    margin-top: 8px;
+
+}
+
+.bankfleet-card-home__footer {
+
+    margin-top: 20px;
+
+}
+.bankfleet-card-home__span{
+    font-size: var(--fs-xxs);
+    color: var(--tertiary-300);
+}
+.bankfleet-card-home__amount {
+
+    margin-top: 8px;
+
+    color:
+        white;
+
+    font-size:var(--fs-sm);
+
+}

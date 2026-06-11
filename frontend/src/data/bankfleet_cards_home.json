@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "type": "account",
+    "title": "Cuenta Premium",
+    "number": "**** 8421",
+    "balance": "$12.540.000",
+    "currency": "COP",
+    "status": "active",
+    "icon": "icon_wallet.svg",
+    "gradient": "purple"
+  },
+  {
+    "id": 2,
+    "type": "investment",
+    "title": "Portafolio Growth",
+    "number": "INV-4582",
+    "balance": "$58.240.000",
+    "currency": "COP",
+    "status": "active",
+    "icon": "icon_chart.svg",
+    "gradient": "blue"
+  },
+  {
+    "id": 3,
+    "type": "credit",
+    "title": "Crédito Hipotecario",
+    "number": "CR-9382",
+    "balance": "$320.000.000",
+    "currency": "COP",
+    "status": "pending",
+    "icon": "icon_credit.svg",
+    "gradient": "green"
+  },
+  {
+    "id": 3,
+    "type": "credit",
+    "title": "Crédito Hipotecario",
+    "number": "CR-9382",
+    "balance": "$320.000.000",
+    "currency": "COP",
+    "status": "pending",
+    "icon": "icon_credit.svg",
+    "gradient": "green"
+  },
+  {
+    "id": 3,
+    "type": "credit",
+    "title": "Crédito Hipotecario",
+    "number": "CR-9382",
+    "balance": "$320.000.000",
+    "currency": "COP",
+    "status": "pending",
+    "icon": "icon_credit.svg",
+    "gradient": "green"
+  }
+]

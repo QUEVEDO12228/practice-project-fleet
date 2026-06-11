@@ -1,0 +1,224 @@
+.bankfleet-transactions{
+    width:100%;
+    /* margin:24px auto; */
+    background: linear-gradient(
+        135deg,
+        var(--primary-900) 0%,
+        var(--primary-800) 100%
+    );
+    /* border-radius:var(--radius-lg); */
+    padding:24px;
+    box-shadow:var(--shadow-primary);
+    font-family:var(--font-primary);
+}
+
+.bankfleet-transactions__header{
+    margin-bottom:24px;
+}
+
+.bankfleet-transactions__header-container{
+    display:flex;
+    align-items:flex-start;
+    gap:24px;
+}
+
+.bankfleet-transactions__title-container{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.bankfleet-transactions__title{
+    font-size:var(--fs-sm);
+    color:var(--white);
+    font-family:var(--font-primary-bold);
+}
+
+.bankfleet-transactions__subtitle{
+    font-size:var(--fs-xxs);
+    color:var(--gray-300);
+}
+
+.bankfleet-transactions__menu-button{
+    border:none;
+    background:transparent;
+    cursor:pointer;
+}
+
+.bankfleet-transactions__toolbar{
+    margin-bottom:24px;
+}
+
+
+.bankfleet-transactions__table-wrapper{
+    overflow-x:auto;
+}
+
+.bankfleet-transactions__table{
+    width:100%;
+    min-width:980px;
+    border-collapse:collapse;
+    height: 100%;
+    background-color: var(--white);
+}
+
+.bankfleet-transactions__table thead{
+    background:var(--primary-900);
+    
+}
+.transaction-recipient__image-options{
+    width: 16px;
+    height: 16px;
+    margin-left: 0.6rem;
+}
+.bankfleet-transactions__table th{
+    padding:8px;
+    color:var(--white);
+    text-align:left;
+    font-size:var(--fs-xxxs);
+}
+
+.bankfleet-transactions__table td{
+    padding:8px 8px;
+    border-bottom:1px solid var(--secondary-500);
+    color:var(--black);
+    font-size:var(--fs-xxxs);
+}
+
+.bankfleet-transactions__table tbody tr:hover{
+    background:var(--primary-50);
+}
+
+.transaction-recipient{
+    display:flex;
+    flex-direction:column;
+}
+
+.transaction-recipient__name{
+    color:var(--primary-900);
+    font-family:var(--font-primary-semibold);
+}
+
+.transaction-recipient__account{
+    color:var(--gray-500);
+}
+
+.transaction-type{
+    padding:8px 8px;
+    border-radius:var(--radius-full);
+    font-size:var(--fs-xxxs);
+}
+
+.transaction-type--transfer{
+    background:var(--secondary-100);
+    color:var(--secondary-600);
+}
+
+.transaction-type--payment{
+    background:var(--primary-100);
+    color:var(--primary-700);
+}
+
+.transaction-type--supplier{
+    background:var(--secondary-50);
+    color:var(--secondary-500);
+}
+
+.transaction-status{
+    padding:8px 8px;
+    border-radius:var(--radius-full);
+    font-size:var(--fs-xxxs);
+}
+
+.transaction-status--success{
+    background:var(--tertiary-100);
+    color:var(--tertiary-600);
+}
+
+.transaction-status--pending{
+    background:#FEF3C7;
+    color:var(--warning-color);
+}
+
+.transaction-status--rejected{
+    background:rgba(239,68,68,.15);
+    color:var(--danger-color);
+}
+.bankfleet-transactions__separeitor-actions{
+    display: flex;
+    justify-content: space-between;
+}
+.bankfleet-transactions__separeitor-actions-buttons{
+    display: flex;
+    gap: 2.4rem;
+}
+.bankfleet-transactions__search {
+    width: 300px;
+    position: relative;
+
+    margin-bottom: 24px;
+}
+
+.bankfleet-transactions__search-icon {
+
+    position: absolute;
+
+    left: 14px;
+    top: 32%;
+    z-index: 1;
+    /* transform: translateY(-50%); */
+
+    width: 16px;
+    height: 16px;
+
+    /* opacity: .6; */
+}
+
+.bankfleet-transactions__search-input {
+
+    width: 100%;
+    height: 44px;
+
+    padding:
+        0
+        16px
+        0
+        42px;
+
+    box-sizing: border-box;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    border-radius: 14px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    backdrop-filter: blur(12px);
+
+    color: var(--white);
+
+    font-size: var(--fs-xxxxs);
+
+    outline: none;
+
+    transition: .25s;
+}
+
+.bankfleet-transactions__search-input::placeholder {
+
+    color: var(--gray-500);
+}
+
+.bankfleet-transactions__search-input:focus {
+
+    border-color:
+        rgba(139,92,246,.45);
+
+    background:
+        rgba(255,255,255,.06);
+
+    box-shadow:
+        0 0 0 4px rgba(139,92,246,.12);
+}

@@ -1,0 +1,26 @@
+.section-footer-content {
+
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    grid-template-rows: auto 1fr;
+
+    grid-template-areas:
+        "navbar navbar"
+        "sidebar content";
+
+    min-height: 100vh;
+}
+
+.navbar-client-home {
+    grid-area: navbar;
+}
+
+.sidebar-client-home {
+    grid-area: sidebar;
+}
+
+.home-products-container {
+    grid-area: content;
+}

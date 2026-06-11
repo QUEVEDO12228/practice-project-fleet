@@ -1,0 +1,242 @@
+.bankfleet-recipients{
+width:100%;
+background: linear-gradient(
+        135deg,
+        var(--primary-900) 0%,
+        var(--primary-800) 100%
+    );
+padding:24px;
+box-shadow:var(--shadow-primary);
+font-family:var(--font-primary);
+}
+
+.bankfleet-recipients__header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:24px;
+}
+
+.bankfleet-recipients__header-container{
+display:flex;
+align-items:flex-start;
+gap:24px;
+}
+
+.bankfleet-recipients__title-container{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.bankfleet-recipients__title{
+font-size:var(--fs-sm);
+color:var(--white);
+font-family:var(--font-primary-bold);
+}
+
+.bankfleet-recipients__subtitle{
+font-size:var(--fs-xxs);
+color:var(--gray-300);
+}
+
+.bankfleet-recipients__menu-button{
+border:none;
+background:transparent;
+cursor:pointer;
+}
+
+.bankfleet-recipients__toolbar-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:24px;
+}
+
+.bankfleet-recipients__filters{
+display:flex;
+align-items:center;
+}
+
+.bankfleet-recipients__favorite-box{
+height:32px;
+padding:0 8px;
+display:flex;
+align-items:center;
+gap:8px;
+border:1px solid var(--gray-200);
+border-radius:var(--radius-md);
+background:var(--white);
+}
+
+.bankfleet-recipients__favorite-label{
+font-size:var(--fs-xxxs);
+color:var(--primary-900);
+cursor:pointer;
+}
+
+.bankfleet-recipients__favorite-checkbox{
+accent-color:var(--secondary-500);
+}
+
+.bankfleet-recipients__table-wrapper{
+overflow-x:auto;
+}
+
+.bankfleet-recipients__table{
+width:100%;
+min-width:fit-content;
+border-collapse:collapse;
+}
+
+.bankfleet-recipients__table thead{
+background:var(--primary-900);
+}
+
+.bankfleet-recipients__table th{
+padding:8px;
+color:var(--white);
+font-size:var(--fs-xxxs);
+text-align:left;
+}
+
+.bankfleet-recipients__table td{
+padding:8px 8px;
+border-bottom:1px solid var(--gray-100);
+font-size:var(--fs-xxxxs);
+color:var(--black);
+background:var(--white);
+}
+
+.bankfleet-recipients__table tbody tr:hover{
+background:var(--secondary-500);
+}
+
+.recipient{
+display:flex;
+align-items:center;
+gap:2px;
+}
+
+.recipient__avatar{
+width:36px;
+height:36px;
+border-radius:50%;
+background:var(--primary-600);
+color:var(--white);
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:var(--font-primary-bold);
+}
+
+.recipient__info{
+display:flex;
+flex-direction:column;
+}
+
+.recipient__alias{
+color:var(--primary-900);
+font-family:var(--font-primary-semibold);
+}
+
+.recipient__detail{
+color:var(--gray-800);
+font-size:var(--fs-xxxs);
+}
+
+.recipient-status{
+padding:8px 18px;
+border-radius:var(--radius-full);
+font-size:var(--fs-xxxs);
+}
+
+.recipient-status--verified{
+background:var(--tertiary-100);
+color:var(--tertiary-600);
+}
+
+.recipient-status--inactive{
+background:rgba(239,68,68,.15);
+color:var(--danger-color);
+}
+
+.recipient-actions{
+display:flex;
+gap:8px;
+}
+
+.recipient-action{
+border:none;
+border-radius:var(--radius-md);
+padding:8px 12px;
+cursor:pointer;
+transition:var(--transition-normal);
+font-size:var(--fs-xxxxs);
+}
+
+.recipient-action--transfer{
+background:var(--secondary-500);
+color:var(--white);
+}
+
+.recipient-action--edit{
+background:var(--primary-100);
+color:var(--primary-700);
+}
+
+.recipient-action--delete{
+background:rgba(239,68,68,.15);
+color:var(--danger-color);
+}
+
+.recipient-action:hover{
+transform:translateY(-2px);
+}
+
+@media (max-width:768px){
+
+.bankfleet-recipients__header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:24px;
+}
+
+.bankfleet-recipients__toolbar-container{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:24px;
+}
+
+.bankfleet-recipients__table thead{
+    display:none;
+}
+
+.bankfleet-recipients__table,
+.bankfleet-recipients__table tbody,
+.bankfleet-recipients__table tr,
+.bankfleet-recipients__table td{
+    display:block;
+    width:100%;
+}
+
+.bankfleet-recipients__table tr{
+    margin-bottom:24px;
+    padding:24px;
+    background:var(--white);
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-primary);
+}
+
+.bankfleet-recipients__table td{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.bankfleet-recipients__table td::before{
+    content:attr(data-label);
+    font-family:var(--font-primary-semibold);
+    color:var(--primary-900);
+}
+}

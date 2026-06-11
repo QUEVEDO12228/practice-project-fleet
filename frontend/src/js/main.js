@@ -1,0 +1,18 @@
+// main.js
+console.log("main cargado");
+
+import '/frontend/src/js/components/forms/login.js';
+import '/frontend/src/js/components/navbar/navbar_login.js';
+import '/frontend/src/js/components/footer/footer.js';
+import '/frontend/src/js/components/forms/register_step1.js';
+import '/frontend/src/js/components/forms/register_step2.js';
+import '/frontend/src/js/components/forms/code_verify.js';
+import '/frontend/src/js/components/forms/forgot_password.js';
+import '/frontend/src/js/components/forms/reset_password.js';
+import '/frontend/src/js/components/cards/bankfleet_card_home.js';
+import '/frontend/src/js/pages/home/vista_home_client.js';
+import '/frontend/src/js/components/sidebar/bankfleet_sidebar_principal.js';
+import '/frontend/src/js/components/transfers/bankfleet_new_transfer.js';
+import '/frontend/src/js/components/tables/bankfleet_employee_management_table.js';
+import '/frontend/src/js/components/tables/bankfleet_recipients.js';
+import '/frontend/src/js/components/tables/bankfleet_table_transfer_history.js';

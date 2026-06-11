@@ -1,0 +1,57 @@
+/* =========================================================
+SECONDARY
+========================================================= */
+
+.bankfleet-btn-secondary {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    height: 36px;
+    padding: 0 16px;
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255,255,255,.03);
+
+    color: var(--white);
+
+    text-decoration: none;
+
+    font-family: var(--font-primary);
+    font-size: 12px;
+    font-weight: 500;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+}
+
+.bankfleet-btn-secondary:hover {
+
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(139,92,246,.35);
+
+    background:
+        rgba(139,92,246,.08);
+}
+
+.bankfleet-btn-secondary:active {
+
+    transform: translateY(0);
+}
+
+.bankfleet-btn-secondary__icon{
+  height: 16px;
+  width: 16px;
+}
