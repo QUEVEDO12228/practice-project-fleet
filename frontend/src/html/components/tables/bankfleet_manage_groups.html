@@ -1,27 +1,27 @@
 <!-- ================== Gestión de Empleados ================== -->
 
-<section class="bankfleet-employees-table">
+<section class="bankfleet_manage_groups-table">
 
-    <div class="bankfleet-employees-table__header">
+    <div class="bankfleet_manage_groups-table__header">
 
-        <div class="bankfleet-employees-table__header-container">
+        <div class="bankfleet_manage_groups-table__header-container">
             <a
                 href="/"
-                class="bankfleet-btn-secondary bankfleet-employees-table__btn-secondary">
+                class="bankfleet-btn-secondary bankfleet_manage_groups-table__btn-secondary">
 
                 <img
                     src="/frontend/public/assets/icons/icon_back.svg"
                     alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet-employees-table__btn-secondary-icon">
+                    class="bankfleet-btn-secondary__icon bankfleet_manage_groups-table__btn-secondary-icon">
             </a>
 
-            <div class="bankfleet-employees-table__container text">
+            <div class="bankfleet_manage_groups-table__container text">
 
-                <h1 class="bankfleet-employees-table__title">
-                    Administrar Empleados
+                <h1 class="bankfleet_manage_groups-table__title">
+                    Administrar grupos
                 </h1>
 
-                <p class="bankfleet-employees-table__subtitle">
+                <p class="bankfleet_manage_groups-table__subtitle">
                     Administra la información de los colaboradores del grupo de nómina.
                 </p>
             </div>
@@ -42,22 +42,22 @@
 
     </div>
 
-    <div class="bankfleet-employees-table__container-buttons">
+    <div class="bankfleet_manage_groups-table__container-buttons">
 
-        <div class="bankfleet-employees-table__search">
+        <div class="bankfleet_manage_groups-table__search">
 
             <img
                 src="/frontend/public/assets/icons/icon_search.svg"
                 alt="Buscar"
-                class="bankfleet-employees-table__search-icon">
+                class="bankfleet_manage_groups-table__search-icon">
 
             <input
                 type="text"
                 placeholder="Buscar operación..."
-                class="bankfleet-employees-table__search-input">
+                class="bankfleet_manage_groups-table__search-input">
 
         </div>
-        <div class="bankfleet-employees-table__container-buttons-buttons"> 
+        <div class="bankfleet_manage_groups-table__container-buttons-buttons"> 
             <a
                 href="/"
                 class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
@@ -79,25 +79,28 @@
         </div>
     </div>
 
-    <div class="bankfleet-employees-table__table-wrapper">
+    <div class="bankfleet_manage_groups-table__table-wrapper">
 
-        <table class="bankfleet-employees-table__table">
+        <table class="bankfleet_manage_groups-table__table">
 
             <thead>
 
                 <tr>
-                    <th><img class="bankfleet-employees-table__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg"></th>
-                    <th>Empleado</th>
-                    <th>Cargo</th>
-                    <th>Correo</th>
-                    <th>Fecha Alta</th>
-                    <th>Banco</th>
+                    <th><img class="bankfleet_manage_groups-table__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg"></th>
+                    <th>Nombre empleado<br>No. de empleados</th>
+                    <th>Fecha de<br> alta</th>
+                    <th>Alias del<br> grupo de nómina</th>
+                    <th>Cuenta origen</th>
+                    <th>Periodicidad</th>
                     <th>Tipo Cuenta</th>
                     <th>No. Cuenta</th>
-                    <th>Operación</th>
-                    <th>Archivo Banco</th>
                     <th>Estado</th>
                 </tr>
+	
+
+
+
+
 
             </thead>
 
@@ -108,7 +111,7 @@
                 <tr>
 
                     <td data-label="ID">
-                        <img class="bankfleet-employees-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
+                        <img class="bankfleet_manage_groups-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
                     </td>
 
                     <td data-label="Empleado">
@@ -116,7 +119,7 @@
                         <div class="employee">
 
                             <div class="employee__avatar">
-                                JG
+                                G1
                             </div>
 
                             <div class="employee__info">
@@ -135,98 +138,22 @@
 
                     </td>
 
-                    <td data-label="Cargo">
-                        Analista de Nómina
-                    </td>
-
-                    <td data-label="Correo">
-                        juliangil@gmail.com
-                    </td>
-
                     <td data-label="Fecha Alta">
                         15/01/2025
                     </td>
 
-                    <td data-label="Banco">
-                        Bancolombia
-                    </td>
-
-                    <td data-label="Tipo Cuenta">
-                        Ahorros
-                    </td>
-
-                    <td data-label="No. Cuenta">
-                        45896587412
-                    </td>
-
-                    <td data-label="Operación">
-
-                        <span class="operation-badge operation-badge--online">
-                            Línea
-                        </span>
-
-                    </td>
-
-                    <td data-label="Archivo Banco">
-                        nomina_enero.xlsx
-                    </td>
-
-                    <td data-label="Estado">
-
-                        <span class="status status--active">
-                            Activo
-                        </span>
-
+                    <td data-label="Alias del grupo de nómina">
+                        Grupo primero
                     </td>
 
                     
 
-                </tr>
-
-                <!-- EMPLEADO 2 -->
-
-                <tr>
-
-                    <td data-label="ID">
-                        <img class="bankfleet-employees-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
+                    <td data-label="Cuenta origen">
+                        Cuenta (Grupo primero)
                     </td>
 
-                    <td data-label="Empleado">
-
-                        <div class="employee">
-
-                            <div class="employee__avatar">
-                                DA
-                            </div>
-
-                            <div class="employee__info">
-
-                                <span class="employee__name">
-                                    Daniela Arias
-                                </span>
-
-                                <span class="employee__document">
-                                    CC 1098745123
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </td>
-
-                    <td data-label="Cargo">
-                        Líder RRHH
-                    </td>
-
-                    <td data-label="Correo">
-                        danielaa@gmail.com
-                    </td>                    <td data-label="Fecha Alta">
-                        08/02/2025
-                    </td>
-
-                    <td data-label="Banco">
-                        Davivienda
+                    <td data-label="Periodicidad">
+                        Mensual
                     </td>
 
                     <td data-label="Tipo Cuenta">
@@ -234,28 +161,16 @@
                     </td>
 
                     <td data-label="No. Cuenta">
-                        74125896321
+                        ****7412
                     </td>
-
-                    <td data-label="Operación">
-
-                        <span class="operation-badge operation-badge--file">
-                            Archivo
-                        </span>
-
-                    </td>
-
-                    <td data-label="Archivo Banco">
-                        lote_rrhh_febrero.txt
-                    </td>
-
                     <td data-label="Estado">
 
                         <span class="status status--active">
                             Activo
                         </span>
-
                     </td>
+
+                    
 
                     
 
@@ -266,7 +181,7 @@
                 <tr>
 
                     <td data-label="ID">
-                        <img class="bankfleet-employees-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
+                        <img class="bankfleet_manage_groups-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
                     </td>
 
                     <td data-label="Empleado">
@@ -317,18 +232,6 @@
                         96587412365
                     </td>
 
-                    <td data-label="Operación">
-
-                        <span class="operation-badge operation-badge--online">
-                            Línea
-                        </span>
-
-                    </td>
-
-                    <td data-label="Archivo Banco">
-                        auditoria_marzo.xlsx
-                    </td>
-
                     <td data-label="Estado">
 
                         <span class="status status--inactive">
@@ -336,7 +239,19 @@
                         </span>
 
                     </td>
+                    <!-- <td data-label="Estado">
 
+                        <span class="status status--active">
+                            Activo
+                        </span>
+                    </td>
+                    <td data-label="Estado">
+
+                        <span class="transaction-status transaction-status--rejected">
+                            Rechazada
+                        </span>
+
+                    </td> -->
                     
 
                 </tr>

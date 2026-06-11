@@ -16,3 +16,6 @@ import '/frontend/src/js/components/transfers/bankfleet_new_transfer.js';
 import '/frontend/src/js/components/tables/bankfleet_employee_management_table.js';
 import '/frontend/src/js/components/tables/bankfleet_recipients.js';
 import '/frontend/src/js/components/tables/bankfleet_table_transfer_history.js';
+import '/frontend/src/js/components/tables/bankfleet_manage_groups.js';
+import '/frontend/src/js/components/tables/payroll_payment_history.js';
+import '/frontend/src/js/components/tables/bankfleet_scheduled_consultations_payroll.js';

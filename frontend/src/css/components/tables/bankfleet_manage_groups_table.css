@@ -1,4 +1,4 @@
-.bankfleet-employees-table{
+.bankfleet_manage_groups-table{
     width:100%;
     background: linear-gradient(
         135deg,
@@ -9,39 +9,39 @@
     box-shadow:var(--shadow-primary);
     font-family:var(--font-primary);
 }
-.bankfleet-employees-table__header-container{
+.bankfleet_manage_groups-table__header-container{
     display: flex;
     gap: 2rem;
 }
-.bankfleet-employees-table__header{
+.bankfleet_manage_groups-table__header{
     display:flex;
     justify-content:space-between;
     align-items:center;
     margin-bottom:24px;
 }
 
-.bankfleet-employees-table__title{
+.bankfleet_manage_groups-table__title{
     font-size:var(--fs-xs);
     color:var(--white);
     font-family:var(--font-primary-bold);
 }
 
-.bankfleet-employees-table__subtitle{
+.bankfleet_manage_groups-table__subtitle{
     font-size:var(--fs-xxxs);
     color:var(--gray-300);
 }
 
-.bankfleet-employees-table__toolbar{
+.bankfleet_manage_groups-table__toolbar{
     margin-bottom:24px;
 }
-.bankfleet-employees-table__search {
+.bankfleet_manage_groups-table__search {
     width: 300px;
     position: relative;
 
     margin-bottom: 24px;
 }
 
-.bankfleet-employees-table__search-icon {
+.bankfleet_manage_groups-table__search-icon {
 
     position: absolute;
 
@@ -56,7 +56,7 @@
     /* opacity: .6; */
 }
 
-.bankfleet-employees-table__search-input {
+.bankfleet_manage_groups-table__search-input {
 
     width: 100%;
     height: 44px;
@@ -88,12 +88,12 @@
     transition: .25s;
 }
 
-.bankfleet-employees-table__search-input::placeholder {
+.bankfleet_manage_groups-table__search-input::placeholder {
 
     color: var(--gray-500);
 }
 
-.bankfleet-employees-table__search-input:focus {
+.bankfleet_manage_groups-table__search-input:focus {
 
     border-color:
         rgba(139,92,246,.45);
@@ -104,16 +104,16 @@
     box-shadow:
         0 0 0 4px rgba(139,92,246,.12);
 }
-.bankfleet-employees-table__container-buttons{
+.bankfleet_manage_groups-table__container-buttons{
     display: flex;
     justify-content: space-between;
 }
-.bankfleet-employees-table__container-buttons-buttons{
+.bankfleet_manage_groups-table__container-buttons-buttons{
     display: flex;
     gap: 2rem;
 }
 
-.bankfleet-employees-table__add-btn{
+.bankfleet_manage_groups-table__add-btn{
     border:none;
     background:var(--primary-700);
     color:var(--white);
@@ -123,36 +123,36 @@
     transition:var(--transition-normal);
 }
 
-.bankfleet-employees-table__add-btn:hover{
+.bankfleet_manage_groups-table__add-btn:hover{
     background:var(--primary-600);
 }
 
-.bankfleet-employees-table__table-wrapper{
+.bankfleet_manage_groups-table__table-wrapper{
     overflow-x:auto;
 }
 
-.bankfleet-employees-table__table{
+.bankfleet_manage_groups-table__table{
     width:100%;
     min-width:900px;
     border-collapse:collapse;
 }
-.bankfleet-employees-table__image-options{
+.bankfleet_manage_groups-table__image-options{
     width: 16px;
     height: 16px;
     margin-left: 0.6rem;
 }
-.bankfleet-employees-table__table thead{
+.bankfleet_manage_groups-table__table thead{
     background:var(--primary-900);
 }
 
-.bankfleet-employees-table__table th{
+.bankfleet_manage_groups-table__table th{
     padding:8px;
     color:var(--white);
     font-size:var(--fs-xxxxs);
     text-align:left;
 }
 
-.bankfleet-employees-table__table td{
+.bankfleet_manage_groups-table__table td{
     padding: 8px;
     border-bottom:1px solid var(--gray-100);
     color:var(--black);
@@ -160,7 +160,7 @@
     font-size:var(--fs-xxxxs);
 }
 
-.bankfleet-employees-table__table tbody tr:hover{
+.bankfleet_manage_groups-table__table tbody tr:hover{
     background:var(--primary-600);
 }
 
@@ -250,25 +250,25 @@
 
 @media (max-width:768px){
 
-    .bankfleet-employees-table__header{
+    .bankfleet_manage_groups-table__header{
         flex-direction:column;
         align-items:flex-start;
         gap:24px;
     }
 
-    .bankfleet-employees-table__table thead{
+    .bankfleet_manage_groups-table__table thead{
         display:none;
     }
 
-    .bankfleet-employees-table__table,
-    .bankfleet-employees-table__table tbody,
-    .bankfleet-employees-table__table tr,
-    .bankfleet-employees-table__table td{
+    .bankfleet_manage_groups-table__table,
+    .bankfleet_manage_groups-table__table tbody,
+    .bankfleet_manage_groups-table__table tr,
+    .bankfleet_manage_groups-table__table td{
         display:block;
         width:100%;
     }
 
-    .bankfleet-employees-table__table tr{
+    .bankfleet_manage_groups-table__table tr{
         background:var(--white);
         margin-bottom:24px;
         padding:24px;
@@ -276,7 +276,7 @@
         box-shadow:var(--shadow-primary);
     }
 
-    .bankfleet-employees-table__table td{
+    .bankfleet_manage_groups-table__table td{
         display:flex;
         justify-content:space-between;
         align-items:center;
@@ -284,11 +284,11 @@
         border-bottom:1px solid var(--gray-100);
     }
 
-    .bankfleet-employees-table__table td:last-child{
+    .bankfleet_manage_groups-table__table td:last-child{
         border:none;
     }
 
-    .bankfleet-employees-table__table td::before{
+    .bankfleet_manage_groups-table__table td::before{
         content:attr(data-label);
         color:var(--primary-900);
         font-family:var(--font-primary-semibold);

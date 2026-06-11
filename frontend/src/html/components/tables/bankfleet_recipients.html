@@ -1,32 +1,32 @@
 <!-- ================== Administración de Destinatarios ================== -->
 
-<section class="bankfleet-recipients">
+<section class="bankfleet-recipients-table">
 
-<div class="bankfleet-recipients__header">
+<div class="bankfleet-recipients-table__header">
 
-    <div class="bankfleet-recipients__header-container">
+    <div class="bankfleet-recipients-table__header-container">
 
         <a
             href="/"
-            class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
+            class="bankfleet-btn-secondary bankfleet-recipients-table__btn-secondary">
 
             <img
                 src="/frontend/public/assets/icons/icon_back.svg"
                 alt=""
-                class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">
+                class="bankfleet-btn-secondary__icon bankfleet-recipients-table__btn-secondary-icon">
         </a>
 
-        <div class="bankfleet-recipients__content">
+        <div class="bankfleet-recipients-table__content">
 
-            <div class="bankfleet-recipients__title-container">
+            <div class="bankfleet-recipients-table__title-container">
 
-                <h1 class="bankfleet-recipients__title">
+                <h1 class="bankfleet-recipients-table__title">
                     Destinatarios
                 </h1>
 
             </div>
 
-            <p class="bankfleet-recipients__subtitle">
+            <p class="bankfleet-recipients-table__subtitle">
                 Administra los destinatarios frecuentes para realizar transferencias rápidas y seguras.
             </p>
 
@@ -48,31 +48,31 @@
     </button>
 
 </div>
-<div class="class bankfleet-transactions__separeitor-actions">
-    <div class="bankfleet-transactions__search">
+<div class="class bankfleet-recipients-table__separeitor-actions">
+    <div class="bankfleet-recipients-table__search">
 
         <img
             src="/frontend/public/assets/icons/icon_search.svg"
             alt="Buscar"
-            class="bankfleet-transactions__search-icon">
+            class="bankfleet-recipients-table__search-icon">
 
         <input
             type="text"
             placeholder="Buscar operación..."
-            class="bankfleet-transactions__search-input">
+            class="bankfleet-recipients-table__search-input">
 
     </div>
-    <div class="class bankfleet-transactions__separeitor-actions-buttons">
-        <div class="bankfleet-recipients__favorite-box">
+    <div class="class bankfleet-recipients-table__separeitor-actions-buttons">
+        <div class="bankfleet-recipients-table__favorite-box">
 
             <input
                 type="checkbox"
                 id="favorites"
-                class="bankfleet-recipients__favorite-checkbox">
+                class="bankfleet-recipients-table__favorite-checkbox">
 
             <label
                 for="favorites"
-                class="bankfleet-recipients__favorite-label">
+                class="bankfleet-recipients-table__favorite-label">
 
                 Mostrar favoritos
 
@@ -81,21 +81,21 @@
         </div>
         <a
             href="/"
-            class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
+            class="bankfleet-btn-secondary bankfleet-recipients-table__btn-secondary">
 
             <img
                 src="/frontend/public/assets/icons/icon_filter_white.svg"
                 alt=""
-                class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">Filtrar
+                class="bankfleet-btn-secondary__icon bankfleet-recipients-table__btn-secondary-icon">Filtrar
         </a>
         <a
             href="/"
-            class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
+            class="bankfleet-btn-secondary bankfleet-recipients-table__btn-secondary">
 
             <img
                 src="/frontend/public/assets/icons/icon_download_white.svg"
                 alt=""
-                class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">Descargar
+                class="bankfleet-btn-secondary__icon bankfleet-recipients-table__btn-secondary-icon">Descargar
         </a>
     </div>
 </div>
@@ -104,15 +104,15 @@
 
         
 
-<div class="bankfleet-recipients__table-wrapper">
+<div class="bankfleet-recipients-table__table-wrapper">
 
-    <table class="bankfleet-recipients__table">
+    <table class="bankfleet-recipients-table__table">
 
         <thead>
             <tr>
 
                 <th>
-                    <img class="bankfleet-employees__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg">
+                    <img class="bankfleet-recipients-table__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg">
                 </th>
 
                 <th>Alias o Nombre</th>
@@ -129,11 +129,11 @@
 
             <!-- DESTINATARIO 1 -->
 
-            <tr>
+            <tr class="bankfleet-recipients-table__tr">
 
                 <td data-label="Opciones">
                     <img
-                        class="bankfleet-employees__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
+                        class="bankfleet-recipients-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
                 </td>
 
                 <td data-label="Alias o Nombre">

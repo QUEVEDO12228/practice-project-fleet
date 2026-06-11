@@ -1,4 +1,4 @@
-.bankfleet-transactions{
+.bankfleet-transactions-table{
     width:100%;
     /* margin:24px auto; */
     background: linear-gradient(
@@ -12,57 +12,57 @@
     font-family:var(--font-primary);
 }
 
-.bankfleet-transactions__header{
+.bankfleet-transactions-table__header{
     margin-bottom:24px;
 }
 
-.bankfleet-transactions__header-container{
+.bankfleet-transactions-table__header-container{
     display:flex;
     align-items:flex-start;
     gap:24px;
 }
 
-.bankfleet-transactions__title-container{
+.bankfleet-transactions-table__title-container{
     display:flex;
     align-items:center;
     gap:12px;
 }
 
-.bankfleet-transactions__title{
-    font-size:var(--fs-sm);
+.bankfleet-transactions-table__title{
+    font-size:var(--fs-xs);
     color:var(--white);
     font-family:var(--font-primary-bold);
 }
 
-.bankfleet-transactions__subtitle{
-    font-size:var(--fs-xxs);
+.bankfleet-transactions-table__subtitle{
+    font-size:var(--fs-xxxs);
     color:var(--gray-300);
 }
 
-.bankfleet-transactions__menu-button{
+.bankfleet-transactions-table__menu-button{
     border:none;
     background:transparent;
     cursor:pointer;
 }
 
-.bankfleet-transactions__toolbar{
+.bankfleet-transactions-table__toolbar{
     margin-bottom:24px;
 }
 
 
-.bankfleet-transactions__table-wrapper{
+.bankfleet-transactions-table__table-wrapper{
     overflow-x:auto;
 }
 
-.bankfleet-transactions__table{
+.bankfleet-transactions-table__table{
     width:100%;
-    min-width:980px;
+    min-width:900px;
     border-collapse:collapse;
     height: 100%;
     background-color: var(--white);
 }
 
-.bankfleet-transactions__table thead{
+.bankfleet-transactions-table__table thead{
     background:var(--primary-900);
     
 }
@@ -71,24 +71,23 @@
     height: 16px;
     margin-left: 0.6rem;
 }
-.bankfleet-transactions__table th{
+.bankfleet-transactions-table__table th{
     padding:8px;
     color:var(--white);
     text-align:left;
     font-size:var(--fs-xxxs);
 }
 
-.bankfleet-transactions__table td{
+.bankfleet-transactions-table__table td{
     padding:8px 8px;
     border-bottom:1px solid var(--secondary-500);
     color:var(--black);
     font-size:var(--fs-xxxs);
 }
 
-.bankfleet-transactions__table tbody tr:hover{
+.bankfleet-transactions-table__table tbody tr:hover{
     background:var(--primary-50);
 }
-
 .transaction-recipient{
     display:flex;
     flex-direction:column;
@@ -144,22 +143,22 @@
     background:rgba(239,68,68,.15);
     color:var(--danger-color);
 }
-.bankfleet-transactions__separeitor-actions{
+.bankfleet-transactions-table__separeitor-actions{
     display: flex;
     justify-content: space-between;
 }
-.bankfleet-transactions__separeitor-actions-buttons{
+.bankfleet-transactions-table__separeitor-actions-buttons{
     display: flex;
     gap: 2.4rem;
 }
-.bankfleet-transactions__search {
+.bankfleet-transactions-table__search {
     width: 300px;
     position: relative;
 
     margin-bottom: 24px;
 }
 
-.bankfleet-transactions__search-icon {
+.bankfleet-transactions-table__search-icon {
 
     position: absolute;
 
@@ -174,7 +173,7 @@
     /* opacity: .6; */
 }
 
-.bankfleet-transactions__search-input {
+.bankfleet-transactions-table__search-input {
 
     width: 100%;
     height: 44px;
@@ -206,12 +205,12 @@
     transition: .25s;
 }
 
-.bankfleet-transactions__search-input::placeholder {
+.bankfleet-transactions-table__search-input::placeholder {
 
     color: var(--gray-500);
 }
 
-.bankfleet-transactions__search-input:focus {
+.bankfleet-transactions-table__search-input:focus {
 
     border-color:
         rgba(139,92,246,.45);
