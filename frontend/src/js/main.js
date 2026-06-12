@@ -14,6 +14,7 @@ import '/frontend/src/js/pages/home/vista_home_client.js';
 import '/frontend/src/js/components/sidebar/bankfleet_sidebar_principal.js';
 import '/frontend/src/js/components/transfers/bankfleet_new_transfer.js';
 import '/frontend/src/js/components/transfers/bankfleet_key_transfer.js';
+import '/frontend/src/js/components/transfers/bankfleet_bank_transfer.js';
 import '/frontend/src/js/components/tables/bankfleet_employee_management_table.js';
 import '/frontend/src/js/components/tables/bankfleet_recipients.js';
 import '/frontend/src/js/components/tables/bankfleet_table_transfer_history.js';

@@ -14,11 +14,14 @@
         var(--primary-800) 100%
     );
 
-    border-right: 1px solid var(--secondary-500);
+    
 
-    padding: 24px 16px;
+    padding: 2px;
 
     box-sizing: border-box;
+}
+.bankfleet-sidebar-principal:hover{
+    border-right: 1px solid var(--secondary-500);
 }
 .bankfleet-sidebar__link {
     position: relative;
@@ -131,6 +134,7 @@ BUTTON
 
     background:
         rgba(255,255,255,.05);
+    border-bottom: solid 1px var(--secondary-500);
 
     color: var(--white);
 }

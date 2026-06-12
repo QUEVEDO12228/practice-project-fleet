@@ -1,0 +1,219 @@
+<section class="bankfleet-transfer-bank">
+
+    <!-- FORMULARIO -->
+
+    <div class="bankfleet-transfer-bank__content">
+        <header class="bankfleet-transfer-bank__header">
+            <a href="/" class="bankfleet-btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_back.svg" alt="Atrás" class="bankfleet-btn-secondary__icon">
+            </a>
+            <div class="bankfleet-transfer-bank__header-content">
+                <div class="bankfleet-transfer-bank__title-span">
+                    <h2 class="bankfleet-transfer-bank__title">Transferencia Bancaria</h2>
+                    <span class="bankfleet-transfer-bank__badge">
+                        Cuenta Bancaria
+                    </span>
+                </div>
+                <div class="bankfleet-transfer-bank__header-texts">
+                    <p class="bankfleet-transfer-bank__subtitle">Envía dinero a cuentas de ahorro o corriente de cualquier entidad financiera nacional de forma segura y rápida.</p>
+                </div>
+            </div>
+        </header>
+
+        <form class="bankfleet-transfer-bank__form">
+
+            <div class="bankfleet-transfer-bank__grid">
+
+                <!-- BANCO -->
+
+                <div class="bankfleet-transfer-bank__field">
+
+                    <label class="bankfleet-transfer-bank__label">
+                        Entidad Financiera
+                    </label>
+
+                    <select class="bankfleet-transfer-bank__select">
+
+                        <option>Seleccionar Banco</option>
+                        <option>Bancolombia</option>
+                        <option>Davivienda</option>
+                        <option>BBVA</option>
+                        <option>Banco de Bogotá</option>
+
+                    </select>
+
+                </div>
+
+                <!-- TIPO CUENTA -->
+
+                <div class="bankfleet-transfer-bank__field">
+
+                    <label class="bankfleet-transfer-bank__label">
+                        Tipo de Cuenta
+                    </label>
+
+                    <select class="bankfleet-transfer-bank__select">
+
+                        <option>Ahorros</option>
+                        <option>Corriente</option>
+
+                    </select>
+
+                </div>
+
+                <!-- CUENTA -->
+
+                <div class="bankfleet-transfer-bank__field">
+
+                    <label class="bankfleet-transfer-bank__label">
+                        Número de Cuenta
+                    </label>
+
+                    <input
+                        type="text"
+                        class="bankfleet-transfer-bank__input"
+                        placeholder="000000000000"
+                    >
+
+                </div>
+
+                <!-- DOCUMENTO -->
+
+                <div class="bankfleet-transfer-bank__field">
+
+                    <label class="bankfleet-transfer-bank__label">
+                        Documento del Titular
+                    </label>
+
+                    <input
+                        type="text"
+                        class="bankfleet-transfer-bank__input"
+                        placeholder="Número de documento"
+                    >
+
+                </div>
+
+                <!-- NOMBRE -->
+
+                <div class="bankfleet-transfer-bank__field">
+
+                    <label class="bankfleet-transfer-bank__label">
+                        Nombre Completo
+                    </label>
+
+                    <input
+                        type="text"
+                        class="bankfleet-transfer-bank__input"
+                        placeholder="Nombre del destinatario"
+                    >
+
+                </div>
+
+                <!-- EMAIL -->
+
+                <div class="bankfleet-transfer-bank__field">
+
+                    <label class="bankfleet-transfer-bank__label">
+                        Correo Electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        class="bankfleet-transfer-bank__input"
+                        placeholder="correo@ejemplo.com"
+                    >
+
+                </div>
+
+            <!-- MONTO -->
+                <div class="bankfleet-transfer-bank__field">
+
+                    <label class="bankfleet-transfer-bank__label">
+                        Valor a Transferir
+                    </label>
+
+                    <input
+                        type="text"
+                        class="bankfleet-transfer-bank__amount-input"
+                        placeholder="$0"
+                    >
+
+                </div>
+
+                <div class="bankfleet-transfer-bank__field">
+
+                    <label class="bankfleet-transfer-bank__label">
+                        Descripción
+                    </label>
+
+                    <textarea
+                        class="bankfleet-transfer-bank__textarea"
+                        placeholder="Concepto de la transferencia"
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- RESUMEN -->
+    <div class="bankfleet-transfer-bank__container-summary-btn">
+        <aside class="bankfleet-transfer-bank__summary">
+
+            <h3 class="bankfleet-transfer-bank__summary-title">
+                Resumen
+            </h3>
+
+            <div class="bankfleet-transfer-bank__summary-item">
+                <span class="bankfleet-transfer-bank__summary-label">
+                    Método
+                </span>
+
+                <span class="bankfleet-transfer-bank__summary-value">
+                    Transferencia Bancaria
+                </span>
+            </div>
+
+            <div class="bankfleet-transfer-bank__summary-item">
+                <span class="bankfleet-transfer-bank__summary-label">
+                    Banco
+                </span>
+
+                <span class="bankfleet-transfer-bank__summary-value">
+                    —
+                </span>
+            </div>
+
+            <div class="bankfleet-transfer-bank__summary-item">
+                <span class="bankfleet-transfer-bank__summary-label">
+                    Titular
+                </span>
+
+                <span class="bankfleet-transfer-bank__summary-value">
+                    —
+                </span>
+            </div>
+
+            <div class="bankfleet-transfer-bank__summary-item">
+                <span class="bankfleet-transfer-bank__summary-label">
+                    Valor
+                </span>
+
+                <span class="bankfleet-transfer-bank__summary-value">
+                    $0
+                </span>
+            </div>
+
+        </aside>
+
+        <div class="bankfleet-transfer-key__actions">
+            <button type="button" class="bankfleet-btn bankfleet-btn--primary">Continuar
+                <img src="/frontend/public/assets/icons/icon_next-white.svg" alt="->" class="bankfleet-btn__icon">
+            </button>
+        </div>
+    </div>
+
+</section>

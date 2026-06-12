@@ -133,7 +133,7 @@
 
 .bankfleet-employees-table__table{
     width:100%;
-    min-width:900px;
+    min-width:0px;
     border-collapse:collapse;
 }
 .bankfleet-employees-table__image-options{

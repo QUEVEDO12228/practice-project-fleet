@@ -15,8 +15,10 @@
 @import url('./components/cards/bankfleet_card_home.css');
 @import url('./components/siderbar/banfleet_sidebar_principal.css');
 @import url('./pages/vista_home_client.css');
+@import url('./pages/view_bankfleet_key_transfer.css');
 @import url('./components/transfers/bankfleet_new_transfer.css');
 @import url('./components/transfers/bankfleet_key_transfer.css');
+@import url('./components/transfers/bankfleet_bank_transfer.css');
 @import url('./components/tables/bankfleet_employee_management_table.css');
 @import url('./components/tables/bankfleet_recipients.css');
 @import url('./components/tables/bankfleet_table_transfer_history.css');

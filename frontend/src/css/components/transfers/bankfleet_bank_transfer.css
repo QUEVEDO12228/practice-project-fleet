@@ -1,0 +1,275 @@
+.bankfleet-transfer-bank{
+    width:100%;
+    max-width:1140px;
+    padding:var(--gap-xl);
+    display:grid;
+    grid-template-columns:1fr 380px;
+    box-sizing:border-box;
+}
+
+.bankfleet-transfer-bank__content{
+   background: var(--primary-800);
+
+    border-radius:var(--radius-xxl);
+    padding:32px;
+    /* backdrop-filter:blur(60px); */
+}
+.bankfleet-transfer-bank__content:hover{
+    border: solid 1px var(--secondary-500);
+}
+
+
+.bankfleet-transfer-bank__header{
+    display: flex;
+    align-items: flex-start;
+    gap: var(--gap-md);
+    margin-bottom: var(--gap-lg);
+}
+.bankfleet-transfer-bank__header-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.bankfleet-transfer-bank__title{
+    margin: 0;
+}
+.bankfleet-transfer-bank__title-span{
+    display: flex;
+    justify-content: space-between;
+}
+.bankfleet-transfer-bank__header-texts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-md);
+    flex-wrap: wrap;
+}
+.bankfleet-transfer-bank__subtitle{
+    margin: 0;
+}
+.bankfleet-transfer-bank__badge{
+    flex-shrink: 0;
+}
+.bankfleet-transfer-bank__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: var(--radius-full);
+    background: rgba(139,92,246,.12);
+    color: var(--secondary-300);
+    font-size: var(--fs-xxxxs);
+    letter-spacing: 1px;
+}
+.bankfleet-transfer-bank__title {
+    color: var(--white);
+    font-size: var(--fs-xs);
+    font-family: var(--font-primary-bold);
+}
+.bankfleet-transfer-bank__subtitle {
+    color: var(--gray-300);
+    font-size: var(--fs-xxxs);
+    line-height: 1.8;
+}
+
+.bankfleet-transfer-bank__form{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.bankfleet-transfer-bank__grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+}
+
+.bankfleet-transfer-bank__field{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+}
+
+.bankfleet-transfer-bank__label{
+    color:var(--white);
+    font-size:var(--fs-xxxxs);
+}
+
+.bankfleet-transfer-bank__input,
+.bankfleet-transfer-bank__select{
+    width:100%;
+    max-width: 300px;
+    height:48px;
+    padding:0 18px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.04);
+    color:var(--white);
+    outline:none;
+    transition:var(--transition-normal);
+    box-sizing:border-box;
+    font-size: var(--fs-xxs);
+}
+
+.bankfleet-transfer-bank__select{
+    cursor:pointer;
+}
+
+.bankfleet-transfer-bank__input:focus,
+.bankfleet-transfer-bank__select:focus{
+    border-color:rgba(139,92,246,.45);
+    background:rgba(255,255,255,.06);
+    box-shadow:0 0 0 4px rgba(139,92,246,.15);
+}
+
+.bankfleet-transfer-bank__amount{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.bankfleet-transfer-bank__amount-input{
+    width:100%;
+    height:48px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.04);
+    color:var(--white);
+    text-align:center;
+    font-size:var(--fs-xxs);
+    font-family:var(--font-primary-bold);
+    outline:none;
+    transition:var(--transition-normal);
+}
+
+.bankfleet-transfer-bank__amount-input:focus{
+    border-color:rgba(139,92,246,.45);
+    box-shadow:0 0 0 4px rgba(139,92,246,.15);
+}
+
+.bankfleet-transfer-bank__textarea{
+    width:100%;
+    min-height:96px;
+    padding:16px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.08);
+    background:rgba(255,255,255,.04);
+    color:var(--white);
+    resize:none;
+    outline:none;
+    box-sizing:border-box;
+}
+
+.bankfleet-transfer-bank__textarea:focus{
+    border-color:rgba(139,92,246,.45);
+    box-shadow:0 0 0 4px rgba(139,92,246,.15);
+}
+
+.bankfleet-transfer-bank__actions{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.bankfleet-transfer-bank__button{
+    height:54px;
+    padding:0 32px;
+    border:none;
+    border-radius:18px;
+    background:var(--secondary-500);
+    color:var(--white);
+    cursor:pointer;
+    font-family:var(--font-primary-semibold);
+    transition:var(--transition-normal);
+}
+
+.bankfleet-transfer-bank__button:hover{
+    transform:translateY(-2px);
+}
+
+.bankfleet-transfer-bank__summary{
+    height:fit-content;
+    position:sticky;
+    top:24px;
+    margin-left:24px;
+    padding:28px;
+    background:var(--primary-800);
+    border:2px solid rgba(255,255,255,.08);
+    border-radius:var(--radius-xxl);
+    backdrop-filter:blur(60px);
+}
+.bankfleet-transfer-bank__summary:hover{
+    border: solid 1px var(--secondary-500);
+}
+.bankfleet-transfer-bank__summary-title{
+    color:var(--white);
+    font-size:var(--fs-xs);
+    font-family:var(--font-primary-bold);
+    margin-bottom:24px;
+}
+
+.bankfleet-transfer-bank__summary-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 0;
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.bankfleet-transfer-bank__summary-item:last-child{
+    border-bottom:none;
+}
+
+.bankfleet-transfer-bank__summary-label{
+    color:var(--gray-300);
+    font-size:var(--fs-xxxxs);
+}
+
+.bankfleet-transfer-bank__summary-value{
+    color:var(--white);
+    font-size:var(--fs-xxxs);
+    font-family:var(--font-primary-semibold);
+}
+
+@media (max-width:1100px){
+
+    .bankfleet-transfer-bank{
+        grid-template-columns:1fr;
+    }
+
+    .bankfleet-transfer-bank__summary{
+        margin-left:0;
+        margin-top:24px;
+        position:relative;
+        top:0;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .bankfleet-transfer-bank{
+        padding:var(--gap-lg);
+    }
+
+    .bankfleet-transfer-bank__grid{
+        grid-template-columns:1fr;
+    }
+
+    .bankfleet-transfer-bank__actions{
+        justify-content:stretch;
+    }
+
+    .bankfleet-transfer-bank__button{
+        width:100%;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .bankfleet-transfer-bank__content,
+    .bankfleet-transfer-bank__summary{
+        padding:24px;
+    }
+
+}

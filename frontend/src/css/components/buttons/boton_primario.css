@@ -42,7 +42,7 @@ PRIMARY
         linear-gradient(
             135deg,
             var(--secondary-500),
-            var(--primary-500)
+            var(--primary-200)
         );
 
     color: var(--white);
@@ -57,6 +57,7 @@ PRIMARY
 
     box-shadow:
         0 16px 32px rgba(139,92,246,.35);
+    border: solid 2px var(--secondary-200);
 }
 
 .bankfleet-btn--primary:active {

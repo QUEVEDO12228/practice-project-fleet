@@ -20,13 +20,15 @@ BANKFLEET GLOBAL NAVBAR
         var(--primary-900) 0%,
         var(--primary-800) 100%
     );
-    border-bottom: 1px solid var(--secondary-500);
+    
 
     backdrop-filter: blur(18px);
 
     font-family: var(--font-primary);
 }
-
+.bankfleet-navbar:hover {
+    border-bottom: 1px solid var(--secondary-500);  
+}
 
 /* =========================================================
 BACKGROUND EFFECTS

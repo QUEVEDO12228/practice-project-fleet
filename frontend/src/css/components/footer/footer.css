@@ -13,14 +13,12 @@ BANKFLEET FOOTER
         var(--primary-800) 100%
     );
 
-    border-top:
-        1px solid var(--border-color);
-
-    padding-top: var(--gap-xxxl);
 
     font-family: var(--font-primary);
 }
-
+.bankfleet-footer:hover {
+    border-top: solid 1px var(--secondary-500);
+}
 
 /* =========================================================
 GLOW EFFECTS
@@ -45,14 +43,22 @@ GLOW EFFECTS
     top: -120px;
     left: -120px;
 
-    background: var(--secondary-500);
+    background: linear-gradient(
+        135deg,
+        var(--primary-900) 0%,
+        var(--primary-800) 100%
+    );
 }
 
 .bankfleet-footer__glow--right {
     right: -120px;
     bottom: -120px;
 
-    background: var(--primary-500);
+    background: linear-gradient(
+        135deg,
+        var(--primary-900) 0%,
+        var(--primary-800) 100%
+    );
 }
 
 
@@ -78,10 +84,13 @@ CONTAINER
 
     margin: 0 auto;
 
-    padding:
-        0
-        var(--gap-xl)
-        var(--gap-xxxl);
+    padding:var(--gap-lg);
+    background: linear-gradient(
+        135deg,
+        var(--primary-900) 0%,
+        var(--primary-800) 100%
+    );
+    
 }
 
 
@@ -181,7 +190,7 @@ BRAND
 
     line-height: 1.8;
 
-    font-size: var(--fs-xxs);
+    font-size: var(--fs-xxxs);
 }
 
 
@@ -211,7 +220,11 @@ METRICS
 
     border-radius: var(--radius-lg);
 
-    background: rgba(255,255,255,0.03);
+    background: linear-gradient(
+        135deg,
+        var(--primary-900) 0%,
+        var(--primary-800) 100%
+    );
 
     backdrop-filter: blur(10px);
 }
@@ -245,7 +258,7 @@ SECTIONS
 
     color: var(--white);
 
-    font-size: var(--fs-xs);
+    font-size: var(--fs-xxs);
 
     font-family: var(--font-primary-semibold);
 }
@@ -276,6 +289,7 @@ LISTS
     color: var(--gray-300);
 
     text-decoration: none;
+    font-size: var(--fs-xxxs);
 
     transition: var(--transition-normal);
 }
@@ -329,13 +343,13 @@ CONTACT
     background:
         rgba(139, 92, 246, 0.1);
 
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xxxxs);
 }
 
 .bankfleet-footer__contact-text {
     color: var(--gray-300);
 
-    font-size: var(--fs-xxs);
+    font-size: var(--fs-xxxxs);
 }
 
 
@@ -364,9 +378,7 @@ BOTTOM
 
     margin: 0 auto;
 
-    padding:
-        var(--gap-lg)
-        var(--gap-xl);
+    padding: var(--gap-sm)
 }
 
 .bankfleet-footer__copyright {

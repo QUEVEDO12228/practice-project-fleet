@@ -5,35 +5,54 @@
 
     <meta charset="UTF-8">
 
-    <link
-        rel="stylesheet"
-        href="/frontend/src/css/main.css">
+    <link rel="stylesheet" href="/frontend/src/css/main.css">
 
-    <script
-        type="module"
-        src="/frontend/src/js/main.js">
-    </script>
+    <script type="module" src="/frontend/src/js/main.js"></script>
 
     <title>Productos</title>
 
 </head>
 
 <body>
-    <section class="section-footer-content">
-        <section class="navbar-client-home">
-            <div class="navbar-login-content"></div>  
-        </section>
-        <section class="sidebar-client-home">
-            <div class="sidebar-container"></div>  
-        </section>
-        <section class="Bankfleet_manage_groups_component_container_Containerjs">
-            <div class="bankfleet-manage-groups-component-container"></div>
-        </section>
-    </section>
-    <section class="footer-client-home">
-      <div class="footer-container"></div>  
-    </section>
-    
+
+    <div class="bankfleet-app">
+
+        <!-- =========================
+             HEADER / NAVBAR
+        ========================== -->
+        <header class="bankfleet-navbar">
+            <div class="navbar-login-content"></div>
+        </header>
+
+        <!-- =========================
+             BODY (SIDEBAR + CONTENT)
+        ========================== -->
+        <div class="bankfleet-app__body">
+
+            <!-- SIDEBAR -->
+            <aside class="bankfleet-sidebar-principal">
+                <div class="sidebar-container"></div>
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <main class="bankfleet-main-content">
+
+                <section class="bankfleet-transfer-view">
+                    <div class="bankfleet-manage-groups-component-container"></div>
+                </section>
+
+            </main>
+
+        </div>
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+        <footer class="bankfleet-footer">
+            <div class="footer-container"></div>
+        </footer>
+
+    </div>
 
 </body>
 
