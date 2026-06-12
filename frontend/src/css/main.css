@@ -16,9 +16,11 @@
 @import url('./components/siderbar/banfleet_sidebar_principal.css');
 @import url('./pages/vista_home_client.css');
 @import url('./components/transfers/bankfleet_new_transfer.css');
+@import url('./components/transfers/bankfleet_key_transfer.css');
 @import url('./components/tables/bankfleet_employee_management_table.css');
 @import url('./components/tables/bankfleet_recipients.css');
 @import url('./components/tables/bankfleet_table_transfer_history.css');
 @import url('./components/tables/bankfleet_manage_groups_table.css');
 @import url('./components/tables/payroll_payment_history.css');
 @import url('./components/tables/bankfleet_scheduled_consultations_payroll.css');
+@import url('./components/tables/bankfleet_scheduled_consultations_transfers.css');

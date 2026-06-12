@@ -1,0 +1,539 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.bankfleet-transfer-key {
+    width: 100%;
+    max-width: 1400px;
+    /* margin: 0 auto; */
+    padding: var(--gap-xl); 
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.bankfleet-transfer-key__content {
+    background: var(--primary-800);
+    border: 2px solid rgba(255,255,255,.08);
+    border-radius: var(--radius-xxl);
+    padding: 32px;
+    backdrop-filter: blur(60px);
+    transition: var(--transition-normal);
+}
+
+.bankfleet-transfer-key__content:hover {
+    border-color: rgba(139,92,246,.25);
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+.bankfleet-transfer-key__header{
+    display: flex;
+    align-items: flex-start;
+    gap: var(--gap-md);
+    margin-bottom: var(--gap-lg);
+}
+
+.bankfleet-transfer-key__header-content{
+    display: flex;
+    flex-direction: column;
+    /* gap: 2px; */
+    flex: 1;
+}
+
+.bankfleet-transfer-key__title{
+    margin: 0;
+}
+
+.bankfleet-transfer-key__header-texts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-md);
+    flex-wrap: wrap;
+}
+
+.bankfleet-transfer-key__subtitle{
+    margin: 0;
+}
+.bankfleet-transfer-key__badge{
+    flex-shrink: 0;
+}
+.bankfleet-transfer-key__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 14px;
+
+    border-radius: var(--radius-full);
+
+    background: rgba(139,92,246,.12);
+
+    color: var(--secondary-300);
+
+    font-size: var(--fs-xxxxs);
+
+    letter-spacing: 1px;
+
+    /* margin-bottom: var(--gap-md); */
+}
+
+.bankfleet-transfer-key__title {
+    color: var(--white);
+    font-size: var(--fs-xs);
+    font-family: var(--font-primary-bold);
+    /* margin-bottom: var(--gap-xs); */
+}
+
+.bankfleet-transfer-key__subtitle {
+    color: var(--gray-300);
+    font-size: var(--fs-xxxs);
+    line-height: 1.8;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.bankfleet-transfer-key__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-lg);
+}
+
+/* =========================================================
+   KEY SELECTOR
+========================================================= */
+
+.bankfleet-transfer-key__selector {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--gap-md);
+}
+
+.bankfleet-transfer-key__option {
+    height: 80px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: var(--gap-sm);
+
+    border-radius: var(--radius-xl);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    background: rgba(255,255,255,.03);
+
+    cursor: pointer;
+
+    transition: var(--transition-normal);
+}
+
+.bankfleet-transfer-key__option:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(139,92,246,.35);
+
+    background: rgba(139,92,246,.06);
+}
+
+.bankfleet-transfer-key__option.active {
+    border-color: var(--secondary-400);
+
+    background: rgba(139,92,246,.12);
+
+    box-shadow: 0 0 0 3px rgba(139,92,246,.15);
+}
+
+.bankfleet-transfer-key__option-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.bankfleet-transfer-key__option span {
+    color: var(--white);
+    font-size: var(--fs-xxxs);
+}
+
+/* =========================================================
+   FIELDS
+========================================================= */
+
+.bankfleet-transfer-key__field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bankfleet-transfer-key__label {
+    color: var(--white);
+    font-size: var(--fs-xxxxs);
+}
+
+.bankfleet-transfer-key__input {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 18px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    background: rgba(255,255,255,.04);
+
+    color: var(--white);
+
+    outline: none;
+
+    transition: var(--transition-normal);
+
+    box-sizing: border-box;
+}
+
+.bankfleet-transfer-key__input::placeholder {
+    color: var(--gray-500);
+}
+
+.bankfleet-transfer-key__input:focus {
+    border-color: rgba(139,92,246,.45);
+
+    background: rgba(255,255,255,.06);
+
+    box-shadow: 0 0 0 4px rgba(139,92,246,.15);
+}
+
+/* =========================================================
+   AMOUNT
+========================================================= */
+
+.bankfleet-transfer-key__amount {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bankfleet-transfer-key__amount-input {
+    width: 100%;
+    height: 48px;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    background: rgba(255,255,255,.04);
+
+    text-align: center;
+
+    color: var(--white);
+
+    font-size: var(--fs-xs);
+
+    font-family: var(--font-primary-bold);
+
+    outline: none;
+
+    transition: var(--transition-normal);
+}
+
+.bankfleet-transfer-key__amount-input:focus {
+    border-color: rgba(139,92,246,.45);
+
+    box-shadow: 0 0 0 4px rgba(139,92,246,.15);
+}
+
+/* =========================================================
+   TEXTAREA
+========================================================= */
+
+.bankfleet-transfer-key__textarea {
+    width: 100%;
+    height: 96px;
+
+    padding: 16px;
+
+    border-radius: var(--radius-lg);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    background: rgba(255,255,255,.04);
+
+    color: var(--white);
+
+    resize: vertical;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.bankfleet-transfer-key__textarea:focus {
+    border-color: rgba(139,92,246,.45);
+
+    box-shadow: 0 0 0 4px rgba(139,92,246,.15);
+}
+
+/* =========================================================
+   SUMMARY CARD
+========================================================= */
+
+.bankfleet-transfer-key__summary {
+    height: fit-content;
+
+    position: sticky;
+    top: 24px;
+
+    background: var(--primary-800);
+
+    border: 2px solid rgba(255,255,255,.08);
+
+    border-radius: var(--radius-xxl);
+
+    padding: 28px;
+    margin-left: var(--gap-lg);
+    backdrop-filter: blur(60px);
+}
+
+.bankfleet-transfer-key__summary-title {
+    color: var(--white);
+
+    font-size: var(--fs-xs);
+
+    font-family: var(--font-primary-bold);
+
+    margin-bottom: var(--gap-lg);
+}
+
+.bankfleet-transfer-key__summary-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.bankfleet-transfer-key__summary-item:last-child {
+    border-bottom: none;
+}
+
+.bankfleet-transfer-key__summary-label {
+    color: var(--gray-300);
+
+    font-size: var(--fs-xxxxs);
+}
+
+.bankfleet-transfer-key__summary-value {
+    color: var(--white);
+
+    font-size: var(--fs-xxxs);
+
+    font-family: var(--font-primary-semibold);
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+.bankfleet-transfer-key__footer{
+    width: 100%;
+}
+.bankfleet-transfer-key__actions {
+    margin-top: var(--gap-lg);
+
+    display: flex;
+
+    justify-content: flex-end;
+
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .bankfleet-transfer-key {
+        grid-template-columns: 1fr;
+    }
+
+    .bankfleet-transfer-key__summary {
+        position: relative;
+        top: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .bankfleet-transfer-key {
+        padding: var(--gap-lg);
+    }
+
+    .bankfleet-transfer-key__selector {
+        grid-template-columns: 1fr;
+    }
+
+    .bankfleet-transfer-key__actions {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .bankfleet-transfer-key__content,
+    .bankfleet-transfer-key__summary {
+        padding: 24px;
+    }
+
+    .bankfleet-transfer-key__amount-input {
+        font-size: 2rem;
+    }
+
+}
+.bankfleet-transfer-key__field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.bankfleet-transfer-key__amount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.bankfleet-transfer-key__label{
+    width: 300px;
+}
+
+.bankfleet-transfer-key__input{
+    width: 100%;
+    max-width: 300px;
+}
+
+.bankfleet-transfer-key__amount-input{
+    width: 100%;
+    max-width: 300px;
+}
+
+.bankfleet-transfer-key__textarea{
+    width: 100%;
+    max-width: 300px;
+}
+
+/* =========================================================
+   APP ROOT
+========================================================= */
+
+.bankfleet-app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================================================
+   BODY (SIDEBAR + CONTENT)
+========================================================= */
+
+.bankfleet-app__body {
+    flex: 1;
+
+    display: flex;
+    align-items: stretch;
+
+    min-height: 0; /* 🔥 clave para evitar overflow raro */
+    width: 100%;
+}
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.bankfleet-sidebar-principal {
+    width: 320px;
+    flex-shrink: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 0; /* 🔥 evita duplicación visual / scroll bug */
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-900),
+        var(--primary-800)
+    );
+
+    border-right: 1px solid var(--secondary-500);
+
+    padding: 24px 16px;
+    box-sizing: border-box;
+
+    /* opcional pro */
+    scrollbar-gutter: stable;
+}
+
+/* scrollbar pro */
+.bankfleet-sidebar-principal::-webkit-scrollbar {
+    width: 6px;
+}
+
+.bankfleet-sidebar-principal::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,.18);
+    border-radius: 20px;
+}
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.bankfleet-main-content {
+    flex: 1;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 0;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.bankfleet-footer {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+/* =========================================================
+   FIX GLOBAL DE SEGURIDAD (RECOMENDADO)
+========================================================= */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}

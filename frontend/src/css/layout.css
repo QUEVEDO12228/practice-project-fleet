@@ -66,3 +66,7 @@ FOOTER CONTAINER
 
     min-width: 0;
 }
+.bankfleet-dashboard-layout{
+    display: flex;
+    align-items: stretch;
+}

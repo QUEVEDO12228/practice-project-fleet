@@ -1,0 +1,303 @@
+<section class="bankfleet-transfer-key">
+
+    <div class="bankfleet-transfer-key__content">
+
+        <!-- HEADER -->
+
+        <header class="bankfleet-transfer-key__header">
+
+            <a
+                href="/"
+                class="bankfleet-btn-secondary">
+
+                <img
+                    src="/frontend/public/assets/icons/icon_back.svg"
+                    alt=""
+                    class="bankfleet-btn-secondary__icon">
+
+            </a>
+
+            <div class="bankfleet-transfer-key__header-content">
+
+                <h2 class="bankfleet-transfer-key__title">
+                    Transferencia por Llave
+                </h2>
+
+                <div class="bankfleet-transfer-key__header-texts">
+
+                    <p class="bankfleet-transfer-key__subtitle">
+                        Envía dinero utilizando celular,
+                        documento o correo electrónico.
+                    </p>
+
+                    <span class="bankfleet-transfer-key__badge">
+                        Instantáneo
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- FORM -->
+
+        <form class="bankfleet-transfer-key__form">
+
+            <!-- TIPO DE LLAVE -->
+
+            <div class="bankfleet-transfer-key__selector">
+
+                <button
+                    type="button"
+                    class="bankfleet-transfer-key__option bankfleet-transfer-key__option--active">
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_phone_secondary.svg"
+                        alt=""
+                        class="bankfleet-transfer-key__option-icon">
+
+                    <span class="bankfleet-transfer-key__option-text">
+                        Celular
+                    </span>
+
+                </button>
+
+                <button
+                    type="button"
+                    class="bankfleet-transfer-key__option">
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_identification_document.svg"
+                        alt=""
+                        class="bankfleet-transfer-key__option-icon">
+
+                    <span class="bankfleet-transfer-key__option-text">
+                        Documento
+                    </span>
+
+                </button>
+
+                <button
+                    type="button"
+                    class="bankfleet-transfer-key__option">
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_email.svg"
+                        alt=""
+                        class="bankfleet-transfer-key__option-icon">
+
+                    <span class="bankfleet-transfer-key__option-text">
+                        Correo
+                    </span>
+
+                </button>
+
+            </div>
+
+            <!-- LLAVE ORIGEN -->
+
+            <div class="bankfleet-transfer-key__field">
+
+                <label
+                    for="transfer-key-source"
+                    class="bankfleet-transfer-key__label">
+
+                    Enviar desde
+
+                </label>
+
+                <select
+                    id="transfer-key-source"
+                    class="bankfleet-transfer-key__input">
+
+                    <option>
+                        Celular • +57 3001234567
+                    </option>
+
+                    <option>
+                        Documento • 1020304050
+                    </option>
+
+                    <option>
+                        Correo • cliente@bankfleet.com
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- LLAVE DESTINO -->
+
+            <div class="bankfleet-transfer-key__field">
+
+                <label
+                    for="transfer-key-destination"
+                    class="bankfleet-transfer-key__label">
+
+                    Enviar a
+
+                </label>
+
+                <input
+                    id="transfer-key-destination"
+                    type="text"
+                    class="bankfleet-transfer-key__input"
+                    placeholder="+57 3001234567">
+
+            </div>
+
+            <!-- MONTO -->
+
+            <div class="bankfleet-transfer-key__amount">
+
+                <label
+                    for="transfer-key-amount"
+                    class="bankfleet-transfer-key__label">
+
+                    Monto
+
+                </label>
+
+                <input
+                    id="transfer-key-amount"
+                    type="text"
+                    class="bankfleet-transfer-key__amount-input"
+                    placeholder="$0">
+
+            </div>
+
+            <!-- CONCEPTO -->
+
+            <div class="bankfleet-transfer-key__field">
+
+                <label
+                    for="transfer-key-concept"
+                    class="bankfleet-transfer-key__label">
+
+                    Concepto
+
+                </label>
+
+                <textarea
+                    id="transfer-key-concept"
+                    class="bankfleet-transfer-key__textarea"
+                    placeholder="Descripción de la transferencia (opcional)">
+                </textarea>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- SUMMARY -->
+
+    <aside class="bankfleet-transfer-key__summary">
+
+        <h3 class="bankfleet-transfer-key__summary-title">
+            Resumen de transferencia
+        </h3>
+
+        <div class="bankfleet-transfer-key__summary-list">
+
+            <div class="bankfleet-transfer-key__summary-item">
+
+                <span class="bankfleet-transfer-key__summary-label">
+                    Tipo de llave
+                </span>
+
+                <strong class="bankfleet-transfer-key__summary-value">
+                    Celular
+                </strong>
+
+            </div>
+
+            <div class="bankfleet-transfer-key__summary-item">
+
+                <span class="bankfleet-transfer-key__summary-label">
+                    Desde
+                </span>
+
+                <strong class="bankfleet-transfer-key__summary-value">
+                    +57 3001234567
+                </strong>
+
+            </div>
+
+            <div class="bankfleet-transfer-key__summary-item">
+
+                <span class="bankfleet-transfer-key__summary-label">
+                    Destino
+                </span>
+
+                <strong class="bankfleet-transfer-key__summary-value">
+                    +57 3019876543
+                </strong>
+
+            </div>
+
+            <div class="bankfleet-transfer-key__summary-item">
+
+                <span class="bankfleet-transfer-key__summary-label">
+                    Monto
+                </span>
+
+                <strong class="bankfleet-transfer-key__summary-value">
+                    $250.000
+                </strong>
+
+            </div>
+
+            <div class="bankfleet-transfer-key__summary-item">
+
+                <span class="bankfleet-transfer-key__summary-label">
+                    Comisión
+                </span>
+
+                <strong class="bankfleet-transfer-key__summary-value">
+                    $0
+                </strong>
+
+            </div>
+
+            <div class="bankfleet-transfer-key__summary-item">
+
+                <span class="bankfleet-transfer-key__summary-label">
+                    Tiempo estimado
+                </span>
+
+                <strong class="bankfleet-transfer-key__summary-value">
+                    Instantáneo
+                </strong>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- ACTIONS -->
+
+    <footer class="bankfleet-transfer-key__footer">
+
+        <div class="bankfleet-transfer-key__actions">
+
+            <button
+                type="button"
+                class="bankfleet-btn bankfleet-btn--primary">
+
+                Continuar
+
+                <img
+                    src="/frontend/public/assets/icons/icon_next-white.svg"
+                    alt=""
+                    class="bankfleet-btn__icon">
+
+            </button>
+
+        </div>
+
+    </footer>
+
+</section>
