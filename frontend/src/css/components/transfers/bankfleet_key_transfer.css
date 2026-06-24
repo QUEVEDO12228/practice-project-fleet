@@ -57,12 +57,12 @@
 }
 .bankfleet-transfer-key__title {
     color: var(--white);
-    font-size: var(--fs-xs);
+    font-size: var(--fs-xxs);
     font-family: var(--font-primary-bold);
 }
 .bankfleet-transfer-key__subtitle {
     color: var(--gray-300);
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xxxxs);
     line-height: 1.8;
 }
 .bankfleet-transfer-key__form {
@@ -148,7 +148,8 @@
 }
 .bankfleet-transfer-key__option{
     width:100%;
-    min-height:72px;
+    max-width: 142px;
+    min-height:48px;
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -161,6 +162,7 @@
     cursor:pointer;
     transition:var(--transition-normal);
     box-sizing:border-box;
+    margin-top: 1.2rem;
 }
 .bankfleet-transfer-key__option:hover{
     transform:translateY(-2px);
@@ -203,6 +205,7 @@
     border:1px solid rgba(255,255,255,.08);
     background:rgba(255,255,255,.04);
     color:var(--white);
+    font-size: var(--fs-xxxs);
     outline:none;
     transition:var(--transition-normal);
     box-sizing:border-box;
@@ -272,4 +275,14 @@
     display:flex;
     flex-direction:column;
     gap:24px;
+}
+.bankfleet-transfer-key__form-layout{
+    display:grid;
+    grid-template-columns:minmax(160px,20%) 1fr;
+    gap:24px;
+}
+.bankfleet-transfer-key__field{
+    display:flex;
+    flex-direction:column;
+    align-items:center; /* <- este */
 }

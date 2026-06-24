@@ -66,7 +66,7 @@
 .bankfleet-transfer-method__title {
     margin: 0 0 var(--gap-sm);
     color: var(--white);
-    font-size: var(--fs-xs);
+    font-size: var(--fs-xxs);
     font-family: var(--font-primary-bold);
 }
 
@@ -74,7 +74,7 @@
     margin: 0;
     max-width: 650px;
     color: var(--gray-300);
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xxxxs);
     line-height: 1.8;
 }
 
@@ -151,8 +151,8 @@
     justify-content: center;
     align-items: center;
 
-    width: 64px;
-    height: 64px;
+    width: 44px;
+    height: 44px;
 
     border-radius: 18px;
 
@@ -167,8 +167,8 @@
 }
 
 .bankfleet-transfer-method__icon {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
 }
 
 /* =========================================================
@@ -178,7 +178,7 @@
 .bankfleet-transfer-method__card-title {
     margin: 0;
     color: var(--white);
-    font-size: var(--fs-xxs);
+    font-size: var(--fs-xxxs);
     font-family: var(--font-primary-semibold);
     text-decoration: none;
 }
@@ -230,7 +230,7 @@
     align-items: center;
 
     min-width: 180px;
-    height: 52px;
+    height: 48px;
 
     border: none;
     border-radius: var(--radius-lg);

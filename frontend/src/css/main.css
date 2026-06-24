@@ -16,9 +16,20 @@
 @import url('./components/siderbar/banfleet_sidebar_principal.css');
 @import url('./pages/vista_home_client.css');
 @import url('./pages/view_bankfleet_key_transfer.css');
+
+
+
 @import url('./components/transfers/bankfleet_new_transfer.css');
 @import url('./components/transfers/bankfleet_key_transfer.css');
 @import url('./components/transfers/bankfleet_bank_transfer.css');
+@import url('./components/transfers/bankfleet_transfer_between_my_accounts.css');
+@import url('./components/transfers/bankfleet_transfer_other_accounts.css');
+@import url('./components/transfers/bankfleet_international_transfer.css');
+@import url('./components/transfers/bankfleet_transfer_frequent_contacts.css');
+@import url('./components/transfers/bankfleet_transfer_by_qr.css');
+
+
+
 @import url('./components/tables/bankfleet_employee_management_table.css');
 @import url('./components/tables/bankfleet_recipients.css');
 @import url('./components/tables/bankfleet_table_transfer_history.css');
@@ -26,3 +37,5 @@
 @import url('./components/tables/payroll_payment_history.css');
 @import url('./components/tables/bankfleet_scheduled_consultations_payroll.css');
 @import url('./components/tables/bankfleet_scheduled_consultations_transfers.css');
+
+@import url('./components/alerts/bankfleet_transfer_confirmation.css');

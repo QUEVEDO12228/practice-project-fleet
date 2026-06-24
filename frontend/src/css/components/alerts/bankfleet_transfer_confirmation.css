@@ -1,0 +1,198 @@
+.bankfleet-transfer-confirmation{
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--gap-lg);
+
+    /* background: rgba(5, 8, 22, .82); */
+    backdrop-filter: blur(12px);
+    transition: var(--transition-normal);
+}
+
+/* ==========================================================
+   MODIFIER
+========================================================== */
+
+.bankfleet-transfer-confirmation--visible{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+/* ==========================================================
+   ELEMENTS
+========================================================== */
+
+.bankfleet-transfer-confirmation__card{
+    width: 100%;
+    max-width: 468px;
+    height: 200px;
+
+    background: var(--primary-800);
+
+    border: 4px solid var(--secondary-300);
+    border-radius: var(--radius-xxl);
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    backdrop-filter: blur(60px);
+
+    box-shadow:
+        0 24px 80px rgba(0,0,0,.45),
+        0 0 32px rgba(139,92,246,.12);
+
+    animation: bankfleet-transfer-confirmation-show .25s ease;
+}
+.bankfleet-transfer-confirmation{
+    background: rgba(0,0,0,.45);
+}
+
+.bankfleet-transfer-confirmation__icon-container{
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(139,92,246,.12);
+    border: 1px solid rgba(139,92,246,.25);
+}
+
+.bankfleet-transfer-confirmation__icon{
+    width: 32px;
+    height: 32px;
+}
+
+.bankfleet-transfer-confirmation__title{
+    margin: 0 0 12px;
+
+    text-align: start;
+
+    color: var(--white);
+
+    font-size: var(--fs-xxs);
+    font-family: var(--font-primary-bold);
+}
+
+.bankfleet-transfer-confirmation__description{
+    margin: 0;
+
+    text-align: start;
+
+    color: var(--gray-400);
+
+    font-size: var(--fs-xxxxs);
+    line-height: 1.8;
+}
+.bankfleet-transfer-confirmation__description-strong{
+    margin: 0;
+
+    text-align: start;
+
+    color: var(--gray-100);
+
+    font-size: var(--fs-xxxs);
+    line-height: 1.8;
+}
+
+.bankfleet-transfer-confirmation__summary{
+    margin-top: var(--gap-lg);
+
+    border-radius: var(--radius-xl);
+
+    overflow: hidden;
+
+    border: 1px solid var(--white);
+}
+
+.bankfleet-transfer-confirmation__summary-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 20px;
+
+    border-bottom: 1px solid var(--white);
+}
+
+.bankfleet-transfer-confirmation__summary-item:last-child{
+    border-bottom: none;
+}
+
+.bankfleet-transfer-confirmation__summary-label{
+    color: var(--white);
+    font-size: var(--fs-xxxxs);
+}
+
+.bankfleet-transfer-confirmation__summary-value{
+    color: var(--white);
+    font-size: var(--fs-xxxxs);
+    font-family: var(--font-primary-semibold);
+}
+
+.bankfleet-transfer-confirmation__actions{
+    margin-top: var(--gap-lg);
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+@keyframes bankfleet-transfer-confirmation-show{
+
+    from{
+        opacity: 0;
+        transform: translateY(16px) scale(.96);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 768px){
+
+    .bankfleet-transfer-confirmation__actions{
+        flex-direction: column-reverse;
+    }
+
+    .bankfleet-transfer-confirmation__actions .bankfleet-btn,
+    .bankfleet-transfer-confirmation__actions .bankfleet-btn-secondary{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .bankfleet-transfer-confirmation__card{
+        padding: 24px;
+    }
+
+    .bankfleet-transfer-confirmation__title{
+        font-size: var(--fs-xs);
+    }
+
+}

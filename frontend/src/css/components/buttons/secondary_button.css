@@ -26,7 +26,7 @@ SECONDARY
     text-decoration: none;
 
     font-family: var(--font-primary);
-    font-size: 12px;
+    font-size:var(--fs-xxxxs);
     font-weight: 500;
 
     transition:
@@ -48,6 +48,6 @@ SECONDARY
 }
 
 .bankfleet-btn-secondary__icon{
-  height: 16px;
-  width: 16px;
+  height: 14px;
+  width: 14px;
 }

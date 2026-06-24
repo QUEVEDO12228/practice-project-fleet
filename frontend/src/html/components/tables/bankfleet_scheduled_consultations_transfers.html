@@ -1,0 +1,239 @@
+<!-- ================== Consultas Programadas ================== -->
+
+<section class="bankfleet-scheduled-queries-table">
+
+```
+<div class="bankfleet-scheduled-queries-table__header">
+    <div class="bankfleet-scheduled-queries-table__header-container">
+
+        <a href="/" class="bankfleet-btn-secondary bankfleet-scheduled-queries-table__btn-secondary">
+            <img
+                src="/frontend/public/assets/icons/icon_back.svg"
+                alt=""
+                class="bankfleet-btn-secondary__icon bankfleet-scheduled-queries-table__btn-secondary-icon"
+            >
+        </a>
+
+        <div class="bankfleet-scheduled-queries-table__content">
+            <div class="bankfleet-scheduled-queries-table__title-container">
+                <h1 class="bankfleet-scheduled-queries-table__title">
+                    Consultas programadas
+                </h1>
+            </div>
+
+            <p class="bankfleet-scheduled-queries-table__subtitle">
+                Consulta y monitorea todas las consultas programadas registradas.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="bankfleet-scheduled-queries-table__separeitor-actions">
+
+    <div class="bankfleet-scheduled-queries-table__search">
+        <img
+            src="/frontend/public/assets/icons/icon_search.svg"
+            alt="Buscar"
+            class="bankfleet-scheduled-queries-table__search-icon"
+        >
+
+        <input
+            type="text"
+            placeholder="Buscar consulta..."
+            class="bankfleet-scheduled-queries-table__search-input"
+        >
+    </div>
+
+    <div class="bankfleet-scheduled-queries-table__separeitor-actions-buttons">
+
+        <a href="/" class="bankfleet-btn-secondary bankfleet-scheduled-queries-table__btn-secondary">
+            <img
+                src="/frontend/public/assets/icons/icon_filter_white.svg"
+                alt=""
+                class="bankfleet-btn-secondary__icon bankfleet-scheduled-queries-table__btn-secondary-icon"
+            >
+            Filtrar
+        </a>
+
+        <a href="/" class="bankfleet-btn-secondary bankfleet-scheduled-queries-table__btn-secondary">
+            <img
+                src="/frontend/public/assets/icons/icon_download_white.svg"
+                alt=""
+                class="bankfleet-btn-secondary__icon bankfleet-scheduled-queries-table__btn-secondary-icon"
+            >
+            Descargar
+        </a>
+
+    </div>
+
+</div>
+
+<div class="bankfleet-scheduled-queries-table__table-wrapper">
+
+    <table class="bankfleet-scheduled-queries-table__table">
+
+        <thead>
+            <tr>
+
+                <th class="query-table__th">
+                    <img
+                        class="query-table__image-options"
+                        src="/frontend/public/assets/icons/icon_settings_white.svg"
+                        alt="Opciones"
+                    >
+                </th>
+
+                <th>Fecha<br>Programada</th>
+                <th>Origen</th>
+                <th>Destino</th>
+                <th>Transacción</th>
+                <th>Tipo<br>de Alta</th>
+                <th>Importe</th>
+                <th class="query-table__th-right">Divisa</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td data-label="Opciones">
+                    <img
+                        class="query-table__image-options"
+                        src="/frontend/public/assets/icons/icon_option_points_black.svg"
+                        alt=""
+                    >
+                </td>
+
+                <td data-label="Fecha Programada">
+                    15/05/2025
+                </td>
+
+                <td data-label="Origen">
+                    Cuenta Operativa
+                </td>
+
+                <td data-label="Destino">
+                    Juan Torres
+                </td>
+
+                <td data-label="Transacción">
+                    <span class="query-transaction-type query-transaction-type--transfer">
+                        Transferencia
+                    </span>
+                </td>
+
+                <td data-label="Tipo de Alta">
+                    <span class="query-register-type query-register-type--online">
+                        En línea
+                    </span>
+                </td>
+
+                <td data-label="Importe">
+                    $ 5.250.000
+                </td>
+
+                <td data-label="Divisa">
+                    COP
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td data-label="Opciones">
+                    <img
+                        class="query-table__image-options"
+                        src="/frontend/public/assets/icons/icon_option_points_black.svg"
+                        alt=""
+                    >
+                </td>
+
+                <td data-label="Fecha Programada">
+                    18/05/2025
+                </td>
+
+                <td data-label="Origen">
+                    Cuenta Nómina
+                </td>
+
+                <td data-label="Destino">
+                    María Pérez
+                </td>
+
+                <td data-label="Transacción">
+                    <span class="query-transaction-type query-transaction-type--payment">
+                        Pago Nómina
+                    </span>
+                </td>
+
+                <td data-label="Tipo de Alta">
+                    <span class="query-register-type query-register-type--file">
+                        Archivo
+                    </span>
+                </td>
+
+                <td data-label="Importe">
+                    $ 18.750.000
+                </td>
+
+                <td data-label="Divisa">
+                    COP
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td data-label="Opciones">
+                    <img
+                        class="query-table__image-options"
+                        src="/frontend/public/assets/icons/icon_option_points_black.svg"
+                        alt=""
+                    >
+                </td>
+
+                <td data-label="Fecha Programada">
+                    20/05/2025
+                </td>
+
+                <td data-label="Origen">
+                    Cuenta Tesorería
+                </td>
+
+                <td data-label="Destino">
+                    Proveedor Global SAS
+                </td>
+
+                <td data-label="Transacción">
+                    <span class="query-transaction-type query-transaction-type--supplier">
+                        Pago Proveedor
+                    </span>
+                </td>
+
+                <td data-label="Tipo de Alta">
+                    <span class="query-register-type query-register-type--online">
+                        En línea
+                    </span>
+                </td>
+
+                <td data-label="Importe">
+                    $ 42.500.000
+                </td>
+
+                <td data-label="Divisa">
+                    COP
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+```
+
+</section>
