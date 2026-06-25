@@ -4,7 +4,7 @@
 
         <header class="bankfleet-transfer-qr__header">
 
-            <a href="/" class="bankfleet-btn-secondary">
+            <a href="/frontend/src/html/pages/dashboard/banking/transfers/cards/vista_bankfleet_new_transfer.html" class="bankfleet-btn-secondary">
                 <img
                     src="/frontend/public/assets/icons/icon_back.svg"
                     alt="Atrás"
@@ -13,10 +13,16 @@
             </a>
 
             <div class="bankfleet-transfer-qr__header-content">
+                <div class="bankfleet-transfer-qr__content-title-badge">
 
-                <h2 class="bankfleet-transfer-qr__title">
-                    Transferencia por QR
-                </h2>
+                    <h2 class="bankfleet-transfer-qr__title">
+                        Transferencia por QR
+                    </h2>
+                    <span class="bankfleet-transfer-qr__badge">
+                        Smart Pay
+                    </span>
+                </div>
+
 
                 <div class="bankfleet-transfer-qr__header-texts">
 
@@ -24,9 +30,7 @@
                         Escanea un código QR y realiza pagos o transferencias rápidas sin ingresar datos manualmente.
                     </p>
 
-                    <span class="bankfleet-transfer-qr__badge">
-                        Smart Pay
-                    </span>
+                    
 
                 </div>
 
@@ -57,6 +61,11 @@
 
                         <button type="button" class="bankfleet-btn bankfleet-btn--primary bankfleet-transfer-qr__scan-btn">
                             Activar cámara
+                            <img
+                                src="/frontend/public/assets/icons/icon_camera_white.svg"
+                                alt=""
+                                class="bankfleet-btn__icon"
+                            >
                         </button>
 
                     </div>
@@ -141,7 +150,7 @@
 
         <div class="bankfleet-transfer-qr__actions">
 
-            <button type="button" class="bankfleet-btn bankfleet-btn--primary">
+            <button type="button" class="bankfleet-btn bankfleet-btn--primary bankfleet-transfer-qr__btn-primary">
                 Pagar
                 <img
                     src="/frontend/public/assets/icons/icon_next-white.svg"

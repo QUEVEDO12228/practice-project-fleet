@@ -2,7 +2,14 @@
 console.log("main cargado");
 
 import '/frontend/src/js/components/forms/login.js';
+
+
 import '/frontend/src/js/components/navbar/navbar_login.js';
+import '/frontend/src/js/components/navbar/navbar_index.js';
+
+import '/frontend/src/js/components/heros/bankfleet_hero_index_landing.js';
+
+
 import '/frontend/src/js/components/footer/footer.js';
 import '/frontend/src/js/components/forms/register_step1.js';
 import '/frontend/src/js/components/forms/register_step2.js';
@@ -11,7 +18,9 @@ import '/frontend/src/js/components/forms/forgot_password.js';
 import '/frontend/src/js/components/forms/reset_password.js';
 import '/frontend/src/js/components/cards/bankfleet_card_home.js';
 import '/frontend/src/js/pages/home/vista_home_client.js';
+
 import '/frontend/src/js/components/sidebar/bankfleet_sidebar_principal.js';
+import '/frontend/src/js/components/sidebar/bankfleet_drop-down_menu.js';
 
 
 import '/frontend/src/js/components/transfers/bankfleet_new_transfer.js';

@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const sidebarContainer =
-        document.querySelector(".navbar-login-content");
+        document.querySelector(".navbar-index-content");
 
     if (!sidebarContainer) return;
 
-    fetch("/frontend/src/html/components/navbar/navbar_login.html")
+    fetch("/frontend/src/html/components/navbar/navbar_index.html")
         .then(res => res.text())
         .then(html => {
 

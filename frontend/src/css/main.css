@@ -13,7 +13,12 @@
 @import url('./components/forms/forgot_password.css');
 @import url('./components/forms/reset_password.css');
 @import url('./components/cards/bankfleet_card_home.css');
+
+
 @import url('./components/siderbar/banfleet_sidebar_principal.css');
+@import url('./components/siderbar/bankfleet_drop-down_menu.css');
+
+
 @import url('./pages/vista_home_client.css');
 @import url('./pages/view_bankfleet_key_transfer.css');
 

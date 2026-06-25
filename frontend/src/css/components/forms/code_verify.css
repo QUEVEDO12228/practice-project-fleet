@@ -1,405 +1,208 @@
-/* =========================================================
-code-verify PAGE
-========================================================= */
-
 .bankfleet-code-verify-page {
     position: relative;
-
-    /* min-height: 100vh; */
-
     overflow: hidden;
-
-    background:
-        linear-gradient(
-            135deg,
-            #050816 0%,
-            #0B1020 100%
-        );
-
+    background:linear-gradient(135deg,  #050816 0%,#0B1020 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-family: var(--font-primary);
 }
-
-
-/* =========================================================
-BACKGROUND GLOW
-========================================================= */
-
 .bankfleet-code-verify-page__glow {
     position: absolute;
-
     width: 400px;
     height: 400px;
-
     border-radius: 50%;
-
     filter: blur(120px);
-
     opacity: 0.12;
-
     pointer-events: none;
 }
-
 .bankfleet-code-verify-page__glow--left {
     top: -120px;
     left: -120px;
-
     background: var(--secondary-500);
 }
-
 .bankfleet-code-verify-page__glow--right {
     right: -120px;
     bottom: -120px;
-
     background: var(--primary-500);
 }
-
-
-/* =========================================================
-LAYOUT
-========================================================= */
-
 .bankfleet-code-verify-layout {
     position: relative;
     z-index: 2;
-
     width: 100%;
     max-width: 1600px;
-
     min-height: 100vh;
-
     display: flex;
 }
-
-
-/* =========================================================
-LEFT
-========================================================= */
-
 .bankfleet-code-verify {
     position: relative;
-
     width: 42%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding:
-        var(--gap-xs);
-
+    padding:var(--gap-xs);
     box-sizing: border-box;
 }
-
-
-/* =========================================================
-TOPBAR
-========================================================= */
-
-
-
-
-/* =========================================================
-CARD
-========================================================= */
-
 .bankfleet-code-verify__card {
     width: 100%;
     max-width: 456px;
-
-    padding:
-        24px;
-
-    border:
-        2px solid rgba(255,255,255,0.08);
-
+    padding:24px;
+    border:2px solid rgba(255,255,255,0.08);
     border-radius: 32px;
-     background: var(--primary-800);
-
+    background: var(--primary-800);
     backdrop-filter: blur(24px);
-
-    box-shadow:
-        0 20px 60px rgba(0,0,0,0.45);
+    box-shadow:0 20px 60px rgba(0,0,0,0.45);
 }
-
 .bankfleet-code-verify__card:hover{
     transform: translateY(-2px);
-
-    border-color:
-        rgba(139,92,246,.35);
-
+    border-color:rgba(139,92,246,.35);
 }
 .bankfleet-code-verify__topbar {
     position: absolute;
-
     top: 8px;
     left: 12px;
-
     z-index: 9999;
 }
-/* =========================================================
-BRAND
-========================================================= */
-
 .bankfleet-code-verify__brand {
     display: flex;
     align-items: center;
-
     gap: var(--gap-md);
-
     margin-bottom: var(--gap-lg);
 }
-
 .bankfleet-code-verify__brand-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 62px;
     height: 62px;
-
-    border-radius: 20px;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--secondary-500),
-            var(--primary-500)
-        );
-
+    border-radius: 20px;       
+    background:linear-gradient(135deg,var(--secondary-500),var(--primary-500));
     color: var(--white);
-
     font-size: var(--fs-sm);
-
     font-family: var(--font-primary-bold);
-
-    box-shadow:
-        0 12px 30px rgba(139,92,246,0.3);
+    box-shadow: 0 12px 30px rgba(139,92,246,0.3);
 }
-
 .bankfleet-code-verify__brand-title {
     margin: 0;
-
     color: var(--white);
-
     font-size: 16px;
-
     letter-spacing: 2px;
 }
-
 .bankfleet-code-verify__brand-subtitle {
     color: var(--secondary-300);
-
     font-size: 10px;
-
     letter-spacing: 1px;
 }
-
-
-/* =========================================================
-HEADER
-========================================================= */
-
 .bankfleet-code-verify__header {
     margin-bottom: var(--gap-sm);
     text-align: center;
 }
-
 .bankfleet-code-verify__title {
     margin-bottom: var(--gap-xs);
-
     color: var(--white);
-
     font-size: 1.6rem;
-
     font-family: var(--font-primary-bold);
 }
-
 .bankfleet-code-verify__subtitle {
     color: var(--gray-300);
-
     line-height: 1.8;
-
     font-size: var(--fs-xxxs);
     margin-bottom: var(--gap-lg) ;
 }
-
 .bankfleet-code-verify__highlight {
     color: var(--secondary-300);
 }
-
-
-/* =========================================================
-FORM
-========================================================= */
-
 .bankfleet-code-verify__form {
     display: flex;
     flex-direction: column;
-
     gap: var(--gap-lg);
 }
-
-
-/* =========================================================
-FIELDS
-========================================================= */
-
 .bankfleet-code-verify__field {
     display: flex;
     flex-direction: column;
-
     gap: 4px;
 }
-
 .bankfleet-code-verify__label-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .bankfleet-code-verify__label {
     color: var(--white);
 
     font-size: var(--fs-xxxxs);
 }
-
 .bankfleet-code-verify__forgot-link {
     color: var(--secondary-300);
-
     text-decoration: none;
-
     font-size: var(--fs-xxxxs);
 }
-
-
-/* =========================================================
-INPUTS
-========================================================= */
-
 .bankfleet-code-verify__input-wrapper {
     position: relative;
 }
-
 .bankfleet-code-verify__input-icon {
     position: absolute;
-
     left: 18px;
     top: 50%;
-
     transform: translateY(-50%);
-
     width: 20px;
     height: 20px;
-
     z-index: 2;
 }
-
 .bankfleet-code-verify__input {
     width: 20px;
     height: 48px;
-
-    padding:
-        0
-        28px;
-
-    border:
-        1px solid rgba(255,255,255,0.08);
-
+    padding:028px;
+    border:1px solid rgba(255,255,255,0.08);
     border-radius: 18px;
-
-    background:
-        rgba(255,255,255,0.04);
-
+    background: rgba(255,255,255,0.04);
     backdrop-filter: blur(10px);
-
     color: var(--white);
-
     font-size: var(--fs-xxxs);
-
     outline: none;
-
     transition: var(--transition-normal);
-
     box-sizing: border-box;
 }
-
 .bankfleet-code-verify__input::placeholder {
     color: var(--gray-500);
 }
-
 .bankfleet-code-verify__input:focus {
-    border-color:
-        rgba(139,92,246,0.45);
-
-    background:
-        rgba(255,255,255,0.06);
-
-    box-shadow:
-        0 0 0 4px rgba(139,92,246,0.15);
+    border-color:rgba(139,92,246,0.45);
+    background: rgba(255,255,255,0.06);
+    box-shadow:0 0 0 4px rgba(139,92,246,0.15);
 }
-
-
-/* =========================================================
-PASSWORD BUTTON
-========================================================= */
-
 .bankfleet-code-verify__toggle-password {
     position: absolute;
-
     right: 18px;
     top: 50%;
-
     transform: translateY(-50%);
-
     border: none;
     background: transparent;
-
     cursor: pointer;
 }
-
-
-/* =========================================================
-OPTIONS
-========================================================= */
-
 .bankfleet-code-verify__options {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .bankfleet-code-verify__checkbox {
     display: flex;
     align-items: center;
-
     gap: var(--gap-xs);
-
     cursor: pointer;
 }
-
 .bankfleet-code-verify__checkbox input {
     display: none;
 }
-
 .bankfleet-code-verify__checkbox-custom {
     width: 18px;
     height: 18px;
-
-    border:
-        1px solid rgba(255,255,255,0.2);
-
+    border:1px solid rgba(255,255,255,0.2);
     border-radius: 6px;
-
-    background:
-        rgba(255,255,255,0.03);
+    background: rgba(255,255,255,0.03);
 }
 .bankfleet-code-verify__checkbox-custom:focus{
     background: var(--secondary-400);
-
 }
 .bankfleet-code-verify__checkbox {
     display: flex;
@@ -408,13 +211,11 @@ OPTIONS
     cursor: pointer;
     position: relative;
 }
-
 .bankfleet-code-verify__checkbox input {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
-
 .bankfleet-code-verify__checkbox-custom {
     width: 18px;
     height: 18px;
@@ -424,12 +225,10 @@ OPTIONS
     transition: all .25s ease;
     flex-shrink: 0;
 }
-
 .bankfleet-code-verify__checkbox input:checked + .bankfleet-code-verify__checkbox-custom {
     background: var(--secondary-600);
     border-color: var(--secondary-600);
 }
-
 .bankfleet-code-verify__checkbox input:checked + .bankfleet-code-verify__checkbox-custom::after {
     content: "";
     display: block;
@@ -440,98 +239,51 @@ OPTIONS
     transform: rotate(45deg);
     margin: 2px 0 0 5px;
 }
-
 .bankfleet-code-verify__checkbox-text {
     color: var(--gray-300);
-
     font-size: var(--fs-xxxxs);
 }
-
-
-/* =========================================================
-SUBMIT
-========================================================= */
-
 .bankfleet-code-verify__button-primary {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* =========================================================
-DIVIDER
-========================================================= */
-
 .bankfleet-code-verify__divider {
     position: relative;
-
     text-align: center;
 }
-
 .bankfleet-code-verify__divider::before {
     content: '';
-
     position: absolute;
-
     top: 50%;
     left: 0;
-
     width: 100%;
     height: 1px;
-
-    background:
-        rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.08);
 }
-
 .bankfleet-code-verify__divider span {
     position: relative;
-
-    padding:
-        0
-        14px;
-
-    background:
-        #0B1020;
-
+    padding:0 14px;
+    background:#0B1020;
     color: var(--gray-400);
-
     font-size: var(--fs-xxxxs);
 }
-
-
-/* =========================================================
-SOCIALS
-========================================================= */
-
 .bankfleet-code-verify__socials {
     display: flex;
-
     gap: var(--gap-lg);
 }
-
 .bankfleet-code-verify__social-button {
     flex: 1;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: var(--gap-sm);
-
     height: 40px;
-
-    border:
-        1px solid rgba(255,255,255,0.08);
-
+    border:1px solid rgba(255,255,255,0.08);
     border-radius: 16px;
-
-    background:
-        rgba(255,255,255,0.03);
-
+    background: rgba(255,255,255,0.03);
     color: var(--white);
-
     cursor: pointer;
-
     transition: var(--transition-normal);
 }
 .bankfleet-btn__icon-social-media{
@@ -540,235 +292,134 @@ SOCIALS
 }
 .bankfleet-code-verify__social-button:hover {
     transform: translateY(-3px);
-
-    border-color:
-        rgba(139,92,246,0.35);
-
-    background:
-        rgba(139,92,246,0.06);
+    border-color:rgba(139,92,246,0.35);
+    background: rgba(139,92,246,0.06);
 }
-
-
-/* =========================================================
-FOOTER
-========================================================= */
-
 .bankfleet-code-verify__footer {
     text-align: center;
 }
-
 .bankfleet-code-verify__footer-text {
     color: var(--gray-400);
-
     font-size: var(--fs-xxxxs);
 }
-
 .bankfleet-code-verify__register-link {
     color: var(--secondary-300);
-
     text-decoration: none;
 }
-
-
-/* =========================================================
-RIGHT SIDE
-========================================================= */
-
 .bankfleet-code-verify-banner {
     position: relative;
-
     width: 58%;
-
     overflow: hidden;
 }
-
 .bankfleet-code-verify-banner__image {
     width: 100%;
     height: 100%;
     max-height: 624px;
     object-fit: cover;
-
     transition: transform 1.2s ease;
 }
-
 .bankfleet-code-verify-banner:hover
 .bankfleet-code-verify-banner__image {
     transform: scale(1.05);
 }
-
 .bankfleet-code-verify-banner__overlay {
     position: absolute;
     inset: 0;
-
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.55),
-            rgba(0,0,0,0.7)
-        );
+    background:linear-gradient( rgba(0,0,0,0.55), rgba(0,0,0,0.7));
 }
-
-
-/* =========================================================
-FLOATING CARD
-========================================================= */
-
 .bankfleet-code-verify-banner__card {
     position: absolute;
-
     left: 60px;
     bottom: 60px;
-
     z-index: 2;
-
     max-width: 500px;
-
     padding: 40px;
-
-    border:
-        1px solid rgba(255,255,255,0.08);
-
+    border:1px solid rgba(255,255,255,0.08);
     border-radius: 28px;
-
-    background:
-        rgba(255,255,255,0.06);
-
+    background: rgba(255,255,255,0.06);
     backdrop-filter: blur(20px);
 }
-
 .bankfleet-code-verify-banner__badge {
     display: inline-flex;
-
     margin-bottom: var(--gap-md);
-
-    padding:
-        8px
-        14px;
-
+    padding:8px 14px;
     border-radius: var(--radius-full);
-
-    background:
-        rgba(139,92,246,0.14);
-
+    background: rgba(139,92,246,0.14);
     color: var(--secondary-300);
-
     font-size: 10px;
-
     letter-spacing: 1px;
 }
-
 .bankfleet-code-verify-banner__title {
     margin-bottom: var(--gap-md);
-
     color: var(--white);
-
     font-size: 4rem;
-
     line-height: 1.1;
-
     font-family: var(--font-primary-bold);
 }
-
 .bankfleet-code-verify-banner__text {
     color: var(--gray-200);
-
     line-height: 1.8;
-
     font-size: var(--fs-xxs);
 }
-
-
-/* =========================================================
-RESPONSIVE
-========================================================= */
-
 @media (max-width: 1200px) {
-
     .bankfleet-code-verify {
         width: 50%;
     }
-
     .bankfleet-code-verify-banner {
         width: 50%;
     }
-
 }
-
 @media (max-width: 980px) {
-
     .bankfleet-code-verify-layout {
         flex-direction: column;
     }
-
     .bankfleet-code-verify,
     .bankfleet-code-verify-banner {
         width: 100%;
     }
-
     .bankfleet-code-verify {
         min-height: 100vh;
     }
-
     .bankfleet-code-verify-banner {
         min-height: 420px;
     }
-
 }
-
 @media (max-width: 768px) {
-
     .bankfleet-code-verify {
-        padding:
-            120px
-            var(--gap-lg)
-            var(--gap-xl);
+        padding:120px var(--gap-lg) var(--gap-xl);
     }
-
     .bankfleet-code-verify__card {
         padding: 32px;
     }
-
     .bankfleet-code-verify-banner__card {
         left: 24px;
         right: 24px;
         bottom: 24px;
-
         padding: 28px;
     }
-
     .bankfleet-code-verify-banner__title {
         font-size: 3rem;
     }
-
 }
-
 @media (max-width: 480px) {
-
     .bankfleet-code-verify-banner {
         display: none;
     }
-
     .bankfleet-code-verify {
         width: 100%;
     }
-
     .bankfleet-code-verify__card {
         padding: 24px;
 
         border-radius: 24px;
     }
-
     .bankfleet-code-verify__title {
         font-size: 2.6rem;
     }
-
     .bankfleet-code-verify__socials {
         flex-direction: column;
     }
-
 }
-
-
-
 .bankfleet-code-box {
   display: flex;
   justify-content: center;

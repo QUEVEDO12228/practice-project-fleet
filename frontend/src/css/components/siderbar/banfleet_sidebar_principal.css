@@ -1,277 +1,140 @@
 .bankfleet-sidebar-principal{
     width: 266px;
-
     flex-shrink: 0;
-
     align-self: stretch;
-
     display: flex;
     flex-direction: column;
-
     border-right: 0.5px solid rgba(255,255,255,.08);
-    
-
     padding: 2px;
-
     box-sizing: border-box;
 }
 .bankfleet-sidebar__link {
     position: relative;
-
     width: fit-content;
-
     color: var(--gray-300);
-
     text-decoration: none;
-
     transition: var(--transition-normal);
     font-size: var(--fs-xxxxs);
 }
-
 .bankfleet-sidebar__link::after {
     content: '';
-
     position: absolute;
-
     left: 0;
     bottom: -4px;
-
     width: 0%;
     height: 1px;
-
     background: var(--secondary-400);
-
     transition: var(--transition-normal);
 }
-
 .bankfleet-sidebar__link:hover {
     color: var(--white);
 }
-
 .bankfleet-sidebar__link:hover::after {
     width: 100%;
 }
-
-/* =========================================================
-LOGO
-========================================================= */
-
 .bankfleet-sidebar-principal__logo {
-
     display: flex;
     align-items: center;
-
     margin-bottom: 32px;
 }
-
 .bankfleet-sidebar-principal__logo-image {
-
     width: 42px;
     height: 42px;
 }
-
-/* =========================================================
-NAVIGATION
-========================================================= */
-
 .bankfleet-sidebar-principal__nav {
-
     display: flex;
     flex-direction: column;
     width: 260px;
-
     gap: 8px;
 }
-
-/* =========================================================
-GROUP
-========================================================= */
-
 .bankfleet-sidebar-principal__group {
-
-    border-bottom:
-        1px solid rgba(255,255,255,.06);
+    border-bottom: 1px solid rgba(255,255,255,.06);
     width: 240px;
     padding-bottom: 12px;
     padding-left: 1.2rem;
 }
-
-/* =========================================================
-BUTTON
-========================================================= */
-
 .bankfleet-sidebar-principal__menu-button {
-
     width: 100%;
     max-width: 236px;
     display: flex;
     align-items: center;
-
     padding: 14px 16px;
-
     border: none;
-
     border-radius: 12px;
-
     background: transparent;
-
     color: var(--gray-50);
-
     cursor: pointer;
-
     font-size: var(--fs-xxxs);
-
 }
-
 .bankfleet-sidebar-principal__menu-button:hover {
-
-     background:
-        rgba(255,255,255,.06);
-
+    background: rgba(255,255,255,.06);
     border-bottom:0.5px solid var(--secondary-500);
-
 }
-
 .bankfleet-sidebar-principal__menu-button.active {
-
-    background:
-        rgba(255,255,255,.06);
-
-    border-left:
-        3px solid var(--secondary-500);
+    background: rgba(255,255,255,.06);
+    border-left:3px solid var(--secondary-500);
     border-bottom: solid 0.5px var(--secondary-500);
-
     color: var(--white);
 }
-
-/* =========================================================
-SUBMENU
-========================================================= */
-
 .bankfleet-sidebar-principal__submenu {
-
     list-style: none;
-
     padding-left: 18px;
-
     margin-top: 8px;
-
     display: none;
 }
-
 .bankfleet-sidebar-principal__submenu.active {
-
     display: flex;
     flex-direction: column;
-
     gap: 10px;
 }
-
 .bankfleet-sidebar-principal__submenu li {
-
     color: var(--gray-400);
-
     font-size: var(--fs-xxxxs);
-
     cursor: pointer;
-
     transition: .25s;
 }
-
 .bankfleet-sidebar-principal__submenu li:hover {
-
     color: var(--secondary-300);
-
     transform: translateX(4px);
 }
-
-/* =========================================================
-SCROLLBAR
-========================================================= */
-
 .bankfleet-sidebar-principal::-webkit-scrollbar {
-
     width: 6px;
 }
-
 .bankfleet-sidebar-principal::-webkit-scrollbar-thumb {
-
-    background:
-        rgba(255,255,255,.18);
-
+    background:  rgba(255,255,255,.18);
     border-radius: 20px;
 }
-/* =========================================================
-SEARCH
-========================================================= */
-
 .bankfleet-sidebar-principal__search {
-
     position: relative;
-
     margin: 8px;
 }
-
 .bankfleet-sidebar-principal__search-icon {
-
     position: absolute;
-
     left: 14px;
     top: 32%;
     z-index: 1;
-    /* transform: translateY(-50%); */
-
     width: 16px;
     height: 16px;
-
-    /* opacity: .6; */
 }
-
 .bankfleet-sidebar-principal__search-input {
-
     width: 100%;
     height: 44px;
-
-    padding:
-        0
-        16px
-        0
-        42px;
-
+    padding:0 16px 0 42px;
     box-sizing: border-box;
-
-    border:
-        1px solid rgba(255,255,255,.08);
-
+    border:  1px solid rgba(255,255,255,.08);
     border-radius: 14px;
-
-    background:
-        rgba(255,255,255,.04);
-
+    background:  rgba(255,255,255,.04);
     backdrop-filter: blur(12px);
-
     color: var(--white);
-
     font-size: var(--fs-xxxxs);
-
     outline: none;
-
     transition: .25s;
 }
-
 .bankfleet-sidebar-principal__search-input::placeholder {
-
     color: var(--gray-500);
 }
-
 .bankfleet-sidebar-principal__search-input:focus {
-
-    border-color:
-        rgba(139,92,246,.45);
-
-    background:
-        rgba(255,255,255,.06);
-
-    box-shadow:
-        0 0 0 4px rgba(139,92,246,.12);
+    border-color: rgba(139,92,246,.45);
+    background:rgba(255,255,255,.06);
+    box-shadow: 0 0 0 4px rgba(139,92,246,.12);
 }

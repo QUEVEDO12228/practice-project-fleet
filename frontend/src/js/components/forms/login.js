@@ -76,7 +76,7 @@ function initLogin() {
             setTimeout(() => {
 
                 window.location.href =
-                    "/frontend/src/html/pages/auth/vista_home_client.html";
+                    "/frontend/src/html/pages/home/vista_home_client.html";
 
             }, 1000);
         });

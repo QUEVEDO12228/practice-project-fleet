@@ -1,27 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const sidebarContainer =
-        document.querySelector(".navbar-login-content");
+    const menuContainer =
+        document.querySelector(".bankfleet-drop-down-menu-container");
 
-    if (!sidebarContainer) return;
+    if (!menuContainer) return;
 
-    fetch("/frontend/src/html/components/navbar/navbar_login.html")
+    fetch("/frontend/src/html/components/siderbars/bankfleet_drop-down_menu.html")
         .then(res => res.text())
         .then(html => {
 
-            sidebarContainer.innerHTML = html;
+            menuContainer.innerHTML = html;
 
-            initSidebarPrincipal();
+            initBankfleetMenuDrawer();
 
         })
         .catch(err => console.error(err));
 
 });
 
-function initDropdownMenu() {
+function initBankfleetMenuDrawer() {
 
     const menuButton =
-        document.querySelector(".bankfleet-navbar__action-button");
+        document.querySelector(".bankfleet-navbar__menu-trigger");
 
     const drawer =
         document.querySelector(".bankfleet-menu-drawer");
@@ -32,7 +32,9 @@ function initDropdownMenu() {
     const closeButton =
         document.querySelector(".bankfleet-menu-drawer__close");
 
-    if (!menuButton || !drawer || !overlay) return;
+    if (!menuButton || !drawer || !overlay) {
+        return;
+    }
 
     menuButton.addEventListener("click", () => {
 
@@ -44,11 +46,21 @@ function initDropdownMenu() {
             "bankfleet-menu-overlay--active"
         );
 
+        document.body.style.overflow = "hidden";
+
     });
 
     closeButton?.addEventListener("click", closeMenu);
 
     overlay.addEventListener("click", closeMenu);
+
+    document.addEventListener("keydown", (event) => {
+
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+
+    });
 
     function closeMenu() {
 
@@ -59,6 +71,8 @@ function initDropdownMenu() {
         overlay.classList.remove(
             "bankfleet-menu-overlay--active"
         );
+
+        document.body.style.overflow = "";
 
     }
 

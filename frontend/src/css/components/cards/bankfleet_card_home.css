@@ -1,315 +1,230 @@
 .bankfleet-products {
-
-    width: 100%;
-
-    padding: var(--gap-xl);
-
+    position:relative;
+    width:100%;
+    max-width: 980px;
+    padding:var(--gap-xxs);
+    box-sizing:border-box;
+    overflow:visible;
 }
-
+.bankfleet-products::before {
+    content:"";
+    position:absolute;
+    top:-120px;
+    right:-120px;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    background:var(--secondary-500);
+    filter:blur(120px);
+    opacity:.12;
+    pointer-events:none;
+}
+.bankfleet-products::after {
+    content:"";
+    position:absolute;
+    bottom:-120px;
+    left:-120px;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    background:var(--primary-400);
+    filter:blur(120px);
+    opacity:.10;
+    pointer-events:none;
+}
+.bankfleet-products__wrapper {
+    position:relative;
+    width:100%;
+    overflow:visible;
+}
+.bankfleet-products__viewport {
+    width:100%;
+    overflow-x:auto;
+    overflow-y:visible;
+    scrollbar-width:none;
+    padding-top:20px;
+    padding-bottom:30px;
+    padding-left: 2rem;
+}
+.bankfleet-products__viewport::-webkit-scrollbar {
+    display:none;
+}
 .bankfleet-products__grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fill,minmax(320px,1fr));
-
-    gap: var(--gap-lg);
-
+    display:flex;
+    gap:var(--gap-xl);
+    width:max-content;
 }
 .bankfleet-card-home {
-
-    position: relative;
-
-    overflow: hidden;
-
-    min-height: 220px;
-
-    padding: 24px;
-
-    border-radius: 28px;
-
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    flex:0 0 calc((90% - (0px * 2)) / 2);  
+    width: 100%;
+    max-width: 300px;
+    min-height:230px;
+    padding:26px;
+    border-radius:var(--radius-xl);
+    border:1px solid rgba(255,255,255,.08);
     background:
-        rgba(255,255,255,.04);
-
-    backdrop-filter: blur(24px);
-
-    border:
-        1px solid rgba(255,255,255,.08);
-
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.015)
+    );
+    backdrop-filter:blur(22px);
+    overflow:hidden;
+    cursor:pointer;
     transition:
-        all .35s ease;
-
-    cursor: pointer;
-
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+.bankfleet-card-home::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background:
+    linear-gradient(90deg, transparent, var(--secondary-400), transparent);
+    opacity:.6;
+}
+.bankfleet-card-home::after {
+    content:"";
+    position:absolute;
+    width:160px;
+    height:160px;
+    top:-70px;
+    right:-70px;
+    border-radius:50%;
+    background:var(--secondary-500);
+    filter:blur(80px);
+    opacity:.15;
+    pointer-events:none;
 }
 .bankfleet-card-home:hover {
-
     transform:
-        translateY(-6px);
-
+    translateY(-8px)
+    scale(1.02);
+    z-index:50;
     border-color:
-        rgba(139,92,246,.4);
-
+    rgba(139,92,246,.45);
     box-shadow:
-        0 30px 60px rgba(0,0,0,.4);
-
+    0 25px 60px rgba(0,0,0,.35),
+    0 0 35px rgba(139,92,246,.18);
 }
-.bankfleet-card-home::before {
-
-    content: "";
-
-    position: absolute;
-
-    top: -100px;
-    right: -100px;
-
-    width: 220px;
-    height: 220px;
-
-    border-radius: 50%;
-
-    filter: blur(80px);
-
-    opacity: .25;
-
-}
-.bankfleet-card-home--purple::before {
-
-    background:
-        var(--secondary-500);
-
-}
-
-.bankfleet-card-home--blue::before {
-
-    background:
-        var(--info-color);
-
-}
-
-.bankfleet-card-home--green::before {
-
-    background:
-        var(--success-color);
-
-}
-.bankfleet-card-home__status {
-
-    padding:
-        6px 12px;
-
-    border-radius:
-        var(--radius-full);
-
-    font-size:
-        var(--fs-xxxxs);
-
-    text-transform:
-        uppercase;
-
-}
-.bankfleet-card-home__status--active {
-
-    background:
-        rgba(34,197,94,.15);
-
-    color:
-        var(--success-color);
-
-}
-
-.bankfleet-card-home__status--pending {
-
-    background:
-        rgba(245,158,11,.15);
-
-    color:
-        var(--warning-color);
-
-}
-.bankfleet-card-home__amount {
-
-    color:
-        var(--white);
-
-    font-size:
-        var(--fs-md);
-
-    font-family:
-        var(--font-primary-bold);
-
-}
-.bankfleet-products {
-
-    width: 100%;
-
-    padding: 24px;
-
-}
-
-.bankfleet-products__grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(auto-fill,minmax(300px,1fr));
-
-    gap: 24px;
-
-}
-
-.bankfleet-card-home {
-
-    position: relative;
-
-    overflow: hidden;
-
-    min-height: 220px;
-
-    padding: 24px;
-
-    border-radius: 28px;
-
-    background: var(--primary-800);
-
-    backdrop-filter: blur(20px);
-
-    border:
-        1px solid rgba(255,255,255,.08);
-
-    transition: .3s;
-
-}
-
-.bankfleet-card-home:hover {
-
-    transform:
-        translateY(-6px);
-
-    border-color:
-        rgba(139,92,246,.4);
-
-}
-
-.bankfleet-card-home::before {
-
-    content: "";
-
-    position: absolute;
-
-    top: -100px;
-    right: -100px;
-
-    width: 220px;
-    height: 220px;
-
-    border-radius: 50%;
-
-    filter: blur(80px);
-
-    opacity: .3;
-
-}
-
-.bankfleet-card-home--purple::before {
-
-    background:
-        var(--secondary-500);
-
-}
-
-.bankfleet-card-home--blue::before {
-
-    background:
-        var(--info-color);
-
-}
-
-.bankfleet-card-home--green::before {
-
-    background:
-        var(--success-color);
-
-}
-
 .bankfleet-card-home__top {
-
-    display: flex;
-
-    justify-content: flex-end;
-
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
-
 .bankfleet-card-home__status {
-
-    padding:
-        6px 12px;
-
-    border-radius: 999px;
-
-    font-size: 10px;
-
-}
-
-.bankfleet-card-home__status--active {
-
+    padding:7px 14px;
+    border-radius:var(--radius-full);
     background:
-        rgba(34,197,94,.15);
-
-    color:
-        #22C55E;
-
+    rgba(34,197,94,.12);
+    border:
+    1px solid rgba(34,197,94,.25);
+    color:var(--success-color);
+    font-size:var(--fs-xxxxs);
+    font-family:var(--font-primary-semibold);
+    text-transform:uppercase;
+    letter-spacing:.5px;
 }
-
+.bankfleet-card-home__status--inactive {
+    background:
+    rgba(239,68,68,.12);
+    border-color:
+    rgba(239,68,68,.25);
+    color:var(--danger-color);
+}
 .bankfleet-card-home__status--pending {
-
-    background:
-        rgba(245,158,11,.15);
-
-    color:
-        #F59E0B;
+    background:rgba(245,158,11,.12);
+    border-color:rgba(245,158,11,.25);
+    color:var(--warning-color);
 
 }
-
 .bankfleet-card-home__body {
-
-    margin-top: 30px;
-
+    display:flex;
+    flex-direction:column;
+    gap:var(--gap-sm);
+    margin-top:var(--gap-lg);
 }
-
 .bankfleet-card-home__title {
-
-    color:var(--tertiary-200);
-
-    font-size:var(--fs-xs);
-
+    margin:0;
+    color:var(--white);
+    font-size:var(--fs-xxxs);
+    font-family:var(--font-primary-semibold);
 }
-
 .bankfleet-card-home__number {
-
-    color:
-        var(--tertiary-300);
-
-    margin-top: 8px;
-
+    margin:0;
+    color:var(--gray-300);
+    font-size:var(--fs-xxxxs);
+    letter-spacing:2px;
 }
-
 .bankfleet-card-home__footer {
-
-    margin-top: 20px;
-
+    display:flex;
+    flex-direction:column;
+    gap:var(--gap-xs);
+    margin-top:var(--gap-xl);
 }
-.bankfleet-card-home__span{
-    font-size: var(--fs-xxs);
-    color: var(--tertiary-300);
+.bankfleet-card-home__span {
+    color:var(--gray-400);
+    font-size:var(--fs-xxxxs);
 }
 .bankfleet-card-home__amount {
-
-    margin-top: 8px;
-
-    color:
-        white;
-
-    font-size:var(--fs-sm);
-
+    margin:0;
+    color:var(--white);
+    font-size:var(--fs-xs);
+    font-family:var(--font-primary-bold);
+}
+.bankfleet-card-home--primary {
+    background:linear-gradient(145deg, rgba(39,64,109,.35),rgba(11,16,35,.8));
+}
+.bankfleet-card-home--secondary {
+    background:linear-gradient( 145deg, rgba(109,40,217,.25), rgba(11,16,35,.8));
+}
+.bankfleet-card-home--success {
+    background:linear-gradient(145deg, rgba(34,197,94,.18), rgba(11,16,35,.8));
+}
+.bankfleet-products__next {
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:48px;
+    height:48px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:none;
+    border-radius:50%;
+    background:
+    rgba(255,255,255,.12);
+    backdrop-filter:blur(15px);
+    cursor:pointer;
+    z-index:99;
+    margin-right: 2rem;
+}
+.bankfleet-products__next:hover {
+    background:
+    rgba(139,92,246,.35);
+    transform:
+    translateY(-50%)
+    scale(1.1);
+}
+.bankfleet-products__next img {
+    width:22px;
+    height:22px;
+}
+@media(max-width:768px){
+    .bankfleet-products {
+        padding:var(--gap-lg);
+    }
+    .bankfleet-card-home {
+        flex:0 0 85%;
+        min-height:210px;
+    }
 }

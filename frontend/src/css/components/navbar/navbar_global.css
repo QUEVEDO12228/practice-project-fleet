@@ -1,238 +1,121 @@
-/* =========================================================
-BANKFLEET GLOBAL NAVBAR
-========================================================= */
-
 .bankfleet-navbar {
     position: sticky;
     top: 0;
-
     z-index: 999;
-
     width: 100%;
-
     overflow: hidden;
-
-    border-bottom:
-        1px solid rgba(255,255,255,0.06);
-
-    background: linear-gradient(
-        135deg,
-        var(--primary-900) 0%,
-        var(--primary-800) 100%
-    );
-    
-
+    border-bottom:1px solid rgba(255,255,255,0.06);
+    background: linear-gradient(135deg,var(--primary-900) 0%,var(--primary-800) 100%);
     backdrop-filter: blur(18px);
-
     font-family: var(--font-primary);
 }
 .bankfleet-navbar:hover {
     border-bottom: 1px solid var(--secondary-500);  
 }
-
-/* =========================================================
-BACKGROUND EFFECTS
-========================================================= */
-
 .bankfleet-navbar__blur {
     position: absolute;
-
     width: 240px;
     height: 240px;
-
     border-radius: 50%;
-
     filter: blur(100px);
-
     opacity: 0.08;
-
     pointer-events: none;
 }
-
 .bankfleet-navbar__blur--left {
     top: -120px;
     left: -120px;
-
     background: var(--secondary-500);
 }
-
 .bankfleet-navbar__blur--right {
     right: -120px;
     top: -120px;
-
     background: var(--primary-500);
 }
-
-
-/* =========================================================
-CONTAINER
-========================================================= */
-
 .bankfleet-navbar__container {
     position: relative;
     z-index: 2;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     max-width: 1600px;
-
     margin: 0 auto;
-
-    padding:
-        14px
-        var(--gap-lg);
+    padding:14px var(--gap-lg);
 }
-
-
-/* =========================================================
-LEFT / RIGHT
-========================================================= */
-
 .bankfleet-navbar__left,
 .bankfleet-navbar__right {
     display: flex;
     align-items: center;
-
     gap: var(--gap-lg);
 }
-
-
-/* =========================================================
-BRAND
-========================================================= */
-
 .bankfleet-navbar__brand {
     display: flex;
     align-items: center;
-
     gap: var(--gap-lg);
-
     text-decoration: none;
 }
-
 .bankfleet-navbar__brand-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 52px;
     height: 52px;
-
     border-radius: var(--radius-xl);
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--secondary-500),
-            var(--primary-500)
-        );
-
+    background: linear-gradient(135deg,var(--secondary-500),var(--primary-500));
     color: var(--white);
-
     font-size: var(--fs-sm);
-
     font-family: var(--font-primary-bold);
-
     box-shadow:
         0 10px 30px rgba(139, 92, 246, 0.25);
 }
-
 .bankfleet-navbar__brand-content {
     display: flex;
     flex-direction: column;
-
     gap: 2px;
 }
-
 .bankfleet-navbar__brand-title {
     margin: 0;
-
     color: var(--white);
-
     font-size: 2rem;
-
     letter-spacing: 2px;
-
     font-family: var(--font-primary-bold);
 }
-
 .bankfleet-navbar__brand-subtitle {
     color: var(--secondary-300);
-
     font-size: 10px;
-
     letter-spacing: 1.5px;
-
     text-transform: uppercase;
 }
-
-
-/* =========================================================
-BUTTONS
-========================================================= */
-
 .bankfleet-navbar__action-button {
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 46px;
     height: 46px;
-
-    border:
-        1px solid rgba(255,255,255,0.06);
-
+    border: 1px solid rgba(255,255,255,0.06);
     border-radius: var(--radius-lg);
-
-    background:
-        rgba(255,255,255,0.03);
-
+    background: rgba(255,255,255,0.03);
     backdrop-filter: blur(12px);
-
     cursor: pointer;
-
     transition: var(--transition-normal);
 }
-
 .bankfleet-navbar__action-button:hover {
     transform: translateY(-4px);
-
-    border-color:
-        rgba(139, 92, 246, 0.35);
-
-    background:
-        rgba(139, 92, 246, 0.08);
-
-    box-shadow:
-        0 10px 30px rgba(139, 92, 246, 0.15);
+    border-color: rgba(139, 92, 246, 0.35);
+    background: rgba(139, 92, 246, 0.08);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
 }
-
-
-/* =========================================================
-PROFILE
-========================================================= */
-
 .bankfleet-navbar__profile-button {
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 52px;
     height: 52px;
-
     border-radius: 50%;
-
     text-decoration: none;
-
     transition: var(--transition-normal);
 }
-
 .bankfleet-navbar__profile-button:hover {
     transform: translateY(-4px);
 }
@@ -240,86 +123,44 @@ PROFILE
 .bankfleet-navbar__avatar {
     width: 100%;
     height: 100%;
-
     overflow: hidden;
-
     border-radius: 50%;
-
     border:
         2px solid rgba(139, 92, 246, 0.35);
-
     box-shadow:
         0 8px 24px rgba(0,0,0,0.35);
 }
-
 .bankfleet-navbar__avatar-image {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
-
-
-/* =========================================================
-STATUS
-========================================================= */
-
 .bankfleet-navbar__status {
     position: absolute;
-
     right: 2px;
     bottom: 2px;
-
     width: 12px;
     height: 12px;
-
     border-radius: 50%;
-
     border: 2px solid var(--gray-950);
-
     background: var(--success-color);
 }
-
-
-/* =========================================================
-NOTIFICATION DOT
-========================================================= */
-
 .bankfleet-navbar__notification-dot {
     position: absolute;
-
     top: 10px;
     right: 10px;
-
     width: 8px;
     height: 8px;
-
     border-radius: 50%;
-
     background: var(--danger-color);
-
     box-shadow:
         0 0 10px rgba(239, 68, 68, 0.6);
 }
-
-
-/* =========================================================
-ICONS
-========================================================= */
-
 .bankfleet-navbar__icon {
     width: 18px;
     height: 18px;
-
     object-fit: contain;
 }
-
-
-/* =========================================================
-FIX TOOLTIP OVERLAY
-========================================================= */
-
-/* IMPORTANTE */
 .bankfleet-navbar {
     overflow: visible;
 }
@@ -327,117 +168,111 @@ FIX TOOLTIP OVERLAY
 /* TOOLTIP */
 .bankfleet-navbar__tooltip {
     position: absolute;
-
     left: 50%;
     bottom: -38px;
-
-    transform:
-        translateX(-50%)
-        translateY(8px);
-
-    padding:
-        8px
-        12px;
-
-    border:
-        1px solid rgba(255,255,255,0.08);
-
+    transform: translateX(-50%) translateY(8px);
+    padding:8px 12px;
+    border:1px solid rgba(255,255,255,0.08);
     border-radius: var(--radius-md);
-
-    background:
-        rgba(15, 17, 21, 0.98);
-
+    background:var(--secondary-400);
     backdrop-filter: blur(18px);
-
     color: var(--white);
-
     font-size: 11px;
-
     white-space: nowrap;
-
+    border: solid 1px var(--white);
     opacity: 0;
-
     pointer-events: none;
-
     transition: var(--transition-normal);
-
-    /* FIX PRINCIPAL */
     z-index: 999999;
 }
-
-/* SHOW TOOLTIP */
 .bankfleet-navbar__action-button:hover
 .bankfleet-navbar__tooltip,
-
 .bankfleet-navbar__profile-button:hover
 .bankfleet-navbar__tooltip {
     opacity: 1;
-
-    transform:
-        translateX(-50%)
-        translateY(0px);
+    transform: translateX(-50%) translateY(0px);
 }
-
-/* EVITA QUE OTROS ELEMENTOS TAPEN */
 .bankfleet-navbar__action-button,
 .bankfleet-navbar__profile-button {
     position: relative;
-
     z-index: 20;
 }
-
 .bankfleet-navbar__action-button:hover,
 .bankfleet-navbar__profile-button:hover {
     z-index: 999999;
 }
-
-
-/* =========================================================
-RESPONSIVE
-========================================================= */
-
+.bankfleet-navbar-session {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: var(--radius-xl);
+    background: rgba(255,255,255,.03);
+    backdrop-filter: blur(20px);
+    transition: var(--transition-normal);
+}
+.bankfleet-navbar-session:hover {
+    border-color: rgba(139,92,246,.35);
+    box-shadow: var(--shadow-secondary);
+}
+.bankfleet-navbar-session__content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.bankfleet-navbar-session__user {
+    color: var(--white);
+    text-align: right;
+    font-size: var(--fs-xxxs);
+    font-family: var(--font-primary-semibold);
+}
+.bankfleet-navbar-session__details {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+.bankfleet-navbar-session__status {
+    color: var(--tertiary-300);
+    font-size: var(--fs-xxxxs);
+}
+.bankfleet-navbar-session__timer {
+    color: var(--secondary-300);
+    font-size: var(--fs-xxxxs);
+    font-family: var(--font-primary-bold);
+    letter-spacing: 1px;
+}
+.bankfleet-navbar-session__last-login {
+    color: var(--gray-300);
+    font-size: var(--fs-xxxxs);
+}
 @media (max-width: 992px) {
-
     .bankfleet-navbar__brand-subtitle {
         display: none;
     }
-
 }
 
 @media (max-width: 768px) {
-
     .bankfleet-navbar__container {
         flex-direction: column;
-
         gap: var(--gap-lg);
     }
-
     .bankfleet-navbar__left,
     .bankfleet-navbar__right {
         width: 100%;
-
         justify-content: center;
-
         flex-wrap: wrap;
     }
-
 }
-
 @media (max-width: 480px) {
-
     .bankfleet-navbar__container {
-        padding:
-            14px
-            var(--gap-lg);
+        padding:14px var(--gap-lg);
     }
-
     .bankfleet-navbar__brand-title {
         font-size: 1.6rem;
     }
-
     .bankfleet-navbar__brand-icon {
         width: 46px;
         height: 46px;
     }
-
 }

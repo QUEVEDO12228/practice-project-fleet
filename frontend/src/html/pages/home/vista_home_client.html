@@ -5,33 +5,51 @@
 
     <meta charset="UTF-8">
 
-    <link
-        rel="stylesheet"
-        href="/frontend/src/css/main.css">
-    <script
-        type="module"
-        src="/frontend/src/js/main.js">
-    </script>
+    <link rel="stylesheet" href="/frontend/src/css/main.css">
+
+    <script type="module" src="/frontend/src/js/main.js"></script>
+
+    <title>Productos</title>
+
 </head>
 
 <body>
 
-    <section class="section-footer-content">
-        <section class="navbar-client-home">
-            <div class="navbar-login-content"></div>  
-        </section>
-        <section class="sidebar-client-home">
-            <div class="sidebar-container"></div>  
-        </section>
-        <div
-            class="home-products-container">
-        </div>
-    </section>
-    <section class="footer-client-home">
-      <div class="footer-container"></div>  
-    </section>
-  </section>
-</body>
-</html>
+    <div class="bankfleet-app">
 
-    
+        <!-- =========================
+             HEADER / NAVBAR
+        ========================== -->
+        <header class="bankfleet-navbar">
+            <div class="navbar-index-content"></div>
+            <div class="bankfleet-drop-down-menu-container"></div>  
+        </header>
+
+        <!-- =========================
+             BODY (SIDEBAR + CONTENT)
+        ========================== -->
+        <div class="bankfleet-app__body">
+
+            <!-- SIDEBAR -->
+            <aside class="bankfleet-sidebar-principal">
+                <div class="sidebar-container"></div>
+            </aside>
+
+            <div
+                class="home-products-container">
+            </div>
+
+        </div>
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+        <footer class="bankfleet-footer">
+            <div class="footer-container"></div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

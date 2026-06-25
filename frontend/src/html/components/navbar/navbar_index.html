@@ -37,30 +37,8 @@ BANKFLEET GLOBAL NAVBAR
 
             </button>
 
-
-            <!-- HOME AVATAR -->
-            <a href="/"
-               class="bankfleet-navbar__profile-button">
-
-                <div class="bankfleet-navbar__avatar">
-
-                    <img
-                        src="/assets/img/img_bankfleet.png"
-                        alt="BANKFLEET"
-                        class="bankfleet-navbar__avatar-image"
-                    >
-
-                </div>
-
-                <span class="bankfleet-navbar__tooltip">
-                    Home
-                </span>
-
-            </a>
-
-
             <!-- BRAND -->
-            <a href="/"
+            <a href="/frontend/src/html/pages/auth/vista_login.html"
                class="bankfleet-navbar__brand">
 
                 <div class="bankfleet-navbar__brand-icon">
@@ -98,83 +76,39 @@ BANKFLEET GLOBAL NAVBAR
         ====================================================== -->
         <div class="bankfleet-navbar__right">
 
+            <div class="bankfleet-navbar-session">
 
-            <!-- REGISTER -->
-            <a href="/register/"
-               class="bankfleet-navbar__action-button">
+                <div class="bankfleet-navbar-session__content">
 
-                <img
-                    src="/frontend/public/assets/icons/icon_register.svg"
-                    alt="Registro"
-                    class="bankfleet-navbar__icon"
-                >
+                    <span class="bankfleet-navbar-session__user">
+                        Juan David Rodríguez
+                    </span>
 
-                <span class="bankfleet-navbar__tooltip">
-                    Registro
-                </span>
+                    <div class="bankfleet-navbar-session__details">
 
-            </a>
+                        <span class="bankfleet-navbar-session__status">
+                            ● Sesión Activa
+                        </span>
 
+                        <span
+                            class="bankfleet-navbar-session__timer"
+                            id="bankfleetSessionTimer"
+                        >
+                            00:00:00
+                        </span>
 
-            <!-- CONTACT -->
-            <a href="/contact/"
-               class="bankfleet-navbar__action-button">
+                        <span class="bankfleet-navbar-session__last-login">
+                            Último acceso:
+                            24/06/2026 08:42 PM
+                        </span>
 
-                <img
-                    src="/frontend/public/assets/icons/icon_contact.svg"
-                    alt="Contacto"
-                    class="bankfleet-navbar__icon"
-                >
-
-                <span class="bankfleet-navbar__tooltip">
-                    Contacto
-                </span>
-
-            </a>
-
-
-            <!-- NOTIFICATIONS -->
-            <button class="bankfleet-navbar__action-button">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_notification.svg"
-                    alt="Notificaciones"
-                    class="bankfleet-navbar__icon"
-                >
-
-                <span class="bankfleet-navbar__notification-dot"></span>
-
-                <span class="bankfleet-navbar__tooltip">
-                    Notificaciones
-                </span>
-
-            </button>
-
-
-            <!-- PROFILE -->
-            <a href="/profile/"
-               class="bankfleet-navbar__profile-button">
-
-                <div class="bankfleet-navbar__avatar">
-
-                    <img
-                        src="/frontend/public/ assets/img/img_home_code_verify.jpg"
-                        alt="Perfil"
-                        class="bankfleet-navbar__avatar-image"
-                    >
+                    </div>
 
                 </div>
 
-                <span class="bankfleet-navbar__status"></span>
-
-                <span class="bankfleet-navbar__tooltip">
-                    Mi Perfil
-                </span>
-
-            </a>
+            </div>
 
         </div>
 
     </div>
-
 </header>

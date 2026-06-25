@@ -1,109 +1,47 @@
-/* =========================================================
-BUTTON BASE
-========================================================= */
-
 .bankfleet-btn{
     position: relative;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-
     width: fit-content;
     min-width: fit-content;
-
     height: 40px;
     padding: 0 16px;
-
     border-radius: var(--radius-full);
     border: 1px solid transparent;
-
     cursor: pointer;
     overflow: hidden;
-
     font-family: var(--font-primary-semibold);
     font-size: var(--fs-xxxxs);
     font-weight: 600;
     letter-spacing: .3px;
-
-    transition:
-        background .25s ease,
-        border-color .25s ease,
-        box-shadow .25s ease,
-        transform .25s ease;
+    transition:background .25s ease, border-color .25s ease, box-shadow .25s ease, transform .25s ease;
 }
-
-/* =========================================================
-PRIMARY - BANKING PREMIUM
-========================================================= */
-
 .bankfleet-btn--primary{
-
     color: var(--white);
-
-    background:
-        linear-gradient(
-            180deg,
-            var(--secondary-400) 0%,
-            var(--secondary-400) 100%
-        );
-
-    
-
+    background:linear-gradient(180deg,var(--secondary-400) 0%,var(--secondary-400) 100%);
     border-color: rgba(255,255,255,.08);
 }
-
-
-
-/* Hover */
-
 .bankfleet-btn--primary:hover{
-
-    background: linear-gradient(
-        100deg,
-        var(--primary-600),
-        var(--secondary-400)
-    );
+    background: linear-gradient(100deg,var(--primary-600),var(--secondary-400));
     transform: translateY(-2px);
     border: 1px solid var(--secondary-50); 
 }
-
-/* Active */
-
 .bankfleet-btn--primary:active{
-
     transform: translateY(0);
-
-    box-shadow:
-        0 2px 8px rgba(109,40,217,.25);
+    box-shadow:0 2px 8px rgba(109,40,217,.25);
 }
-
-/* Focus */
-
 .bankfleet-btn--primary:focus-visible{
-
     outline: none;
-    
-    box-shadow:
-        0 0 0 4px rgba(167,139,250,.20),
-        0 8px 18px rgba(109,40,217,.35);
+    box-shadow:0 0 0 4px rgba(167,139,250,.20), 0 8px 18px rgba(109,40,217,.35);
 }
-
-/* Disabled */
-
 .bankfleet-btn--primary:disabled{
-
     opacity:.45;
     cursor:not-allowed;
     transform:none;
     box-shadow:none;
 }
-
-/* =========================================================
-ICON
-========================================================= */
-
 .bankfleet-btn__icon{
     width:16px;
     height:16px;
