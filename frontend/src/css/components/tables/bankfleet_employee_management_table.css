@@ -16,12 +16,12 @@
     margin-bottom:24px;
 }
 .bankfleet-employees-table__title{
-    font-size:var(--fs-xs);
+    font-size:var(--fs-xxs);
     color:var(--white);
     font-family:var(--font-primary-bold);
 }
 .bankfleet-employees-table__subtitle{
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
     color:var(--gray-300);
 }
 .bankfleet-employees-table__toolbar{

@@ -18,6 +18,8 @@
 @import url('./components/siderbar/banfleet_sidebar_principal.css');
 @import url('./components/siderbar/bankfleet_drop-down_menu.css');
 
+@import url('./components/electronic payroll/bankfleet_dian.css');
+
 
 @import url('./pages/vista_home_client.css');
 @import url('./pages/view_bankfleet_key_transfer.css');

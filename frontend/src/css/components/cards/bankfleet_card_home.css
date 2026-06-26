@@ -61,7 +61,7 @@
     justify-content:space-between;
     flex:0 0 calc((90% - (0px * 2)) / 2);  
     width: 100%;
-    max-width: 300px;
+    max-width: 294px;
     min-height:230px;
     padding:26px;
     border-radius:var(--radius-xl);

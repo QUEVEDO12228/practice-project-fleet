@@ -1,65 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-    const sidebarContainer =
-        document.querySelector(".navbar-login-content");
-
-    if (!sidebarContainer) return;
-
+document.addEventListener("DOMContentLoaded", function () {
+    const NavbarLogin = document.querySelector(".navbar-login-content");
+    if (!NavbarLogin) {console.warn("No se encontró '.navbar-login-content' en el HTML.");return;}
     fetch("/frontend/src/html/components/navbar/navbar_login.html")
-        .then(res => res.text())
-        .then(html => {
-
-            sidebarContainer.innerHTML = html;
-
-            initSidebarPrincipal();
-
-        })
-        .catch(err => console.error(err));
-
+        .then(response => {if (!response.ok) {throw new Error("Error al cargar navbar_login.html");}return response.text();})
+        .then(data => {NavbarLogin.innerHTML = data;
+        }).catch(error => {console.error("Error cargando el componente:", error);});
 });
-
-function initDropdownMenu() {
-
-    const menuButton =
-        document.querySelector(".bankfleet-navbar__action-button");
-
-    const drawer =
-        document.querySelector(".bankfleet-menu-drawer");
-
-    const overlay =
-        document.querySelector(".bankfleet-menu-overlay");
-
-    const closeButton =
-        document.querySelector(".bankfleet-menu-drawer__close");
-
-    if (!menuButton || !drawer || !overlay) return;
-
-    menuButton.addEventListener("click", () => {
-
-        drawer.classList.add(
-            "bankfleet-menu-drawer--active"
-        );
-
-        overlay.classList.add(
-            "bankfleet-menu-overlay--active"
-        );
-
-    });
-
-    closeButton?.addEventListener("click", closeMenu);
-
-    overlay.addEventListener("click", closeMenu);
-
-    function closeMenu() {
-
-        drawer.classList.remove(
-            "bankfleet-menu-drawer--active"
-        );
-
-        overlay.classList.remove(
-            "bankfleet-menu-overlay--active"
-        );
-
-    }
-
-}

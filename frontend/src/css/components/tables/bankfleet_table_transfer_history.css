@@ -19,12 +19,12 @@
     gap:12px;
 }
 .bankfleet-transactions-table__title{
-    font-size:var(--fs-xs);
+    font-size:var(--fs-xxs);
     color:var(--white);
     font-family:var(--font-primary-bold);
 }
 .bankfleet-transactions-table__subtitle{
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
     color:var(--gray-300);
 }
 .bankfleet-transactions-table__menu-button{
@@ -57,13 +57,13 @@
     padding:8px;
     color:var(--white);
     text-align:left;
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
 }
 .bankfleet-transactions-table__table td{
     padding:8px 8px;
     border-bottom:1px solid var(--secondary-500);
     color:var(--black);
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
 }
 .bankfleet-transactions-table__table tbody tr:hover{
     background:var(--primary-50);
@@ -99,7 +99,7 @@
 .transaction-status{
     padding:8px 8px;
     border-radius:var(--radius-full);
-    font-size:var(--fs-xxxs);
+    /* font-size:var(--fs-xxxxs); */
 }
 .transaction-status--success{
     background:var(--tertiary-100);

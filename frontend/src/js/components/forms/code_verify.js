@@ -1,41 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-  const container = document.querySelector(".code-verify-container");
-
-  if (!container) return;
-
-  fetch("/frontend/src/html/components/forms/code_verify.html")
-    .then(res => res.text())
-    .then(html => {
-
-      container.innerHTML = html;
-
-      // 🔥 IMPORTANTE: esperar DOM listo dentro del HTML insertado
-      setTimeout(() => {
-        initVerify();
-      }, 0);
-
-    })
-    .catch(err => console.error(err));
+document.addEventListener("DOMContentLoaded", function () {
+    const ForgotContainer = document.querySelector(".code-verify-container");
+    if (!ForgotContainer) {console.warn("No se encontró '.code-verify-container' en el HTML.");return;}
+    fetch("/frontend/src/html/components/forms/code_verify.html")
+        .then(response => {if (!response.ok) {throw new Error("Error al cargar code_verify.html");}return response.text();})
+        .then(data => {ForgotContainer.innerHTML = data;
+            initCodeVerify();})
+        .catch(error => {console.error("Error cargando el componente:", error);});
 });
-
-
-// =========================
-// INIT CODE VERIFY
-// =========================
-function initVerify() {
-
-  const nextBtn = document.querySelector(".bankfleet-btn--primary");
-
-  if (!nextBtn) {
-    console.error("NO ENCONTRÉ BOTÓN SIGUIENTE");
-    return;
-  }
-
-  nextBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    window.location.href =
-      "/frontend/src/html/pages/auth/vista_reset_password.html";
-  });
+function initCodeVerify() {
+    const RecibirCode = document.querySelector(".bankfleet-btn--primary");
+    if (!RecibirCode) {console.error("NO ENCONTRÉ BOTÓN SIGUIENTE");return;}
+    RecibirCode.addEventListener("click", function (e) {e.preventDefault();window.location.href = "/frontend/src/html/pages/auth/vista_reset_password.html";});
 }

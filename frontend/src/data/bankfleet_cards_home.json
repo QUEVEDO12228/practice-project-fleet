@@ -31,27 +31,5 @@
     "status": "pending",
     "icon": "icon_credit.svg",
     "gradient": "green"
-  },
-  {
-    "id": 3,
-    "type": "credit",
-    "title": "Crédito Hipotecario",
-    "number": "CR-9382",
-    "balance": "$320.000.000",
-    "currency": "COP",
-    "status": "pending",
-    "icon": "icon_credit.svg",
-    "gradient": "green"
-  },
-  {
-    "id": 3,
-    "type": "credit",
-    "title": "Crédito Hipotecario",
-    "number": "CR-9382",
-    "balance": "$320.000.000",
-    "currency": "COP",
-    "status": "pending",
-    "icon": "icon_credit.svg",
-    "gradient": "green"
   }
 ]

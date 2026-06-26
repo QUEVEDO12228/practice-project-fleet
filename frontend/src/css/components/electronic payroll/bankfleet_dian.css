@@ -1,0 +1,183 @@
+.bankfleet-dian{
+    width:100%;
+    /* background:var(--primary-800); */
+    box-shadow:var(--shadow-primary);
+    overflow:hidden;
+}
+.bankfleet-dian__header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:var(--gap-lg);
+    padding:40px;
+}
+.bankfleet-dian__icon-wrapper{
+    width:90px;
+    height:90px;
+    flex-shrink:0;
+    border-radius:var(--radius-lg);
+    background:linear-gradient(145deg,var(--primary-400),var(--secondary-400));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:var(--shadow-secondary);
+
+}
+.bankfleet-dian__icon{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+}
+.bankfleet-dian__information{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+.bankfleet-dian__title-container{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    flex-wrap:wrap;
+
+}
+.bankfleet-dian__title{
+    font-family:var(--font-primary-bold);
+    font-size:var(--fs-xs);
+    color:var(--white);
+    margin:0;
+
+}
+.bankfleet-dian__badge{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 16px;
+    border-radius:999px;
+    background:var(--tertiary-50);
+    color:var(--tertiary-500);
+    font-family:var(--font-primary-semibold);
+    font-size:var(--fs-xxxs);
+    border:1px solid var(--tertiary-200);
+}
+.bankfleet-dian__badge-dot{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background:var(--success-color);
+    animation:bankfleetPulse 1.8s infinite;
+}
+.bankfleet-dian__description{
+    margin:0;
+    max-width:900px;
+    color:var(--gray-200);
+    line-height:1.8;
+    font-size:var(--fs-xxxs);
+
+}
+.bankfleet-dian__actions{
+    display:flex;
+    align-items:center;
+}
+@keyframes bankfleetPulse{
+    0%{transform:scale(.9);opacity:.7;}
+    50%{transform:scale(1.3);opacity:1;}
+    100%{transform:scale(.9);opacity:.7;}
+}
+@media (max-width:992px){
+    .bankfleet-dian__header{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:28px;
+    }
+    .bankfleet-dian__actions{
+        width:100%;
+    }
+    .bankfleet-dian__button{
+        width:100%;
+    }
+}
+/* ========================================================================= */
+.bankfleet-dian-overview{
+    margin-top:var(--gap-xl);
+    /* background:var(--primary-800); */
+    border-top: solid 1px var(--secondary-400) ;
+    box-shadow:var(--shadow-primary);
+    overflow:hidden;
+}
+.bankfleet-dian-overview__header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:28px 32px;
+    border-bottom:1px solid var(--secondary-400);
+}
+.bankfleet-dian-overview__icon{
+    width:60px;
+    height:60px;
+    border-radius:var(--radius-md);
+    background:var(--primary-50);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-shrink:0;
+}
+.bankfleet-dian-overview__icon img{
+    width:28px;
+    height:28px;
+}
+.bankfleet-dian-overview__title{
+    margin:0;
+    font-family:var(--font-primary-bold);
+    font-size:var(--fs-xs);
+    color:var(--white);
+}
+.bankfleet-dian-overview__subtitle{
+    margin-top:6px;
+    color:var(--gray-200);
+    font-size:var(--fs-xxxs);
+}
+.bankfleet-dian-overview__content{
+
+    padding:24px;
+
+}
+
+.bankfleet-dian-overview__description{
+
+    margin:0;
+
+    color:var(--gray-300);
+
+    font-size:var(--fs-xxxs);
+
+    line-height:1.9;
+
+    text-align:justify;
+
+}
+
+.bankfleet-dian-overview__description strong{
+
+    color:var(--gray-100);
+
+    font-family:var(--font-primary-semibold);
+
+}
+@media (max-width:768px){
+
+    .bankfleet-dian-overview__header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .bankfleet-dian-overview__content{
+
+        padding:24px;
+
+    }
+
+}

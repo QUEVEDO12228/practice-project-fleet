@@ -17,6 +17,7 @@
     font-weight: 600;
     letter-spacing: .3px;
     transition:background .25s ease, border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+    text-decoration: none;
 }
 .bankfleet-btn--primary{
     color: var(--white);

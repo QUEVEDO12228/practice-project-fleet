@@ -19,12 +19,12 @@
     gap:12px;
 }
 .bankfleet-scheduled-queries-table__title{
-    font-size:var(--fs-xs);
+    font-size:var(--fs-xxs);
     color:var(--white);
     font-family:var(--font-primary-bold);
 }
 .bankfleet-scheduled-queries-table__subtitle{
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
     color:var(--gray-300);
 }
 .bankfleet-scheduled-queries-table__table-wrapper{
@@ -48,13 +48,13 @@
     padding:8px;
     color:var(--white);
     text-align:left;
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
 }
 .bankfleet-scheduled-queries-table__table td{
-    padding:8px;
+    padding:12px;
     border-bottom:1px solid var(--secondary-500);
     color:var(--black);
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
 }
 .bankfleet-scheduled-queries-table__table tbody tr:hover{
     background:var(--primary-50);
@@ -105,7 +105,7 @@
 .query-transaction-type{
     padding:8px;
     border-radius:var(--radius-full);
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
 }
 .query-transaction-type--transfer{
     background:var(--secondary-100);

@@ -78,7 +78,7 @@
 .bankfleet-recipients-table__table th{
     padding:8px;
     color:var(--white);
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
     text-align:left;
 }
 .bankfleet-recipients-table__table td{
@@ -117,7 +117,8 @@
 }
 .recipient__detail{
     color:var(--gray-800);
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
+    font-weight: 600;
 }
 .recipient-status{
     padding:8px 18px;

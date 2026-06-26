@@ -9,6 +9,8 @@ import '/frontend/src/js/components/navbar/navbar_index.js';
 
 import '/frontend/src/js/components/heros/bankfleet_hero_index_landing.js';
 
+import '/frontend/src/js/components/electronic payroll/bankfleet_dian.js';
+
 
 import '/frontend/src/js/components/footer/footer.js';
 import '/frontend/src/js/components/forms/register_step1.js';
