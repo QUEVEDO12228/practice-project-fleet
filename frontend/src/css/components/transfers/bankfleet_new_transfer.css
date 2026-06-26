@@ -1,34 +1,17 @@
-/* ========================================================= 
-   BANKFLEET NEW TRANSFER - METHOD SELECTION
-========================================================= */
-
 .bankfleet-transfer-method {
     position: relative;
     width: 100%;
     padding: var(--gap-lg);
     box-sizing: border-box;
-
-    background: linear-gradient(
-        135deg,
-        var(--primary-900) 0%,
-        var(--primary-800) 100%
-    );
+    background: linear-gradient( 135deg, var(--primary-900) 0%, var(--primary-800) 100%);
 }
-
-/* 👇 OCULTAR SCROLLBAR (Chrome, Edge, Safari) */
 .bankfleet-transfer-method {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge viejo */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
-
 .bankfleet-transfer-method::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
 }
-
-/* =========================================================
-   GLOW EFFECTS
-========================================================= */
-
 .bankfleet-transfer-method::before,
 .bankfleet-transfer-method::after {
     content: "";
@@ -40,36 +23,27 @@
     opacity: .12;
     pointer-events: none;
 }
-
 .bankfleet-transfer-method::before {
     top: -120px;
     right: -120px;
     background: var(--secondary-500);
 }
-
 .bankfleet-transfer-method::after {
     bottom: -120px;
     left: -120px;
     background: var(--primary-400);
 }
-
-/* =========================================================
-   HEADER
-========================================================= */
-
 .bankfleet-transfer-method__header {
     position: relative;
     z-index: 2;
     margin-bottom: var(--gap-lg);
 }
-
 .bankfleet-transfer-method__title {
     margin: 0 0 var(--gap-sm);
     color: var(--white);
     font-size: var(--fs-xxs);
     font-family: var(--font-primary-bold);
 }
-
 .bankfleet-transfer-method__subtitle {
     margin: 0;
     max-width: 650px;
@@ -77,51 +51,32 @@
     font-size: var(--fs-xxxxs);
     line-height: 1.8;
 }
-
-/* =========================================================
-   GRID
-========================================================= */
-
 .bankfleet-transfer-method__grid {
     position: relative;
     z-index: 2;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     justify-content: center;
     gap: var(--gap-lg);
-
     width: 100%;
 }
-
-/* =========================================================
-   CARD
-========================================================= */
-
 .bankfleet-transfer-method__card {
     position: relative;
-
     width: 100%;
     max-width: 300px;
-
     display: flex;
     flex-direction: column;
     gap: var(--gap-md);
-
     padding: 24px;
-
     background: rgba(255,255,255,.03);
     border: 1px solid rgba(255,255,255,.08);
     border-radius: var(--radius-xl);
-
     backdrop-filter: blur(20px);
     cursor: pointer;
-
     transition: var(--transition-normal);
     overflow: hidden;
     text-decoration: none;
 }
-
 .bankfleet-transfer-method__card:hover {
     transform: translateY(-4px);
     border-color: rgba(139,92,246,.35);
@@ -129,11 +84,6 @@
     background: rgba(139,92,246,.04);
     box-shadow: var(--shadow-secondary);
 }
-
-/* =========================================================
-   ACTIVE CARD
-========================================================= */
-
 .bankfleet-transfer-method__card--active {
     border-color: var(--secondary-400);
     background: rgba(139,92,246,.08);
@@ -141,40 +91,21 @@
         0 0 0 1px rgba(139,92,246,.3),
         0 0 25px rgba(139,92,246,.2);
 }
-
-/* =========================================================
-   ICON
-========================================================= */
-
 .bankfleet-transfer-method__icon-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 44px;
     height: 44px;
-
     border-radius: 18px;
-
-    background: linear-gradient(
-        135deg,
-        var(--secondary-500),
-        var(--primary-500)
-    );
-
+    background: linear-gradient(135deg,var(--secondary-500),var(--primary-500));
     box-shadow: 0 10px 30px rgba(109,40,217,.25);
     text-decoration: none;
 }
-
 .bankfleet-transfer-method__icon {
     width: 22px;
     height: 22px;
 }
-
-/* =========================================================
-   CONTENT
-========================================================= */
-
 .bankfleet-transfer-method__card-title {
     margin: 0;
     color: var(--white);
@@ -182,7 +113,6 @@
     font-family: var(--font-primary-semibold);
     text-decoration: none;
 }
-
 .bankfleet-transfer-method__card-description {
     margin: 0;
     color: var(--gray-300);
@@ -190,62 +120,34 @@
     line-height: 1.7;
     text-decoration: none;  
 }
-
-/* =========================================================
-   BADGE
-========================================================= */
-
 .bankfleet-transfer-method__badge {
     width: fit-content;
     margin-top: auto;
-
     padding: 8px 14px;
     border-radius: var(--radius-full);
-
     background: rgba(139,92,246,.12);
     border: 1px solid rgba(139,92,246,.20);
-
     color: var(--secondary-300);
     font-size: var(--fs-xxxxs);
     text-decoration: none;
 }
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
 .bankfleet-transfer-method__footer {
     display: flex;
     justify-content: flex-end;
     margin-top: var(--gap-xxl);
 }
-
-/* =========================================================
-   BUTTON
-========================================================= */
-
 .bankfleet-transfer-method__continue {
     display: flex;
     justify-content: center;
     align-items: center;
-
     min-width: 180px;
     height: 48px;
-
     border: none;
     border-radius: var(--radius-lg);
-
     cursor: pointer;
-
     color: var(--white);
     font-size: var(--fs-xxxs);
     font-family: var(--font-primary-semibold);
-
-    background: linear-gradient(
-        135deg,
-        var(--secondary-500),
-        var(--secondary-700)
-    );
-
+    background: linear-gradient( 135deg, var(--secondary-500), var(--secondary-700));
     box-shadow: 0 10px 30px rgba(109,40,217,.25);
 }

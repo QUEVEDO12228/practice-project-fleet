@@ -1,275 +1,81 @@
-<!-- =========================================================
-     BANKFLEET - NUEVA TRANSFERENCIA
-========================================================= -->
-
 <section class="bankfleet-transfer-method">
-
-    <!-- HEADER -->
     <header class="bankfleet-transfer-method__header">
-
-        <h2 class="bankfleet-transfer-method__title">
-            Nueva Transferencia
-        </h2>
-
-        <p class="bankfleet-transfer-method__subtitle">
-            Elige cómo deseas enviar dinero. Utiliza transferencias inmediatas mediante llaves digitales, cuentas bancarias tradicionales o realiza movimientos entre tus propios productos financieros de forma segura.
-        </p>
-
+        <h2 class="bankfleet-transfer-method__title">Nueva Transferencia</h2>
+        <p class="bankfleet-transfer-method__subtitle">Elige cómo deseas enviar dinero. Utiliza transferencias inmediatas mediante llaves digitales, cuentas bancarias tradicionales
+             o realiza movimientos entre tus propios productos financieros de forma segura.</p>
     </header>
-
-    <!-- GRID -->
     <div class="bankfleet-transfer-method__grid">
-
-        <!-- =========================================================
-             TRANSFERENCIA POR LLAVE
-        ========================================================= -->
-        <a href="http://127.0.0.1:5500/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_key_transfer.html"
-            class="bankfleet-transfer-method__card"
-            data-transfer="key"
-        >
+        <a href="/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_key_transfer.html" class="bankfleet-transfer-method__card" data-transfer="key">
+            <div class="bankfleet-transfer-method__icon-wrapper">
+                <img src="/frontend/public/assets/icons/icon_key_white.svg" alt="Transferencia por llave" class="bankfleet-transfer-method__icon" >
+            </div>
+            <div class="bankfleet-transfer-method__content">
+                <h3 class="bankfleet-transfer-method__card-title">Transferencia por Llave</h3>
+                <p class="bankfleet-transfer-method__card-description">Envía dinero utilizando número celular, documento de identidad o correo electrónico registrado por el destinatario.</p>
+            </div>
+            <span class="bankfleet-transfer-method__badge">Instantáneo</span>
+        </a>
+        <a href="/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_bank_transfer.html" class="bankfleet-transfer-method__card" data-transfer="bank">
+            <div class="bankfleet-transfer-method__icon-wrapper">
+                <img src="/frontend/public/assets/icons/icon_bank_white.svg" alt="Transferencia bancaria" class="bankfleet-transfer-method__icon">
+            </div>
+            <div class="bankfleet-transfer-method__content">
+                <h3 class="bankfleet-transfer-method__card-title">Transferencia Bancaria</h3>
+                <p class="bankfleet-transfer-method__card-description">Realiza envíos a cuentas de ahorro o corriente de cualquier entidad financiera nacional.</p>
+            </div>
+            <span class="bankfleet-transfer-method__badge">Cuenta Bancaria</span>
+        </a>
+        <a href="/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_transfer_between_my_accounts.html" class="bankfleet-transfer-method__card" data-transfer="internal" >
 
             <div class="bankfleet-transfer-method__icon-wrapper">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_key_white.svg"
-                    alt="Transferencia por llave"
-                    class="bankfleet-transfer-method__icon"
-                >
-
+                <img src="/frontend/public/assets/icons/icon_users_white.svg" alt="Entre mis cuentas" class="bankfleet-transfer-method__icon">
             </div>
-
             <div class="bankfleet-transfer-method__content">
-
-                <h3 class="bankfleet-transfer-method__card-title">
-                    Transferencia por Llave
-                </h3>
-
-                <p class="bankfleet-transfer-method__card-description">
-                    Envía dinero utilizando número celular, documento de identidad o correo electrónico registrado por el destinatario.
-                </p>
-
+                <h3 class="bankfleet-transfer-method__card-title">Entre Mis Cuentas</h3>
+                <p class="bankfleet-transfer-method__card-description">Transfiere fondos entre tus productos BANKFLEET de manera inmediata y sin costos adicionales.</p>
             </div>
-
-            <span class="bankfleet-transfer-method__badge">
-                Instantáneo
-            </span>
-
+            <span class="bankfleet-transfer-method__badge">Sin Comisión</span>
         </a>
-
-        <!-- =========================================================
-             TRANSFERENCIA BANCARIA
-        ========================================================= -->
-        <a href="/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_bank_transfer.html"
-            class="bankfleet-transfer-method__card"
-            data-transfer="bank"
-        >
-
+        <a href="/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_transfer_other_accounts.html" class="bankfleet-transfer-method__card" data-transfer="internal" >
             <div class="bankfleet-transfer-method__icon-wrapper">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_bank_white.svg"
-                    alt="Transferencia bancaria"
-                    class="bankfleet-transfer-method__icon"
-                >
-
+                <img src="/frontend/public/assets/icons/icon_users_white.svg" alt="Otras cuentas" class="bankfleet-transfer-method__icon">
             </div>
-
             <div class="bankfleet-transfer-method__content">
-
-                <h3 class="bankfleet-transfer-method__card-title">
-                    Transferencia Bancaria
-                </h3>
-
-                <p class="bankfleet-transfer-method__card-description">
-                    Realiza envíos a cuentas de ahorro o corriente de cualquier entidad financiera nacional.
-                </p>
-
+                <h3 class="bankfleet-transfer-method__card-title"> Otras Cuentas</h3>
+                <p class="bankfleet-transfer-method__card-description"> Transfiere fondos de tus productos para otras cuentas BANKFLEET de manera inmediata y sin costos adicionales.</p>
             </div>
-
-            <span class="bankfleet-transfer-method__badge">
-                Cuenta Bancaria
-            </span>
-
+            <span class="bankfleet-transfer-method__badge">Sin Comisión</span>
         </a>
-
-        <!-- =========================================================
-             ENTRE MIS CUENTAS
-        ========================================================= -->
-        <a href="http://127.0.0.1:5500/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_transfer_between_my_accounts.html"
-            class="bankfleet-transfer-method__card"
-            data-transfer="internal"
-        >
-
+        <a href="/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_international_transfer.html" class="bankfleet-transfer-method__card" data-transfer="international">
             <div class="bankfleet-transfer-method__icon-wrapper">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_users_white.svg"
-                    alt="Entre mis cuentas"
-                    class="bankfleet-transfer-method__icon"
-                >
-
+                <img src="/frontend/public/assets/icons/icon_international_white.svg" alt="Transferencia internacional" class="bankfleet-transfer-method__icon">
             </div>
-
             <div class="bankfleet-transfer-method__content">
-
-                <h3 class="bankfleet-transfer-method__card-title">
-                    Entre Mis Cuentas
-                </h3>
-
-                <p class="bankfleet-transfer-method__card-description">
-                    Transfiere fondos entre tus productos BANKFLEET de manera inmediata y sin costos adicionales.
-                </p>
-
+                <h3 class="bankfleet-transfer-method__card-title">Transferencia Internacional</h3>
+                <p class="bankfleet-transfer-method__card-description">Envía dinero a bancos internacionales mediante códigos SWIFT, BIC o IBAN con seguimiento seguro.</p>
             </div>
-
-            <span class="bankfleet-transfer-method__badge">
-                Sin Comisión
-            </span>
-
+            <span class="bankfleet-transfer-method__badge">Global</span>
         </a>
-        <!-- =========================================================
-             Otras CUENTAS
-        ========================================================= -->
-        <a href="http://127.0.0.1:5500/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_transfer_other_accounts.html"
-            class="bankfleet-transfer-method__card"
-            data-transfer="internal"
-        >
-
+        <a href="/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_transfer_frequent_contacts.html" class="bankfleet-transfer-method__card" data-transfer="international">
             <div class="bankfleet-transfer-method__icon-wrapper">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_users_white.svg"
-                    alt="Otras cuentas"
-                    class="bankfleet-transfer-method__icon"
-                >
+                <img src="/frontend/public/assets/icons/icon_frecuenty_contact_white.svg" alt="Contactos frecuentes" class="bankfleet-transfer-method__icon">
 
             </div>
-
             <div class="bankfleet-transfer-method__content">
-
-                <h3 class="bankfleet-transfer-method__card-title">
-                    Otras Cuentas
-                </h3>
-
-                <p class="bankfleet-transfer-method__card-description">
-                    Transfiere fondos de tus productos para otras cuentas BANKFLEET de manera inmediata y sin costos adicionales.
-                </p>
-
+                <h3 class="bankfleet-transfer-method__card-title"> Contactos Frecuentes</h3>
+                <p class="bankfleet-transfer-method__card-description"> Selecciona destinatarios guardados previamente y realiza transferencias en segundos.</p>
             </div>
-
-            <span class="bankfleet-transfer-method__badge">
-                Sin Comisión
-            </span>
-
+            <span class="bankfleet-transfer-method__badge">Favoritos</span>
         </a>
-
-        <!-- =========================================================
-             TRANSFERENCIA INTERNACIONAL
-        ========================================================= -->
-        <a href="/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_international_transfer.html"
-            class="bankfleet-transfer-method__card"
-            data-transfer="international"
-        >
-
+        <a href="/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_transfer_by_qr.html" class="bankfleet-transfer-method__card" data-transfer="qr">
             <div class="bankfleet-transfer-method__icon-wrapper">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_international_white.svg"
-                    alt="Transferencia internacional"
-                    class="bankfleet-transfer-method__icon"
-                >
-
+                <img src="/frontend/public/assets/icons/icon_qr_white.svg" alt="Transferencia QR" class="bankfleet-transfer-method__icon">
             </div>
-
             <div class="bankfleet-transfer-method__content">
-
-                <h3 class="bankfleet-transfer-method__card-title">
-                    Transferencia Internacional
-                </h3>
-
-                <p class="bankfleet-transfer-method__card-description">
-                    Envía dinero a bancos internacionales mediante códigos SWIFT, BIC o IBAN con seguimiento seguro.
-                </p>
-
+                <h3 class="bankfleet-transfer-method__card-title"> Transferencia por QR</h3>
+                <p class="bankfleet-transfer-method__card-description"> Escanea un código QR y realiza pagos o transferencias rápidas sin ingresar datos manualmente.</p>
             </div>
-
-            <span class="bankfleet-transfer-method__badge">
-                Global
-            </span>
-
+            <span class="bankfleet-transfer-method__badge">Smart Pay</span>
         </a>
-
-        <!-- =========================================================
-             CONTACTOS FRECUENTES
-        ========================================================= -->
-        <a href="/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_transfer_frequent_contacts.html"
-            class="bankfleet-transfer-method__card"
-            data-transfer="international"
-        >
-
-            <div class="bankfleet-transfer-method__icon-wrapper">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_frecuenty_contact_white.svg"
-                    alt="Contactos frecuentes"
-                    class="bankfleet-transfer-method__icon"
-                >
-
-            </div>
-
-            <div class="bankfleet-transfer-method__content">
-
-                <h3 class="bankfleet-transfer-method__card-title">
-                    Contactos Frecuentes
-                </h3>
-
-                <p class="bankfleet-transfer-method__card-description">
-                    Selecciona destinatarios guardados previamente y realiza transferencias en segundos.
-                </p>
-
-            </div>
-
-            <span class="bankfleet-transfer-method__badge">
-                Favoritos
-            </span>
-
-        </a>
-
-        <!-- =========================================================
-             QR PAYMENT
-        ========================================================= -->
-        <a href="/frontend/src/html/pages/dashboard/banking/transfers/view_bankfleet_transfer_by_qr.html"
-            class="bankfleet-transfer-method__card"
-            data-transfer="qr"
-        >
-
-            <div class="bankfleet-transfer-method__icon-wrapper">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_qr_white.svg"
-                    alt="Transferencia QR"
-                    class="bankfleet-transfer-method__icon"
-                >
-
-            </div>
-
-            <div class="bankfleet-transfer-method__content">
-
-                <h3 class="bankfleet-transfer-method__card-title">
-                    Transferencia por QR
-                </h3>
-
-                <p class="bankfleet-transfer-method__card-description">
-                    Escanea un código QR y realiza pagos o transferencias rápidas sin ingresar datos manualmente.
-                </p>
-
-            </div>
-
-            <span class="bankfleet-transfer-method__badge">
-                Smart Pay
-            </span>
-
-        </a>
-
     </div>
 </section>

@@ -1,265 +1,106 @@
-<!-- ================== Gestión de Empleados ================== -->
-
 <section class="bankfleet_manage_groups-table">
-
     <div class="bankfleet_manage_groups-table__header">
-
         <div class="bankfleet_manage_groups-table__header-container">
-            <a
-                href="javascript:history.back()" alt="Volver"
-                class="bankfleet-btn-secondary bankfleet_manage_groups-table__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_back.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet_manage_groups-table__btn-secondary-icon">
+            <a href="javascript:history.back()" alt="Volver" class="bankfleet-btn-secondary bankfleet_manage_groups-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet_manage_groups-table__btn-secondary-icon">
             </a>
-
             <div class="bankfleet_manage_groups-table__container text">
-
-                <h1 class="bankfleet_manage_groups-table__title">
-                    Administrar grupos
-                </h1>
-
-                <p class="bankfleet_manage_groups-table__subtitle">
-                    Administra la información de los colaboradores del grupo de nómina.
-                </p>
+                <h1 class="bankfleet_manage_groups-table__title">Administrar grupos</h1>
+                <p class="bankfleet_manage_groups-table__subtitle">Administra la información de los colaboradores del grupo de nómina.</p>
             </div>
-
         </div>
-        <button
-            type="button"
-            class="bankfleet-btn bankfleet-btn--primary">
-
-            Agregar Empleado
-
-            <img
-                src="/frontend/public/assets/icons/icon_sum_white.svg"
-                alt=""
-                class="bankfleet-btn__icon">
-
+        <button type="button" class="bankfleet-btn bankfleet-btn--primary">Agregar Empleado
+            <img src="/frontend/public/assets/icons/icon_sum_white.svg" alt="" class="bankfleet-btn__icon">
         </button>
-
     </div>
-
     <div class="bankfleet_manage_groups-table__container-buttons">
-
         <div class="bankfleet_manage_groups-table__search">
-
-            <img
-                src="/frontend/public/assets/icons/icon_search.svg"
-                alt="Buscar"
-                class="bankfleet_manage_groups-table__search-icon">
-
-            <input
-                type="text"
-                placeholder="Buscar operación..."
-                class="bankfleet_manage_groups-table__search-input">
-
+            <img src="/frontend/public/assets/icons/icon_search.svg" alt="Buscar" class="bankfleet_manage_groups-table__search-icon">
+            <input type="text" placeholder="Buscar operación..." class="bankfleet_manage_groups-table__search-input">
         </div>
         <div class="bankfleet_manage_groups-table__container-buttons-buttons"> 
-            <a
-                href="/"
-                class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_filter_white.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">Filtrar
+            <a href="/" class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_filter_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">Filtrar
             </a>
-            <a
-                href="/"
-                class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_download_white.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">Descargar
+            <a href="/" class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_download_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">Descargar
             </a>
         </div>
     </div>
-
     <div class="bankfleet_manage_groups-table__table-wrapper">
-
         <table class="bankfleet_manage_groups-table__table">
-
             <thead>
-
                 <tr>
                     <th><img class="bankfleet_manage_groups-table__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg"></th>
-                    <th>Nombre empleado<br>No. de empleados</th>
-                    <th>Fecha de<br> alta</th>
-                    <th>Alias del<br> grupo de nómina</th>
-                    <th>Cuenta origen</th>
-                    <th>Periodicidad</th>
-                    <th>Tipo Cuenta</th>
-                    <th>No. Cuenta</th>
-                    <th>Estado</th>
+                    <th>Nombre empleado<br>No. de empleados</th><th>Fecha de<br> alta</th><th>Alias del<br> grupo de nómina</th>
+                    <th>Cuenta origen</th><th>Periodicidad</th><th>Tipo Cuenta</th><th>No. Cuenta</th><th>Estado</th>
                 </tr>
-	
-
-
-
-
-
             </thead>
-
             <tbody>
-
-                <!-- EMPLEADO 1 -->
-
                 <tr>
-
                     <td data-label="ID">
                         <img class="bankfleet_manage_groups-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
                     </td>
-
                     <td data-label="Empleado">
-
                         <div class="employee">
-
-                            <div class="employee__avatar">
-                                G1
-                            </div>
-
+                            <div class="employee__avatar">G1</div>
                             <div class="employee__info">
-
-                                <span class="employee__name">
-                                    Julián Gil
-                                </span>
-
-                                <span class="employee__document">
-                                    CC 1088547896
-                                </span>
-
+                                <span class="employee__name">Julián Gil</span>
+                                <span class="employee__document">CC 1088547896</span>
                             </div>
-
                         </div>
-
                     </td>
-
-                    <td data-label="Fecha Alta">
-                        15/01/2025
-                    </td>
-
-                    <td data-label="Alias del grupo de nómina">
-                        Grupo primero
-                    </td>
-
-                    
-
-                    <td data-label="Cuenta origen">
-                        Cuenta (Grupo primero)
-                    </td>
-
-                    <td data-label="Periodicidad">
-                        Mensual
-                    </td>
-
-                    <td data-label="Tipo Cuenta">
-                        Corriente
-                    </td>
-
-                    <td data-label="No. Cuenta">
-                        ****7412
-                    </td>
-                    <td data-label="Estado">
-
-                        <span class="status status--active">
-                            Activo
-                        </span>
-                    </td>
-
-                    
-
-                    
-
+                    <td data-label="Fecha Alta">15/01/2025</td>
+                    <td data-label="Alias del grupo de nómina">Grupo primero</td>
+                    <td data-label="Cuenta origen">Cuenta (Grupo primero)</td>
+                    <td data-label="Periodicidad">Mensual</td>
+                    <td data-label="Tipo Cuenta">Corriente</td>
+                    <td data-label="No. Cuenta">****7412</td>
+                    <td data-label="Estado"><span class="status status--active">Activo</span></td>
                 </tr>
-
-                <!-- EMPLEADO 3 -->
-
                 <tr>
-
                     <td data-label="ID">
                         <img class="bankfleet_manage_groups-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
                     </td>
-
                     <td data-label="Empleado">
-
                         <div class="employee">
-
-                            <div class="employee__avatar">
-                                SV
-                            </div>
-
+                            <div class="employee__avatar">G1</div>
                             <div class="employee__info">
-
-                                <span class="employee__name">
-                                    Sebastián Valencia
-                                </span>
-
-                                <span class="employee__document">
-                                    CC 1001547823
-                                </span>
-
+                                <span class="employee__name">Julián Gil</span>
+                                <span class="employee__document">CC 1088547896</span>
                             </div>
-
                         </div>
-
                     </td>
-
-                    <td data-label="Cargo">
-                        Auditor Financiero
-                    </td>
-
-                    <td data-label="Correo">
-                        sebastianv@gmail.com
-                    </td>
-
-                    <td data-label="Fecha Alta">
-                        20/03/2025
-                    </td>
-
-                    <td data-label="Banco">
-                        BBVA
-                    </td>
-
-                    <td data-label="Tipo Cuenta">
-                        Ahorros
-                    </td>
-
-                    <td data-label="No. Cuenta">
-                        96587412365
-                    </td>
-
-                    <td data-label="Estado">
-
-                        <span class="status status--inactive">
-                            Suspendido
-                        </span>
-
-                    </td>
-                    <!-- <td data-label="Estado">
-
-                        <span class="status status--active">
-                            Activo
-                        </span>
-                    </td>
-                    <td data-label="Estado">
-
-                        <span class="transaction-status transaction-status--rejected">
-                            Rechazada
-                        </span>
-
-                    </td> -->
-                    
-
+                    <td data-label="Fecha Alta">15/01/2025</td>
+                    <td data-label="Alias del grupo de nómina">Grupo primero</td>
+                    <td data-label="Cuenta origen">Cuenta (Grupo primero)</td>
+                    <td data-label="Periodicidad">Mensual</td>
+                    <td data-label="Tipo Cuenta">Corriente</td>
+                    <td data-label="No. Cuenta">****7412</td>
+                    <td data-label="Estado"><span class="status status--inactive">Suspendido</span></td>
                 </tr>
-
+                <tr>
+                    <td data-label="ID">
+                        <img class="bankfleet_manage_groups-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
+                    </td>
+                    <td data-label="Empleado">
+                        <div class="employee">
+                            <div class="employee__avatar">G1</div>
+                            <div class="employee__info">
+                                <span class="employee__name">Julián Gil</span>
+                                <span class="employee__document">CC 1088547896</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-label="Fecha Alta">15/01/2025</td>
+                    <td data-label="Alias del grupo de nómina">Grupo primero</td>
+                    <td data-label="Cuenta origen">Cuenta (Grupo primero)</td>
+                    <td data-label="Periodicidad">Mensual</td>
+                    <td data-label="Tipo Cuenta">Corriente</td>
+                    <td data-label="No. Cuenta">****7412</td>
+                    <td data-label="Estado"><span class="status status--inactive">Suspendido</span></td>
+                </tr>
             </tbody>
-
         </table>
-
     </div>
-
 </section>

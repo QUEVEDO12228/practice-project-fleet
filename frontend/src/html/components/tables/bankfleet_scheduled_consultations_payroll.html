@@ -1,221 +1,82 @@
 <!-- ================== Historial de Transacciones ================== -->
 <section class="bankfleet_scheduled_consultations-table">
-
     <div class="bankfleet_scheduled_consultations-table__header">
-
         <div class="bankfleet_scheduled_consultations-table__header-container">
-
-            <a
-                href="javascript:history.back()" alt="Volver"
-                class="bankfleet-btn-secondary bankfleet_scheduled_consultations-table__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_back.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet_scheduled_consultations-table__btn-secondary-icon">
+            <a href="javascript:history.back()" alt="Volver" class="bankfleet-btn-secondary bankfleet_scheduled_consultations-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet_scheduled_consultations-table__btn-secondary-icon">
             </a>
-
             <div class="bankfleet_scheduled_consultations-table__content">
-
                 <div class="bankfleet_scheduled_consultations-table__title-container">
-
-                    <h1 class="bankfleet_scheduled_consultations-table__title">
-                        Consultas programadas
-                    </h1>
-
+                    <h1 class="bankfleet_scheduled_consultations-table__title">Consultas programadas</h1>
                 </div>
-
-                <p class="bankfleet_scheduled_consultations-table__subtitle">
-                    Consulta y monitorea todas las operaciones financieras realizadas.
-                </p>
-
+                <p class="bankfleet_scheduled_consultations-table__subtitle">Consulta y monitorea todas las operaciones financieras realizadas.</p>
             </div>
-
         </div>
         <div class="bankfleet_scheduled_consultations-table__field">
-
-    <label
-        for="payroll-group"
-        class="bankfleet_scheduled_consultations-table__label">
-
-        Grupo de nómina
-
-    </label>
-
+    <label for="payroll-group" class="bankfleet_scheduled_consultations-table__label">Grupo de nómina</label>
     <div class="bankfleet_scheduled_consultations-table__select-wrapper">
-
-            <select
-                id="payroll-group"
-                class="bankfleet_scheduled_consultations-table__select">
-
-                <option value="">
-                    Selecciona un grupo de nómina
-                </option>
-
-                <option value="administrativo">
-                    Administrativo
-                </option>
-
-                <option value="operativo">
-                    Operativo
-                </option>
-
-                <option value="ventas">
-                    Ventas
-                </option>
-
-                <option value="gerencia">
-                    Gerencia
-                </option>
-
-                <option value="contratistas">
-                    Contratistas
-                </option>
-
+            <select id="payroll-group" class="bankfleet_scheduled_consultations-table__select">
+                <option value="">Selecciona un grupo de nómina</option>
+                <option value="administrativo">Administrativo</option>
+                <option value="operativo">Operativo</option>
+                <option value="ventas">Ventas</option>
+                <option value="gerencia">Gerencia</option>
+                <option value="contratistas">Contratistas</option>
             </select>
-
-            <img
-                src="/frontend/public/assets/icons/icon_arrow_below.svg"
-                alt=""
-                class="bankfleet_scheduled_consultations-table__select-icon">
-
+            <img src="/frontend/public/assets/icons/icon_arrow_below.svg" alt="" class="bankfleet_scheduled_consultations-table__select-icon">
         </div>
-
     </div>
-
     </div>
     <div class="class bankfleet_scheduled_consultations-table__separeitor-actions">
         <div class="bankfleet_scheduled_consultations-table__search">
-
-            <img
-                src="/frontend/public/assets/icons/icon_search.svg"
-                alt="Buscar"
-                class="bankfleet_scheduled_consultations-table__search-icon">
-
-            <input
-                type="text"
-                placeholder="Buscar operación..."
-                class="bankfleet_scheduled_consultations-table__search-input">
-
+            <img src="/frontend/public/assets/icons/icon_search.svg" alt="Buscar" class="bankfleet_scheduled_consultations-table__search-icon">
+            <input type="text" placeholder="Buscar operación..." class="bankfleet_scheduled_consultations-table__search-input">
         </div>
         <div class="bankfleet_scheduled_consultations-table__separeitor-actions-buttons">
-            <a
-                href="/"
-                class="bankfleet-btn-secondary bankfleet_scheduled_consultations-table__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_filter_white.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet_scheduled_consultations-table__btn-secondary-icon">Filtrar
+            <a href="/" class="bankfleet-btn-secondary bankfleet_scheduled_consultations-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_filter_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet_scheduled_consultations-table__btn-secondary-icon">Filtrar
             </a>
-            <a
-                href="/"
-                class="bankfleet-btn-secondary bankfleet_scheduled_consultations-table__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_download_white.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet_scheduled_consultations-table__btn-secondary-icon">Descargar
+            <a href="/" class="bankfleet-btn-secondary bankfleet_scheduled_consultations-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_download_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet_scheduled_consultations-table__btn-secondary-icon">Descargar
             </a>
         </div>
     </div>
-
     <div class="bankfleet_scheduled_consultations-table__table-wrapper">
-
         <table class="bankfleet_scheduled_consultations-table__table">
-
             <thead>
                 <tr>
-
                     <th class="transaction-recipient__table-th">
-                        <img
-                            class="transaction-recipient__image-options"
-                            src="/frontend/public/assets/icons/icon_settings_white.svg"
-                            alt="Opciones">
+                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg" alt="Opciones">
                     </th>
-
                     <th class="bankfleet_scheduled_consultations-table__checkbox-column">
-
                         <label class="bankfleet_scheduled_consultations-table__checkbox">
-
-                            <input
-                                type="checkbox"
-                                id="select-all-payrolls"
-                                class="bankfleet_scheduled_consultations-table__checkbox-input">
-
+                            <input type="checkbox" id="select-all-payrolls" class="bankfleet_scheduled_consultations-table__checkbox-input">
                             <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
-
                         </label>
-
                     </th>
-
-                    <th>Fecha<br>Operación</th>
-                    <th>Importe</th>
-                    <th>Tipo de operación</th>
-                    <th>Nombre del<br>archivo</th>
-                    <th>Total de<br> pagos</th>
-                    <th>Fecha programada</th>
-                    <!-- <th class="transaction-recipient__table-th-right">Estado</th> -->
-
+                    <th>Fecha<br>Operación</th><th>Importe</th><th>Tipo de operación</th><th>Nombre del<br>archivo</th>
+                    <th>Total de<br> pagos</th><th>Fecha programada</th>
                 </tr>
             </thead>
             <tbody>
-
                 <tr>
-
                     <td data-label="Opciones">
-                        <img
-                            class="transaction-recipient__image-options"
-                            src="/frontend/public/assets/icons/icon_option_points_black.svg"
-                            alt="">
+                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg" alt="">
                     </td>
-
-                    <td
-                        data-label="Seleccionar"
-                        class="bankfleet_scheduled_consultations-table__checkbox-cell">
-
+                    <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
                         <label class="bankfleet_scheduled_consultations-table__checkbox">
-
-                            <input
-                                type="checkbox"
-                                class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
-
+                            <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
                             <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
-
                         </label>
-
                     </td>
-
-                    <td data-label="Fecha Operación">
-                        15/05/2025
-                    </td>
-
-                    <td data-label="Importe">
-                        $ 5.250.000
-                    </td>
-
-                    <td data-label="Tipo de operación">
-                        En linea
-                    </td>
-
-                    <td data-label="Nombre del archivo">
-                        Pago mes enero
-                    </td>
-
-                    <td data-label="Total de pagos">
-                        5
-                    </td>
-
-                    <td data-label="Fecha programada">
-                        01/01/2026
-                    </td>
-
+                    <td data-label="Fecha Operación">15/05/2025</td>
+                    <td data-label="Importe">$ 5.250.000</td>
+                    <td data-label="Tipo de operación">En linea</td>
+                    <td data-label="Nombre del archivo">Pago mes enero</td>
+                    <td data-label="Total de pagos">5</td>
+                    <td data-label="Fecha programada">01/01/2026</td>
                 </tr>
-
             </tbody>
-
         </table>
-
     </div>
-
 </section>

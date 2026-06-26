@@ -1,227 +1,82 @@
-<!-- ================== Historial de Transacciones ================== -->
 <section class="payroll-payment-history-table">
-
     <div class="payroll-payment-history-table__header">
-
         <div class="payroll-payment-history-table__header-container">
-
-            <a
-                href="javascript:history.back()" alt="Volver"
-                class="bankfleet-btn-secondary payroll-payment-history-table__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_back.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon payroll-payment-history-table__btn-secondary-icon">
+            <a href="javascript:history.back()" alt="Volver" class="bankfleet-btn-secondary payroll-payment-history-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="bankfleet-btn-secondary__icon payroll-payment-history-table__btn-secondary-icon">
             </a>
-
             <div class="payroll-payment-history-table__content">
-
                 <div class="payroll-payment-history-table__title-container">
-
-                    <h1 class="payroll-payment-history-table__title">
-                        Historial de pagos de nómina
-                    </h1>
-
+                    <h1 class="payroll-payment-history-table__title">Historial de pagos de nómina</h1>
                 </div>
-
-                <p class="payroll-payment-history-table__subtitle">
-                    Consulta y monitorea todas las operaciones financieras realizadas.
-                </p>
-
+                <p class="payroll-payment-history-table__subtitle">Consulta y monitorea todas las operaciones financieras realizadas.</p>
             </div>
-
         </div>
         <div class="payroll-payment-history-table__field">
-
-    <label
-        for="payroll-group"
-        class="payroll-payment-history-table__label">
-
-        Grupo de nómina
-
-    </label>
-
+    <label for="payroll-group" class="payroll-payment-history-table__label">Grupo de nómina</label>
     <div class="payroll-payment-history-table__select-wrapper">
-
-            <select
-                id="payroll-group"
-                class="payroll-payment-history-table__select">
-
-                <option value="">
-                    Selecciona un grupo de nómina
-                </option>
-
-                <option value="administrativo">
-                    Administrativo
-                </option>
-
-                <option value="operativo">
-                    Operativo
-                </option>
-
-                <option value="ventas">
-                    Ventas
-                </option>
-
-                <option value="gerencia">
-                    Gerencia
-                </option>
-
-                <option value="contratistas">
-                    Contratistas
-                </option>
-
+            <select id="payroll-group" class="payroll-payment-history-table__select">
+                <option value="">Selecciona un grupo de nómina</option>
+                <option value="administrativo">Administrativo</option>
+                <option value="operativo">Operativo</option>
+                <option value="ventas">Ventas</option>
+                <option value="gerencia">Gerencia</option>
+                <option value="contratistas">Contratistas</option>
             </select>
-
-            <img
-                src="/frontend/public/assets/icons/icon_arrow_below.svg"
-                alt=""
-                class="payroll-payment-history-table__select-icon">
-
+            <img src="/frontend/public/assets/icons/icon_arrow_below.svg" alt="" class="payroll-payment-history-table__select-icon">
         </div>
-
     </div>
-
     </div>
     <div class="class payroll-payment-history-table__separeitor-actions">
         <div class="payroll-payment-history-table__search">
-
-            <img
-                src="/frontend/public/assets/icons/icon_search.svg"
-                alt="Buscar"
-                class="payroll-payment-history-table__search-icon">
-
-            <input
-                type="text"
-                placeholder="Buscar operación..."
-                class="payroll-payment-history-table__search-input">
-
+            <img src="/frontend/public/assets/icons/icon_search.svg" alt="Buscar" class="payroll-payment-history-table__search-icon">
+            <input type="text" placeholder="Buscar operación..." class="payroll-payment-history-table__search-input">
         </div>
         <div class="payroll-payment-history-table__separeitor-actions-buttons">
-            <a
-                href="/"
-                class="bankfleet-btn-secondary payroll-payment-history-table__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_filter_white.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon payroll-payment-history-table__btn-secondary-icon">Filtrar
+            <a href="/" class="bankfleet-btn-secondary payroll-payment-history-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_filter_white.svg" alt="" class="bankfleet-btn-secondary__icon payroll-payment-history-table__btn-secondary-icon">Filtrar
             </a>
-            <a
-                href="/"
-                class="bankfleet-btn-secondary payroll-payment-history-table__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_download_white.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon payroll-payment-history-table__btn-secondary-icon">Descargar
+            <a href="/" class="bankfleet-btn-secondary payroll-payment-history-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_download_white.svg" alt="" class="bankfleet-btn-secondary__icon payroll-payment-history-table__btn-secondary-icon">Descargar
             </a>
         </div>
     </div>
-
     <div class="payroll-payment-history-table__table-wrapper">
-
         <table class="payroll-payment-history-table__table">
-
             <thead>
                 <tr>
-
                     <th class="transaction-recipient__table-th">
-                        <img
-                            class="transaction-recipient__image-options"
-                            src="/frontend/public/assets/icons/icon_settings_white.svg"
-                            alt="Opciones">
+                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg" alt="Opciones">
                     </th>
-
                     <th class="payroll-payment-history-table__checkbox-column">
-
                         <label class="payroll-payment-history-table__checkbox">
-
-                            <input
-                                type="checkbox"
-                                id="select-all-payrolls"
-                                class="payroll-payment-history-table__checkbox-input">
-
+                            <input type="checkbox" id="select-all-payrolls" class="payroll-payment-history-table__checkbox-input">
                             <span class="payroll-payment-history-table__checkbox-box"></span>
-
                         </label>
-
                     </th>
-
-                    <th>Fecha<br>Operación</th>
-                    <th>Importe</th>
-                    <th>Tipo de<br>operación</th>
-                    <th>Nombre del<br>archivo</th>
-                    <th>Total de<br>pagos</th>
-                    <th>Fecha de<br>dispersión</th>
-                    <th class="transaction-recipient__table-th-right">Estado</th>
-
+                    <th>Fecha<br>Operación</th><th>Importe</th><th>Tipo de<br>operación</th><th>Nombre del<br>archivo</th><th>Total de<br>pagos</th>
+                    <th>Fecha de<br>dispersión</th><th class="transaction-recipient__table-th-right">Estado</th>
                 </tr>
             </thead>
             <tbody>
-
                 <tr>
-
                     <td data-label="Opciones">
-                        <img
-                            class="transaction-recipient__image-options"
-                            src="/frontend/public/assets/icons/icon_option_points_black.svg"
-                            alt="">
+                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg" alt="">
                     </td>
-
-                    <td
-                        data-label="Seleccionar"
-                        class="payroll-payment-history-table__checkbox-cell">
-
+                    <td data-label="Seleccionar" class="payroll-payment-history-table__checkbox-cell">
                         <label class="payroll-payment-history-table__checkbox">
-
-                            <input
-                                type="checkbox"
-                                class="payroll-payment-history-table__checkbox-input payroll-row-checkbox">
-
+                            <input type="checkbox" class="payroll-payment-history-table__checkbox-input payroll-row-checkbox">
                             <span class="payroll-payment-history-table__checkbox-box"></span>
-
                         </label>
-
                     </td>
-
-                    <td data-label="Fecha Operación">
-                        15/05/2025
-                    </td>
-
-                    <td data-label="Importe">
-                        $ 5.250.000
-                    </td>
-
-                    <td data-label="Tipo de operación">
-                        En linea
-                    </td>
-
-                    <td data-label="Nombre del archivo">
-                        Pago mes enero
-                    </td>
-
-                    <td data-label="Total de pagos">
-                        5
-                    </td>
-
-                    <td data-label="Fecha de dispersión">
-                        01/01/2026
-                    </td>
-
-                    <td data-label="Estado">
-                        <span class="transaction-status transaction-status--success">
-                            Ejecutada
-                        </span>
-                    </td>
-
+                    <td data-label="Fecha Operación">15/05/2025</td>
+                    <td data-label="Importe">$ 5.250.000</td>
+                    <td data-label="Tipo de operación">En linea</td>
+                    <td data-label="Nombre del archivo">Pago mes enero</td>
+                    <td data-label="Total de pagos">5</td>
+                    <td data-label="Fecha de dispersión">01/01/2026</td>
+                    <td data-label="Estado"><span class="transaction-status transaction-status--success">Ejecutada</span></td>
                 </tr>
-
             </tbody>
-
         </table>
-
     </div>
-
 </section>

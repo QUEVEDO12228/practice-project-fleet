@@ -6,8 +6,6 @@
     grid-template-columns:1fr 380px;
     box-sizing:border-box;
 }
-
-/* CONTENT */
 .bankfleet-frequent-contacts__content{
     background:var(--primary-800);
     border:2px solid rgba(255,255,255,.08);
@@ -15,21 +13,17 @@
     padding:32px;
     backdrop-filter:blur(60px);
 }
-
-/* HEADER */
 .bankfleet-frequent-contacts__header{
     display:flex;
     align-items:flex-start;
     gap:var(--gap-md);
     margin-bottom:var(--gap-lg);
 }
-
 .bankfleet-frequent-contacts__header-content{
     display:flex;
     flex-direction:column;
     flex:1;
 }
-
 .bankfleet-frequent-contacts__header-texts{
     display:flex;
     justify-content:space-between;
@@ -37,21 +31,18 @@
     flex-wrap:wrap;
     gap:var(--gap-md);
 }
-
 .bankfleet-frequent-contacts__title{
     margin:0;
     color:var(--white);
     font-size:var(--fs-xxs);
     font-family:var(--font-primary-bold);
 }
-
 .bankfleet-frequent-contacts__subtitle{
     margin:0;
     color:var(--gray-300);
     font-size:var(--fs-xxxxs);
     line-height:1.8;
 }
-
 .bankfleet-frequent-contacts__badge{
     padding:8px 14px;
     border-radius:var(--radius-full);
@@ -59,28 +50,22 @@
     color:var(--secondary-300);
     font-size:var(--fs-xxxxs);
 }
-
-/* GRID */
 .bankfleet-frequent-contacts__grid{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:24px;
     margin-top:var(--gap-lg);
 }
-
-/* CONTACTS */
 .bankfleet-frequent-contacts__section-title{
     color:var(--white);
     font-size:var(--fs-xxs);
     margin-bottom:var(--gap-md);
 }
-
 .bankfleet-frequent-contacts__list{
     display:flex;
     flex-direction:column;
     gap:12px;
 }
-
 .bankfleet-frequent-contacts__card{
     display:flex;
     align-items:center;
@@ -92,17 +77,14 @@
     cursor:pointer;
     transition:var(--transition-normal);
 }
-
 .bankfleet-frequent-contacts__card:hover{
     border-color:rgba(139,92,246,.35);
     transform:translateY(-2px);
 }
-
 .bankfleet-frequent-contacts__card--active{
     border-color:rgba(139,92,246,.5);
     background:rgba(139,92,246,.08);
 }
-
 .bankfleet-frequent-contacts__avatar{
     width:38px;
     height:38px;
@@ -114,48 +96,38 @@
     color:var(--white);
     font-weight:bold;
 }
-
 .bankfleet-frequent-contacts__info strong{
     color:var(--white);
     display:block;
     font-size: var(--fs-xxxs);
 }
-
 .bankfleet-frequent-contacts__info span{
     color:var(--gray-300);
     font-size:var(--fs-xxxxs);
 }
-
-/* FIELDS */
 .bankfleet-frequent-contacts__fields{
     display:flex;
     flex-direction:column;
     gap:var(--gap-lg);
 }
-
 .bankfleet-frequent-contacts__field{
     display:flex;
     flex-direction:column;
     gap:8px;
 }
-
 .bankfleet-frequent-contacts__field--full{
     grid-column:1 / -1;
 }
-
 .bankfleet-frequent-contacts__label{
     color:var(--white);
     font-size:var(--fs-xxxxs);
 }
-
-/* INPUTS */
 .bankfleet-frequent-contacts__input,
 .bankfleet-frequent-contacts__amount-input{
     width:100%;
     max-width:300px;
     min-width:300px;
 }
-
 .bankfleet-frequent-contacts__input{
     height:48px;
     padding:0 18px;
@@ -164,7 +136,6 @@
     background:rgba(255,255,255,.04);
     color:var(--white);
 }
-
 .bankfleet-frequent-contacts__amount-input{
     height:56px;
     border-radius:18px;
@@ -173,8 +144,6 @@
     background:rgba(255,255,255,.04);
     color:var(--white);
 }
-
-/* TEXTAREA */
 .bankfleet-frequent-contacts__textarea{
     width:100%;
     min-height:120px;
@@ -185,14 +154,11 @@
     color:var(--white);
     resize:none;
 }
-
-/* SUMMARY */
 .bankfleet-frequent-contacts__union-summary-btn{
     display:flex;
     flex-direction:column;
     margin-left:var(--gap-lg);
 }
-
 .bankfleet-frequent-contacts__summary{
     width:280px;
     background:var(--primary-800);
@@ -200,65 +166,52 @@
     border-radius:var(--radius-xxl);
     padding:28px;
 }
-
 .bankfleet-frequent-contacts__summary-title{
     color:var(--white);
     font-size:var(--fs-xs);
     margin-bottom:var(--gap-lg);
 }
-
 .bankfleet-frequent-contacts__summary-item{
     display:flex;
     justify-content:space-between;
     padding:14px 0;
     border-bottom:1px solid rgba(255,255,255,.06);
 }
-
 .bankfleet-frequent-contacts__summary-item:last-child{
     border-bottom:none;
 }
-
 .bankfleet-frequent-contacts__summary-label{
     color:var(--gray-300);
     font-size:var(--fs-xxxxs);
 }
-
 .bankfleet-frequent-contacts__summary-value{
     color:var(--white);
     font-weight:600;
 }
-
-/* ACTIONS */
 .bankfleet-frequent-contacts__actions{
     margin-top:var(--gap-lg);
     display:flex;
     justify-content:flex-end;
     max-width:280px;
 }
-
-/* RESPONSIVE */
 @media (max-width:1100px){
     .bankfleet-frequent-contacts{
         grid-template-columns:1fr;
     }
-
     .bankfleet-frequent-contacts__union-summary-btn{
         margin-left:0;
         margin-top:var(--gap-lg);
     }
 }
-
 @media (max-width:768px){
     .bankfleet-frequent-contacts__grid{
         grid-template-columns:1fr;
     }
-
     .bankfleet-frequent-contacts__input,
     .bankfleet-frequent-contacts__amount-input{
         max-width:100%;
     }
 }
-
 @media (max-width:480px){
     .bankfleet-frequent-contacts__content,
     .bankfleet-frequent-contacts__summary{

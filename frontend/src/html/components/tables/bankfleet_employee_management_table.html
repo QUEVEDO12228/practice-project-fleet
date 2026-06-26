@@ -1,341 +1,111 @@
-<!-- ================== Gestión de Empleados ================== -->
-
 <section class="bankfleet-employees-table">
-
     <div class="bankfleet-employees-table__header">
-
         <div class="bankfleet-employees-table__header-container">
             <a href="javascript:history.back()" alt="Volver" class="bankfleet-btn-secondary bankfleet-employees-table__btn-secondary"> 
                 <img src="/frontend/public/assets/icons/icon_back.svg" alt="Volver" class="bankfleet-btn-secondary__icon bankfleet-employees-table__btn-secondary-icon"> 
             </a>
-
-
             <div class="bankfleet-employees-table__container text">
-
-                <h1 class="bankfleet-employees-table__title">
-                    Administrar Empleados
-                </h1>
-
-                <p class="bankfleet-employees-table__subtitle">
-                    Administra la información de los colaboradores del grupo de nómina.
-                </p>
+                <h1 class="bankfleet-employees-table__title">Administrar Empleados</h1>
+                <p class="bankfleet-employees-table__subtitle">Administra la información de los colaboradores del grupo de nómina.</p>
             </div>
-
         </div>
-        <button
-            type="button"
-            class="bankfleet-btn bankfleet-btn--primary">
-
-            Agregar Empleado
-
-            <img
-                src="/frontend/public/assets/icons/icon_sum_white.svg"
-                alt=""
-                class="bankfleet-btn__icon">
-
+        <button type="button" class="bankfleet-btn bankfleet-btn--primary">Agregar Empleado
+            <img src="/frontend/public/assets/icons/icon_sum_white.svg" alt="" class="bankfleet-btn__icon">
         </button>
-
     </div>
-
     <div class="bankfleet-employees-table__container-buttons">
-
         <div class="bankfleet-employees-table__search">
-
-            <img
-                src="/frontend/public/assets/icons/icon_search.svg"
-                alt="Buscar"
-                class="bankfleet-employees-table__search-icon">
-
-            <input
-                type="text"
-                placeholder="Buscar operación..."
-                class="bankfleet-employees-table__search-input">
-
+            <img src="/frontend/public/assets/icons/icon_search.svg" alt="Buscar" class="bankfleet-employees-table__search-icon">
+            <input type="text" placeholder="Buscar operación..." class="bankfleet-employees-table__search-input">
         </div>
         <div class="bankfleet-employees-table__container-buttons-buttons"> 
-            <a
-                href="/"
-                class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_filter_white.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">Filtrar
+            <a href="/" class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_filter_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">Filtrar
             </a>
-            <a
-                href="/"
-                class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_download_white.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">Descargar
+            <a href="/" class="bankfleet-btn-secondary bankfleet-transactions__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_download_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">Descargar
             </a>
         </div>
     </div>
-
     <div class="bankfleet-employees-table__table-wrapper">
-
         <table class="bankfleet-employees-table__table">
-
             <thead>
-
                 <tr>
                     <th><img class="bankfleet-employees-table__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg"></th>
-                    <th>Empleado</th>
-                    <th>Cargo</th>
-                    <th>Correo</th>
-                    <th>Fecha Alta</th>
-                    <th>Banco</th>
-                    <th>Tipo Cuenta</th>
-                    <th>No. Cuenta</th>
-                    <th>Operación</th>
-                    <th>Archivo Banco</th>
-                    <th>Estado</th>
+                    <th>Empleado</th><th>Cargo</th><th>Correo</th><th>Fecha Alta</th><th>Banco</th><th>Tipo Cuenta</th>
+                    <th>No. Cuenta</th><th>Operación</th><th>Archivo Banco</th><th>Estado</th>
                 </tr>
-
             </thead>
-
             <tbody>
-
-                <!-- EMPLEADO 1 -->
-
                 <tr>
-
                     <td data-label="ID">
                         <img class="bankfleet-employees-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
                     </td>
-
                     <td data-label="Empleado">
-
                         <div class="employee">
-
-                            <div class="employee__avatar">
-                                JG
-                            </div>
-
+                            <div class="employee__avatar">JG</div>
                             <div class="employee__info">
-
-                                <span class="employee__name">
-                                    Julián Gil
-                                </span>
-
-                                <span class="employee__document">
-                                    CC 1088547896
-                                </span>
-
+                                <span class="employee__name">Julián Gil</span>
+                                <span class="employee__document">CC 1088547896</span>
                             </div>
-
                         </div>
-
                     </td>
-
-                    <td data-label="Cargo">
-                        Analista<br>de Nómina
-                    </td>
-
-                    <td data-label="Correo">
-                        juliangil<br>@gmail.com
-                    </td>
-
-                    <td data-label="Fecha Alta">
-                        15/01/2025
-                    </td>
-
-                    <td data-label="Banco">
-                        Bancolombia
-                    </td>
-
-                    <td data-label="Tipo Cuenta">
-                        Ahorros
-                    </td>
-
-                    <td data-label="No. Cuenta">
-                        ****7412
-                    </td>
-
-                    <td data-label="Operación">
-
-                        <span class="operation-badge operation-badge--online">
-                            Línea
-                        </span>
-
-                    </td>
-
-                    <td data-label="Archivo Banco">
-                        nomina_enero.xlsx
-                    </td>
-
-                    <td data-label="Estado">
-
-                        <span class="status status--active">
-                            Activo
-                        </span>
-
-                    </td>
-
-                    
-
+                    <td data-label="Cargo">Analista<br>de Nómina</td>
+                    <td data-label="Correo">juliangil<br>@gmail.com</td>
+                    <td data-label="Fecha Alta">15/01/2025</td>
+                    <td data-label="Banco">Bancolombia</td>
+                    <td data-label="Tipo Cuenta">Ahorros</td>
+                    <td data-label="No. Cuenta">****7412</td>
+                    <td data-label="Operación"><span class="operation-badge operation-badge--online">Línea</span></td>
+                    <td data-label="Archivo Banco">nomina_enero.xlsx</td>
+                    <td data-label="Estado"><span class="status status--active">Activo</span></td>
                 </tr>
-
-                <!-- EMPLEADO 2 -->
-
                 <tr>
-
                     <td data-label="ID">
                         <img class="bankfleet-employees-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
                     </td>
-
                     <td data-label="Empleado">
-
                         <div class="employee">
-
-                            <div class="employee__avatar">
-                                DA
-                            </div>
-
+                            <div class="employee__avatar">JG</div>
                             <div class="employee__info">
-
-                                <span class="employee__name">
-                                    Daniela Arias
-                                </span>
-
-                                <span class="employee__document">
-                                    CC 1098745123
-                                </span>
-
+                                <span class="employee__name">Julián Gil</span>
+                                <span class="employee__document">CC 1088547896</span>
                             </div>
-
                         </div>
-
                     </td>
-
-                    <td data-label="Cargo">
-                        Líder<br>RRHH
-                    </td>
-
-                    <td data-label="Correo">
-                        danielaa<br>@gmail.com
-                    </td>                    <td data-label="Fecha Alta">
-                        08/02/2025
-                    </td>
-
-                    <td data-label="Banco">
-                        Davivienda
-                    </td>
-
-                    <td data-label="Tipo Cuenta">
-                        Corriente
-                    </td>
-
-                    <td data-label="No. Cuenta">
-                        ****6321
-                    </td>
-
-                    <td data-label="Operación">
-
-                        <span class="operation-badge operation-badge--file">
-                            Archivo
-                        </span>
-
-                    </td>
-
-                    <td data-label="Archivo Banco">
-                        lote_rrhh_febrero.txt
-                    </td>
-
-                    <td data-label="Estado">
-
-                        <span class="status status--active">
-                            Activo
-                        </span>
-
-                    </td>
-
-                    
-
+                    <td data-label="Cargo">Analista<br>de Nómina</td>
+                    <td data-label="Correo">juliangil<br>@gmail.com</td>
+                    <td data-label="Fecha Alta">15/01/2025</td>
+                    <td data-label="Banco">Bancolombia</td>
+                    <td data-label="Tipo Cuenta">Ahorros</td>
+                    <td data-label="No. Cuenta">****7412</td>
+                    <td data-label="Operación"><span class="operation-badge operation-badge--online">Línea</span></td>
+                    <td data-label="Archivo Banco">nomina_enero.xlsx</td>
+                    <td data-label="Estado"><span class="status status--active">Activo</span></td>
                 </tr>
-
-                <!-- EMPLEADO 3 -->
-
                 <tr>
-
                     <td data-label="ID">
                         <img class="bankfleet-employees-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
                     </td>
-
                     <td data-label="Empleado">
-
                         <div class="employee">
-
-                            <div class="employee__avatar">
-                                SV
-                            </div>
-
+                            <div class="employee__avatar">JG</div>
                             <div class="employee__info">
-
-                                <span class="employee__name">
-                                    Sebastián Valencia
-                                </span>
-
-                                <span class="employee__document">
-                                    CC 1001547823
-                                </span>
-
+                                <span class="employee__name">Julián Gil</span>
+                                <span class="employee__document">CC 1088547896</span>
                             </div>
-
                         </div>
-
                     </td>
-
-                    <td data-label="Cargo">
-                        Auditor<br>Financiero
-                    </td>
-
-                    <td data-label="Correo">
-                        sebastianv<br>@gmail.com
-                    </td>
-
-                    <td data-label="Fecha Alta">
-                        20/03/2025
-                    </td>
-
-                    <td data-label="Banco">
-                        BBVA
-                    </td>
-
-                    <td data-label="Tipo Cuenta">
-                        Ahorros
-                    </td>
-
-                    <td data-label="No. Cuenta">
-                        ****2365
-                    </td>
-
-                    <td data-label="Operación">
-
-                        <span class="operation-badge operation-badge--online">
-                            Línea
-                        </span>
-
-                    </td>
-
-                    <td data-label="Archivo Banco">
-                        auditoria_marzo.xlsx
-                    </td>
-
-                    <td data-label="Estado">
-
-                        <span class="status status--inactive">
-                            Suspendido
-                        </span>
-
-                    </td>
-
-                    
-
+                    <td data-label="Cargo">Analista<br>de Nómina</td>
+                    <td data-label="Correo">juliangil<br>@gmail.com</td>
+                    <td data-label="Fecha Alta">15/01/2025</td>
+                    <td data-label="Banco">Bancolombia</td>
+                    <td data-label="Tipo Cuenta">Ahorros</td>
+                    <td data-label="No. Cuenta">****7412</td>
+                    <td data-label="Operación"><span class="operation-badge operation-badge--online">Línea</span></td>
+                    <td data-label="Archivo Banco">nomina_enero.xlsx</td>
+                    <td data-label="Estado"><span class="status status--inactive">Suspendido</span></td>
                 </tr>
-
             </tbody>
 
         </table>

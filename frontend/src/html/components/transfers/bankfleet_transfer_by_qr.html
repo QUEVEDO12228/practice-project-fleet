@@ -1,80 +1,32 @@
 <section class="bankfleet-transfer-qr">
-
     <div class="bankfleet-transfer-qr__content">
-
         <header class="bankfleet-transfer-qr__header">
-
             <a href="/frontend/src/html/pages/dashboard/banking/transfers/cards/vista_bankfleet_new_transfer.html" class="bankfleet-btn-secondary">
-                <img
-                    src="/frontend/public/assets/icons/icon_back.svg"
-                    alt="Atrás"
-                    class="bankfleet-btn-secondary__icon"
-                >
+                <img src="/frontend/public/assets/icons/icon_back.svg" alt="Atrás" class="bankfleet-btn-secondary__icon">
             </a>
-
             <div class="bankfleet-transfer-qr__header-content">
                 <div class="bankfleet-transfer-qr__content-title-badge">
-
-                    <h2 class="bankfleet-transfer-qr__title">
-                        Transferencia por QR
-                    </h2>
-                    <span class="bankfleet-transfer-qr__badge">
-                        Smart Pay
-                    </span>
+                    <h2 class="bankfleet-transfer-qr__title">Transferencia por QR</h2>
+                    <span class="bankfleet-transfer-qr__badge">Smart Pay</span>
                 </div>
-
-
                 <div class="bankfleet-transfer-qr__header-texts">
-
-                    <p class="bankfleet-transfer-qr__subtitle">
-                        Escanea un código QR y realiza pagos o transferencias rápidas sin ingresar datos manualmente.
-                    </p>
-
-                    
-
+                    <p class="bankfleet-transfer-qr__subtitle">Escanea un código QR y realiza pagos o transferencias rápidas sin ingresar datos manualmente.</p>
                 </div>
-
             </div>
-
         </header>
-
         <form class="bankfleet-transfer-qr__form">
-
             <div class="bankfleet-transfer-qr__grid">
-
-                <!-- QR SCANNER -->
                 <div class="bankfleet-transfer-qr__scanner">
-
-                    <h3 class="bankfleet-transfer-qr__section-title">
-                        Escanear QR
-                    </h3>
-
+                    <h3 class="bankfleet-transfer-qr__section-title">Escanear QR</h3>
                     <div class="bankfleet-transfer-qr__scanner-box">
-
-                        <div class="bankfleet-transfer-qr__scanner-frame">
-                            <div class="bankfleet-transfer-qr__scanner-line"></div>
-                        </div>
-
-                        <p class="bankfleet-transfer-qr__scanner-text">
-                            Coloca el código QR dentro del marco
-                        </p>
-
-                        <button type="button" class="bankfleet-btn bankfleet-btn--primary bankfleet-transfer-qr__scan-btn">
-                            Activar cámara
-                            <img
-                                src="/frontend/public/assets/icons/icon_camera_white.svg"
-                                alt=""
-                                class="bankfleet-btn__icon"
-                            >
+                        <div class="bankfleet-transfer-qr__scanner-frame"><div class="bankfleet-transfer-qr__scanner-line"></div></div>
+                        <p class="bankfleet-transfer-qr__scanner-text">Coloca el código QR dentro del marco</p>
+                        <button type="button" class="bankfleet-btn bankfleet-btn--primary bankfleet-transfer-qr__scan-btn">Activar cámara
+                            <img src="/frontend/public/assets/icons/icon_camera_white.svg" alt="" class="bankfleet-btn__icon" >
                         </button>
-
                     </div>
-
                 </div>
-
-                <!-- FORM FIELDS -->
                 <div class="bankfleet-transfer-qr__fields">
-
                     <div class="bankfleet-transfer-qr__field">
                         <label class="bankfleet-transfer-qr__label">Cuenta origen</label>
                         <select class="bankfleet-transfer-qr__input">
@@ -82,85 +34,33 @@
                             <option>Cuenta Corriente • ****9831</option>
                         </select>
                     </div>
-
                     <div class="bankfleet-transfer-qr__field">
                         <label class="bankfleet-transfer-qr__label">Monto (opcional)</label>
-                        <input
-                            type="text"
-                            class="bankfleet-transfer-qr__amount-input"
-                            placeholder="$0"
-                        >
+                        <input type="text" class="bankfleet-transfer-qr__amount-input" placeholder="$0">
                     </div>
-
                     <div class="bankfleet-transfer-qr__field bankfleet-transfer-qr__field--full">
                         <label class="bankfleet-transfer-qr__label">Concepto</label>
-                        <textarea
-                            class="bankfleet-transfer-qr__textarea"
-                            placeholder="Pago mediante QR"
-                        ></textarea>
+                        <textarea class="bankfleet-transfer-qr__textarea" placeholder="Pago mediante QR"></textarea>
                     </div>
-
                 </div>
-
             </div>
-
         </form>
-
     </div>
-
-    <!-- SUMMARY -->
     <div class="bankfleet-transfer-qr__union-summary-btn">
-
         <aside class="bankfleet-transfer-qr__summary">
-
-            <h3 class="bankfleet-transfer-qr__summary-title">
-                Resumen
-            </h3>
-
+            <h3 class="bankfleet-transfer-qr__summary-title">Resumen</h3>
             <div class="bankfleet-transfer-qr__summary-list">
-
-                <div class="bankfleet-transfer-qr__summary-item">
-                    <span class="bankfleet-transfer-qr__summary-label">Destino</span>
-                    <strong class="bankfleet-transfer-qr__summary-value">QR Detectado</strong>
-                </div>
-
-                <div class="bankfleet-transfer-qr__summary-item">
-                    <span class="bankfleet-transfer-qr__summary-label">Beneficiario</span>
-                    <strong class="bankfleet-transfer-qr__summary-value">-</strong>
-                </div>
-
-                <div class="bankfleet-transfer-qr__summary-item">
-                    <span class="bankfleet-transfer-qr__summary-label">Monto</span>
-                    <strong class="bankfleet-transfer-qr__summary-value">$0</strong>
-                </div>
-
-                <div class="bankfleet-transfer-qr__summary-item">
-                    <span class="bankfleet-transfer-qr__summary-label">Comisión</span>
-                    <strong class="bankfleet-transfer-qr__summary-value">$0</strong>
-                </div>
-
-                <div class="bankfleet-transfer-qr__summary-item">
-                    <span class="bankfleet-transfer-qr__summary-label">Estado</span>
-                    <strong class="bankfleet-transfer-qr__summary-value">Esperando escaneo</strong>
-                </div>
-
+                <div class="bankfleet-transfer-qr__summary-item"><span class="bankfleet-transfer-qr__summary-label">Destino</span><strong class="bankfleet-transfer-qr__summary-value">QR Detectado</strong></div>
+                <div class="bankfleet-transfer-qr__summary-item"><span class="bankfleet-transfer-qr__summary-label">Beneficiario</span><strong class="bankfleet-transfer-qr__summary-value">-</strong></div>
+                <div class="bankfleet-transfer-qr__summary-item"><span class="bankfleet-transfer-qr__summary-label">Monto</span><strong class="bankfleet-transfer-qr__summary-value">$0</strong></div>
+                <div class="bankfleet-transfer-qr__summary-item"><span class="bankfleet-transfer-qr__summary-label">Comisión</span><strong class="bankfleet-transfer-qr__summary-value">$0</strong></div>
+                <div class="bankfleet-transfer-qr__summary-item"><span class="bankfleet-transfer-qr__summary-label">Estado</span><strong class="bankfleet-transfer-qr__summary-value">Esperando escaneo</strong></div>
             </div>
-
         </aside>
-
         <div class="bankfleet-transfer-qr__actions">
-
-            <button type="button" class="bankfleet-btn bankfleet-btn--primary bankfleet-transfer-qr__btn-primary">
-                Pagar
-                <img
-                    src="/frontend/public/assets/icons/icon_next-white.svg"
-                    alt=""
-                    class="bankfleet-btn__icon"
-                >
+            <button type="button" class="bankfleet-btn bankfleet-btn--primary bankfleet-transfer-qr__btn-primary">Pagar
+                <img src="/frontend/public/assets/icons/icon_next-white.svg" alt="" class="bankfleet-btn__icon">
             </button>
-
         </div>
-
     </div>
-
 </section>

@@ -1,164 +1,134 @@
 .bankfleet-scheduled-queries-table{
-width:100%;
-background:linear-gradient(
-135deg,
-var(--primary-900) 0%,
-var(--primary-800) 100%
-);
-padding:24px;
-box-shadow:var(--shadow-primary);
-font-family:var(--font-primary);
+    width:100%;
+    background:linear-gradient( 135deg, var(--primary-900) 0%, var(--primary-800) 100% );
+    padding:24px;
+    box-shadow:var(--shadow-primary);
+    font-family:var(--font-primary);
 }
-
 .bankfleet-scheduled-queries-table__header{
-margin-bottom:24px;
+    margin-bottom:24px;
 }
-
 .bankfleet-scheduled-queries-table__header-container{
-display:flex;
-align-items:flex-start;
-gap:24px;
+    display:flex;
+    align-items:flex-start;
+    gap:24px;
 }
-
 .bankfleet-scheduled-queries-table__title-container{
-display:flex;
-align-items:center;
-gap:12px;
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
-
 .bankfleet-scheduled-queries-table__title{
-font-size:var(--fs-xs);
-color:var(--white);
-font-family:var(--font-primary-bold);
+    font-size:var(--fs-xs);
+    color:var(--white);
+    font-family:var(--font-primary-bold);
 }
-
 .bankfleet-scheduled-queries-table__subtitle{
-font-size:var(--fs-xxxs);
-color:var(--gray-300);
+    font-size:var(--fs-xxxs);
+    color:var(--gray-300);
 }
-
 .bankfleet-scheduled-queries-table__table-wrapper{
-overflow-x:auto;
+    overflow-x:auto;
 }
-
 .bankfleet-scheduled-queries-table__table{
-width:100%;
-min-width:900px;
-border-collapse:collapse;
-background:var(--white);
+    width:100%;
+    min-width:900px;
+    border-collapse:collapse;
+    background:var(--white);
 }
-
 .bankfleet-scheduled-queries-table__table thead{
-background:var(--primary-900);
+    background:var(--primary-900);
 }
-
 .query-table__image-options{
-width:16px;
-height:16px;
-margin-left:.6rem;
+    width:16px;
+    height:16px;
+    margin-left:.6rem;
 }
-
 .bankfleet-scheduled-queries-table__table th{
-padding:8px;
-color:var(--white);
-text-align:left;
-font-size:var(--fs-xxxs);
+    padding:8px;
+    color:var(--white);
+    text-align:left;
+    font-size:var(--fs-xxxs);
 }
-
 .bankfleet-scheduled-queries-table__table td{
-padding:8px;
-border-bottom:1px solid var(--secondary-500);
-color:var(--black);
-font-size:var(--fs-xxxs);
+    padding:8px;
+    border-bottom:1px solid var(--secondary-500);
+    color:var(--black);
+    font-size:var(--fs-xxxs);
 }
-
 .bankfleet-scheduled-queries-table__table tbody tr:hover{
-background:var(--primary-50);
+    background:var(--primary-50);
 }
-
 .bankfleet-scheduled-queries-table__separeitor-actions{
-display:flex;
-justify-content:space-between;
+    display:flex;
+    justify-content:space-between;
 }
-
 .bankfleet-scheduled-queries-table__separeitor-actions-buttons{
-display:flex;
-gap:2.4rem;
+    display:flex;
+    gap:2.4rem;
 }
-
 .bankfleet-scheduled-queries-table__search{
-width:300px;
-position:relative;
-margin-bottom:24px;
+    width:300px;
+    position:relative;
+    margin-bottom:24px;
 }
-
 .bankfleet-scheduled-queries-table__search-icon{
-position:absolute;
-left:14px;
-top:32%;
-z-index:1;
-width:16px;
-height:16px;
+    position:absolute;
+    left:14px;
+    top:32%;
+    z-index:1;
+    width:16px;
+    height:16px;
 }
-
 .bankfleet-scheduled-queries-table__search-input{
-width:100%;
-height:44px;
-padding:0 16px 0 42px;
-box-sizing:border-box;
-border:1px solid rgba(255,255,255,.08);
-border-radius:14px;
-background:rgba(255,255,255,.04);
-backdrop-filter:blur(12px);
-color:var(--white);
-font-size:var(--fs-xxxxs);
-outline:none;
-transition:.25s;
+    width:100%;
+    height:44px;
+    padding:0 16px 0 42px;
+    box-sizing:border-box;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(12px);
+    color:var(--white);
+    font-size:var(--fs-xxxxs);
+    outline:none;
+    transition:.25s;
 }
-
 .bankfleet-scheduled-queries-table__search-input::placeholder{
-color:var(--gray-500);
+    color:var(--gray-500);
 }
-
 .bankfleet-scheduled-queries-table__search-input:focus{
-border-color:rgba(139,92,246,.45);
-background:rgba(255,255,255,.06);
-box-shadow:0 0 0 4px rgba(139,92,246,.12);
+    border-color:rgba(139,92,246,.45);
+    background:rgba(255,255,255,.06);
+    box-shadow:0 0 0 4px rgba(139,92,246,.12);
 }
-
 .query-transaction-type{
-padding:8px;
-border-radius:var(--radius-full);
-font-size:var(--fs-xxxs);
+    padding:8px;
+    border-radius:var(--radius-full);
+    font-size:var(--fs-xxxs);
 }
-
 .query-transaction-type--transfer{
-background:var(--secondary-100);
-color:var(--secondary-600);
+    background:var(--secondary-100);
+    color:var(--secondary-600);
 }
-
 .query-transaction-type--payment{
-background:var(--primary-100);
-color:var(--primary-700);
+    background:var(--primary-100);
+    color:var(--primary-700);
 }
-
 .query-transaction-type--supplier{
-background:var(--secondary-50);
-color:var(--secondary-500);
+    background:var(--secondary-50);
+    color:var(--secondary-500);
 }
-
 .query-register-type{
-padding:8px;
-border-radius:var(--radius-full);
-font-size:var(--fs-xxxs);
+    padding:8px;
+    border-radius:var(--radius-full);
+    font-size:var(--fs-xxxs);
 }
-
 .query-register-type--online{
-background:var(--tertiary-100);
-color:var(--tertiary-600);
+    background:var(--tertiary-100);
+    color:var(--tertiary-600);
 }
-
 .query-register-type--file{
-background:#DBEAFE;
-color:#1D4ED8;
+    background:#DBEAFE;
+    color:#1D4ED8;
 }

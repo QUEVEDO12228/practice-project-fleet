@@ -1,168 +1,98 @@
 .bankfleet_scheduled_consultations-table{
     width:100%;
-    /* margin:24px auto; */
-    background: linear-gradient(
-        135deg,
-        var(--primary-900) 0%,
-        var(--primary-800) 100%
-    );
-    /* border-radius:var(--radius-lg); */
+    background: linear-gradient( 135deg, var(--primary-900) 0%, var(--primary-800) 100%);
     padding:24px;
     box-shadow:var(--shadow-primary);
     font-family:var(--font-primary);
 }
-
 .bankfleet_scheduled_consultations-table__header{
     margin-bottom:24px;
 }
-
 .bankfleet_scheduled_consultations-table__header-container{
     display:flex;
     align-items:flex-start;
     gap:24px;
 }
-
 .bankfleet_scheduled_consultations-table__title-container{
     display:flex;
     align-items:center;
     gap:12px;
 }
-
 .bankfleet_scheduled_consultations-table__title{
     font-size:var(--fs-xs);
     color:var(--white);
     font-family:var(--font-primary-bold);
 }
-
 .bankfleet_scheduled_consultations-table__subtitle{
     font-size:var(--fs-xxxs);
     color:var(--gray-300);
     margin-bottom: 2.43rem;
 }
-
 .bankfleet_scheduled_consultations-table__menu-button{
     border:none;
     background:transparent;
     cursor:pointer;
 }
-
 .bankfleet_scheduled_consultations-table__toolbar{
     margin-bottom:24px;
 }
-
-/* ==========================================
-   SELECT GRUPO DE NOMINA
-========================================== */
-
 .bankfleet_scheduled_consultations-table__field{
     display:flex;
     flex-direction:column;
     gap:2px;
 }
-
 .bankfleet_scheduled_consultations-table__label{
     font-size:var(--fs-xxxxs);
     color:var(--white);
     font-family:var(--font-primary-semibold);
 }
-
 .bankfleet_scheduled_consultations-table__select-wrapper{
     position:relative;
     width:300px;
 }
-
 .bankfleet_scheduled_consultations-table__select{
-
     width:300px;
     height:48px;
-
-    padding:
-        0
-        42px
-        0
-        16px;
-
-    border:
-        1px solid var(--border-color);
-
-    border-radius:
-        var(--radius-md);
-
-    background:
-        var(--glass-color);
-
-    backdrop-filter:
-        blur(12px);
-
-    color:
-        var(--white);
-
-    font-size:
-        var(--fs-xxxxs);
-
-    font-family:
-        var(--font-primary);
-
+    padding: 0 42px 0 16px;
+    border:1px solid var(--border-color);
+    border-radius:var(--radius-md);
+    background: var(--glass-color);
+    backdrop-filter:blur(12px);
+    color:var(--white);
+    font-size: var(--fs-xxxxs);
+    font-family:var(--font-primary);
     outline:none;
-
     cursor:pointer;
-
     appearance:none;
     -webkit-appearance:none;
     -moz-appearance:none;
-
-    transition:
-        var(--transition-normal);
+    transition:var(--transition-normal);
 }
-
 .bankfleet_scheduled_consultations-table__select:hover{
-
-    border-color:
-        var(--secondary-400);
+    border-color:var(--secondary-400);
 }
-
 .bankfleet_scheduled_consultations-table__select:focus{
-
-    border-color:
-        var(--secondary-400);
-
-    box-shadow:
-        0 0 0 4px rgba(139,92,246,.15);
-
-    background:
-        rgba(255,255,255,.06);
+    border-color:var(--secondary-400);
+    box-shadow:0 0 0 4px rgba(139,92,246,.15);
+    background: rgba(255,255,255,.06);
 }
-
 .bankfleet_scheduled_consultations-table__select option{
-
-    background:
-        var(--primary-900);
-
-    color:
-        var(--white);
+    background: var(--primary-900);
+    color: var(--white);
 }
-
 .bankfleet_scheduled_consultations-table__select-icon{
-
     position:absolute;
-
     right:16px;
     top:50%;
-
-    transform:
-        translateY(-50%);
-
+    transform:translateY(-50%);
     width:14px;
     height:14px;
-
     pointer-events:none;
-
     opacity:.8;
 }
 .bankfleet_scheduled_consultations-table__table-wrapper{
     overflow-x:auto;
 }
-
 .bankfleet_scheduled_consultations-table__table{
     width:100%;
     min-width:900px;
@@ -170,10 +100,8 @@
     height: 100%;
     background-color: var(--white);
 }
-
 .bankfleet_scheduled_consultations-table__table thead{
     background:var(--primary-900);
-    
 }
 .transaction-recipient__image-options{
     width: 16px;
@@ -186,92 +114,59 @@
     text-align:left;
     font-size:var(--fs-xxxs);
 }
-
 .bankfleet_scheduled_consultations-table__table td{
     padding:8px 8px;
     border-bottom:1px solid var(--secondary-500);
     color:var(--black);
     font-size:var(--fs-xxxs);
 }
-/* ==========================================
-   CHECKBOX TABLE
-========================================== */
-
 .bankfleet_scheduled_consultations-table__checkbox-column,
 .bankfleet_scheduled_consultations-table__checkbox-cell{
     width:48px;
     text-align:center;
 }
-
 .bankfleet_scheduled_consultations-table__checkbox{
     position:relative;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     cursor:pointer;
 }
-
 .bankfleet_scheduled_consultations-table__checkbox-input{
-
     position:absolute;
-
     opacity:0;
-
     width:0;
     height:0;
 }
-
 .bankfleet_scheduled_consultations-table__checkbox-box{
-
     width:18px;
     height:18px;
-
     border-radius:6px;
-
     border:1.5px solid var(--secondary-300);
-
     background:transparent;
-
     transition:var(--transition-fast);
-
     position:relative;
 }
-
 .bankfleet_scheduled_consultations-table__checkbox-input:checked
 + .bankfleet_scheduled_consultations-table__checkbox-box{
-
     background:var(--secondary-500);
-
     border-color:var(--secondary-500);
 }
-
 .bankfleet_scheduled_consultations-table__checkbox-input:checked
 + .bankfleet_scheduled_consultations-table__checkbox-box::after{
-
     content:"";
-
     position:absolute;
-
     left:6px;
     top:2px;
-
     width:4px;
     height:8px;
-
     border:solid var(--white);
-
     border-width:0 2px 2px 0;
-
     transform:rotate(45deg);
 }
-
 .bankfleet_scheduled_consultations-table__checkbox:hover
 .bankfleet_scheduled_consultations-table__checkbox-box{
-
     border-color:var(--secondary-400);
-
     box-shadow:0 0 0 3px rgba(139,92,246,.15);
 }
 .bankfleet_scheduled_consultations-table__table tbody tr:hover{
@@ -281,53 +176,43 @@
     display:flex;
     flex-direction:column;
 }
-
 .transaction-recipient__name{
     color:var(--primary-900);
     font-family:var(--font-primary-semibold);
 }
-
 .transaction-recipient__account{
     color:var(--gray-500);
 }
-
 .transaction-type{
     padding:8px 8px;
     border-radius:var(--radius-full);
     font-size:var(--fs-xxxs);
 }
-
 .transaction-type--transfer{
     background:var(--secondary-100);
     color:var(--secondary-600);
 }
-
 .transaction-type--payment{
     background:var(--primary-100);
     color:var(--primary-700);
 }
-
 .transaction-type--supplier{
     background:var(--secondary-50);
     color:var(--secondary-500);
 }
-
 .transaction-status{
     padding:8px 8px;
     border-radius:var(--radius-full);
     font-size:var(--fs-xxxs);
 }
-
 .transaction-status--success{
     background:var(--tertiary-100);
     color:var(--tertiary-600);
 }
-
 .transaction-status--pending{
     background:#FEF3C7;
     color:var(--warning-color);
 }
-
 .transaction-status--rejected{
     background:rgba(239,68,68,.15);
     color:var(--danger-color);
@@ -343,70 +228,35 @@
 .bankfleet_scheduled_consultations-table__search {
     width: 300px;
     position: relative;
-
     margin-bottom: 24px;
 }
-
 .bankfleet_scheduled_consultations-table__search-icon {
-
     position: absolute;
-
     left: 14px;
     top: 32%;
     z-index: 1;
-    /* transform: translateY(-50%); */
-
     width: 16px;
     height: 16px;
-
-    /* opacity: .6; */
 }
-
 .bankfleet_scheduled_consultations-table__search-input {
-
     width: 100%;
     height: 44px;
-
-    padding:
-        0
-        16px
-        0
-        42px;
-
+    padding: 0 16px 0 42px;
     box-sizing: border-box;
-
-    border:
-        1px solid rgba(255,255,255,.08);
-
+    border:1px solid rgba(255,255,255,.08);
     border-radius: 14px;
-
-    background:
-        rgba(255,255,255,.04);
-
+    background: rgba(255,255,255,.04);
     backdrop-filter: blur(12px);
-
     color: var(--white);
-
     font-size: var(--fs-xxxxs);
-
     outline: none;
-
     transition: .25s;
 }
-
 .bankfleet_scheduled_consultations-table__search-input::placeholder {
-
     color: var(--gray-500);
 }
-
 .bankfleet_scheduled_consultations-table__search-input:focus {
-
-    border-color:
-        rgba(139,92,246,.45);
-
-    background:
-        rgba(255,255,255,.06);
-
-    box-shadow:
-        0 0 0 4px rgba(139,92,246,.12);
+    border-color:rgba(139,92,246,.45);
+    background: rgba(255,255,255,.06);
+    box-shadow:0 0 0 4px rgba(139,92,246,.12);
 }

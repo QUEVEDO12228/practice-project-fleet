@@ -1,296 +1,101 @@
-<!-- ================== Historial de Transacciones ================== -->
 <section class="bankfleet-transactions-table">
-
     <div class="bankfleet-transactions-table__header">
-
         <div class="bankfleet-transactions-table__header-container">
-
-            <a
-                href="javascript:history.back()" alt="Volver"
-                class="bankfleet-btn-secondary bankfleet-transactions-table__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_back.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet-transactions-table__btn-secondary-icon">
+            <a href="javascript:history.back()" alt="Volver" class="bankfleet-btn-secondary bankfleet-transactions-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions-table__btn-secondary-icon">
             </a>
-
             <div class="bankfleet-transactions-table__content">
-
                 <div class="bankfleet-transactions-table__title-container">
-
-                    <h1 class="bankfleet-transactions-table__title">
-                        Historial de  transferencias
-                    </h1>
-
+                    <h1 class="bankfleet-transactions-table__title">Historial de  transferencias</h1>
                 </div>
-
-                <p class="bankfleet-transactions-table__subtitle">
-                    Consulta y monitorea todas las operaciones financieras realizadas.
-                </p>
-
+                <p class="bankfleet-transactions-table__subtitle">Consulta y monitorea todas las operaciones financieras realizadas.</p>
             </div>
-
         </div>
-
     </div>
     <div class="class bankfleet-transactions-table__separeitor-actions">
         <div class="bankfleet-transactions-table__search">
-
-            <img
-                src="/frontend/public/assets/icons/icon_search.svg"
-                alt="Buscar"
-                class="bankfleet-transactions-table__search-icon">
-
-            <input
-                type="text"
-                placeholder="Buscar operación..."
-                class="bankfleet-transactions-table__search-input">
-
+            <img src="/frontend/public/assets/icons/icon_search.svg" alt="Buscar" class="bankfleet-transactions-table__search-icon">
+            <input type="text" placeholder="Buscar operación..." class="bankfleet-transactions-table__search-input">
         </div>
         <div class="class bankfleet-transactions-table__separeitor-actions-buttons">
-            <a
-                href="/"
-                class="bankfleet-btn-secondary bankfleet-transactions-table__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_filter_white.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet-transactions-table__btn-secondary-icon">Filtrar
+            <a href="/" class="bankfleet-btn-secondary bankfleet-transactions-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_filter_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions-table__btn-secondary-icon">Filtrar
             </a>
-            <a
-                href="/"
-                class="bankfleet-btn-secondary bankfleet-transactions-table__btn-secondary">
-
-                <img
-                    src="/frontend/public/assets/icons/icon_download_white.svg"
-                    alt=""
-                    class="bankfleet-btn-secondary__icon bankfleet-transactions-table__btn-secondary-icon">Descargar
+            <a href="/" class="bankfleet-btn-secondary bankfleet-transactions-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_download_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions-table__btn-secondary-icon">Descargar
             </a>
         </div>
     </div>
-
     <div class="bankfleet-transactions-table__table-wrapper">
-
         <table class="bankfleet-transactions-table__table">
-
             <thead>
-
                 <tr>
-
                     <th class="transaction-recipient__table-th">
-                        <img
-                            class="transaction-recipient__image-options"
-                            src="/frontend/public/assets/icons/icon_settings_white.svg"
-                            alt="Opciones">
+                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg" alt="Opciones">
                     </th>
-
-                    <th>Fecha<br>Operación</th>
-                    <th>Fecha<br>Programada</th>
-                    <th>Cuenta<br>Destino</th>
-                    <th>Banco</th>
-                    <th>Transacción</th>
-                    <th>Importe</th>
-                    <th>Divisa</th>
-                    <!-- <th>Firmas</th> -->
-                    <th class="transaction-recipient__table-th-right">Estado</th>
-
+                    <th>Fecha<br>Operación</th><th>Fecha<br>Programada</th><th>Cuenta<br>Destino</th><th>Banco</th><th>Transacción</th><th>Importe</th>
+                    <th>Divisa</th><th class="transaction-recipient__table-th-right">Estado</th>
                 </tr>
-
             </thead>
-
             <tbody>
-
                 <tr>
-
                     <td data-label="Opciones">
                         <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg" >
                     </td>
-
-                    <td data-label="Fecha Operación">
-                        15/05/2025
-                    </td>
-
-                    <td data-label="Fecha Programada">
-                        15/05/2025
-                    </td>
-
+                    <td data-label="Fecha Operación">15/05/2025</td>
+                    <td data-label="Fecha Programada">15/05/2025</td>
                     <td data-label="Cuenta Destino">
-
                         <div class="transaction-recipient">
-
-                            <span class="transaction-recipient__name">
-                                Juan Torres
-                            </span>
-
-                            <span class="transaction-recipient__account">
-                                ****96321
-                            </span>
-
+                            <span class="transaction-recipient__name">Juan Torres</span>
+                            <span class="transaction-recipient__account">****96321</span>
                         </div>
-
                     </td>
-
-                    <td data-label="Banco">
-                        Davivienda
-                    </td>
-
-                    <td data-label="Transacción">
-
-                        <span class="transaction-type transaction-type--transfer">
-                            Transferencia
-                        </span>
-
-                    </td>
-
-                    <td data-label="Importe">
-                        $ 5.250.000
-                    </td>
-
-                    <td data-label="Divisa">
-                        COP
-                    </td>
-
-                    
-
+                    <td data-label="Banco">Davivienda</td>
+                    <td data-label="Transacción"><span class="transaction-type transaction-type--transfer">Transferencia</span></td>
+                    <td data-label="Importe">$ 5.250.000</td>
+                    <td data-label="Divisa">COP</td>
                     <td data-label="Estado">
-
-                        <span class="transaction-status transaction-status--success">
-                            Ejecutada
-                        </span>
-
+                        <span class="transaction-status transaction-status--success">Ejecutada</span>
                     </td>
-
                 </tr>
-
                 <tr>
-
                     <td data-label="Opciones">
-                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg" alt="">
+                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg" >
                     </td>
-
-                    <td data-label="Fecha Operación">
-                        16/05/2025
-                    </td>
-
-                    <td data-label="Fecha Programada">
-                        18/05/2025
-                    </td>
-
+                    <td data-label="Fecha Operación">15/05/2025</td>
+                    <td data-label="Fecha Programada">15/05/2025</td>
                     <td data-label="Cuenta Destino">
-
                         <div class="transaction-recipient">
-
-                            <span class="transaction-recipient__name">
-                                María Pérez
-                            </span>
-
-                            <span class="transaction-recipient__account">
-                                ****78214
-                            </span>
-
+                            <span class="transaction-recipient__name">Juan Torres</span>
+                            <span class="transaction-recipient__account">****96321</span>
                         </div>
-
                     </td>
-
-                    <td data-label="Banco">
-                        Bancolombia
-                    </td>
-
-                    <td data-label="Transacción">
-
-                        <span class="transaction-type transaction-type--payment">
-                            Pago Nómina
-                        </span>
-
-                    </td>
-
-                    <td data-label="Importe">
-                        $ 18.750.000
-                    </td>
-
-                    <td data-label="Divisa">
-                        COP
-                    </td>
-
-                    
-
-                    <td data-label="Estado">
-
-                        <span class="transaction-status transaction-status--pending">
-                            Pendiente
-                        </span>
-
-                    </td>
-
+                    <td data-label="Banco">Davivienda</td>
+                    <td data-label="Transacción"><span class="transaction-type transaction-type--transfer">Transferencia</span></td>
+                    <td data-label="Importe">$ 5.250.000</td>
+                    <td data-label="Divisa">COP</td>
+                    <td data-label="Estado"><td data-label="Estado"><span class="transaction-status transaction-status--pending">Pendiente</span></td></td>
                 </tr>
-
                 <tr>
-
                     <td data-label="Opciones">
-                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg" alt="">
+                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg" >
                     </td>
-
-                    <td data-label="Fecha Operación">
-                        20/05/2025
-                    </td>
-
-                    <td data-label="Fecha Programada">
-                        20/05/2025
-                    </td>
-
+                    <td data-label="Fecha Operación">15/05/2025</td>
+                    <td data-label="Fecha Programada">15/05/2025</td>
                     <td data-label="Cuenta Destino">
-
                         <div class="transaction-recipient">
-
-                            <span class="transaction-recipient__name">
-                                Proveedor Global SAS
-                            </span>
-
-                            <span class="transaction-recipient__account">
-                                ****45874
-                            </span>
-
+                            <span class="transaction-recipient__name">Juan Torres</span>
+                            <span class="transaction-recipient__account">****96321</span>
                         </div>
-
                     </td>
-
-                    <td data-label="Banco">
-                        BBVA
-                    </td>
-
-                    <td data-label="Transacción">
-
-                        <span class="transaction-type transaction-type--supplier">
-                            Pago Proveedor
-                        </span>
-
-                    </td>
-
-                    <td data-label="Importe">
-                        $ 42.500.000
-                    </td>
-
-                    <td data-label="Divisa">
-                        COP
-                    </td>
-
-                    
-
-                    <td data-label="Estado">
-
-                        <span class="transaction-status transaction-status--rejected">
-                            Rechazada
-                        </span>
-
-                    </td>
-
+                    <td data-label="Banco">Davivienda</td>
+                    <td data-label="Transacción"><span class="transaction-type transaction-type--transfer">Transferencia</span></td>
+                    <td data-label="Importe">$ 5.250.000</td>
+                    <td data-label="Divisa">COP</td>
+                    <td data-label="Estado"><td data-label="Estado"><span class="transaction-status transaction-status--rejected">Rechazada</span></td>
                 </tr>
-
+                </tr>
             </tbody>
-
         </table>
-
     </div>
-
 </section>
