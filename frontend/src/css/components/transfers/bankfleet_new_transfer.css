@@ -55,7 +55,7 @@
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
     gap: var(--gap-lg);
     width: 100%;

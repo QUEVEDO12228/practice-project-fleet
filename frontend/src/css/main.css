@@ -2,29 +2,36 @@
 @import url('./main.css');
 @import url('./variables.css');
 
-@import url('./components/forms/login.css');
-@import url('./components/buttons/boton_primario.css');
-@import url('./components/navbar/navbar_global.css');
-@import url('./components/footer/footer.css');
 @import url('./components/buttons/secondary_button.css');
+@import url('./components/buttons/boton_primario.css');
+
+@import url('./components/navbar/navbar_global.css');
+
+@import url('./components/footer/footer.css');
+@import url('./components/footer/footer_landing.css');
+
+
+@import url('./components/forms/login.css');
 @import url('./components/forms/register_step1.css');
 @import url('./components/forms/register_step2.css');
+@import url('./components/forms/register_step3.css');
+@import url('./components/forms/register_step4.css');
+@import url('./components/forms/register_step5.css');
+@import url('./components/forms/register_step6.css');
+@import url('./components/forms/register_step7.css');
 @import url('./components/forms/code_verify.css');
 @import url('./components/forms/forgot_password.css');
 @import url('./components/forms/reset_password.css');
-@import url('./components/cards/bankfleet_card_home.css');
 
+@import url('./components/cards/bankfleet_card_home.css');
 
 @import url('./components/siderbar/banfleet_sidebar_principal.css');
 @import url('./components/siderbar/bankfleet_drop-down_menu.css');
 
 @import url('./components/electronic payroll/bankfleet_dian.css');
 
-
 @import url('./pages/vista_home_client.css');
 @import url('./pages/view_bankfleet_key_transfer.css');
-
-
 
 @import url('./components/transfers/bankfleet_new_transfer.css');
 @import url('./components/transfers/bankfleet_key_transfer.css');

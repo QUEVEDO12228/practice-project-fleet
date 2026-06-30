@@ -16,10 +16,6 @@ BANKFLEET FOOTER
 
     font-family: var(--font-primary);
 }
-.bankfleet-footer:hover {
-    border-top: solid 1px var(--secondary-500);
-}
-
 /* =========================================================
 GLOW EFFECTS
 ========================================================= */
@@ -504,6 +500,7 @@ RESPONSIVE
   font-family: var(--font-primary-bold);
 
   color: var(--white);
+  align-items: self-start;
 
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: var(--secondary-400);

@@ -9,7 +9,7 @@
     align-items:center;
     justify-content:space-between;
     gap:var(--gap-lg);
-    padding:40px;
+    padding:12px;
 }
 .bankfleet-dian__icon-wrapper{
     width:90px;
@@ -58,7 +58,7 @@
     color:var(--tertiary-500);
     font-family:var(--font-primary-semibold);
     font-size:var(--fs-xxxs);
-    border:1px solid var(--tertiary-200);
+    border: solid 1px rgba(139,92,246,.35);
 }
 .bankfleet-dian__badge-dot{
     width:8px;
@@ -101,7 +101,7 @@
 .bankfleet-dian-overview{
     margin-top:var(--gap-xl);
     /* background:var(--primary-800); */
-    border-top: solid 1px var(--secondary-400) ;
+    border-top:  solid 1px rgba(139,92,246,.35);
     box-shadow:var(--shadow-primary);
     overflow:hidden;
 }
@@ -110,7 +110,7 @@
     align-items:center;
     gap:20px;
     padding:28px 32px;
-    border-bottom:1px solid var(--secondary-400);
+    border-bottom: solid 1px rgba(139,92,246,.35);
 }
 .bankfleet-dian-overview__icon{
     width:60px;

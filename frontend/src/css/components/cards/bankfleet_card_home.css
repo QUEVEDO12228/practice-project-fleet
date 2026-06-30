@@ -219,12 +219,38 @@
     width:22px;
     height:22px;
 }
-@media(max-width:768px){
+@media(width: 768px){
     .bankfleet-products {
         padding:var(--gap-lg);
     }
     .bankfleet-card-home {
         flex:0 0 85%;
         min-height:210px;
+    }
+    .bankfleet-products__grid {
+        display:flex;
+        flex-direction: column;
+        gap:var(--gap-xl);
+        width:max-content;
+    }
+}
+@media (max-width: 1200px) {
+    .bankfleet-products__grid {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos bajen */
+        gap: var(--gap-xl);
+    }
+
+    .bankfleet-products__grid > * {
+        flex: 1 1 calc(50% - var(--gap-xl)); /* 2 columnas */
+        box-sizing: border-box;
+    }
+}
+@media (width < 900px) {
+    .bankfleet-products__grid {
+        display:flex;
+        flex-direction: column;
+        gap:var(--gap-xl);
+        width:max-content;
     }
 }

@@ -11,7 +11,7 @@
     width: 100%;
 }
 .bankfleet-sidebar-principal {
-    width: 266px;
+    width: 240px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;

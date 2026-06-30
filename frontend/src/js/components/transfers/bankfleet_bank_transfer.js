@@ -21,11 +21,11 @@ function initTransferKeyEvents() {
                 <p class="bankfleet-transfer-confirmation__description-strong">Esto enviará el dinero <strong>¿Estás seguro?</strong></p>
                 <p class="bankfleet-transfer-confirmation__description"> Estás a punto de enviar dinero mediante una llave registrada. Verifica la información antes de continuar.</p>
                 <div class="bankfleet-transfer-confirmation__actions">
-                    <button type="button" class="bankfleet-btn-secondary bankfleet-transfer-confirmation__cancel">Cancelar
+                    <button type="button" class="bankfleet-btn-secondary bankfleet-transfer-confirmation__cancel">Atrás
                         <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="bankfleet-btn-secondary__icon">
                     </button>
                     <button type="button" class="bankfleet-btn bankfleet-btn--primary bankfleet-transfer-confirmation__confirm">Confirmar
-                        <img src="/frontend/public/assets/icons/icon_next-white.svg" alt="" class="bankfleet-btn__icon" >
+                        <img src="/frontend/public/assets/icons/icon_next_white.svg" alt="" class="bankfleet-btn__icon" >
                     </button>
                 </div>
             </div>

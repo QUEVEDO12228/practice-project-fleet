@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("/frontend/src/html/components/forms/register_step2.html")
         .then(response => {if (!response.ok) {throw new Error("Error al cargar register_step2.html");}return response.text();})
         .then(data => {RegisterStep2Container.innerHTML = data;
-            initForgot();})
+            initRegisterStep2();})
         .catch(error => {console.error("Error cargando el componente:", error);});
 });
+function initRegisterStep2() {
+    const RegisterStep2Form = document.querySelector(".bankfleet-btn--primary");
+    if (!RegisterStep2Form) {console.error("NO ENCONTRÉ BOTÓN SIGUIENTE");return;}
+    RegisterStep2Form.addEventListener("click", function (e) {e.preventDefault();window.location.href = "/frontend/src/html/pages/auth/vista_register_step3.html";});
+}
