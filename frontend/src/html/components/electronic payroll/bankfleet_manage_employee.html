@@ -1,0 +1,694 @@
+<section class="bankfleet-employee-manage">
+
+    <div class="bankfleet-employee-manage__container">
+
+        <!--========================
+        HEADER
+        =========================-->
+
+        <header class="bankfleet-employee-manage__header">
+
+            <div class="bankfleet-employee-manage__header-left">
+
+                <a href="javascript:history.back()"
+                   class="bankfleet-btn-secondary">
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_back.svg"
+                        class="bankfleet-btn-secondary__icon"
+                        alt="Volver">
+
+                </a>
+
+                <div class="bankfleet-employee-manage__header-content">
+
+                    <h1 class="bankfleet-employee-manage__title">
+                        Gestionar Empleado
+                    </h1>
+
+                    <p class="bankfleet-employee-manage__subtitle">
+                        Actualiza la información del colaborador y administra
+                        su información bancaria.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!--========================
+        FORMULARIO
+        =========================-->
+
+        <form class="bankfleet-employee-manage__form">
+
+            <!--======================================================
+            INFORMACIÓN PERSONAL
+            =======================================================-->
+
+            <section class="bankfleet-employee-manage__section">
+
+                <div class="bankfleet-employee-manage__section-header">
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_user_profile_white.svg"
+                        class="bankfleet-employee-manage__section-icon"
+                        alt="">
+
+                    <h2 class="bankfleet-employee-manage__section-title">
+
+                        Información Personal
+
+                    </h2>
+
+                </div>
+
+                <div class="bankfleet-employee-manage__section-content">
+
+                    <!-- Nombre -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Nombre completo
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_name_user.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                value="Julián Gil">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Tipo Documento -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Tipo documento
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_id.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <select
+                                class="bankfleet-employee-manage__input">
+
+                                <option>CC</option>
+                                <option>CE</option>
+                                <option>TI</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Documento -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Número documento
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_id.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                value="1088547896">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Correo -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Correo electrónico
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_email.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="email"
+                                class="bankfleet-employee-manage__input"
+                                value="juliangil@gmail.com">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Teléfono -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Teléfono
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_phone.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                value="3001234567">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Cargo -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Cargo
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_work_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                value="Analista de Nómina">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Estado -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Estado
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_status_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <select
+                                class="bankfleet-employee-manage__input">
+
+                                <option>Activo</option>
+                                <option>Suspendido</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Fecha ingreso -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Fecha de ingreso
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_calendar_search_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="date"
+                                class="bankfleet-employee-manage__input"
+                                value="2025-01-15">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>  
+            <section class="bankfleet-employee-manage__section">
+
+                <div class="bankfleet-employee-manage__section-header">
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_bank_white.svg"
+                        class="bankfleet-employee-manage__section-icon"
+                        alt="">
+
+                    <h2 class="bankfleet-employee-manage__section-title">
+
+                        Información Bancaria
+
+                    </h2>
+
+                </div>
+
+                <div class="bankfleet-employee-manage__section-content">
+
+                    <!-- Banco -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Banco
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_bank_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <select class="bankfleet-employee-manage__input">
+
+                                <option>Bancolombia</option>
+                                <option>Davivienda</option>
+                                <option>BBVA</option>
+                                <option>Banco de Bogotá</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Tipo Cuenta -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Tipo de cuenta
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_account_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <select class="bankfleet-employee-manage__input">
+
+                                <option>Ahorros</option>
+                                <option>Corriente</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Número Cuenta -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Número de cuenta
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_number_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                value="458796321456">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Operación -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Tipo de operación
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_logs_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <select class="bankfleet-employee-manage__input">
+
+                                <option>Línea</option>
+                                <option>Archivo Banco</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Archivo Banco -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Archivo Banco
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_document_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                value="nomina_julio_2026.xlsx">
+
+                        </div>
+
+                    </div>
+
+                    <!-- Cuenta Principal -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Cuenta principal
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_check_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <select class="bankfleet-employee-manage__input">
+
+                                <option>Sí</option>
+                                <option>No</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Moneda -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Moneda
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_money_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <select class="bankfleet-employee-manage__input">
+
+                                <option>COP</option>
+                                <option>USD</option>
+                                <option>EUR</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Observaciones -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Observaciones
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_pencil_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                placeholder="Observaciones de la cuenta bancaria">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="bankfleet-employee-manage__section">
+
+                <div class="bankfleet-employee-manage__section-header">
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_settings_white.svg"
+                        class="bankfleet-employee-manage__section-icon"
+                        alt="">
+
+                    <h2 class="bankfleet-employee-manage__section-title">
+
+                        Información del Sistema
+
+                    </h2>
+
+                </div>
+
+                <div class="bankfleet-employee-manage__section-content">
+
+                    <!-- Fecha creación -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Fecha de creación
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_calendar_search_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                value="15/01/2025"
+                                readonly>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Última actualización -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Última actualización
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_update_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                value="02/07/2026 10:25 AM"
+                                readonly>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Usuario creador -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Usuario creador
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_user_check_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                value="Administrador"
+                                readonly>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Último editor -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Último editor
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_user_edit_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                value="Carlos Ramírez"
+                                readonly>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ID -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            ID del empleado
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_identification_document_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-employee-manage__input"
+                                value="EMP-000125"
+                                readonly>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Estado del registro -->
+
+                    <div class="bankfleet-employee-manage__field">
+
+                        <label class="bankfleet-employee-manage__label">
+                            Estado del registro
+                        </label>
+
+                        <div class="bankfleet-employee-manage__input-wrapper">
+
+                            <img
+                                src="/frontend/public/assets/icons/icon_status_purple.svg"
+                                class="bankfleet-employee-manage__input-icon"
+                                alt="">
+
+                            <select
+                                class="bankfleet-employee-manage__input">
+                                <option>Deshabilitar</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+
+            </section>
+        </form>
+
+         <div class="bankfleet-employee-manage__footer">
+
+            <button
+                type="submit"
+                class="bankfleet-btn bankfleet-btn--primary">
+
+                Guardar cambios
+
+                <img
+                    src="/frontend/public/assets/icons/icon_save_white.svg"
+                    class="bankfleet-btn__icon"
+                    alt="">
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</section>
+

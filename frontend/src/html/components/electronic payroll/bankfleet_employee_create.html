@@ -1,0 +1,351 @@
+<!-- ==========================================================
+BANKFLEET - MODAL AGREGAR EMPLEADO
+=========================================================== -->
+
+<section class="bankfleet-employee-create">
+
+    <div class="bankfleet-employee-create__overlay"></div>
+
+    <div class="bankfleet-employee-create__card">
+        <div class="bankfleet-employee-create__header-container">
+            <a href="javascript:history.back()" alt="Volver" class="bankfleet-btn-secondary bankfleet-employees-table__btn-secondary"> 
+                <img src="/frontend/public/assets/icons/icon_back.svg" alt="Volver" class="bankfleet-btn-secondary__icon bankfleet-employees-table__btn-secondary-icon"> 
+            </a>
+            <div class="bankfleet-employee-create__container text">
+                <h1 class="bankfleet-employee-create__title">Crear empleados</h1>
+                <p class="bankfleet-employee-create__subtitle">Administra la información de los colaboradores del grupo de nómina.</p>
+            </div>
+        </div>
+
+        <form class="bankfleet-employee-create__form">
+
+            <div class="bankfleet-employee-create__content">
+
+                <!--========================================-->
+
+                <div class="bankfleet-employee-create__field">
+
+                    <label class="bankfleet-employee-create__label">
+                        Nombre completo
+                    </label>
+
+                    <div class="bankfleet-employee-create__input-wrapper">
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_name_user.svg"
+                            class="bankfleet-employee-create__input-icon"
+                            alt="">
+
+                        <input
+                            type="text"
+                            class="bankfleet-employee-create__input"
+                            placeholder="Ej: Pepito Pérez">
+
+                    </div>
+
+                </div>
+
+                <!--========================================-->
+
+                <div class="bankfleet-employee-create__field">
+
+                    <label class="bankfleet-employee-create__label">
+                        Tipo documento
+                    </label>
+
+                    <div class="bankfleet-employee-create__input-wrapper">
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_id.svg"
+                            class="bankfleet-employee-create__input-icon"
+                            alt="">
+
+                        <select class="bankfleet-employee-create__input">
+
+                            <option class="bankfleet-employee-create__option-content" selected disabled>
+                                Selecciona
+                            </option>
+
+                            <option class="bankfleet-employee-create__option-content">CC</option>
+                            <option class="bankfleet-employee-create__option-content">TI</option>
+                            <option class="bankfleet-employee-create__option-content">CE</option>
+                            <option class="bankfleet-employee-create__option-content">Pasaporte</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!--========================================-->
+
+                <div class="bankfleet-employee-create__field">
+
+                    <label class="bankfleet-employee-create__label">
+                        Número documento
+                    </label>
+
+                    <div class="bankfleet-employee-create__input-wrapper">
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_identification_document_purple.svg"
+                            class="bankfleet-employee-create__input-icon"
+                            alt="">
+
+                        <input
+                            type="text"
+                            class="bankfleet-employee-create__input"
+                            placeholder="Número de documento">
+
+                    </div>
+
+                </div>
+
+                <!--========================================-->
+
+                <div class="bankfleet-employee-create__field">
+
+                    <label class="bankfleet-employee-create__label">
+                        Correo electrónico
+                    </label>
+
+                    <div class="bankfleet-employee-create__input-wrapper">
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_email.svg"
+                            class="bankfleet-employee-create__input-icon"
+                            alt="">
+
+                        <input
+                            type="email"
+                            class="bankfleet-employee-create__input"
+                            placeholder="correo@empresa.com">
+
+                    </div>
+
+                </div>
+
+                <!--========================================-->
+
+                <div class="bankfleet-employee-create__field">
+
+                    <label class="bankfleet-employee-create__label">
+                        Teléfono
+                    </label>
+
+                    <div class="bankfleet-employee-create__input-wrapper">
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_phone.svg"
+                            class="bankfleet-employee-create__input-icon"
+                            alt="">
+
+                        <input
+                            type="text"
+                            class="bankfleet-employee-create__input"
+                            placeholder="3001234567">
+
+                    </div>
+
+                </div>
+
+                <!--========================================-->
+
+                <div class="bankfleet-employee-create__field">
+
+                    <label class="bankfleet-employee-create__label">
+                        Cargo
+                    </label>
+
+                    <div class="bankfleet-employee-create__input-wrapper">
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_work_purple.svg"
+                            class="bankfleet-employee-create__input-icon"
+                            alt="">
+
+                        <input
+                            type="text"
+                            class="bankfleet-employee-create__input"
+                            placeholder="Cargo del empleado">
+
+                    </div>
+
+                </div>
+
+                <!--========================================-->
+
+                <div class="bankfleet-employee-create__field">
+
+                    <label class="bankfleet-employee-create__label">
+                        Banco
+                    </label>
+
+                    <div class="bankfleet-employee-create__input-wrapper">
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_bank_purple.svg"
+                            class="bankfleet-employee-create__input-icon"
+                            alt="">
+
+                        <select class="bankfleet-employee-create__input">
+
+                            <option class="bankfleet-employee-create__option-content" selected disabled>
+                                Selecciona un banco
+                            </option>
+
+                            <option class="bankfleet-employee-create__option-content">Bancolombia</option>
+                            <option class="bankfleet-employee-create__option-content">Davivienda</option>
+                            <option class="bankfleet-employee-create__option-content">BBVA</option>
+                            <option class="bankfleet-employee-create__option-content">Banco de Bogotá</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!--========================================-->
+
+                <div class="bankfleet-employee-create__field">
+
+                    <label class="bankfleet-employee-create__label">
+                        Tipo de cuenta
+                    </label>
+
+                    <div class="bankfleet-employee-create__input-wrapper">
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_account_purple.svg"
+                            class="bankfleet-employee-create__input-icon"
+                            alt="">
+
+                        <select class="bankfleet-employee-create__input">
+
+                            <option class="bankfleet-employee-create__option-content" selected disabled>
+                                Selecciona
+                            </option>
+
+                            <option class="bankfleet-employee-create__option-content">Ahorros</option>
+                            <option class="bankfleet-employee-create__option-content">Corriente</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!--========================================-->
+
+                <div class="bankfleet-employee-create__field">
+
+                    <label class="bankfleet-employee-create__label">
+                        Número de cuenta
+                    </label>
+
+                    <div class="bankfleet-employee-create__input-wrapper">
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_number_purple.svg"
+                            class="bankfleet-employee-create__input-icon"
+                            alt="">
+
+                        <input
+                            type="text"
+                            class="bankfleet-employee-create__input"
+                            placeholder="Número de cuenta">
+
+                    </div>
+
+                </div>
+
+                <!--========================================-->
+
+                <div class="bankfleet-employee-create__field">
+
+                    <label class="bankfleet-employee-create__label">
+                        Operación
+                    </label>
+
+                    <div class="bankfleet-employee-create__input-wrapper">
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_logs_purple.svg"
+                            class="bankfleet-employee-create__input-icon"
+                            alt="">
+
+                        <select class="bankfleet-employee-create__input">
+
+                            <option class="bankfleet-employee-create__option-content" selected disabled>
+                                Selecciona
+                            </option>
+
+                            <option class="bankfleet-employee-create__option-content">Línea</option>
+                            <option class="bankfleet-employee-create__option-content">Archivo</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!--========================================-->
+
+                <div class="bankfleet-employee-create__field">
+
+                    <label class="bankfleet-employee-create__label">
+                        Estado
+                    </label>
+
+                    <div class="bankfleet-employee-create__input-wrapper">
+
+                        <img
+                            src="/frontend/public/assets/icons/icon_status_purple.svg"
+                            class="bankfleet-employee-create__input-icon"
+                            alt="">
+
+                        <select class="bankfleet-employee-create__input">
+
+                            <option class="bankfleet-employee-create__option-content">Activo</option>
+                            <option class="bankfleet-employee-create__option-content">Suspendido</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--========================
+            FOOTER
+            =========================-->
+
+            <div class="bankfleet-employee-create__footer">
+
+                <button
+                    type="button"
+                    class="bankfleet-btn-secondary">Cancelar
+                    <img src="/frontend/public/assets/icons/icon_x_white.svg" alt="Volver" class="bankfleet-btn-secondary__icon bankfleet-employee-create__btn-secondary-icon"> 
+                </button>
+
+                <button
+                    type="submit"
+                    class="bankfleet-btn bankfleet-btn--primary">
+
+                    Guardar empleado
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_save_white.svg"
+                        class="bankfleet-btn__icon"
+                        alt="">
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>

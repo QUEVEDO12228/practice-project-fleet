@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("/frontend/src/html/components/tables/bankfleet_employee_management_table.html")
         .then(response => {if (!response.ok) {throw new Error("Error al cargar bankfleet_employee_management_table.html");}return response.text();})
         .then(data => {TableEmployeManagementContainer.innerHTML = data;
-            initForgot();})
+            initTableEmployeManagement();})
         .catch(error => {console.error("Error cargando el componente:", error);});
 });
+function initTableEmployeManagement() {
+    const TableEmployeManagement = document.querySelector(".bankfleet-btn--primary");
+    if (!TableEmployeManagement) {console.error("NO ENCONTRÉ BOTÓN SIGUIENTE");return;}
+    TableEmployeManagement.addEventListener("click", function (e) {e.preventDefault();window.location.href = "/frontend/src/html/pages/dashboard/banking/electronic%20payroll/vista_bankfleet_employee_create.html";});
+}

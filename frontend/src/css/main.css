@@ -18,7 +18,6 @@
 @import url('./components/forms/register_step4.css');
 @import url('./components/forms/register_step5.css');
 @import url('./components/forms/register_step6.css');
-@import url('./components/forms/register_step7.css');
 @import url('./components/forms/code_verify.css');
 @import url('./components/forms/forgot_password.css');
 @import url('./components/forms/reset_password.css');
@@ -29,6 +28,8 @@
 @import url('./components/siderbar/bankfleet_drop-down_menu.css');
 
 @import url('./components/electronic payroll/bankfleet_dian.css');
+@import url('./components/electronic payroll/bankfleet_employee_create.css');
+@import url('./components/electronic payroll/bankfleet_manage_employee.css');
 
 @import url('./pages/vista_home_client.css');
 @import url('./pages/view_bankfleet_key_transfer.css');

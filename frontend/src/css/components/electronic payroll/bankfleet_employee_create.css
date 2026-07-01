@@ -1,0 +1,192 @@
+/* =========================================================
+BANKFLEET - EMPLOYEE CREATE MODAL
+========================================================= */
+
+.bankfleet-employee-create{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-primary);
+}
+/* =========================
+CARD
+========================= */
+
+.bankfleet-employee-create__card{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: max-content;
+    /* max-height: 80vh; */
+    overflow-y: auto;
+
+    padding: 24px;
+}
+.bankfleet-employee-create__header-container{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.bankfleet-employee-create__header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:24px;
+}
+.bankfleet-employee-create__title{
+    font-size:var(--fs-xxs);
+    color:var(--white);
+    font-family:var(--font-primary-bold);
+}
+.bankfleet-employee-create__subtitle{
+    font-size:var(--fs-xxxxs);
+    color:var(--gray-300);
+}
+
+/* =========================
+FORM
+========================= */
+
+.bankfleet-employee-create__form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* grid visual opcional */
+.bankfleet-employee-create__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* =========================
+FIELD
+========================= */
+
+.bankfleet-employee-create__field{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 380px;
+}
+
+.bankfleet-employee-create__label{
+    color: var(--white);
+    font-size: var(--fs-xxxxs);
+}
+
+/* =========================
+INPUT WRAPPER
+========================= */
+
+.bankfleet-employee-create__input-wrapper{
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+}
+
+/* icono input */
+.bankfleet-employee-create__input-icon{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    z-index: 2;
+}
+.bankfleet-employee-create__option-content{
+    background: var(--primary-900);
+    color: var(--white);
+    font-size: var(--fs-xxxxs);
+}
+.bankfleet-employee-create__option-content:hover{
+    background: var(--secondary-400);
+    color: var(--white);
+    font-size: var(--fs-xxxxs);
+}
+/* =========================
+INPUTS / SELECTS
+========================= */
+
+.bankfleet-employee-create__input{
+    width: 100%;
+    height: 48px;
+    max-width: 300px;
+    min-width: 300px;
+
+    padding: 0 16px 0 44px;
+
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.08);
+
+    background: rgba(255,255,255,0.04);
+    color: var(--white);
+
+    font-size: var(--fs-xxxs);
+
+    outline: none;
+    transition: var(--transition-normal);
+    box-sizing: border-box;
+}
+
+.bankfleet-employee-create__input::placeholder{
+    color: var(--gray-500);
+}
+
+.bankfleet-employee-create__input:focus{
+    border-color: rgba(139,92,246,0.45);
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 0 0 4px rgba(139,92,246,0.12);
+}
+
+/* select arrow fix */
+.bankfleet-employee-create__input select{
+    appearance: none;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.bankfleet-employee-create__footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 980px){
+
+    .bankfleet-employee-create__card{
+        max-width: 95%;
+    }
+
+    .bankfleet-employee-create__content{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px){
+
+    .bankfleet-employee-create__card{
+        padding: 24px;
+        border-radius: 24px;
+    }
+
+    .bankfleet-employee-create__footer{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .bankfleet-employee-create__input,
+    .bankfleet-employee-create__input-wrapper,
+    .bankfleet-employee-create__field{
+        max-width: 100%;
+    }
+}
