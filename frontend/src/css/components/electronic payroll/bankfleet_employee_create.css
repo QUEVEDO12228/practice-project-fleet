@@ -68,7 +68,7 @@ FIELD
 .bankfleet-employee-create__field{
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
     max-width: 380px;
 }
 
