@@ -15,6 +15,7 @@
     line-height: 1;
     display: flex;
     align-items: center;
+    
 }
 .bankfleet-navbar__blur {
     position: absolute;

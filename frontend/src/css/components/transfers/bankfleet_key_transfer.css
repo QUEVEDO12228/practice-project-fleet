@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 .bankfleet-transfer-key__content {
-    background: var(--primary-800);
+    /* background: var(--primary-800); */
     /* border: 2px solid rgba(255,255,255,.08); */
     /* border-radius: var(--radius-xxl); */
     padding: 24px;
@@ -80,7 +80,7 @@
     height: fit-content;
     position: sticky;
     top: 24px;
-    background: var(--primary-800);
+    /* background: var(--primary-800); */
     /* border: 2px solid rgba(255,255,255,.08); */
     /* border-radius: var(--radius-xxl); */
     padding: 28px;

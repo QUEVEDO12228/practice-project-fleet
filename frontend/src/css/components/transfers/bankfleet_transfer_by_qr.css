@@ -1,17 +1,17 @@
 .bankfleet-transfer-qr{
     width:100%;
     max-width:fit-content;
-    padding:var(--gap-lg);
+    /* padding:var(--gap-lg); */
     display:grid;
     grid-template-columns:1fr 380px;
     box-sizing:border-box;
 }
 .bankfleet-transfer-qr__content{
-    background:var(--primary-800);
-    border:2px solid rgba(255,255,255,.08);
-    border-radius:var(--radius-xxl);
+    /* background:var(--primary-800); */
+    /* border:2px solid rgba(255,255,255,.08); */
+    /* border-radius:var(--radius-xxl); */
     padding:var(--gap-lg);
-    backdrop-filter:blur(60px);
+    /* backdrop-filter:blur(60px); */
 }
 .bankfleet-transfer-qr__header{
     display:flex;
@@ -160,8 +160,8 @@
 }
 .bankfleet-transfer-qr__summary{
     width:280px;
-    background:var(--primary-800);
-    border:2px solid rgba(255,255,255,.08);
+    /* background:var(--primary-800); */
+    /* border:2px solid rgba(255,255,255,.08); */
     border-radius:var(--radius-xxl);
     padding:28px;
 }

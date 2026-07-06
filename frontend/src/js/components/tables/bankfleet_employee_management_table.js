@@ -11,4 +11,18 @@ function initTableEmployeManagement() {
     const TableEmployeManagement = document.querySelector(".bankfleet-btn--primary");
     if (!TableEmployeManagement) {console.error("NO ENCONTRÉ BOTÓN SIGUIENTE");return;}
     TableEmployeManagement.addEventListener("click", function (e) {e.preventDefault();window.location.href = "/frontend/src/html/pages/dashboard/banking/electronic%20payroll/vista_bankfleet_employee_create.html";});
+    
+    const menus = document.querySelectorAll(".employee-menu");
+    menus.forEach(menu => {const button = menu.querySelector(".employee-menu__btn");
+        button.addEventListener("click", function(e) {e.stopPropagation();
+            menus.forEach(item => {if(item !== menu){item.classList.remove("active");}});
+            menu.classList.toggle("active");});});
+    document.addEventListener("click", () => {menus.forEach(menu => menu.classList.remove("active"));});
+
+    const menusprimary = document.querySelectorAll(".employee-menu-primary");
+    menusprimary.forEach(menuprimary => {const button = menuprimary.querySelector(".employee-menu__btn-primary");
+        button.addEventListener("click", function(e) {e.stopPropagation();
+            menusprimary.forEach(item => {if(item !== menuprimary){item.classList.remove("active");}});
+            menuprimary.classList.toggle("active");});});
+    document.addEventListener("click", () => {menusprimary.forEach(menuprimary => menuprimary.classList.remove("active"));});
 }

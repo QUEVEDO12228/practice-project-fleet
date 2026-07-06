@@ -52,5 +52,7 @@
 @import url('./components/tables/payroll_payment_history.css');
 @import url('./components/tables/bankfleet_scheduled_consultations_payroll.css');
 @import url('./components/tables/bankfleet_scheduled_consultations_transfers.css');
+@import url('./components/tables/bankfleet_scheduled_consultations_transfers.css');
+@import url('./components/tables/bankfleet_global_table_filter.css');
 
 @import url('./components/alerts/bankfleet_transfer_confirmation.css');

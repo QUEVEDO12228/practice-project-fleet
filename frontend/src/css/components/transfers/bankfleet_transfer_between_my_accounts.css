@@ -1,18 +1,18 @@
 .bankfleet-transfer-own-accounts{
     width:100%;
     max-width:fit-content;
-    padding:var(--gap-lg);
+    /* padding:var(--gap-lg); */
     display:grid;
     grid-template-columns:1fr 380px;
     box-sizing:border-box;
 }
 .bankfleet-transfer-own-accounts__content{
-    background:var(--primary-800);
-    border:2px solid rgba(255,255,255,.08);
-    border-radius:var(--radius-xxl);
-    padding:32px;
-    backdrop-filter:blur(60px);
-    transition:var(--transition-normal);
+    /* background:var(--primary-800); */
+    /* border:2px solid rgba(255,255,255,.08); */
+    /* border-radius:var(--radius-xxl); */
+    padding:24px;
+    /* backdrop-filter:blur(60px); */
+    /* transition:var(--transition-normal); */
 }
 .bankfleet-transfer-own-accounts__content:hover{
     border-color:rgba(139,92,246,.25);
@@ -89,6 +89,7 @@
     padding:0 18px;
     border-radius:18px;
     border:1px solid rgba(255,255,255,.08);
+    font-size: var(--fs-xxxs);
     background:rgba(255,255,255,.04);
     color:var(--white);
     outline:none;
@@ -148,15 +149,15 @@
 }
 .bankfleet-transfer-own-accounts__summary{
     width: 280px;
-    background:var(--primary-800);
-    border:2px solid rgba(255,255,255,.08);
-    border-radius:var(--radius-xxl);
+    /* background:var(--primary-800); */
+    /* border:2px solid rgba(255,255,255,.08); */
+    /* border-radius:var(--radius-xxl); */
     padding:28px;
     backdrop-filter:blur(60px);
 }
 .bankfleet-transfer-own-accounts__summary-title{
     color:var(--white);
-    font-size:var(--fs-xs);
+    font-size:var(--fs-xxs);
     font-family:var(--font-primary-bold);
     margin-bottom:var(--gap-lg);
 }
@@ -178,7 +179,7 @@
 .bankfleet-transfer-own-accounts__summary-value{
     color:var(--white);
     font-size:var(--fs-xxxs);
-    font-family:var(--font-primary-semibold);
+    font-weight: 1;
 }
 .bankfleet-transfer-own-accounts__actions{
     margin-top:var(--gap-lg);

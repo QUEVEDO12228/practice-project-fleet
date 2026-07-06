@@ -64,17 +64,17 @@
     background: transparent;
     color: var(--gray-50);
     cursor: pointer;
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xxxxs);
 }
 .bankfleet-sidebar-principal__menu-button:hover {
-    background: rgba(255,255,255,.06);
-    border-bottom:0.5px solid var(--secondary-500);
+    background:  rgba(255,255,255,.05);
+    color: var(--white);
+    border-left: 3px solid var(--secondary-500);
 }
 .bankfleet-sidebar-principal__menu-button.active {
-    background: rgba(255,255,255,.06);
-    border-left:3px solid var(--secondary-500);
-    border-bottom: solid 0.5px var(--secondary-500);
+    background:  rgba(255,255,255,.05);
     color: var(--white);
+    border-left: 3px solid var(--secondary-500);
 }
 .bankfleet-sidebar-principal__submenu {
     list-style: none;

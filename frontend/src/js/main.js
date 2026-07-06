@@ -46,6 +46,7 @@ import '/frontend/src/js/components/tables/bankfleet_manage_groups.js';
 import '/frontend/src/js/components/tables/payroll_payment_history.js';
 import '/frontend/src/js/components/tables/bankfleet_scheduled_consultations_payroll.js';
 import '/frontend/src/js/components/tables/bankfleet_scheduled_consultations_transfers.js';
+import '/frontend/src/js/components/tables/bankfleer_global_table_filter.js';
 
 import '/frontend/src/js/components/transfers/alerts/bankfleet_transfer_confirmation.js';
 

@@ -86,6 +86,20 @@ FORM
     gap: 24px;
 }
 
+@media (width > 1400px){
+    .bankfleet-employee-manage__form{
+        width: 100%;
+        max-width: max-content;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .bankfleet-employee-manage{
+        width: 100%;
+        max-width: 20000px;
+    }
+}
+
 /* =========================
 SECTIONS BASE
 ========================= */
