@@ -1,38 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
     const TableManageGroupContainer = document.querySelector(".bankfleet-manage-groups-component-container");
-    if (!TableManageGroupContainer) {console.warn("No se encontró '.bankfleet-manage-groups-component-container' en el HTML.");return;}
+    const FilterContainer = document.querySelector(".bankfleer-global-table-filter-container");
+    if (!TableManageGroupContainer) {console.warn("No se encontró '.bankfleet-manage-groups-component-container'");return;}
     fetch("/frontend/src/html/components/tables/bankfleet_manage_groups.html")
         .then(response => {if (!response.ok) {throw new Error("Error al cargar bankfleet_manage_groups.html");}return response.text();})
-        .then(data => {TableManageGroupContainer.innerHTML = data;
-            initTableManagementGroups(), initDropdownFilter();})
-        .catch(error => {console.error("Error cargando el componente:", error);});
+        .then(data => {TableManageGroupContainer.innerHTML = data;initTableManagementGroups();if (FilterContainer) {
+                fetch("/frontend/src/html/components/tables/bankfleet_global_table_filter.html")
+                    .then(response => {if (!response.ok) {throw new Error("Error al cargar bankfleet_global_table_filter.html");}return response.text();})
+                    .then(filterHTML => {FilterContainer.innerHTML = filterHTML;console.log("Filtro cargado correctamente");initBankfleetfilterDrawer();})
+                    .catch(error => {console.error("Error cargando filtro:",error);});}})
+        .catch(error => {console.error("Error cargando componente tabla:",error);});
 });
-function initTableManagementGroups() {
-const menus = document.querySelectorAll(".employee-menu");
-    menus.forEach(menu => {const button = menu.querySelector(".employee-menu__btn");
-        button.addEventListener("click", function(e) {e.stopPropagation();
-            menus.forEach(item => {if(item !== menu){item.classList.remove("active");}});
-            menu.classList.toggle("active");});});
-    document.addEventListener("click", () => {menus.forEach(menu => menu.classList.remove("active"));});
 
-    const menusprimary = document.querySelectorAll(".employee-menu-primary");
-    menusprimary.forEach(menuprimary => {const button = menuprimary.querySelector(".employee-menu__btn-primary");
-        button.addEventListener("click", function(e) {e.stopPropagation();
-            menusprimary.forEach(item => {if(item !== menuprimary){item.classList.remove("active");}});
-            menuprimary.classList.toggle("active");});});
-    document.addEventListener("click", () => {menusprimary.forEach(menuprimary => menuprimary.classList.remove("active"));});
-}
-function initDropdownFilter() {
-    const filterButton = document.querySelector(".bankfleet-navbar__action-button");
-    const drawer = document.querySelector(".bankfleet-filter-drawer");
-    const overlay = document.querySelector(".bankfleet-filter-overlay");
-    const closeButton = document.querySelector(".bankfleet-filter-drawer__close");
-    if (!filterButton || !drawer || !overlay) return;
-    filterButton.addEventListener("click", () => {
-        drawer.classList.add("bankfleet-filter-drawer--active");
-        overlay.classList.add("bankfleet-filter-overlay--active");
-    });
-    closeButton?.addEventListener("click", closefilter);
-    overlay.addEventListener("click", closefilter);
-    function closefilter() {drawer.classList.remove("bankfleet-filter-drawer--active"); overlay.classList.remove("bankfleet-filter-overlay--active");}
+function initTableManagementGroups(){
+    const menus = document.querySelectorAll(".employee-menu");menus.forEach(menu => {const button = menu.querySelector(".employee-menu__btn");
+        if(!button) return;button.addEventListener("click",function(e){e.stopPropagation();menus.forEach(item => {if(item !== menu){item.classList.remove("active");}});menu.classList.toggle("active");});});
+    const menusPrimary = document.querySelectorAll(".employee-menu-primary");menusPrimary.forEach(menu => {const button = menu.querySelector(".employee-menu__btn-primary");
+        if(!button) return;button.addEventListener("click",function(e){e.stopPropagation();menusPrimary.forEach(item => {if(item !== menu){item.classList.remove("active");}});menu.classList.toggle("active");});});
+    document.addEventListener("click",function(){menus.forEach(menu => {menu.classList.remove("active");});menusPrimary.forEach(menu => {menu.classList.remove("active");});});
+    const BtnPrimaryAddEmployee = document.querySelector(".bankfleet-btn--primary");
+    if (!BtnPrimaryAddEmployee) {console.error("NO ENCONTRÉ BOTÓN SIGUIENTE");return;}
+    BtnPrimaryAddEmployee.addEventListener("click", function (e) {e.preventDefault();window.location.href = "/frontend/src/html/pages/dashboard/banking/electronic%20payroll/vista_bankfleet_employee_create.html";});
 }

@@ -1,75 +1,94 @@
 <section class="bankfleet-recipients-table">
-<div class="bankfleet-recipients-table__header">
-    <div class="bankfleet-recipients-table__header-container">
-        <a href="javascript:history.back()" alt="Volver" class="bankfleet-btn-secondary bankfleet-recipients-table__btn-secondary">
-            <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-recipients-table__btn-secondary-icon">
-        </a>
-        <div class="bankfleet-recipients-table__content">
-            <div class="bankfleet-recipients-table__title-container">
-                <h1 class="bankfleet-recipients-table__title">Destinatarios</h1>
+    <div class="bankfleet-recipients-table__header">
+        <div class="bankfleet-recipients-table__header-container">
+            <a href="javascript:history.back()" alt="Volver" class="bankfleet-btn-secondary bankfleet-recipients-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-recipients-table__btn-secondary-icon">
+            </a>
+            <div class="bankfleet-recipients-table__content">
+                <div class="bankfleet-recipients-table__title-container">
+                    <h1 class="bankfleet-recipients-table__title">Destinatarios</h1>
+                </div>
+                <p class="bankfleet-recipients-table__subtitle">Administra los destinatarios frecuentes para realizar transferencias rápidas y seguras.</p>
             </div>
-            <p class="bankfleet-recipients-table__subtitle">Administra los destinatarios frecuentes para realizar transferencias rápidas y seguras.</p>
+        </div>
+        <button type="button" class="bankfleet-btn bankfleet-btn--primary">Nuevo destinatario
+            <img src="/frontend/public/assets/icons/icon_sum_white.svg" alt="" class="bankfleet-btn__icon">
+        </button>
+    </div>
+    <div class="class bankfleet-recipients-table__separeitor-actions">
+        <div class="bankfleet-recipients-table__search">
+            <img src="/frontend/public/assets/icons/icon_search.svg" alt="Buscar" class="bankfleet-recipients-table__search-icon">
+            <input type="text" placeholder="Buscar operación..." class="bankfleet-recipients-table__search-input">
+        </div>
+        <div class="class bankfleet-recipients-table__separeitor-actions-buttons">
+            <div class="bankfleet-recipients-table__favorite-box">
+                <input type="checkbox" id="favorites" class="bankfleet-recipients-table__favorite-checkbox">
+                <label for="favorites" class="bankfleet-recipients-table__favorite-label">Mostrar favoritos</label>
+            </div>
+            <button type="button" class="bankfleet-btn-secondary bankfleet-table-filter-btn bankfleet-scheduled-queries-table-filter-btn">
+                <img src="/frontend/public/assets/icons/icon_filter_white.svg" class="bankfleet-btn-secondary__icon bankfleet-scheduled-queries-table__btn-secondary-icon" alt="">
+                Filtrar
+            </button>
+            <a href="/" class="bankfleet-btn-secondary bankfleet-recipients-table__btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_download_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-recipients-table__btn-secondary-icon">Descargar
+            </a>
         </div>
     </div>
-    <button type="button" class="bankfleet-btn bankfleet-btn--primary">Nuevo destinatario
-        <img src="/frontend/public/assets/icons/icon_sum_white.svg" alt="" class="bankfleet-btn__icon">
-    </button>
-</div>
-<div class="class bankfleet-recipients-table__separeitor-actions">
-    <div class="bankfleet-recipients-table__search">
-        <img src="/frontend/public/assets/icons/icon_search.svg" alt="Buscar" class="bankfleet-recipients-table__search-icon">
-        <input type="text" placeholder="Buscar operación..." class="bankfleet-recipients-table__search-input">
-    </div>
-    <div class="class bankfleet-recipients-table__separeitor-actions-buttons">
-        <div class="bankfleet-recipients-table__favorite-box">
-            <input type="checkbox" id="favorites" class="bankfleet-recipients-table__favorite-checkbox">
-            <label for="favorites" class="bankfleet-recipients-table__favorite-label">Mostrar favoritos</label>
-        </div>
-        <a href="/" class="bankfleet-btn-secondary bankfleet-recipients-table__btn-secondary">
-            <img src="/frontend/public/assets/icons/icon_filter_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-recipients-table__btn-secondary-icon">Filtrar
-        </a>
-        <a href="/" class="bankfleet-btn-secondary bankfleet-recipients-table__btn-secondary">
-            <img src="/frontend/public/assets/icons/icon_download_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-recipients-table__btn-secondary-icon">Descargar
-        </a>
-    </div>
-</div>
-<div class="bankfleet-recipients-table__table-wrapper">
-    <table class="bankfleet-recipients-table__table">
-        <thead>
-            <tr>
-                <th>
-                    <img class="bankfleet-recipients-table__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg">
-                </th>
-                <th>Alias o Nombre</th><th>Nombre del Titular</th><th>Información de Destino</th><th>Banco</th><th>Favorito</th><th>Estado</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="bankfleet-recipients-table__tr">
-                <td data-label="Opciones">
-                    <img class="bankfleet-recipients-table__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg">
-                </td>
-                <td data-label="Alias o Nombre">
-                    <div class="recipient">
-                        <div class="recipient__avatar">
-                            <input type="checkbox" class="payroll-payment-history-table__checkbox-input payroll-row-checkbox">
-                            <span class="payroll-payment-history-table__checkbox-box"></span>
+    <div class="bankfleet-recipients-table__table-wrapper">
+        <table class="bankfleet-recipients-table__table">
+            <thead>
+                <tr>
+                    <th>
+                        <img class="bankfleet-recipients-table__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg">
+                    </th>
+                    <th>Alias o Nombre</th><th>Nombre del Titular</th><th>Información de Destino</th><th>Banco</th><th>Favorito</th><th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bankfleet-recipients-table__tr">
+                    <td data-label="Opciones">
+                        <div class="bankfleet-recipients-table-employee-menu">
+                            <button class="bankfleet-recipients-table-employee-menu__btn">
+                                <img
+                                    src="/frontend/public/assets/icons/icon_option_points_black.svg"
+                                    alt="Opciones"
+                                    class="bankfleet-employees-table__image-options">
+                            </button>
+
+                            <div class="bankfleet-recipients-table-employee-menu__dropdown">
+                                <a href="#">
+                                    <img src="/frontend/public/assets/icons/icon_settings_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">
+                                    Gestionar Grupo
+                                </a>
+                                <a href="#" class="delete">
+                                    <img src="/frontend/public/assets/icons/icon_trash_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">                                    
+                                    Eliminar Grupo
+                                </a>
+                            </div>
                         </div>
-                        <div class="recipient__info">
-                            <span class="recipient__alias">Mi Casero</span>
-                            <span class="recipient__detail">Destinatario frecuente</span>
+                    </td>
+                    <td data-label="Alias o Nombre">
+                        <div class="recipient">
+                            <div class="recipient__avatar">
+                                <input type="checkbox" class="payroll-payment-history-table__checkbox-input payroll-row-checkbox">
+                                <span class="payroll-payment-history-table__checkbox-box"></span>
+                            </div>
+                            <div class="recipient__info">
+                                <span class="recipient__alias">Mi Casero</span>
+                                <span class="recipient__detail">Destinatario frecuente</span>
+                            </div>
                         </div>
-                    </div>
-                </td>
-                <td data-label="Nombre del Titular">Carlos Martínez</td>
-                <td data-label="Información de Destino">Cuenta Ahorros • 45896587412</td>
-                <td data-label="Banco">Bancolombia</td>
-                <td data-label="Favorito"><span class="recipient-favorite">★ Sí</span></td>
-                <td data-label="Estado"><span class="recipient-status recipient-status--verified">Verificado</span>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+                    </td>
+                    <td data-label="Nombre del Titular">Carlos Martínez</td>
+                    <td data-label="Información de Destino">Cuenta Ahorros • 45896587412</td>
+                    <td data-label="Banco">Bancolombia</td>
+                    <td data-label="Favorito"><span class="recipient-favorite">★ Sí</span></td>
+                    <td data-label="Estado"><span class="recipient-status recipient-status--verified">Verificado</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
 <!-- <td data-label="Acciones">
 

@@ -223,3 +223,52 @@
         font-family:var(--font-primary-semibold);
     }
 }
+
+.bankfleet_manage_groups-table-employee-menu-primary{
+    position: relative;
+    display: inline-block;
+}
+.bankfleet_manage_groups-table-employee-menu__btn-primary{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+}
+.bankfleet_manage_groups-table-employee-menu__dropdown-primary{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 32px;
+    min-width: 180px;
+    background: rgba(17, 24, 46, 0.85);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    overflow: hidden;
+}
+.bankfleet_manage_groups-table-employee-menu__dropdown-primary a{
+    display: block;
+    padding: 12px 16px;
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: var(--fs-xxxxxs);
+    transition: background .2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    height: 36px;
+    padding: 0 16px;
+    width: 220px;
+}
+.bankfleet_manage_groups-table-employee-menu__dropdown-primary a:hover{
+    background: var(--secondary-700);
+}
+.bankfleet_manage_groups-table-employee-menu__dropdown-primary a.delete{
+    color: #dc2626;
+    font-weight: 600;
+}
+.bankfleet_manage_groups-table-employee-menu-primary.active .bankfleet_manage_groups-table-employee-menu__dropdown-primary{
+    display: block;
+}

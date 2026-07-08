@@ -260,3 +260,102 @@
     background: rgba(255,255,255,.06);
     box-shadow:0 0 0 4px rgba(139,92,246,.12);
 }
+
+.bankfleet_scheduled_consultations-table-employee-menu{
+    position: relative;
+    display: inline-block;
+}
+.bankfleet_scheduled_consultations-table-employee-menu__btn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+}
+.bankfleet_scheduled_consultations-table-employee-menu__dropdown{
+    display: none;
+    position: absolute;
+    /* top: 0px; */
+    left: 32px;
+    bottom: -12px;
+    min-width: 220px;
+    background:rgba(17, 24, 46, 0.85);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    overflow: hidden;
+}
+.bankfleet_scheduled_consultations-table-employee-menu__dropdown a{
+    display: block;
+    padding: 12px 16px;
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: var(--fs-xxxxxs);
+    transition: background .2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    height: 36px;
+    padding: 0 16px;
+    width: 220px;
+}
+.bankfleet_scheduled_consultations-table-employee-menu__dropdown a:hover{
+    background: var(--primary-400);
+}
+.bankfleet_scheduled_consultations-table-employee-menu__dropdown a.delete{
+    color: #dc2626;
+    font-weight: 600;
+}
+.bankfleet_scheduled_consultations-table-employee-menu.active .bankfleet_scheduled_consultations-table-employee-menu__dropdown{
+    display: block;
+}
+.bankfleet_scheduled_consultations-table-employee-menu-primary{
+    position: relative;
+    display: inline-block;
+}
+.bankfleet_scheduled_consultations-table-employee-menu__btn-primary{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+}
+.bankfleet_scheduled_consultations-table-employee-menu__dropdown-primary{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 32px;
+    min-width: 180px;
+    background: rgba(17, 24, 46, 0.85);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    overflow: hidden;
+}
+.bankfleet_scheduled_consultations-table-employee-menu__dropdown-primary a{
+    display: block;
+    padding: 12px 16px;
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: var(--fs-xxxxxs);
+    transition: background .2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    height: 36px;
+    padding: 0 16px;
+    width: 220px;
+}
+.bankfleet_scheduled_consultations-table-employee-menu__dropdown-primary a:hover{
+    background: var(--secondary-700);
+}
+.bankfleet_scheduled_consultations-table-employee-menu__dropdown-primary a.delete{
+    color: #dc2626;
+    font-weight: 600;
+}
+.bankfleet_scheduled_consultations-table-employee-menu-primary.active .bankfleet_scheduled_consultations-table-employee-menu__dropdown-primary{
+    display: block;
+}
+

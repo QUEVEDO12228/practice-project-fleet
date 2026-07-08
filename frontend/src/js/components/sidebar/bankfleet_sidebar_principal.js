@@ -30,13 +30,13 @@ const SIDEBAR_CONFIG = {
     "/frontend/src/html/pages/dashboard/banking/transfers/cards/vista_bankfleet_new_transfer.html": {hideLinks: [    "Nueva Transferencia (Ejecución)"]},
     "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_bankfleet_table_transfer_history.html": {hideLinks: ["Historial y Comprobantes"]},
     "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_bankfleet_table_transfer_history.html": {hideLinks: ["Historial de transferencias"]},  
-    "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_bankfleet_scheduled_consultations_transfers.html": {hideLinks: ["Consultas programadas"]},
+    "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_bankfleet_scheduled_consultations_transfers.html": {hideLinks: ["Consultas programadas T"]},
     "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_bankfleet_recipients.html": {hideLinks: ["Gestión de Destinatarios y Favoritos"]},
     "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_functions_security.html": {hideLinks: ["Seguridad y Funciones Especiales"]},
     "/frontend/src/html/pages/dashboard/banking/payrollpayment/tables/view_bankfleet_manage_groups.html": {hideLinks: ["Administrar grupos"]},
     "/frontend/src/html/pages/dashboard/banking/payrollpayment/tables/view_bankfleet_employee_management_table.html": {hideLinks: ["Administrar empleados"]},
     "/frontend/src/html/pages/dashboard/banking/payrollpayment/tables/view_payroll_payment_history.html": {hideLinks: ["Historial de pagos de nómina"]},
-    "/frontend/src/html/pages/dashboard/banking/payrollpayment/tables/view_bankfleet_scheduled_consultations_payroll.html": {hideLinks: ["Consultas programadas"]},
+    "/frontend/src/html/pages/dashboard/banking/payrollpayment/tables/view_bankfleet_scheduled_consultations_payroll.html": {hideLinks: ["Consultas programadas N"]},
     "/frontend/src/html/pages/dashboard/banking/electronic%20payroll/view_bankfleet_dian.html": {hideLinks: ["Transmi automática a la DIAN"]}
 };
 function ocultarOpcionActual() {

@@ -18,9 +18,10 @@
             <input type="text" placeholder="Buscar operación..." class="bankfleet-transactions-table__search-input">
         </div>
         <div class="class bankfleet-transactions-table__separeitor-actions-buttons">
-            <a href="/" class="bankfleet-btn-secondary bankfleet-transactions-table__btn-secondary">
-                <img src="/frontend/public/assets/icons/icon_filter_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions-table__btn-secondary-icon">Filtrar
-            </a>
+            <button type="button" class="bankfleet-btn-secondary bankfleet-table-filter-btn bankfleet-transactions-table-filter-btn">
+                <img src="/frontend/public/assets/icons/icon_filter_white.svg" class="bankfleet-btn-secondary__icon bankfleet-transactions-table__btn-secondary-icon" alt="">
+                Filtrar
+            </button>
             <a href="/" class="bankfleet-btn-secondary bankfleet-transactions-table__btn-secondary">
                 <img src="/frontend/public/assets/icons/icon_download_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions-table__btn-secondary-icon">Descargar
             </a>
@@ -40,7 +41,25 @@
             <tbody>
                 <tr>
                     <td data-label="Opciones">
-                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg" >
+                        <div class="bankfleet-transactions-table-employee-menu-primary">
+                            <button class="bankfleet-transactions-table-employee-menu__btn-primary">
+                                <img
+                                    src="/frontend/public/assets/icons/icon_option_points_black.svg"
+                                    alt="Opciones"
+                                    class="bankfleet-employees-table__image-options">
+                            </button>
+
+                            <div class="bankfleet-transactions-table-employee-menu__dropdown-primary">
+                                <a href="#">
+                                    <img src="/frontend/public/assets/icons/icon_settings_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">
+                                    Gestionar Grupo
+                                </a>
+                                <a href="#" class="delete">
+                                    <img src="/frontend/public/assets/icons/icon_trash_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">                                    
+                                    Eliminar Grupo
+                                </a>
+                            </div>
+                        </div>
                     </td>
                     <td data-label="Fecha Operación">15/05/2025</td>
                     <td data-label="Fecha Programada">15/05/2025</td>
@@ -60,7 +79,25 @@
                 </tr>
                 <tr>
                     <td data-label="Opciones">
-                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_option_points_black.svg" >
+                        <div class="bankfleet-transactions-table-employee-menu">
+                            <button class="bankfleet-transactions-table-employee-menu__btn">
+                                <img
+                                    src="/frontend/public/assets/icons/icon_option_points_black.svg"
+                                    alt="Opciones"
+                                    class="bankfleet-employees-table__image-options">
+                            </button>
+
+                            <div class="bankfleet-transactions-table-employee-menu__dropdown">
+                                <a href="#">
+                                    <img src="/frontend/public/assets/icons/icon_settings_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">
+                                    Gestionar Grupo
+                                </a>
+                                <a href="#" class="delete">
+                                    <img src="/frontend/public/assets/icons/icon_trash_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-transactions__btn-secondary-icon">                                    
+                                    Eliminar Grupo
+                                </a>
+                            </div>
+                        </div>
                     </td>
                     <td data-label="Fecha Operación">15/05/2025</td>
                     <td data-label="Fecha Programada">15/05/2025</td>
