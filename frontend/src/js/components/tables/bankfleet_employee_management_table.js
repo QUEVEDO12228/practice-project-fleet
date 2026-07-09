@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const TableEmployeManagementContainer = document.querySelector(".bankfleet-employee-management-table-container");
     const FilterScheduledConsultationsTransfersContainer = document.querySelector(".bankfleer-global-table-filter-container");
     if (!TableEmployeManagementContainer) {console.warn("No se encontró '.bankfleet-employee-management-table-container'");return;}
-    fetch("/frontend/src/html/components/tables/bankfleet_employee_management_table.html")
+    fetch("/frontend/src/html/components/electronic payroll/tables/bankfleet_employee_management_table.html")
         .then(response => {if (!response.ok) {throw new Error("Error al cargar bankfleet_employee_management_table.html");}return response.text();})
         .then(data => {TableEmployeManagementContainer.innerHTML = data;initTableEmployeManagement();
             if (FilterScheduledConsultationsTransfersContainer) {

@@ -8,6 +8,10 @@ import '/frontend/src/js/components/heros/bankfleet_hero_index_landing.js';
 import '/frontend/src/js/components/electronic payroll/bankfleet_dian.js';
 import '/frontend/src/js/components/electronic payroll/bankfleet_employee_create.js';
 import '/frontend/src/js/components/electronic payroll/bankfleet_manage_employee.js';
+import '/frontend/src/js/components/electronic payroll/filters/bankfleet_filter_payrollpayment1.js';
+import '/frontend/src/js/components/electronic payroll/filters/bankfleet_filter_payrollpayment2.js';
+import '/frontend/src/js/components/electronic payroll/filters/bankfleet_filter_payrollpayment3.js';
+import '/frontend/src/js/components/electronic payroll/filters/bankfleet_filter_payrollpayment4.js';
 
 import '/frontend/src/js/components/footer/footer.js';
 import '/frontend/src/js/components/footer/footer_landing.js';
@@ -38,6 +42,9 @@ import '/frontend/src/js/components/transfers/bankfleet_transfer_other_accounts.
 import '/frontend/src/js/components/transfers/bankfleet_international_transfer.js';
 import '/frontend/src/js/components/transfers/bankfleet_transfer_frequent_contacts.js';
 import '/frontend/src/js/components/transfers/bankfleet_transfer_by_qr.js';
+import '/frontend/src/js/components/transfers/filters/bankfleet_filter_transfers1.js';
+import '/frontend/src/js/components/transfers/filters/bankfleet_filter_transfers2.js';
+import '/frontend/src/js/components/transfers/filters/bankfleet_filter_transfers3.js';
 
 import '/frontend/src/js/components/tables/bankfleet_employee_management_table.js';
 import '/frontend/src/js/components/tables/bankfleet_recipients.js';

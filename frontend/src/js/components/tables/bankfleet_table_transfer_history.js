@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const TableTransferHistoryContainer = document.querySelector(".bankfleet-table-transfer-history-container");
     const FilterTransferHistoryContainer = document.querySelector(".bankfleer-global-table-filter-container");
     if (!TableTransferHistoryContainer) {console.warn("No se encontró '.bankfleet-table-transfer-history-container'");return;}
-    fetch("/frontend/src/html/components/tables/bankfleet_table_transfer_history.html")
+    fetch("/frontend/src/html/components/transfers/tables/bankfleet_table_transfer_history.html")
         .then(response => {if (!response.ok) {throw new Error("Error al cargar bankfleet_table_transfer_history.html");}return response.text();})
         .then(data => {TableTransferHistoryContainer.innerHTML = data;initTransferHistoryContainer();
             if (FilterTransferHistoryContainer) {

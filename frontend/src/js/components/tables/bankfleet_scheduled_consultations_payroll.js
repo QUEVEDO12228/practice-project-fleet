@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const TableScheduledConsultationsPayrollContainer = document.querySelector(".bankfleet-scheduled-consultations-component-container");
     const FilterScheduledConsultationsPayrollContainer = document.querySelector(".bankfleer-global-table-filter-container");
     if (!TableScheduledConsultationsPayrollContainer) {console.warn("No se encontró '.bankfleet-scheduled-consultations-component-container'");return;}
-    fetch("/frontend/src/html/components/tables/bankfleet_scheduled_consultations_payroll.html")
+    fetch("/frontend/src/html/components/electronic payroll/tables/bankfleet_scheduled_consultations_payroll.html")
         .then(response => {if (!response.ok) {throw new Error("Error al cargar bankfleet_scheduled_consultations_payroll.html");}return response.text();})
         .then(data => {TableScheduledConsultationsPayrollContainer.innerHTML = data;initScheduledConsultationsPayroll();
             if (FilterScheduledConsultationsPayrollContainer) {

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const TableRecipientsContainer = document.querySelector(".bankfleet-recipients-component-container");
     const FilterScheduledConsultationsTransfersContainer = document.querySelector(".bankfleer-global-table-filter-container");
     if (!TableRecipientsContainer) {console.warn("No se encontró '.bankfleet-recipients-component-container'");return;}
-    fetch("/frontend/src/html/components/tables/bankfleet_recipients.html")
+    fetch("/frontend/src/html/components/transfers/tables/bankfleet_recipients.html")
         .then(response => {if (!response.ok) {throw new Error("Error al cargar bankfleet_recipients.html");}return response.text();})
         .then(data => {TableRecipientsContainer.innerHTML = data;initTableRecipients();
             if (FilterScheduledConsultationsTransfersContainer) {
