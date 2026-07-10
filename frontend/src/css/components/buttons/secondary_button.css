@@ -18,11 +18,16 @@
 .bankfleet-btn-secondary:hover {
     transform: translateY(-2px);
     border: 1px solid var(--secondary-50);  
+    background-color: var(--primary-950);
 }
 .bankfleet-btn-secondary:active {
     transform: translateY(0);
 }
 .bankfleet-btn-secondary__icon{
+  height: 14px;
+  width: 14px;
+}
+.bankfleet-btn-secondary__icon:hover{
   height: 14px;
   width: 14px;
 }

@@ -30,6 +30,8 @@ import '/frontend/src/js/components/forms/reset_password.js';
 import '/frontend/src/js/components/cards/bankfleet_card_home.js';
 
 import '/frontend/src/js/pages/home/vista_home_client.js';
+import '/frontend/src/js/pages/payrollpayment/table/vista_bankfleet_manage_groups.js';
+import '/frontend/src/js/pages/payrollpayment/table/view_bankfleet_employee_management_table.js';
 
 import '/frontend/src/js/components/sidebar/bankfleet_sidebar_principal.js';
 import '/frontend/src/js/components/sidebar/bankfleet_drop-down_menu.js';
@@ -42,9 +44,6 @@ import '/frontend/src/js/components/transfers/bankfleet_transfer_other_accounts.
 import '/frontend/src/js/components/transfers/bankfleet_international_transfer.js';
 import '/frontend/src/js/components/transfers/bankfleet_transfer_frequent_contacts.js';
 import '/frontend/src/js/components/transfers/bankfleet_transfer_by_qr.js';
-import '/frontend/src/js/components/transfers/filters/bankfleet_filter_transfers1.js';
-import '/frontend/src/js/components/transfers/filters/bankfleet_filter_transfers2.js';
-import '/frontend/src/js/components/transfers/filters/bankfleet_filter_transfers3.js';
 
 import '/frontend/src/js/components/tables/bankfleet_employee_management_table.js';
 import '/frontend/src/js/components/tables/bankfleet_recipients.js';
@@ -53,7 +52,7 @@ import '/frontend/src/js/components/tables/bankfleet_manage_groups.js';
 import '/frontend/src/js/components/tables/payroll_payment_history.js';
 import '/frontend/src/js/components/tables/bankfleet_scheduled_consultations_payroll.js';
 import '/frontend/src/js/components/tables/bankfleet_scheduled_consultations_transfers.js';
-import '/frontend/src/js/components/tables/bankfleer_global_table_filter.js';
+// import '/frontend/src/js/components/tables/bankfleer_global_table_filter.js';
 
 import '/frontend/src/js/components/transfers/alerts/bankfleet_transfer_confirmation.js';
 

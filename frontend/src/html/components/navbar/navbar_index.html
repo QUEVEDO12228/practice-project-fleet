@@ -3,12 +3,9 @@
     <div class="bankfleet-navbar__blur bankfleet-navbar__blur--right"></div>
     <div class="bankfleet-navbar__container">
         <div class="bankfleet-navbar__left">
-            <button class="bankfleet-navbar__action-button bankfleet-navbar__menu-trigger">
-                <img src="/frontend/public/assets/icons/icon_menu.svg" alt="Menu" class="bankfleet-navbar__icon" >
-                <span class="bankfleet-navbar__tooltip">Menú</span>
-            </button>
+            
             <a href="/frontend/src/html/pages/auth/vista_login.html"class="bankfleet-navbar__brand">
-                <div class="bankfleet-navbar__brand-icon">B</div>
+                <!-- <div class="bankfleet-navbar__brand-icon">B</div> -->
                 <div class="bankfleet-navbar__brand-content">
                     <h1 class="bankfleet-navbar__logo">
                       <span class="bankfleet-navbar__letter">B</span>
@@ -27,13 +24,24 @@
         </div>
         <div class="bankfleet-navbar__right">
             <div class="bankfleet-navbar-session">
-                <div class="bankfleet-navbar-session__content">
-                    <span class="bankfleet-navbar-session__user">Juan David Rodríguez</span>
-                    <div class="bankfleet-navbar-session__details">
-                        <span class="bankfleet-navbar-session__status">● Sesión Activa</span>
-                        <span class="bankfleet-navbar-session__timer" id="bankfleetSessionTimer">00:00:00</span>
-                        <span class="bankfleet-navbar-session__last-login">Último acceso: 24/06/2026 08:42 PM </span>
+                <div class="bankfleet-navbar-session__details-content-button">
+                    <div class="bankfleet-navbar-session__content">
+                        <span class="bankfleet-navbar-session__user">Juan David Rodríguez</span>
+                        <div class="bankfleet-navbar-session__details">
+                            <span class="bankfleet-navbar-session__status">● Sesión Activa</span>
+                            <span class="bankfleet-navbar-session__timer" id="bankfleetSessionTimer">00:00:00</span>
+                            <span class="bankfleet-navbar-session__last-login">Último acceso: 24/06/2026 08:42 PM </span>
+                        </div>
                     </div>
+                    <button class="bankfleet-navbar__action-button">
+                        <img src="/frontend/public/assets/icons/icon_notification.svg" alt="Notificaciones" class="bankfleet-navbar__icon">
+                        <span class="bankfleet-navbar__notification-dot"></span>
+                        <span class="bankfleet-navbar__tooltip-left">Notificaciones</span>
+                    </button>
+                    <button class="bankfleet-navbar__action-button bankfleet-navbar__menu-trigger">
+                        <img src="/frontend/public/assets/icons/icon_menu.svg" alt="Menu" class="bankfleet-navbar__icon" >
+                        <span class="bankfleet-navbar__tooltip">Menú</span>
+                    </button>
                 </div>
             </div>
         </div>

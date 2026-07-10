@@ -40,45 +40,63 @@
 
 
     <div class="bankfleet-filter-drawer__body">
-
-        <div class="bankfleet-login__field">
-            <label class="bankfleet-login__label">Correo electrónico</label>
-            <div class="bankfleet-login__input-wrapper">
-                <img src="/frontend/public/assets/icons/icon_email.svg" alt="" class="bankfleet-login__input-icon">
-                <input type="email" class="bankfleet-login__input" placeholder="correo@bankfleet.com">
-            </div>
-        </div>
-
         <!-- Fecha de alta -->
-         <label class="bankfleet-filter-drawer__label">Fecha de alta</label>
         <div class="bankfleet-filter-drawer__field">
-            <label class="bankfleet-filter-drawer__label">Desde</label>
+            <label class="bankfleet-filter-drawer__label">Fecha de alta</label>
             <div class="bankfleet-filter-drawer__input-wrapper">
                 <img src="/frontend/public/assets/icons/icon_bank_purple.svg " alt="" class="bankfleet-filter-drawer__input-icon">
-                <input type="date" class="bankfleet-filter-drawer__input" placeholder="Desde">
+                <input type="date" class="bankfleet-filter-drawer__input" placeholder="Desde - Hasta">
             </div>
             
         </div>
-        <div class="bankfleet-filter-drawer__field">
-            <label class="bankfleet-filter-drawer__label">Hasta</label>
-            <div class="bankfleet-filter-drawer__input-wrapper">
-                <img src="/frontend/public/assets/icons/icon_bank_purple.svg " alt="" class="bankfleet-filter-drawer__input-icon">
-                <input type="date" class="bankfleet-filter-drawer__input" placeholder="Hasta">
-            </div>
-
-        </div>
-
-        <!-- Banco -->
+        <!-- Cuenta origen -->
         <div class="bankfleet-filter-drawer__field">
 
             <label class="bankfleet-filter-drawer__label">
-                Banco
+                Cuenta origen
             </label>
 
             <div class="bankfleet-filter-drawer__input-wrapper">
 
                 <img
-                    src="/frontend/public/assets/icons/icon_bank_purple.svg "
+                    src="/frontend/public/assets/icons/icon_account_purple.svg"
+                    alt=""
+                    class="bankfleet-filter-drawer__input-icon">
+
+                <select class="bankfleet-filter-drawer__input">
+
+                    <option selected disabled>
+                        Selecciona una de tus cuentas
+                    </option>
+
+                    <option>
+                        Cuenta principal
+                    </option>
+
+                    <option>
+                        Cuenta nómina
+                    </option>
+
+                    <option>
+                        Cuenta ahorro
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+        <!-- Periodicidad -->
+        <div class="bankfleet-filter-drawer__field">
+
+            <label class="bankfleet-filter-drawer__label">
+                Periodicidad
+            </label>
+
+            <div class="bankfleet-filter-drawer__input-wrapper">
+
+                <img
+                    src="/frontend/public/assets/icons/icon_calendar_search_purple.svg"
                     alt=""
                     class="bankfleet-filter-drawer__input-icon">
 
@@ -89,35 +107,15 @@
                     </option>
 
                     <option>
-                        Cuentas propias
+                        Semanal
                     </option>
 
                     <option>
-                        Terceros
+                        Quincenal
                     </option>
 
                     <option>
-                        BBVA Colombia
-                    </option>
-
-                    <option>
-                        Bancolombia
-                    </option>
-
-                    <option>
-                        Davivienda
-                    </option>
-
-                    <option>
-                        Banco de Bogotá
-                    </option>
-
-                    <option>
-                        Banco Popular
-                    </option>
-
-                    <option>
-                        Banco Agrario
+                        Mensual
                     </option>
 
                 </select>
