@@ -1,5 +1,6 @@
 .bankfleet-sidebar-principal{
     width: 240px;
+    height: 100vh;
     flex-shrink: 0;
     align-self: stretch;
     display: flex;
