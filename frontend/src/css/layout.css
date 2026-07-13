@@ -27,11 +27,8 @@ html {
 body {
     min-height: 100vh;
 
-    background: linear-gradient(
-        135deg,
-        var(--primary-900) 0%,
-        var(--primary-800) 100%
-    );
+    background:
+        var(--primary-950);
 
     font-family: var(--font-primary);
 

@@ -63,26 +63,60 @@
     border-color:rgba(139,92,246,.35);
 }
 
-.bankfleet-register-step4__topbar{
-  position:absolute;
-  top:10px;
-  left:10px;
-}
 
-.bankfleet-register-step4__header{
-  text-align:center;
-  margin-bottom:18px;
+.bankfleet-register-step4__topbar {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    z-index: 9999;
 }
-
-.bankfleet-register-step4__title{
-  color:#fff;
-  font-size:1.6rem;
-  margin-bottom:6px;
+.bankfleet-register-step4__brand {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-md);
+    margin-bottom: var(--gap-lg);
 }
-
-.bankfleet-register-step4__subtitle{
-  color:var(--gray-300);
-  font-size:12px;
+.bankfleet-register-step4__brand-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 20px;
+    background:linear-gradient(135deg,var(--secondary-500),var(--primary-500));
+    color: var(--white);
+    font-size: var(--fs-sm);
+    font-family: var(--font-primary-bold);
+    box-shadow: 0 12px 30px rgba(139,92,246,0.3);
+}
+.bankfleet-register-step4__brand-title {
+    margin: 0;
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.bankfleet-register-step4__brand-subtitle {
+    color: var(--secondary-300);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.bankfleet-register-step4__header {
+    margin-bottom: var(--gap-sm);
+    text-align: center;
+}
+.bankfleet-register-step4__title {
+    margin-bottom: var(--gap-xs);
+    color: var(--white);
+    font-size: 1.6rem;
+    font-family: var(--font-primary-bold);
+}
+.bankfleet-register-step4__subtitle {
+    color: var(--gray-300);
+    line-height: 1.8;
+    font-size: var(--fs-xxxs);
+}
+.bankfleet-register-step4__highlight {
+    color: var(--secondary-300);
 }
 
 /* CONTRACT */

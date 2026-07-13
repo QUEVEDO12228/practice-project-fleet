@@ -1,7 +1,6 @@
 .bankfleet-menu-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,.45);
     backdrop-filter: blur(20px);
     height: 100vh;
     z-index: 999;

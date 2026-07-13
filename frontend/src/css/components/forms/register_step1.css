@@ -315,7 +315,6 @@
 .bankfleet-register-step1-banner__image {
     width: 100%;
     height: 100%;
-    max-height: 578px;
     object-fit: cover;
 
     transition: transform 1.2s ease;

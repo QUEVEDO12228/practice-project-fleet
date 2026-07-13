@@ -3,7 +3,6 @@
     width: 100%;
     padding: var(--gap-lg);
     box-sizing: border-box;
-    background: linear-gradient( 135deg, var(--primary-900) 0%, var(--primary-800) 100%);
 }
 .bankfleet-transfer-method {
     scrollbar-width: none;

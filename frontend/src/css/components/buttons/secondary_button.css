@@ -18,7 +18,7 @@
 .bankfleet-btn-secondary:hover {
     transform: translateY(-2px);
     border: 1px solid var(--secondary-50);  
-    background-color: var(--primary-950);
+    background:linear-gradient(180deg,var(--primary-800) 0%,var(--primary-400) 100%);
 }
 .bankfleet-btn-secondary:active {
     transform: translateY(0);

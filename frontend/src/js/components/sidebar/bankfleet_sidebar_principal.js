@@ -28,8 +28,7 @@ function initSidebarPrincipal() {
 const SIDEBAR_CONFIG = {
     "/frontend/src/html/pages/home/vista_home_client.html": {hideMenu: "Inicio"},
     "/frontend/src/html/pages/dashboard/banking/transfers/cards/vista_bankfleet_new_transfer.html": {hideLinks: [    "Nueva Transferencia (Ejecución)"]},
-    "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_bankfleet_table_transfer_history.html": {hideLinks: ["Historial y Comprobantes"]},
-    "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_bankfleet_table_transfer_history.html": {hideLinks: ["Historial de transferencias"]},  
+    "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_bankfleet_table_transfer_history.html": {hideLinks: ["Historial y Comprobantes"]},  
     "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_bankfleet_scheduled_consultations_transfers.html": {hideLinks: ["Consultas programadas T"]},
     "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_bankfleet_recipients.html": {hideLinks: ["Gestión de Destinatarios y Favoritos"]},
     "/frontend/src/html/pages/dashboard/banking/transfers/tables/view_functions_security.html": {hideLinks: ["Seguridad y Funciones Especiales"]},

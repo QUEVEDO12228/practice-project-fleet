@@ -5,15 +5,13 @@
     align-self: stretch;
     display: flex;
     flex-direction: column;
-    border-right: 0.5px solid rgba(255,255,255,.08);
     padding: 2px;
     box-sizing: border-box;
-    border-right:  solid 1px rgba(139,92,246,.35);
 }
 .bankfleet-sidebar__link {
     position: relative;
     width: fit-content;
-    color: var(--gray-300);
+    color: var(--gray-200);
     text-decoration: none;
     transition: var(--transition-normal);
     font-size: var(--fs-xxxxs);
