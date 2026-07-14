@@ -17,7 +17,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient( 180deg, var(--primary-900), var(--primary-800));
+    background: var(--primary-950);
     border-left: 1px solid rgba(255,255,255,.08);
     backdrop-filter: blur(24px);
     box-shadow:-10px 0 40px rgba(0,0,0,.45);
@@ -38,7 +38,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 28px;
-    border-bottom: 1px solid rgba(255,255,255,.08);
+    border-bottom: 1px solid rgba(255,255,255,.80);
 }
 .bankfleet-menu-drawer__profile {
     display: flex;
@@ -84,7 +84,7 @@
 }
 .bankfleet-menu-drawer__close:hover {
     background: rgba(255,255,255,.08);
-    border-bottom:  1px solid var(--secondary-500);
+    border-bottom:  2px solid var(--secondary-400);
 }
 .bankfleet-menu-drawer__body {
     flex: 1;
@@ -110,6 +110,7 @@
     background:  rgba(255,255,255,.05);
     color: var(--white);
     border-left: 3px solid var(--secondary-500);
+    border-bottom: 1px solid var(--secondary-500);
 }
 .bankfleet-menu-drawer__icon {
     width: 18px;
@@ -119,7 +120,7 @@
     padding: 24px;
     display: flex;
     justify-content: center;
-    border-top:  1px solid rgba(255,255,255,.08);
+    border-top:  1px solid rgba(255,255,255,.80);
 }
 .bankfleet-menu-drawer__body::-webkit-scrollbar {
     width: 6px;

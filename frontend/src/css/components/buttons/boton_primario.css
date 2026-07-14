@@ -22,12 +22,11 @@
 .bankfleet-btn--primary{
     color: var(--white);
     background:linear-gradient(180deg,var(--secondary-400) 0%,var(--secondary-400) 100%);
-    border-color: rgba(255,255,255,.08);
 }
 .bankfleet-btn--primary:hover{
     background: linear-gradient(100deg,var(--primary-600),var(--secondary-400));
     transform: translateY(-2px);
-    border: 1px solid var(--secondary-50); 
+    border: 0.5px solid var(--secondary-50); 
 }
 .bankfleet-btn--primary:active{
     transform: translateY(0);

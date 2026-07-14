@@ -3,7 +3,6 @@
   display:flex;
   justify-content:center;
   align-items:center;
-  background:linear-gradient(135deg,#050816,#0B1020);
   font-family:var(--font-primary);
   position:relative;
   overflow:hidden;
@@ -53,7 +52,6 @@
   max-width:432px;
   padding:24px;
   border-radius:32px;
-  background:var(--primary-800);
   border:1px solid rgba(255,255,255,0.08);
   backdrop-filter:blur(20px);
 }

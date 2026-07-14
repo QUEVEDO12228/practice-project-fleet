@@ -7,7 +7,6 @@
     box-sizing:border-box;
 }
 .bankfleet-transfer-bank__content{
-    background:var(--primary-800);
     /* border:2px solid rgba(255,255,255,.08); */
     /* border-radius:var(--radius-xxl); */
     padding:24px;
@@ -121,7 +120,6 @@
 }
 .bankfleet-transfer-bank__summary{
     width:280px;
-    background:var(--primary-800);
     /* border:2px solid rgba(255,255,255,.08); */
     /* border-radius:var(--radius-xxl); */
     padding:24px;
@@ -130,7 +128,7 @@
 }  
 .bankfleet-transfer-bank__summary-title{
     color:var(--white);
-    font-size:var(--fs-xs);
+    font-size:var(--fs-xxs);
     font-family:var(--font-primary-bold);
     margin-bottom:var(--gap-lg);
 }
@@ -149,7 +147,7 @@
 }
 .bankfleet-transfer-bank__summary-value{
     color:var(--white);
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
     font-family:var(--font-primary-semibold);
 }
 .bankfleet-transfer-bank__actions{
