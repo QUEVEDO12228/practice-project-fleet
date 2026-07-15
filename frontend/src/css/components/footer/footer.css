@@ -7,12 +7,6 @@ BANKFLEET FOOTER
 
     overflow: hidden;
 
-    background: linear-gradient(
-        135deg,
-        var(--primary-900) 0%,
-        var(--primary-800) 100%
-    );
-
 
     font-family: var(--font-primary);
 }
@@ -39,22 +33,12 @@ GLOW EFFECTS
     top: -120px;
     left: -120px;
 
-    background: linear-gradient(
-        135deg,
-        var(--primary-900) 0%,
-        var(--primary-800) 100%
-    );
 }
 
 .bankfleet-footer__glow--right {
     right: -120px;
     bottom: -120px;
 
-    background: linear-gradient(
-        135deg,
-        var(--primary-900) 0%,
-        var(--primary-800) 100%
-    );
 }
 
 
@@ -81,12 +65,6 @@ CONTAINER
     margin: 0 auto;
 
     padding:var(--gap-lg);
-    background: linear-gradient(
-        135deg,
-        var(--primary-900) 0%,
-        var(--primary-800) 100%
-    );
-    
 }
 
 
@@ -120,12 +98,6 @@ BRAND
 
     border-radius: var(--radius-xl);
 
-    background:
-        linear-gradient(
-            135deg,
-            var(--secondary-500),
-            var(--primary-500)
-        );
 
     color: var(--white);
 
@@ -215,12 +187,6 @@ METRICS
         1px solid rgba(255,255,255,0.06);
 
     border-radius: var(--radius-lg);
-
-    background: linear-gradient(
-        135deg,
-        var(--primary-900) 0%,
-        var(--primary-800) 100%
-    );
 
     backdrop-filter: blur(10px);
 }

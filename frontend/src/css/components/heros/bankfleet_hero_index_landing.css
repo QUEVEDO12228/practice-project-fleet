@@ -1,0 +1,487 @@
+/*==================================================
+ bankfleet-hero-principal
+==================================================*/
+
+.bankfleet-hero-principal{
+
+    position:relative;
+    overflow:hidden;
+    max-width: 1000px;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    align-items:center;
+    gap:var(--gap-xxxl);
+    padding-top:24px;
+}
+
+/*====================================*/
+
+.bankfleet-hero-principal__content{
+    display:flex;
+    flex-direction:column;
+    gap:var(--gap-lg);
+}
+.bankfleet-hero-principal__content-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+
+}
+.bankfleet-hero-principal__badge{
+
+    width:max-content;
+    width: 300px;
+    display:flex;
+    align-items:center;
+    gap:var(--gap-lg);
+
+    padding:10px 18px;
+
+    border-radius:var(--radius-full);
+
+    background:var(--primary-50);
+
+    border:1px solid var(--primary-100);
+
+    color:var(--primary-600);
+
+    font-size: var(--fs-xxxxxs);
+
+    font-family:var(--font-primary-semibold);
+
+    letter-spacing:.8px;
+
+    text-transform:uppercase;
+}
+
+/*====================================*/
+
+.bankfleet-hero-principal__badge-dot{
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:var(--success-color);
+
+    box-shadow:0 0 10px var(--success-color);
+}
+
+/*====================================*/
+
+.bankfleet-hero-principal__title{
+
+    margin:0;
+
+    color:var(--white);
+
+    font-size:var(--fs-xs);
+
+    font-family:var(--font-primary-bold);
+
+    line-height:1.08;
+
+    letter-spacing:-1px;
+}
+
+.bankfleet-hero-principal__title span{
+
+    display:block;
+
+    margin-top:1.2rem;
+
+    color:var(--gray-200);
+
+    font-size:var(--fs-xxs);
+
+}   
+
+/*====================================*/
+
+.bankfleet-hero-principal__description{
+
+    max-width:720px;
+
+    margin:0;
+
+    color:var(--gray-200);
+
+    font-size:var(--fs-xxxxs);
+
+    font-family:var(--font-primary-regular);
+
+    line-height:1.8;
+}
+
+/*====================================*/
+
+.bankfleet-hero-principal__actions{
+
+    display:flex;
+
+    gap:var(--gap-lg);
+
+    flex-wrap:wrap;
+}
+
+/*====================================*/
+
+.bankfleet-hero-principal__stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:var(--gap-md);
+}
+
+/*====================================*/
+
+.stat-card{
+
+    padding:22px;
+
+    border-radius:var(--radius-lg);
+
+    border-radius:var(--radius-xl);
+    border:1px solid rgba(255,255,255,.08);
+    background:
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.015)
+    );
+    backdrop-filter:blur(22px);
+    overflow:hidden;
+    cursor:pointer;
+    transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+.stat-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.08);
+}
+.stat-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--secondary-400), transparent);
+    opacity: .6;
+}
+
+/*====================================*/
+
+.stat-card small{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--gray-100);
+
+    font-size:var(--fs-xxxxs);
+
+    font-family:var(--font-primary-semibold);
+
+    text-transform:uppercase;
+
+    letter-spacing:.6px;
+}
+
+.stat-card strong{
+
+    color:var(--white);
+
+    font-size:var(--fs-xxs);
+
+    font-family:var(--font-primary-bold);
+}
+
+/*==================================================
+ VISUAL
+==================================================*/
+
+.bankfleet-hero-principal__visual{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+/*====================================*/
+
+.bankfleet-hero-principal-card{
+
+    width:100%;
+
+    max-width:460px;
+
+    padding:36px;
+
+    border-radius:var(--radius-xxl);
+    border:1px solid rgba(255,255,255,.08);
+    background:
+    linear-gradient(var(--secondary-950));
+    backdrop-filter:blur(22px);
+    overflow:hidden;
+    cursor:pointer;
+    transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+.bankfleet-hero-principal-card::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background:
+    linear-gradient(90deg, transparent, var(--secondary-400), transparent);
+    opacity:.6;
+}
+
+/*====================================*/
+
+.bankfleet-hero-principal-card__header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:32px;
+
+    opacity:.85;
+
+    font-size:var(--fs-xxxxs);
+
+    font-family:var(--font-primary-semibold);
+    color: var(--white);
+}
+
+/*====================================*/
+
+.bankfleet-hero-principal-card h2{
+
+    margin:0;
+
+    font-size:var(--fs-xxs);
+    color: var(--white);
+
+    font-family:var(--font-primary-bold);
+}
+
+/*====================================*/
+
+.bankfleet-hero-principal-card__progress{
+
+    margin:32px 0;
+
+    height:10px;
+
+    border-radius:var(--radius-full);
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.18);
+}
+
+.bankfleet-hero-principal-card__progress-bar{
+
+    width:72%;
+
+    height:100%;
+
+    border-radius:inherit;
+
+    background:var(--white);
+}
+
+/*====================================*/
+
+.bankfleet-hero-principal-card__footer{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--gap-lg);
+}
+
+.bankfleet-hero-principal-card__footer small{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    opacity:.75;
+
+    font-size:var(--fs-xxxxs);
+    color: var(--white);
+}
+
+.bankfleet-hero-principal-card__footer strong{
+
+    font-size:var(--fs-xxxs);
+    color: var(--white);
+    font-family:var(--font-primary-bold);
+}
+
+/*==================================================
+ bankfleet-FLOATING CARDS
+==================================================*/
+
+.bankfleet-floating-card{
+
+    position:absolute;
+
+    max-width:150px;
+
+    padding:18px;
+    color: var(--white);
+    border-radius:var(--radius-lg);;
+    font-size: var(--fs-xxxxs);
+    border:1px solid rgba(255,255,255,.08);
+    background:
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.015)
+    );
+    backdrop-filter:blur(22px);
+    overflow:hidden;
+    cursor:pointer;
+    transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+.bankfleet-floating-card:before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:3px;
+    background:
+    linear-gradient(90deg, transparent, var(--secondary-400), transparent);
+    opacity:.6;
+}
+.bankfleet-floating-card span{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:var(--white);
+
+    font-size:var(--fs-xxxxs);
+
+    text-transform:uppercase;
+
+    letter-spacing:.6px;
+}
+
+.bankfleet-floating-card strong{
+
+    color:var(--gray-200);
+
+    font-size:var(--fs-xxxxs);
+
+    font-family:var(--font-primary-bold);
+}
+
+.bankfleet-floating-card--top{
+
+    top:-50px;
+
+    right:-0px;
+}
+
+.bankfleet-floating-card--bottom{
+
+    bottom:-50px;
+
+    left:-20px;
+}
+
+/*==================================================
+ RESPONSIVE
+==================================================*/
+
+@media(max-width:1200px){
+
+.bankfleet-hero-principal{
+
+    grid-template-columns:1fr;
+
+    gap:var(--gap-xxl);
+
+    padding:40px;
+}
+
+.bankfleet-hero-principal__visual{
+
+    order:-1;
+}
+
+.bankfleet-hero-principal__stats{
+
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.bankfleet-hero-principal{
+
+    padding:28px;
+}
+
+.bankfleet-hero-principal__title{
+
+    font-size:var(--fs-lg);
+}
+
+.bankfleet-hero-principal__description{
+
+    font-size:var(--fs-xxs);
+}
+
+.bankfleet-hero-principal__actions{
+
+    flex-direction:column;
+}
+
+.bankfleet-hero-principal__stats{
+
+    grid-template-columns:1fr;
+}
+
+.bankfleet-hero-principal-card{
+
+    max-width:100%;
+}
+
+.bankfleet-floating-card{
+
+    display:none;
+}
+
+}

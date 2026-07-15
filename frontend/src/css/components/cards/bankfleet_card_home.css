@@ -2,7 +2,7 @@
     position:relative;
     width:100%;
     max-width: 980px;
-    padding:var(--gap-xxs);
+    padding-top:var(--gap-xxs);
     box-sizing:border-box;
     overflow:visible;
 }
@@ -44,7 +44,6 @@
     scrollbar-width:none;
     padding-top:20px;
     padding-bottom:30px;
-    padding-left: 2rem;
 }
 .bankfleet-products__viewport::-webkit-scrollbar {
     display:none;

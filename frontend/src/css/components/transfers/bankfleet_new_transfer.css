@@ -1,8 +1,9 @@
 .bankfleet-transfer-method {
     position: relative;
     width: 100%;
-    padding: var(--gap-lg);
     box-sizing: border-box;
+    padding-top: var(--gap-lg);
+    padding-bottom: var(--gap-lg);
 }
 .bankfleet-transfer-method {
     scrollbar-width: none;

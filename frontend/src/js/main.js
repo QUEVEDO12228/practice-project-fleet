@@ -26,12 +26,15 @@ import '/frontend/src/js/components/forms/register_step6.js';
 import '/frontend/src/js/components/forms/code_verify.js';
 import '/frontend/src/js/components/forms/forgot_password.js';
 import '/frontend/src/js/components/forms/reset_password.js';
+import '/frontend/src/js/components/heros/bankfleet_hero_index_landing.js';
 
 import '/frontend/src/js/components/cards/bankfleet_card_home.js';
 
 import '/frontend/src/js/pages/home/vista_home_client.js';
 import '/frontend/src/js/pages/payrollpayment/table/vista_bankfleet_manage_groups.js';
 import '/frontend/src/js/pages/payrollpayment/table/view_bankfleet_employee_management_table.js';
+import '/frontend/src/js/pages/payrollpayment/table/view_payroll_payment_history.js';
+import '/frontend/src/js/pages/payrollpayment/table/view_bankfleet_scheduled_consultations_payroll.js';
 
 import '/frontend/src/js/components/sidebar/bankfleet_sidebar_principal.js';
 import '/frontend/src/js/components/sidebar/bankfleet_drop-down_menu.js';

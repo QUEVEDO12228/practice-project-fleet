@@ -21,14 +21,30 @@
 }
 .bankfleet-btn--primary{
     color: var(--white);
-    background:linear-gradient(180deg,var(--secondary-400) 0%,var(--secondary-400) 100%);
+    background:
+    linear-gradient(160deg, transparent, var(--secondary-400), transparent);
+    backdrop-filter:blur(22px);
+    overflow:hidden;
+    cursor:pointer;
+    transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
 }
 .bankfleet-btn--primary:hover{
-    background: linear-gradient(100deg,var(--primary-600),var(--secondary-400));
-    transform: translateY(-2px);
-    border: 0.5px solid var(--secondary-50); 
+    color: var(--white);
+    background:
+    linear-gradient(160deg, transparent, var(--secondary-500), transparent);
+    backdrop-filter:blur(22px);
+    overflow:hidden;
+    cursor:pointer;
+    transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+    transform: translateY(-6px);
 }
-.bankfleet-btn--primary:active{
+.bankfleet-btn--primary:active{ 
     transform: translateY(0);
     box-shadow:0 2px 8px rgba(109,40,217,.25);
 }

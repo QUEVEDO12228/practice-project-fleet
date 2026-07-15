@@ -5,29 +5,43 @@
     gap: 8px;
     height: 36px;
     padding: 0 16px;
-    border:1px solid rgba(255,255,255,.08);
     border-radius: 999px;
-    background: rgba(255,255,255,.03);
+    border: 1px solid var(--secondary-50);  
+    background:
+    linear-gradient(160deg, transparent, var(--gray-500), transparent);
+    backdrop-filter:blur(22px);
+    overflow:hidden;
+    cursor:pointer;
+    transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
     color: var(--white);
     text-decoration: none;
     font-family: var(--font-primary);
     font-size:var(--fs-xxxxs);
     font-weight: 500;
-    transition:transform .25s ease, border-color .25s ease, background .25s ease;
 }
 .bankfleet-btn-secondary:hover {
     transform: translateY(-2px);
-    border: 1px solid var(--secondary-50);  
-    background:linear-gradient(180deg,var(--primary-800) 0%,var(--primary-400) 100%);
+    background:
+    linear-gradient(160deg, transparent, var(--gray-300), transparent);
+    backdrop-filter:blur(-22px);
+    overflow:hidden;
+    cursor:pointer;
+    transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
 }
 .bankfleet-btn-secondary:active {
     transform: translateY(0);
 }
 .bankfleet-btn-secondary__icon{
-  height: 14px;
-  width: 14px;
+  height: 12px;
+  width: 12px;
 }
-.bankfleet-btn-secondary__icon:hover{
-  height: 14px;
-  width: 14px;
+
+.vista-home-client__btn-secondary{
+  margin-top: 2.4rem;
 }
