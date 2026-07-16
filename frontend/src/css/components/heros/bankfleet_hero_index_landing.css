@@ -280,7 +280,7 @@
 
     margin:0;
 
-    font-size:var(--fs-xxs);
+    font-size:var(--fs-xs);
     color: var(--white);
 
     font-family:var(--font-primary-bold);
