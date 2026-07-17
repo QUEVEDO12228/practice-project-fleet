@@ -5,27 +5,69 @@
 .bankfleet-sidebar__link {
     position: relative;
     width: fit-content;
-    color: var(--gray-200);
+    color: var(--white);
     text-decoration: none;
     transition: var(--transition-normal);
     font-size: var(--fs-xxxxs);
+    padding: 4px 8px 4px 8px;
+    /* 1. Crea un contexto de apilamiento en el elemento padre */
+    z-index: 1;
 }
+
+.bankfleet-sidebar__link:hover {
+    color: var(--white);
+}
+
 .bankfleet-sidebar__link::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: -4px;
     width: 0%;
-    height: 1px;
-    background: var(--secondary-400);
+    height: 30px;
+    background: color-mix(in srgb, var(--secondary-500) 90%, transparent);
     transition: var(--transition-normal);
-}
-.bankfleet-sidebar__link:hover {
-    color: var(--white);
+    border-radius: 10px;
+    /* 2. Envía el pseudo-elemento al fondo de la capa actual */
+    z-index: -12;
 }
 .bankfleet-sidebar__link:hover::after {
     width: 100%;
 }
+.bankfleet-sidebar__link--double {
+    position: relative;
+    width: fit-content;
+    color: var(--white);
+    text-decoration: none;
+    transition: var(--transition-normal);
+    font-size: var(--fs-xxxxs);
+    padding: 4px 8px 4px 8px;
+    /* 1. Crea un contexto de apilamiento en el elemento padre */
+    z-index: 1;
+}
+
+.bankfleet-sidebar__link--double:hover {
+    color: var(--white);
+    width: 144px;
+}
+
+.bankfleet-sidebar__link--double::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 44px;
+    background: var(--secondary-500);
+    transition: var(--transition-normal);
+    border-radius: 10px;
+    /* 2. Envía el pseudo-elemento al fondo de la capa actual */
+    z-index: -12;
+}
+.bankfleet-sidebar__link--double:hover::after {
+    width: 100%;
+}
+
 .bankfleet-sidebar-principal__logo {
     display: flex;
     align-items: center;
@@ -60,13 +102,14 @@
     font-size: var(--fs-xxxxs);
 }
 .bankfleet-sidebar-principal__menu-button:hover {
-    background: var(--gray-600);
+    background: rgba(255,255,255,.05);
     color: var(--white);
     border-left: 6px solid var(--secondary-500);
     border-right: 6px solid var(--secondary-500);
 }
 .bankfleet-sidebar-principal__menu-button.active {
-    background:  rgba(255,255,255,.05);
+    background: var(--gray-700);
+
     color: var(--white);
     border-left: 6px solid var(--secondary-500);
     border-right: 6px solid var(--secondary-500);

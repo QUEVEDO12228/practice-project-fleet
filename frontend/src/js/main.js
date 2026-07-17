@@ -36,6 +36,9 @@ import '/frontend/src/js/pages/payrollpayment/table/vista_bankfleet_manage_group
 import '/frontend/src/js/pages/payrollpayment/table/view_bankfleet_employee_management_table.js';
 import '/frontend/src/js/pages/payrollpayment/table/view_payroll_payment_history.js';
 import '/frontend/src/js/pages/payrollpayment/table/view_bankfleet_scheduled_consultations_payroll.js';
+import '/frontend/src/js/pages/transfers/tables/view_bankfleet_recipients.js';
+import '/frontend/src/js/pages/transfers/tables/view_bankfleet_scheduled_consultations_transfers.js';
+import '/frontend/src/js/pages/transfers/tables/view_bankfleet_table_transfer_history.js';
 
 import '/frontend/src/js/components/sidebar/bankfleet_sidebar_principal.js';
 import '/frontend/src/js/components/sidebar/bankfleet_drop-down_menu.js';

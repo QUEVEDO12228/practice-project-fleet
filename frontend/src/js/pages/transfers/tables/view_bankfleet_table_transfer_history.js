@@ -1,21 +1,29 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/frontend/src/css/main.css">
-    <script type="module" src="/frontend/src/js/main.js"></script>
-    <title>V, Tabla Historial de transferencias</title>
-</head>
-<body>
-    <div class="bankfleet-app">
-        <header class="bankfleet-navbar"><div class="navbar-index-content"></div><div class="bankfleet-drop-down-menu-container"></div>  </header>
-        <div class="bankfleet-app__body">
-            <aside class="bankfleet-sidebar-principal"><div class="sidebar-container"></div></aside>
-            <main class="bankfleet-main-content"><section class="bankfleet-transfer-view"><div class="bankfleet-table-transfer-history-container"></div>
-            <div class="bankfleet-global-table-filter-container"></div></section></main>
-        </div>
-        <footer class="bankfleet-footer"><div class="footer-landing-container"></div></footer>
-    </div>
-</body>
-</html>
+import {
+    loadTransferHistoryTable,
+    initTableTransferHistory
+} from "/frontend/src/js/components/tables/bankfleet_table_transfer_history.js";
 
+import {
+    loadFilterDrawer,
+    initFilterDrawer
+} from "/frontend/src/js/components/transfers/filters/bankfleet_filter_transfers3.js";
+
+document.addEventListener("DOMContentLoaded", async () => {
+
+    try {
+
+        await loadTransferHistoryTable();
+
+        await loadFilterDrawer();
+
+        initTableTransferHistory();
+
+        initFilterDrawer();
+
+    } catch (error) {
+
+        console.error(error);
+
+    }
+
+});

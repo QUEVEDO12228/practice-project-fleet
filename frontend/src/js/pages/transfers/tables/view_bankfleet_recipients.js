@@ -1,21 +1,29 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/frontend/src/css/main.css">
-    <script type="module" src="/frontend/src/js/main.js"></script>
-    <title>V, Tabla Gestión de destinatarios</title>
-</head>
-<body>
-    <div class="bankfleet-app">
-        <header class="bankfleet-navbar"><div class="navbar-index-content"></div><div class="bankfleet-drop-down-menu-container"></div>  </header>
-        <div class="bankfleet-app__body">
-            <aside class="bankfleet-sidebar-principal"><div class="sidebar-container"></div></aside>
-            <main class="bankfleet-main-content"><section class="bankfleet-transfer-view"><div class="bankfleet-recipients-component-container"></div>
-            <div class="bankfleet-global-table-filter-container"></div></section></main>
-        </div>
-        <footer class="bankfleet-footer"><div class="footer-landing-container"></div></footer>
-    </div>
-</body>
-</html>
+import {
+    loadRecipientsTable,
+    initTableRecipients
+} from "/frontend/src/js/components/tables/bankfleet_recipients.js";
 
+import {
+    loadFilterDrawer,
+    initFilterDrawer
+} from "/frontend/src/js/components/transfers/filters/bankfleet_filter_transfers1.js";
+
+document.addEventListener("DOMContentLoaded", async () => {
+
+    try {
+
+        await loadRecipientsTable();
+
+        await loadFilterDrawer();
+
+        initTableRecipients();
+
+        initFilterDrawer();
+
+    } catch (error) {
+
+        console.error(error);
+
+    }
+
+});
