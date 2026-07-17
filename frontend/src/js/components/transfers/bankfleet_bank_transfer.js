@@ -24,8 +24,9 @@ function initTransferKeyEvents() {
                     <button type="button" class="bankfleet-btn-secondary bankfleet-transfer-confirmation__cancel">Atrás
                         <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="bankfleet-btn-secondary__icon">
                     </button>
-                    <button type="button" class="bankfleet-btn bankfleet-btn--primary bankfleet-transfer-confirmation__confirm">Confirmar
-                        <img src="/frontend/public/assets/icons/icon_next_white.svg" alt="" class="bankfleet-btn__icon" >
+                    <button class="bankfleet-btn bankfleet-btn--primary bankfleet-btn--expand bankfleet-transfer-confirmation__confirm">
+                        <span class="bankfleet-btn__text">Confirmar</span>
+                        <img src="/frontend/public/assets/icons/icon_next-white.svg" alt="->" class="bankfleet-btn__icon bankfleet-transfer-key__btn-icon">
                     </button>
                 </div>
             </div>

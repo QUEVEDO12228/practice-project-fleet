@@ -6,16 +6,9 @@
     height: 36px;
     padding: 0 16px;
     border-radius: 999px;
-    border: 1px solid var(--secondary-50);  
-    background:
-    linear-gradient(160deg, transparent, var(--gray-900), transparent);
-    backdrop-filter:blur(22px);
-    overflow:hidden;
-    cursor:pointer;
-    transition:
-    transform .35s ease,
-    border-color .35s ease,
-    box-shadow .35s ease;
+    background:none;
+    border:
+        2px solid rgba(255,255,255,.10); 
     color: var(--white);
     text-decoration: none;
     font-family: var(--font-primary);
@@ -23,17 +16,11 @@
     font-weight: 500;
 }
 .bankfleet-btn-secondary:hover {
-    transform: translateY(-6px);
-    background:
-    linear-gradient(160deg, transparent, var(--gray-600), transparent);
-    backdrop-filter:blur(-22px);
-    overflow:hidden;
-    cursor:pointer;
-    transition:
-    transform .35s ease,
-    border-color .35s ease,
-    box-shadow .35s ease;
-    box-shadow: 0 4px 4px -2px rgba(107, 114, 128, .20), 0 12px 14px -6px rgba(107, 114, 128, .35);
+    transform: translateY(-2px);
+
+    border-color:
+        rgba(139,92,246,.35);
+
 }
 .bankfleet-btn-secondary:active {
     transform: translateY(0);

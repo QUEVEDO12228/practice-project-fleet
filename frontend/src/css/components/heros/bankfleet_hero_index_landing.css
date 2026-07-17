@@ -14,6 +14,18 @@
     padding-top:24px;
 }
 
+@media (width > 1080px ) {
+    .bankfleet-hero-principal{
+        max-width: fit-content;
+    }
+}
+
+@media (width < 980px ) {
+    .bankfleet-hero-principal{
+        max-width: fit-content;
+    }
+}
+
 /*====================================*/
 
 .bankfleet-hero-principal__content{

@@ -71,3 +71,10 @@ FOOTER CONTAINER
     display: flex;
     align-items: stretch;
 }
+
+a{
+    background: var(--primary-950);
+}
+button{
+    background: var(--primary-950);
+}

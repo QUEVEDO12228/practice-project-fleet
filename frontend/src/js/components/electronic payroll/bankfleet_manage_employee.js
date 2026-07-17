@@ -10,5 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 function initManageEmployee() {
     const ManageEmployee = document.querySelector(".bankfleet-btn--primary");
     if (!ManageEmployee) {console.error("NO ENCONTRÉ BOTÓN SIGUIENTE");return;}
-    ManageEmployee.addEventListener("click", function (e) {e.preventDefault();window.location.href = "/frontend/src/html/pages/auth/vista_register_step1.html";});
+    ManageEmployee.addEventListener("click", function (e) {e.preventDefault();window.location.href = "/frontend/src/html/pages/dashboard/banking/payrollpayment/tables/view_bankfleet_employee_management_table.html";});
+    const ManageEmployeeSecondButton = document.querySelector(".bankfleet-employee-manage__bankfleet-btn");
+    if (!ManageEmployeeSecondButton) {console.error("NO ENCONTRÉ BOTÓN SIGUIENTE");return;}
+    ManageEmployeeSecondButton.addEventListener("click", function (e) {e.preventDefault();window.location.href = "/frontend/src/html/pages/dashboard/banking/electronic%20payroll/view_bankfleet_manage_employee1.html";});
 }

@@ -1,13 +1,12 @@
-.bankfleet-sidebar-principal{
+/* .bankfleet-sidebar-principal{
     width: 240px;
     height: 100vh;
     flex-shrink: 0;
     align-self: stretch;
     display: flex;
     flex-direction: column;
-    padding: 2px;
     box-sizing: border-box;
-}
+} */
 .bankfleet-sidebar__link {
     position: relative;
     width: fit-content;
