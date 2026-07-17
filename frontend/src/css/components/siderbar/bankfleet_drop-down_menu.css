@@ -109,10 +109,10 @@
     transition: var(--transition-normal);
 }
 .bankfleet-menu-drawer__item:hover {
-    background:  rgba(255,255,255,.05);
+    background: var(--gray-600);
     color: var(--white);
-    border-left: 3px solid var(--secondary-500);
-    border-bottom: 1px solid var(--secondary-500);
+    border-left: 6px solid var(--secondary-500);
+    border-right: 6px solid var(--secondary-500);   
 }
 .bankfleet-menu-drawer__icon {
     width: 18px;

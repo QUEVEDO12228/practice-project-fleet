@@ -8,7 +8,7 @@
     border-radius: 999px;
     background:none;
     border:
-        2px solid rgba(255,255,255,.10); 
+        1px solid rgba(255,255,255,.10); 
     color: var(--white);
     text-decoration: none;
     font-family: var(--font-primary);
@@ -18,8 +18,7 @@
 .bankfleet-btn-secondary:hover {
     transform: translateY(-2px);
 
-    border-color:
-        rgba(139,92,246,.35);
+    border:1px solid var(--secondary-400)
 
 }
 .bankfleet-btn-secondary:active {
