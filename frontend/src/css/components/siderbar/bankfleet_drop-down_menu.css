@@ -57,7 +57,7 @@
     background:linear-gradient(135deg, var(--secondary-500), var(--secondary-700));
     color: var(--white);
     font-family: var(--font-primary-bold);
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xs);
     box-shadow: var(--shadow-secondary);
 }
 .bankfleet-menu-drawer__user {
@@ -67,12 +67,12 @@
 .bankfleet-menu-drawer__name {
     margin: 0;
     color: var(--white);
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xxs);
     font-family: var(--font-primary-semibold);
 }
 .bankfleet-menu-drawer__role {
     color: var(--gray-300);
-    font-size: var(--fs-xxxxs);
+    font-size: var(--fs-xxxs);
 }
 .bankfleet-menu-drawer__close {
     width: 40px;
@@ -96,7 +96,7 @@
     gap: 8px;
 }
 .bankfleet-menu-drawer__text-item{
-    font-size: var(--fs-xxxxs);
+    font-size: var(--fs-xxxs);
 }
 .bankfleet-menu-drawer__item {
     display: flex;

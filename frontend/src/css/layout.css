@@ -24,9 +24,8 @@ html {
     padding: 0;
 }
 
-body {
+.body1 {
     min-height: 100vh;
-    
     background:
         var(--primary-950);
 
@@ -40,8 +39,39 @@ body {
 
     display: flex;
     flex-direction: column;
+}
+body {
+    min-height: 100vh;
+    background:
+        var(--primary-950);
 
-    overflow-x: hidden;
+    font-family: var(--font-primary);
+
+    color: var(--black);
+
+    font-size: var(--fs-xs);
+
+    line-height: 1.5;
+
+    display: flex;
+    flex-direction: column;
+}
+.body-login {
+    min-height: 100vh;
+    margin: 0px 86px;
+    background:
+        var(--primary-950);
+
+    font-family: var(--font-primary);
+
+    color: var(--black);
+
+    font-size: var(--fs-xs);
+
+    line-height: 1.5;
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* =========================================================

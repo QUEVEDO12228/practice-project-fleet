@@ -1,15 +1,16 @@
  .bankfleet-sidebar-principal{
-    width: 240px;
+    width: fit-content;
     height: 100vh;
 }
 .bankfleet-sidebar__link {
     position: relative;
     width: fit-content;
-    color: var(--white);
+    min-width: 200px;
+    color: var(--gray-200);
     text-decoration: none;
     transition: var(--transition-normal);
-    font-size: var(--fs-xxxxs);
-    padding: 4px 8px 4px 8px;
+    font-size: var(--fs-xxxs);
+    padding: 4px 2px 4px 2px;
     /* 1. Crea un contexto de apilamiento en el elemento padre */
     z-index: 1;
 }
@@ -36,12 +37,12 @@
 }
 .bankfleet-sidebar__link--double {
     position: relative;
-    width: fit-content;
-    color: var(--white);
+    width: 200px;
+    color: var(--gray-200);
     text-decoration: none;
     transition: var(--transition-normal);
-    font-size: var(--fs-xxxxs);
-    padding: 4px 8px 4px 8px;
+    font-size: var(--fs-xxxs);
+    padding: 4px 2px 4px 2px;
     /* 1. Crea un contexto de apilamiento en el elemento padre */
     z-index: 1;
 }
@@ -99,7 +100,7 @@
     background: transparent;
     color: var(--gray-50);
     cursor: pointer;
-    font-size: var(--fs-xxxxs);
+    font-size: var(--fs-xxxs);
 }
 .bankfleet-sidebar-principal__menu-button:hover {
     background: rgba(255,255,255,.05);
@@ -116,18 +117,18 @@
 }
 .bankfleet-sidebar-principal__submenu {
     list-style: none;
-    padding-left: 18px;
     margin-top: 8px;
     display: none;
 }
 .bankfleet-sidebar-principal__submenu.active {
     display: flex;
     flex-direction: column;
+    margin-left: 0.8rem;
     gap: 10px;
 }
 .bankfleet-sidebar-principal__submenu li {
     color: var(--gray-400);
-    font-size: var(--fs-xxxxs);
+    font-size: var(--fs-xxxs);
     cursor: pointer;
     transition: .25s;
 }
@@ -167,6 +168,7 @@
     font-size: var(--fs-xxxxs);
     outline: none;
     transition: .25s;
+    max-width: 196px;
 }
 .bankfleet-sidebar-principal__search-input::placeholder {
     color: var(--gray-500);

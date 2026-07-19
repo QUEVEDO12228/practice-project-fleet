@@ -26,7 +26,7 @@
     font-family:var(--font-primary-bold);
 }
 .bankfleet-recipients-table__subtitle{
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxs);
     color:var(--gray-300);
 }
 .bankfleet-recipients-table__menu-button{

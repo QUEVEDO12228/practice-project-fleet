@@ -57,12 +57,12 @@
 }
 .bankfleet-transfer-key__title {
     color: var(--white);
-    font-size: var(--fs-xxs);
+    font-size: var(--fs-sm);
     font-family: var(--font-primary-bold);
 }
 .bankfleet-transfer-key__subtitle {
     color: var(--gray-300);
-    font-size: var(--fs-xxxxs);
+    font-size: var(--fs-xxxs);
     line-height: 1.8;
 }
 .bankfleet-transfer-key__form {

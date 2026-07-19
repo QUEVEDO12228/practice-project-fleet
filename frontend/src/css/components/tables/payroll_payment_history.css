@@ -187,7 +187,7 @@
 .transaction-type{
     padding:8px 8px;
     border-radius:var(--radius-full);
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
 }
 .transaction-type--transfer{
     background:var(--secondary-100);
@@ -204,7 +204,7 @@
 .transaction-status{
     padding:8px 8px;
     border-radius:var(--radius-full);
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
 }
 .transaction-status--success{
     background:var(--tertiary-100);

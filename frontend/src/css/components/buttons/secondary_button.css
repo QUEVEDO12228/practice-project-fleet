@@ -12,7 +12,7 @@
     color: var(--white);
     text-decoration: none;
     font-family: var(--font-primary);
-    font-size:var(--fs-xxxxs);
+    font-size:var(--fs-xxxs);
     font-weight: 500;
 }
 .bankfleet-btn-secondary:hover {

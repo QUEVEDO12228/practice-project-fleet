@@ -1,7 +1,6 @@
 .bankfleet-transfer-method {
     position: relative;
     width: 100%;
-    box-sizing: border-box;
     padding-top: var(--gap-lg);
     padding-bottom: var(--gap-lg);
 }
@@ -26,7 +25,6 @@
 .bankfleet-transfer-method::before {
     top: -120px;
     right: -120px;
-    background: var(--secondary-500);
 }
 .bankfleet-transfer-method::after {
     bottom: -120px;
@@ -41,21 +39,21 @@
 .bankfleet-transfer-method__title {
     margin: 0 0 var(--gap-sm);
     color: var(--white);
-    font-size: var(--fs-xxs);
+    font-size: var(--fs-sm);
     font-family: var(--font-primary-bold);
 }
 .bankfleet-transfer-method__subtitle {
     margin: 0;
     max-width: 650px;
     color: var(--gray-300);
-    font-size: var(--fs-xxxxs);
+    font-size: var(--fs-xxxs);
     line-height: 1.8;
 }
 .bankfleet-transfer-method__grid {
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     justify-content: center;
     gap: var(--gap-lg);
     width: 100%;
@@ -107,16 +105,16 @@
     height: 22px;
 }
 .bankfleet-transfer-method__card-title {
-    margin: 0;
+    margin: 0px 0px 12px 0px;
     color: var(--white);
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xs);
     font-family: var(--font-primary-semibold);
     text-decoration: none;
 }
 .bankfleet-transfer-method__card-description {
     margin: 0;
     color: var(--gray-300);
-    font-size: var(--fs-xxxxs);
+    font-size: var(--fs-xxxs);
     line-height: 1.7;
     text-decoration: none;  
 }
