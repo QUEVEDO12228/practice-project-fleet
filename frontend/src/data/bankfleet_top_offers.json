@@ -1,0 +1,198 @@
+[
+  {
+    "badge": "💰 INCENTIVO",
+    "icon": "🎁",
+    "title": "Regalo de hasta 2.750 €",
+    "description": "Recibe un bono directo de 500 € por domiciliar ingresos altos y disfruta de una remuneración del 1,5% TAE para ahorros de hasta 150.000 €.",
+    "features": [
+      "500 € de regalo",
+      "1,5% TAE",
+      "Hasta 150.000 €"
+    ],
+    "price": "Hasta 2.750 €",
+    "button": "Ver oferta",
+    "featured": true
+  },
+  {
+    "badge": "💰 CASHBACK",
+    "icon": "💳",
+    "title": "Combinación de hasta 2.580 €",
+    "description": "Obtén un 2% TAE, 400 € por tu nómina, devolución del 10% en Bizum y 3% en recibos del hogar durante el primer año.",
+    "features": [
+      "2% TAE",
+      "400 € por nómina",
+      "Cashback en Bizum"
+    ],
+    "price": "Hasta 2.580 €",
+    "button": "Solicitar",
+    "featured": false
+  },
+  {
+    "badge": "💰 RECOMPENSAS",
+    "icon": "🏆",
+    "title": "Bonificación acumulativa de 1.060 €",
+    "description": "Premia el uso diario de tu cuenta mediante reembolsos por recibos, tarjeta, nómina y operaciones Bizum.",
+    "features": [
+      "Reembolsos",
+      "Tarjeta",
+      "Bizum"
+    ],
+    "price": "1.060 €",
+    "button": "Descubrir",
+    "featured": false
+  },
+  {
+    "badge": "💰 SIN PERMANENCIA",
+    "icon": "📅",
+    "title": "Incentivo diferido de 840 €",
+    "description": "Recibe pagos mensuales durante dos años vinculando ingresos mínimos de 800 €, Bizum y recibos del hogar.",
+    "features": [
+      "840 €",
+      "Sin permanencia rígida",
+      "Pagos mensuales"
+    ],
+    "price": "840 €",
+    "button": "Conocer",
+    "featured": false
+  },
+  {
+    "badge": "💰 AHORRO",
+    "icon": "💵",
+    "title": "Premio de 600 € más rentabilidad",
+    "description": "Obtén hasta 600 € en efectivo durante el primer año junto con una remuneración del 2,50% TAE.",
+    "features": [
+      "600 €",
+      "2,50% TAE",
+      "Desde 850 € de nómina"
+    ],
+    "price": "600 €",
+    "button": "Solicitar",
+    "featured": false
+  },
+  {
+    "badge": "💰 EFECTIVO",
+    "icon": "💸",
+    "title": "Efectivo directo de 500 €",
+    "description": "Recibe un incentivo en efectivo al domiciliar una nómina o pensión igual o superior a 1.200 € mensuales.",
+    "features": [
+      "500 €",
+      "Pago directo",
+      "Nómina o pensión"
+    ],
+    "price": "500 €",
+    "button": "Ver oferta",
+    "featured": false
+  },
+  {
+    "badge": "📈 RENTABILIDAD",
+    "icon": "🚀",
+    "title": "Cuenta Premium al 5,09% TAE",
+    "description": "Una de las mayores rentabilidades del mercado para saldos de hasta 12.000 € durante el primer año.",
+    "features": [
+      "5,09% TAE",
+      "Hasta 12.000 €",
+      "Nómina desde 600 €"
+    ],
+    "price": "5,09% TAE",
+    "button": "Abrir cuenta",
+    "featured": false
+  },
+  {
+    "badge": "📈 AHORRO",
+    "icon": "🏦",
+    "title": "Cuenta Ahorro al 3,51% TAE",
+    "description": "Alta rentabilidad para nuevos clientes con intereses diarios y disponibilidad total del dinero.",
+    "features": [
+      "3,51% TAE",
+      "Intereses diarios",
+      "Sin restricciones"
+    ],
+    "price": "3,51% TAE",
+    "button": "Conocer",
+    "featured": false
+  },
+  {
+    "badge": "📈 ILIMITADO",
+    "icon": "💰",
+    "title": "Efectivo ilimitado al 3,04% TAE",
+    "description": "Haz crecer tus ahorros sin límites de capital y sin comisiones de administración.",
+    "features": [
+      "3,04% TAE",
+      "Sin tope",
+      "Sin comisiones"
+    ],
+    "price": "3,04% TAE",
+    "button": "Invertir",
+    "featured": false
+  },
+  {
+    "badge": "📈 BIENESTAR",
+    "icon": "❤️",
+    "title": "Cuenta Saludable al 3,00% TAE",
+    "description": "Obtén una rentabilidad especial cumpliendo objetivos de bienestar y salud.",
+    "features": [
+      "3,00% TAE",
+      "Hasta 50.000 €",
+      "Objetivos saludables"
+    ],
+    "price": "3,00% TAE",
+    "button": "Ver más",
+    "featured": false
+  },
+  {
+    "badge": "📈 DIGITAL",
+    "icon": "📱",
+    "title": "Cuenta Digital con 11,00% E.A.",
+    "description": "Cuenta digital con una alta rentabilidad anual para mantener el dinero siempre disponible.",
+    "features": [
+      "11,00% E.A.",
+      "Dinero disponible",
+      "Banca digital"
+    ],
+    "price": "11,00% E.A.",
+    "button": "Abrir",
+    "featured": false
+  },
+  {
+    "badge": "📈 CAJITAS",
+    "icon": "📦",
+    "title": "Ahorro con Cajitas al 9,25% E.A.",
+    "description": "Organiza tu dinero en objetivos independientes con ganancias diarias desde el primer peso.",
+    "features": [
+      "9,25% E.A.",
+      "Ganancias diarias",
+      "Desde $1"
+    ],
+    "price": "9,25% E.A.",
+    "button": "Empezar",
+    "featured": false
+  },
+  {
+    "badge": "🔒 CDT",
+    "icon": "📜",
+    "title": "CDT a Largo Plazo 13,51% E.A.",
+    "description": "Invierte a 18 meses y asegura una de las tasas más altas del mercado con capital garantizado.",
+    "features": [
+      "13,51% E.A.",
+      "18 meses",
+      "Renta fija"
+    ],
+    "price": "13,51% E.A.",
+    "button": "Invertir",
+    "featured": false
+  },
+  {
+    "badge": "🔒 CDT",
+    "icon": "🏦",
+    "title": "CDT a 1 Año 13,46% E.A.",
+    "description": "Obtén un rendimiento garantizado durante 360 días respaldado por fondos de garantía estatales.",
+    "features": [
+      "13,46% E.A.",
+      "360 días",
+      "Capital protegido"
+    ],
+    "price": "13,46% E.A.",
+    "button": "Solicitar",
+    "featured": false
+  }
+]

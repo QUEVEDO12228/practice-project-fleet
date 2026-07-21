@@ -30,6 +30,7 @@ import '/frontend/src/js/components/forms/reset_password.js';
 import '/frontend/src/js/components/heros/bankfleet_hero_index_landing.js';
 
 import '/frontend/src/js/components/cards/bankfleet_card_home.js';
+import '/frontend/src/js/components/cards/bankfleet_top_offers.js';
 
 import '/frontend/src/js/pages/home/vista_home_client.js';
 import '/frontend/src/js/pages/payrollpayment/table/vista_bankfleet_manage_groups.js';

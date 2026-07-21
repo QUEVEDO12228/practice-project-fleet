@@ -12,6 +12,7 @@
     align-items:center;
     gap:var(--gap-xl);
     padding-top:24px;
+    margin-bottom: 2.4rem;
 }
 
 @media (width > 1080px ) {
@@ -244,11 +245,15 @@
     max-width:460px;
 
     padding:36px;
-
+    
     border-radius:var(--radius-xxl);
-    border:1px solid rgba(255,255,255,.08);
-    background:
-    linear-gradient(var(--secondary-950));
+    border-top:3px solid rgba(255,255,255,1);
+    background: 
+    linear-gradient(
+        135deg,
+        var(--secondary-500),
+        var(--info-color)
+    );
     backdrop-filter:blur(22px);
     overflow:hidden;
     cursor:pointer;
@@ -369,12 +374,12 @@
     color: var(--white);
     border-radius:var(--radius-lg);;
     font-size: var(--fs-xxxxs);
-    border:1px solid rgba(255,255,255,.08);
-    background:
+    border-top:3px solid rgba(255,255,255,1);
+    background: 
     linear-gradient(
-        145deg,
-        rgba(255,255,255,.05),
-        rgba(255,255,255,.015)
+        135deg,
+        var(--secondary-500),
+        var(--info-color)
     );
     backdrop-filter:blur(22px);
     overflow:hidden;
