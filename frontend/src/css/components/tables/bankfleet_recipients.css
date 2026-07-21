@@ -46,7 +46,7 @@
 }
 .bankfleet-recipients-table__favorite-box{
     height:32px;
-    padding:0 8px;
+    padding:0 24px;
     display:flex;
     align-items:center;
     gap:8px;
@@ -87,8 +87,8 @@
     color:var(--black);
     background:var(--white);
 }
-.bankfleet-recipients-table__table tbody .bankfleet-recipients-table__tr:hover{
-        background:var(--secondary-600);
+.bankfleet-recipients-table__table tbody tr:hover td {
+    background: var(--secondary-300);
 }
 .recipient{
     display:flex;

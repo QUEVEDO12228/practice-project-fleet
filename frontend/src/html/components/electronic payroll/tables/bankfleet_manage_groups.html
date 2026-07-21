@@ -20,6 +20,10 @@
             <input type="text" placeholder="Buscar operación..." class="bankfleet_manage_groups-table__search-input">
         </div>
         <div class="bankfleet_manage_groups-table__container-buttons-buttons">
+            <div class="bankfleet-recipients-table__favorite-box">
+                <input type="checkbox" id="favorites" class="bankfleet-recipients-table__favorite-checkbox">
+                <label for="favorites" class="bankfleet-recipients-table__favorite-label">Mostrar favoritos</label>
+            </div>
             <button type="button" class="bankfleet-btn-secondary bankfleet-manage-groups__btn-filter">
                 <img src="/frontend/public/assets/icons/icon_filter_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-scheduled-queries-table__btn-secondary-icon">
                 Filtrar
@@ -33,7 +37,15 @@
         <table class="bankfleet_manage_groups-table__table">
             <thead>
                 <tr>
-                    <th><img class="bankfleet_manage_groups-table__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg"></th>
+                    <th class="transaction-recipient__table-th">
+                        <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg" alt="Opciones">
+                    </th>
+                    <th class="bankfleet_scheduled_consultations-table__checkbox-column">
+                        <label class="bankfleet_scheduled_consultations-table__checkbox">
+                            <input type="checkbox" id="select-all-payrolls" class="bankfleet_scheduled_consultations-table__checkbox-input">
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box-white"></span>
+                        </label>
+                    </th>
                     <th>Nombre empleado<br>No. de empleados</th><th>Fecha de<br> alta</th><th>Alias del<br> grupo de nómina</th>
                     <th>Cuenta origen</th><th>Periodicidad</th><th>Tipo Cuenta</th><th>No. Cuenta</th><th>Estado</th>
                 </tr>
@@ -60,6 +72,12 @@
                                 </a>
                             </div>
                         </div>
+                    </td>
+                    <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
+                        <label class="bankfleet_scheduled_consultations-table__checkbox">
+                            <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                        </label>
                     </td>
                     <td data-label="Empleado">
                         <div class="employee">
@@ -100,6 +118,12 @@
                             </div>
                         </div>
                     </td>
+                    <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
+                        <label class="bankfleet_scheduled_consultations-table__checkbox">
+                            <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                        </label>
+                    </td>
                     <td data-label="Empleado">
                         <div class="employee">
                             <div class="employee__avatar">G1</div>
@@ -138,6 +162,12 @@
                                 </a>
                             </div>
                         </div>
+                    </td>
+                    <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
+                        <label class="bankfleet_scheduled_consultations-table__checkbox">
+                            <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                        </label>
                     </td>
                     <td data-label="Empleado">
                         <div class="employee">

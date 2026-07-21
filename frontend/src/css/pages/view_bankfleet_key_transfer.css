@@ -1,34 +1,26 @@
 .bankfleet-app {
-    min-height: 100vh;
+    height: 100vh;      /* Cambia min-height por height */
     display: flex;
     flex-direction: column;
+    overflow: hidden;   /* Evita el scroll del body */
 }
+
 .bankfleet-app__body {
     flex: 1;
     display: flex;
-    align-items: stretch;
-    min-height: 0; 
-    width: 100%;
-}
-.bankfleet-sidebar-principal {
-    width: fit-content;
-    flex-shrink: 0;
-    display: flex;
     min-height: 0;
-    /* overflow-y: auto;
-
-    overflow-x: hidden;
-    scrollbar-gutter: stable; */
-    
 }
+
+.bankfleet-sidebar-principal {
+    flex-shrink: 0;
+    width: fit-content;
+    /* Sin overflow aquí */
+}
+
 .bankfleet-main-content {
     flex: 1;
     min-width: 0;
-    display: flex;
-    flex-direction: column;
     min-height: 0;
-}
-.bankfleet-footer {
-    flex-shrink: 0;
-    width: 100%;
+    overflow-y: auto;   /* Aquí vive el scroll */
+    overflow-x: hidden;
 }

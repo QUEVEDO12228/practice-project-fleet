@@ -1,24 +1,18 @@
  .bankfleet-sidebar-principal{
     width: fit-content;
     height: 100vh;
+    min-height: 100vh;
 }
 .bankfleet-sidebar__link {
     position: relative;
-    width: fit-content;
-    min-width: 200px;
+    width: 200px;
     color: var(--gray-200);
     text-decoration: none;
     transition: var(--transition-normal);
     font-size: var(--fs-xxxs);
-    padding: 4px 2px 4px 2px;
-    /* 1. Crea un contexto de apilamiento en el elemento padre */
+    padding: 0px 12px;
     z-index: 1;
 }
-
-.bankfleet-sidebar__link:hover {
-    color: var(--white);
-}
-
 .bankfleet-sidebar__link::after {
     content: '';
     position: absolute;
@@ -29,11 +23,10 @@
     background: color-mix(in srgb, var(--secondary-500) 90%, transparent);
     transition: var(--transition-normal);
     border-radius: 10px;
-    /* 2. Envía el pseudo-elemento al fondo de la capa actual */
     z-index: -12;
 }
 .bankfleet-sidebar__link:hover::after {
-    width: 100%;
+    width: 200px;
 }
 .bankfleet-sidebar__link--double {
     position: relative;
@@ -42,16 +35,9 @@
     text-decoration: none;
     transition: var(--transition-normal);
     font-size: var(--fs-xxxs);
-    padding: 4px 2px 4px 2px;
-    /* 1. Crea un contexto de apilamiento en el elemento padre */
+    padding: 0px 12px;
     z-index: 1;
 }
-
-.bankfleet-sidebar__link--double:hover {
-    color: var(--white);
-    width: 144px;
-}
-
 .bankfleet-sidebar__link--double::after {
     content: '';
     position: absolute;
@@ -62,11 +48,10 @@
     background: var(--secondary-500);
     transition: var(--transition-normal);
     border-radius: 10px;
-    /* 2. Envía el pseudo-elemento al fondo de la capa actual */
     z-index: -12;
 }
 .bankfleet-sidebar__link--double:hover::after {
-    width: 100%;
+    width: 190px;
 }
 
 .bankfleet-sidebar-principal__logo {
@@ -101,6 +86,7 @@
     color: var(--gray-50);
     cursor: pointer;
     font-size: var(--fs-xxxs);
+    margin-bottom: 1rem;
 }
 .bankfleet-sidebar-principal__menu-button:hover {
     background: rgba(255,255,255,.05);

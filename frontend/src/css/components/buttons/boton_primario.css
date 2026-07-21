@@ -12,7 +12,8 @@
     cursor: pointer;
     overflow: hidden;
     font-family: var(--font-primary-semibold);
-    font-size: var(--fs-xxxs);
+    font-size: var(--fs-xxxxs);
+    font-weight: 600;
     letter-spacing: .3px;
     transition:background .25s ease, border-color .25s ease, box-shadow .25s ease, transform .25s ease;
     text-decoration: none;
@@ -29,23 +30,8 @@
     border-color .35s ease,
     box-shadow .35s ease;
 }
-.bankfleet-btn--primary:hover{
-    color: var(--white);
-    background:
-    linear-gradient(160deg, transparent, var(--secondary-500), transparent);
-    backdrop-filter:blur(22px);
-    overflow:hidden;
-    cursor:pointer;
-    border-left: 3px solid var(--secondary-600);
-    border-right: 3px solid var(--secondary-600);
-}
 .bankfleet-btn--primary:active{ 
     transform: translateY(0);
-    box-shadow:0 2px 8px rgba(109,40,217,.25);
-}
-.bankfleet-btn--primary:focus-visible{
-    outline: none;
-    box-shadow:0 0 0 4px rgba(167,139,250,.20), 0 8px 18px rgba(109,40,217,.35);
 }
 .bankfleet-btn--primary:disabled{
     opacity:.45;
@@ -80,7 +66,7 @@
     
 }
 .bankfleet-btn--expand:hover{
-
+    
     width:fit-content;
     
     transition:

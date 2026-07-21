@@ -63,9 +63,11 @@
     border-bottom:1px solid var(--secondary-500);
     color:var(--black);
     font-size:var(--fs-xxxxs);
+    outline: 1px solid var(--primary-950);
+    outline-offset: 0.5px; 
 }
 .bankfleet-transactions-table__table tbody tr:hover{
-    background:var(--primary-50);
+    background:var(--primary-100);
 }
 .transaction-recipient{
     display:flex;

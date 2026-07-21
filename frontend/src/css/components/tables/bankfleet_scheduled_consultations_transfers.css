@@ -34,6 +34,7 @@
     min-width:900px;
     border-collapse:collapse;
     background:var(--white);
+    margin-top: 2.4rem;
 }
 .bankfleet-scheduled-queries-table__table thead{
     background:var(--primary-900);
@@ -48,6 +49,7 @@
     color:var(--white);
     text-align:left;
     font-size:var(--fs-xxxxs);
+
 }
 .bankfleet-scheduled-queries-table__table td{
     padding:12px;
@@ -56,7 +58,7 @@
     font-size:var(--fs-xxxxs);
 }
 .bankfleet-scheduled-queries-table__table tbody tr:hover{
-    background:var(--primary-50);
+    background:var(--secondary-300);
 }
 .bankfleet-scheduled-queries-table__separeitor-actions{
     display:flex;
@@ -103,7 +105,7 @@
 .query-transaction-type{
     padding:8px;
     border-radius:var(--radius-full);
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
 }
 .query-transaction-type--transfer{
     background:var(--secondary-100);
@@ -120,7 +122,7 @@
 .query-register-type{
     padding:8px;
     border-radius:var(--radius-full);
-    font-size:var(--fs-xxxs);
+    font-size:var(--fs-xxxxs);
 }
 .query-register-type--online{
     background:var(--tertiary-100);

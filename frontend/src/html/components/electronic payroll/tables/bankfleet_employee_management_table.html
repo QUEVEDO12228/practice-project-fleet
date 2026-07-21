@@ -20,6 +20,10 @@
             <input type="text" placeholder="Buscar operación..." class="bankfleet-employees-table__search-input">
         </div>
         <div class="bankfleet-employees-table__container-buttons-buttons"> 
+            <div class="bankfleet-recipients-table__favorite-box">
+                <input type="checkbox" id="favorites" class="bankfleet-recipients-table__favorite-checkbox">
+                <label for="favorites" class="bankfleet-recipients-table__favorite-label">Mostrar favoritos</label>
+            </div>
             <button type="button" class="bankfleet-btn-secondary bankfleet-manage-groups__btn-filter">
                 <img src="/frontend/public/assets/icons/icon_filter_white.svg" class="bankfleet-btn-secondary__icon bankfleet-transactions-table__btn-secondary-icon" alt="">
                 Filtrar
@@ -34,6 +38,12 @@
             <thead>
                 <tr>
                     <th><img class="bankfleet-employees-table__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg"></th>
+                    <th class="bankfleet_scheduled_consultations-table__checkbox-column">
+                        <label class="bankfleet_scheduled_consultations-table__checkbox">
+                            <input type="checkbox" id="select-all-payrolls" class="bankfleet_scheduled_consultations-table__checkbox-input">
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box-white"></span>
+                        </label>
+                    </th>
                     <th>Empleado</th><th>Cargo</th><th>Correo</th><th>Fecha Alta</th><th>Banco</th><th>Tipo Cuenta</th>
                     <th>No. Cuenta</th><th>Operación</th><th>Archivo<br>Banco</th><th>Estado</th>
                 </tr>
@@ -60,6 +70,12 @@
                                 </a>
                             </div>
                         </div>
+                    </td>
+                    <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
+                        <label class="bankfleet_scheduled_consultations-table__checkbox">
+                            <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                        </label>
                     </td>
                     <td data-label="Empleado">
                         <div class="employee">
@@ -107,6 +123,12 @@
                             </div>
                         </div>
                     </td>
+                    <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
+                        <label class="bankfleet_scheduled_consultations-table__checkbox">
+                            <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                        </label>
+                    </td>
                     <td data-label="Empleado">
                         <div class="employee">
                             <div class="employee__avatar">JG</div>
@@ -151,6 +173,12 @@
                                 </a>
                             </div>
                         </div>
+                    </td>
+                    <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
+                        <label class="bankfleet_scheduled_consultations-table__checkbox">
+                            <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                        </label>
                     </td>
                     <td data-label="Empleado">
                         <div class="employee">

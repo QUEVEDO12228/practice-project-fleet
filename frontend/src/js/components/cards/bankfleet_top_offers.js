@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             </span>
 
                             <img
-                                src="/frontend/public/assets/icons/icon_next-white.svg"
+                                src="/frontend/public/assets/icons/icon_dollar_white.svg"
                                 class="bankfleet-btn__icon"
                                 alt=""
                             >

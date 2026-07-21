@@ -1,7 +1,7 @@
 .bankfleet-products {
     position:relative;
     width:100%;
-    max-width: 980px;
+    max-width: 1080px;
     padding-top:var(--gap-xxs);
     box-sizing:border-box;
     overflow:visible;
@@ -61,7 +61,7 @@
     justify-content:space-between;
     flex:0 0 calc((90% - (0px * 2)) / 2);  
     width: 100%;
-    max-width: 294px;
+    max-width: 320px;
     min-height:230px;
     padding:26px;
     border-radius:var(--radius-xl);

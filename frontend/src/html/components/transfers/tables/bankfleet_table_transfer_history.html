@@ -18,6 +18,10 @@
             <input type="text" placeholder="Buscar operación..." class="bankfleet-transactions-table__search-input">
         </div>
         <div class="class bankfleet-transactions-table__separeitor-actions-buttons">
+            <div class="bankfleet-recipients-table__favorite-box">
+                <input type="checkbox" id="favorites" class="bankfleet-recipients-table__favorite-checkbox">
+                <label for="favorites" class="bankfleet-recipients-table__favorite-label">Mostrar favoritos</label>
+            </div>
             <button type="button" class="bankfleet-btn-secondary bankfleet-manage-groups__btn-filter">
                 <img src="/frontend/public/assets/icons/icon_filter_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-scheduled-queries-table__btn-secondary-icon">
                 Filtrar
@@ -33,6 +37,12 @@
                 <tr>
                     <th class="transaction-recipient__table-th">
                         <img class="transaction-recipient__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg" alt="Opciones">
+                    </th>
+                    <th class="bankfleet_scheduled_consultations-table__checkbox-column">
+                    <label class="bankfleet_scheduled_consultations-table__checkbox">
+                            <input type="checkbox" id="select-all-payrolls" class="bankfleet_scheduled_consultations-table__checkbox-input">
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box-white"></span>
+                        </label>
                     </th>
                     <th>Fecha<br>Operación</th><th>Fecha<br>Programada</th><th>Cuenta<br>Destino</th><th>Banco</th><th>Transacción</th><th>Importe</th>
                     <th>Divisa</th><th class="transaction-recipient__table-th-right">Estado</th>
@@ -60,6 +70,12 @@
                                 </a>
                             </div>
                         </div>
+                    </td>
+                    <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
+                        <label class="bankfleet_scheduled_consultations-table__checkbox">
+                            <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                        </label>
                     </td>
                     <td data-label="Fecha Operación">15/05/2025</td>
                     <td data-label="Fecha Programada">15/05/2025</td>
@@ -98,6 +114,12 @@
                                 </a>
                             </div>
                         </div>
+                    </td>
+                    <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
+                        <label class="bankfleet_scheduled_consultations-table__checkbox">
+                            <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                        </label>
                     </td>
                     <td data-label="Fecha Operación">15/05/2025</td>
                     <td data-label="Fecha Programada">15/05/2025</td>

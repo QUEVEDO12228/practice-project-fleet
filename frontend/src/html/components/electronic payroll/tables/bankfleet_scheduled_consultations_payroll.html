@@ -10,7 +10,7 @@
                     <h1 class="bankfleet_scheduled_consultations-table__title">Consultas programadas</h1>
                 </div>
                 <p class="bankfleet_scheduled_consultations-table__subtitle">Consulta y monitorea todas las operaciones financieras realizadas.</p>
-            </div>
+            </div>  
         </div>
         <div class="bankfleet_scheduled_consultations-table__field">
             <label for="payroll-group" class="bankfleet_scheduled_consultations-table__label">Grupo de nómina</label>
@@ -33,6 +33,10 @@
             <input type="text" placeholder="Buscar operación..." class="bankfleet_scheduled_consultations-table__search-input">
         </div>
         <div class="bankfleet_scheduled_consultations-table__separeitor-actions-buttons">
+            <div class="bankfleet-recipients-table__favorite-box">
+                <input type="checkbox" id="favorites" class="bankfleet-recipients-table__favorite-checkbox">
+                <label for="favorites" class="bankfleet-recipients-table__favorite-label">Mostrar favoritos</label>
+            </div>
             <button type="button" class="bankfleet-btn-secondary bankfleet-manage-groups__btn-filter">
                 <img src="/frontend/public/assets/icons/icon_filter_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-scheduled-queries-table__btn-secondary-icon">
                 Filtrar
@@ -52,7 +56,7 @@
                     <th class="bankfleet_scheduled_consultations-table__checkbox-column">
                         <label class="bankfleet_scheduled_consultations-table__checkbox">
                             <input type="checkbox" id="select-all-payrolls" class="bankfleet_scheduled_consultations-table__checkbox-input">
-                            <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                            <span class="bankfleet_scheduled_consultations-table__checkbox-box-white"></span>
                         </label>
                     </th>
                     <th>Fecha<br>Operación</th><th>Importe</th><th>Tipo de<br>operación</th><th>Nombre del<br>archivo</th>

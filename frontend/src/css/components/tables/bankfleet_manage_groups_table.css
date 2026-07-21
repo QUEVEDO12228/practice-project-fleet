@@ -101,7 +101,7 @@
     padding:8px;
     color:var(--white);
     font-size:var(--fs-xxxxs);
-    text-align:left;
+    text-align:start;
 }
 .bankfleet_manage_groups-table__table td{
     padding: 8px;
@@ -109,10 +109,14 @@
     color:var(--black);
     background:var(--white);
     font-size:var(--fs-xxxxs);
+    outline: 1px solid var(--primary-950);
+    outline-offset: 0.5px; 
+
 }
-.bankfleet_manage_groups-table__table tbody tr:hover{
-    background:var(--primary-600);
+.bankfleet_manage_groups-table__table tbody tr:hover td {
+    background: var(--secondary-300);
 }
+
 .employee{
     display:flex;
     align-items:center;

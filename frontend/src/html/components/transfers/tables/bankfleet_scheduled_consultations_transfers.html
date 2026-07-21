@@ -18,6 +18,10 @@
         <input type="text" placeholder="Buscar consulta..." class="bankfleet-scheduled-queries-table__search-input">
     </div>
     <div class="bankfleet-scheduled-queries-table__separeitor-actions-buttons">
+        <a class="bankfleet-btn-secondary bankfleet-scheduled-queries-table__btn-secondary">
+            <input type="checkbox" id="favorites" class="bankfleet-recipients-table__favorite-checkbox">
+            Mostrar favoritos
+        </a>
         <button type="button" class="bankfleet-btn-secondary bankfleet-manage-groups__btn-filter">
             <img src="/frontend/public/assets/icons/icon_filter_white.svg" alt="" class="bankfleet-btn-secondary__icon bankfleet-scheduled-queries-table__btn-secondary-icon">
             Filtrar
@@ -34,12 +38,18 @@
                 <th class="query-table__th">
                     <img class="query-table__image-options" src="/frontend/public/assets/icons/icon_settings_white.svg" alt="Opciones">
                 </th>
+                <th class="bankfleet_scheduled_consultations-table__checkbox-column">
+                    <label class="bankfleet_scheduled_consultations-table__checkbox">
+                        <input type="checkbox" id="select-all-payrolls" class="bankfleet_scheduled_consultations-table__checkbox-input">
+                        <span class="bankfleet_scheduled_consultations-table__checkbox-box-white"></span>
+                    </label>
+                </th>
                 <th>Fecha<br>Programada</th><th>Origen</th><th>Destino</th><th>Transacción</th><th>Tipo<br>de Alta</th><th>Importe</th>
                 <th class="query-table__th-right">Divisa</th>
             </tr>
         </thead>
         <tbody>
-            <tr>A
+            <tr>
                 <td data-label="ID">
                     <div class="bankfleet-scheduled-queries-table-employee-menu-primary">
                         <button class="bankfleet-scheduled-queries-table-employee-menu__btn-primary">
@@ -60,6 +70,12 @@
                             </a>
                         </div>
                     </div>
+                </td>
+                <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
+                    <label class="bankfleet_scheduled_consultations-table__checkbox">
+                        <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
+                        <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                    </label>
                 </td>
                 <td data-label="Fecha Programada">15/05/2025</td>
                 <td data-label="Origen">Cuenta Operativa</td>
@@ -91,6 +107,12 @@
                         </div>
                     </div>
                 </td>
+                 <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
+                    <label class="bankfleet_scheduled_consultations-table__checkbox">
+                        <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
+                        <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                    </label>
+                </td>
                 <td data-label="Fecha Programada">18/05/2025</td>
                 <td data-label="Origen">Cuenta Nómina</td>
                 <td data-label="Destino">María Pérez</td>
@@ -120,6 +142,12 @@
                             </a>
                         </div>
                     </div>
+                </td>
+                 <td data-label="Seleccionar" class="bankfleet_scheduled_consultations-table__checkbox-cell">
+                    <label class="bankfleet_scheduled_consultations-table__checkbox">
+                        <input type="checkbox" class="bankfleet_scheduled_consultations-table__checkbox-input payroll-row-checkbox">
+                        <span class="bankfleet_scheduled_consultations-table__checkbox-box"></span>
+                    </label>
                 </td>
                 <td data-label="Fecha Programada">20/05/2025</td>
                 <td data-label="Origen">Cuenta Tesorería</td>

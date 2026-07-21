@@ -120,10 +120,8 @@
     color:var(--black);
     font-size:var(--fs-xxxs);
 }
-.bankfleet_scheduled_consultations-table__checkbox-column,
-.bankfleet_scheduled_consultations-table__checkbox-cell{
-    width:48px;
-    text-align:center;
+.bankfleet_scheduled_consultations-table tbody tr:hover td {
+    background: var(--secondary-300);
 }
 .bankfleet_scheduled_consultations-table__checkbox{
     position:relative;
@@ -138,11 +136,21 @@
     width:0;
     height:0;
 }
+
 .bankfleet_scheduled_consultations-table__checkbox-box{
     width:18px;
     height:18px;
     border-radius:6px;
-    border:1.5px solid var(--secondary-300);
+    border:1.5px solid var(--black);
+    background:transparent;
+    transition:var(--transition-fast);
+    position:relative;
+}
+.bankfleet_scheduled_consultations-table__checkbox-box-white{
+    width:18px;
+    height:18px;
+    border-radius:6px;
+    border:1.5px solid var(--white);
     background:transparent;
     transition:var(--transition-fast);
     position:relative;
@@ -151,6 +159,11 @@
 + .bankfleet_scheduled_consultations-table__checkbox-box{
     background:var(--secondary-500);
     border-color:var(--secondary-500);
+}
+.bankfleet_scheduled_consultations-table__checkbox-input:checked
++ .bankfleet_scheduled_consultations-table__checkbox-box-white{
+    background:var(--white);
+    border-color:var(--white);
 }
 .bankfleet_scheduled_consultations-table__checkbox-input:checked
 + .bankfleet_scheduled_consultations-table__checkbox-box::after{
@@ -164,9 +177,21 @@
     border-width:0 2px 2px 0;
     transform:rotate(45deg);
 }
+.bankfleet_scheduled_consultations-table__checkbox-input:checked
++ .bankfleet_scheduled_consultations-table__checkbox-box-white::after{
+    content:"";
+    position:absolute;
+    left:6px;
+    top:2px;
+    width:4px;
+    height:8px;
+    border:solid var(--secondary-400);
+    border-width:0 2px 2px 0;
+    transform:rotate(45deg);
+}
 .bankfleet_scheduled_consultations-table__checkbox:hover
 .bankfleet_scheduled_consultations-table__checkbox-box{
-    border-color:var(--secondary-400);
+    border-color:var(--white);
     box-shadow:0 0 0 3px rgba(139,92,246,.15);
 }
 .bankfleet_scheduled_consultations-table__table tbody tr:hover{

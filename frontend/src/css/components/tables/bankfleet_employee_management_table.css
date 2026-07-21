@@ -109,8 +109,8 @@
     background:var(--white);
     font-size:var(--fs-xxxxs);
 }
-.bankfleet-employees-table__table tbody tr:hover{
-    background:var(--primary-600);
+.bankfleet-employees-table__table tbody tr:hover td {
+    background: var(--secondary-300);
 }
 .employee{
     display:flex;
