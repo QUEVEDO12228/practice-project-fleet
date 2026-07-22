@@ -1,7 +1,6 @@
  .bankfleet-sidebar-principal{
     width: fit-content;
     height: 100vh;
-    min-height: 100vh;
 }
 .bankfleet-sidebar__link {
     position: relative;

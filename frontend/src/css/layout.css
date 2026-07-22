@@ -36,15 +36,21 @@ body {
     font-size: var(--fs-xs);
 
     line-height: 1.5;
-
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 html,
 body {
-    overflow: hidden;
+    height: 100%;
+    margin: 0;
 }
-
+.body-login {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+}   
 /* =========================================================
 MAIN CONTENT
 ========================================================= */

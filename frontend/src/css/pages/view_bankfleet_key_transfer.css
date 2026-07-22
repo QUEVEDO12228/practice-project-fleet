@@ -1,8 +1,8 @@
 .bankfleet-app {
-    height: 100vh;      /* Cambia min-height por height */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    overflow: hidden;   /* Evita el scroll del body */
+    min-height: 0;
 }
 
 .bankfleet-app__body {
@@ -10,17 +10,13 @@
     display: flex;
     min-height: 0;
 }
-
 .bankfleet-sidebar-principal {
+    width: 260px; /* o el ancho que uses */
     flex-shrink: 0;
-    width: fit-content;
-    /* Sin overflow aquí */
 }
 
 .bankfleet-main-content {
     flex: 1;
-    min-width: 0;
+    overflow-y: auto;
     min-height: 0;
-    overflow-y: auto;   /* Aquí vive el scroll */
-    overflow-x: hidden;
 }
