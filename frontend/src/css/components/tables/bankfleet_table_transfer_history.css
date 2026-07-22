@@ -3,6 +3,7 @@
     padding:24px;
     box-shadow:var(--shadow-primary);
     font-family:var(--font-primary);
+    margin-bottom: 2.4rem;
 }
 .bankfleet-transactions-table__header{
     margin-bottom:24px;
@@ -64,10 +65,10 @@
     color:var(--black);
     font-size:var(--fs-xxxxs);
     outline: 1px solid var(--primary-950);
-    outline-offset: 0.5px; 
+    outline-offset: 1px; 
 }
 .bankfleet-transactions-table__table tbody tr:hover{
-    background:var(--primary-100);
+    background: var(--primary-50);
 }
 .transaction-recipient{
     display:flex;

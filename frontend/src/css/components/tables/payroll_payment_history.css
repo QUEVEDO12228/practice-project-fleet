@@ -3,6 +3,7 @@
     padding:24px;
     box-shadow:var(--shadow-primary);
     font-family:var(--font-primary);
+    margin-bottom: 2.4rem;
 }
 .payroll-payment-history-table__header{
     margin-bottom:24px;
@@ -171,7 +172,7 @@
     box-shadow:0 0 0 3px rgba(139,92,246,.15);
 }
 .payroll-payment-history-table__table tbody tr:hover{
-    background:var(--primary-50);
+    background: var(--primary-50);
 }
 .transaction-recipient{
     display:flex;

@@ -6,68 +6,40 @@
     box-sizing: border-box;
     padding-top: 0.4rem;
 }
-
-/* =========================
-CONTAINER PRINCIPAL
-========================= */
-
-    .bankfleet-employee-manage__container{
+.bankfleet-employee-manage__container{
     width: 100%;
-    /* max-width: 820px; */
-
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-
-/* =========================
-HEADER
-========================= */
-
 .bankfleet-employee-manage__header{
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-
-/* lado izquierdo header */
-
 .bankfleet-employee-manage__header-left{
     display: flex;
     align-items: flex-start;
     gap: 16px;
 }
-
-/* contenido texto header */
-
 .bankfleet-employee-manage__header-content{
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
-
-/* título */
-
 .bankfleet-employee-manage__title{
     color: var(--white);
     font-size: var(--fs-xxs);
     font-family: var(--font-primary-bold);
     margin: 0;
 }
-
-/* subtítulo */
-
 .bankfleet-employee-manage__subtitle{
     color: var(--gray-300);
     font-size: var(--fs-xxxs);
     line-height: 1.6;
     margin: 0;
 }
-
-/* botones header */
-
 .bankfleet-employee-manage__header-buttons{
     display: flex;
     gap: 12px;
@@ -112,7 +84,7 @@ SECTIONS BASE
     display: flex;
     align-items: center;
     gap: 10px;  
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.2rem;
 }
 
 /* icono sección */

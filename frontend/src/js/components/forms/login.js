@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function initLogin() {
 
+    // ==========================
     // BOTÓN VOLVER
+    // ==========================
     const backBtn = document.querySelector(".bankfleet-btn-secondary");
 
     if (backBtn) {
@@ -26,7 +28,9 @@ function initLogin() {
         });
     }
 
-    // PASSWORD
+    // ==========================
+    // MOSTRAR / OCULTAR PASSWORD
+    // ==========================
     const passwordInput = document.querySelector(
         ".bankfleet-login__input--password"
     );
@@ -48,12 +52,18 @@ function initLogin() {
             eyeImg.src = hidden
                 ? "/frontend/public/assets/icons/icon_closed-eye.svg"
                 : "/frontend/public/assets/icons/icon_open-eye.svg";
+
+            eyeImg.alt = hidden
+                ? "Ocultar contraseña"
+                : "Mostrar contraseña";
         });
     }
 
+    // ==========================
     // LOGIN
+    // ==========================
     const loginBtn = document.querySelector(
-        ".bankfleet-btn--primary"
+        ".bankfleet-login__bankfleet-btn--primary"
     );
 
     if (loginBtn) {
@@ -64,50 +74,117 @@ function initLogin() {
 
             const remember = document.querySelector(
                 ".bankfleet-login__checkbox input"
-            ).checked;
+            )?.checked;
 
             console.log("Mantener sesión:", remember);
 
-            showCustomAlert(
-                "Inicio de sesión correcto",
-                "success"
-            );
-
-            setTimeout(() => {
-
-                window.location.href =
-                    "/frontend/src/html/pages/home/vista_home_client.html";
-
-            }, 1000);
+            mostrarModalToken();
         });
     }
 }
 
-function showCustomAlert(message, type = "success") {
+// =====================================
+// MODAL TOKEN
+// =====================================
+function mostrarModalToken() {
 
-    const alert = document.createElement("div");
+    const existente = document.querySelector(
+        ".bankfleet-transfer-confirmation-token"
+    );
 
-    alert.className = `alert alert--${type}`;
+    if (existente) {
+        existente.remove();
+    }
 
-    alert.innerHTML = `
-        <div class="alert__content">
-            <p class="alert__message">${message}</p>
+    const modal = document.createElement("div");
+
+    modal.className =
+        "bankfleet-transfer-confirmation-token bankfleet-transfer-confirmation--visible";
+
+    modal.innerHTML = `
+        <div class="bankfleet-transfer-confirmation-token__card">
+
+            <h3 class="bankfleet-transfer-confirmation-token__title">
+                Enviamos un token a tu correo
+            </h3>
+
+            <p class="bankfleet-transfer-confirmation-token__description-strong">
+                Tendrás 2 minutos para ingresarlo
+                <strong>2:00</strong>
+            </p>
+
+            <p class="bankfleet-transfer-confirmation-token__description">
+                Su propósito exclusivo es garantizar una comunicación segura entre su dispositivo y nuestra plataforma, protegiendo su identidad.
+            </p>
+
+            <div class="bankfleet-register-step1__field">
+
+                <label class="bankfleet-transfer-confirmation-token__label">
+                    Token
+                </label>
+
+                <div class="bankfleet-transfer-confirmation-token__bankfleet-code-box">
+
+                    <input maxlength="1" type="text" class="bankfleet-transfer-confirmation-token__input">
+                    <input maxlength="1" type="text" class="bankfleet-transfer-confirmation-token__input">
+                    <input maxlength="1" type="text" class="bankfleet-transfer-confirmation-token__input">
+                    <input maxlength="1" type="text" class="bankfleet-transfer-confirmation-token__input">
+                    <input maxlength="1" type="text" class="bankfleet-transfer-confirmation-token__input">
+                    <input maxlength="1" type="text" class="bankfleet-transfer-confirmation-token__input">
+
+                </div>
+
+            </div>
+
+            <div class="bankfleet-transfer-confirmation-token__actions">
+
+                <button
+                    type="button"
+                    class="bankfleet-btn-secondary bankfleet-transfer-confirmation-token__cancel">
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_back.svg"
+                        alt=""
+                        class="bankfleet-btn-secondary__icon">
+
+                </button>
+
+                <button
+                    type="button"
+                    class="bankfleet-btn bankfleet-btn--primary bankfleet-btn--expand bankfleet-transfer-confirmation-token__confirm">
+
+                    <span class="bankfleet-btn__text">
+                        Confirmar
+                    </span>
+
+                    <img
+                        src="/frontend/public/assets/icons/icon_next-white.svg"
+                        alt=""
+                        class="bankfleet-btn__icon">
+
+                </button>
+
+            </div>
+
         </div>
     `;
 
-    document.body.appendChild(alert);
+    document.body.appendChild(modal);
 
-    setTimeout(() => {
-        alert.classList.add("show");
-    }, 50);
+    // Cerrar modal
+    modal
+        .querySelector(".bankfleet-transfer-confirmation-token__cancel")
+        .addEventListener("click", () => {
+            modal.remove();
+        });
 
-    setTimeout(() => {
+    // Confirmar token
+    modal
+        .querySelector(".bankfleet-transfer-confirmation-token__confirm")
+        .addEventListener("click", () => {
 
-        alert.classList.remove("show");
+            window.location.href =
+                "/frontend/src/html/pages/home/vista_home_client.html";
 
-        setTimeout(() => {
-            alert.remove();
-        }, 300);
-
-    }, 2000);
+        });
 }

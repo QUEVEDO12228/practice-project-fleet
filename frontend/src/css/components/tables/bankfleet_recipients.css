@@ -3,6 +3,7 @@
     padding:24px;
     box-shadow:var(--shadow-primary);
     font-family:var(--font-primary);
+    margin-bottom: 2.4rem;
 }
 .bankfleet-recipients-table__header{
     display:flex;
@@ -88,7 +89,7 @@
     background:var(--white);
 }
 .bankfleet-recipients-table__table tbody tr:hover td {
-    background: var(--secondary-300);
+    background: var(--primary-50);
 }
 .recipient{
     display:flex;

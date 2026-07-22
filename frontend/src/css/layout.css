@@ -5,68 +5,55 @@ LAYOUT BASE
 html {
     margin: 0;
     padding: 0;
-
     min-height: 100vh;
-
     box-sizing: border-box;
-
     font-size: 62.5%;
-
     overflow-x: hidden;
 }
-
-*,
-*::before,
-*::after {
+*,*::before,*::after {
     box-sizing: inherit;
-
     margin: 0;
     padding: 0;
 }
-
-
+html,
+body{
+    height:100%;
+    margin:0;
+}
 body {
     min-height: 100vh;
-    background:
-        var(--primary-950);
+    background:var(--primary-950);
     font-family: var(--font-primary);
-
     color: var(--black);
-
     font-size: var(--fs-xs);
-
     line-height: 1.5;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow:hidden;
 }
-html,
-body {
+.bankfleet-app {
     height: 100%;
-    margin: 0;
+    overflow:hidden;
 }
-.body-login {
+.bankfleet-app {
     flex: 1;
     min-height: 0;
-    display: flex;
-}   
-/* =========================================================
-MAIN CONTENT
-========================================================= */
-
-.section-footer-content {
-    flex: 1 0 auto;
-
-    width: 100%;
-
-    min-width: 0;
 }
 
-/* =========================================================
-FOOTER CONTAINER
-========================================================= */
+.bankfleet-app__body{
+    display:flex;
+    height:100%;
+    min-height:0;
+}
 
+.bankfleet-main-content {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 .footer-client-home {
     flex-shrink: 0;
 
@@ -78,10 +65,14 @@ FOOTER CONTAINER
     display: flex;
     align-items: stretch;
 }
-
 a{
     background: var(--primary-950);
 }
 button{
-    background: var(--primary-950);
+   background: var(--primary-950);
+}
+
+.body-login {
+    flex: 1;
+    min-height: 0;
 }

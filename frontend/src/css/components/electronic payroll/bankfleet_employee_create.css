@@ -21,7 +21,7 @@ CARD
     /* max-height: 80vh; */
     overflow-y: auto;
 
-    padding: 24px;
+    padding-top: 24px;
 }
 .bankfleet-employee-create__header-container{
     display: flex;
@@ -114,7 +114,7 @@ INPUTS / SELECTS
 .bankfleet-employee-create__input{
     width: 100%;
     height: 48px;
-    max-width: 300px;
+    width: 330px;
     min-width: 300px;
 
     padding: 0 16px 0 44px;

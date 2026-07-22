@@ -19,7 +19,7 @@
 
 .sidebar-client-home {
     grid-area: sidebar;
-}
+}   
 
 .home-products-container {
     grid-area: content;

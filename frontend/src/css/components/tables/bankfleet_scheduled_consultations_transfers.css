@@ -3,6 +3,7 @@
     padding:24px;
     box-shadow:var(--shadow-primary);
     font-family:var(--font-primary);
+    margin-bottom: 2.4rem;
 }
 .bankfleet-scheduled-queries-table__header{
     margin-bottom:24px;
@@ -58,7 +59,7 @@
     font-size:var(--fs-xxxxs);
 }
 .bankfleet-scheduled-queries-table__table tbody tr:hover{
-    background:var(--secondary-300);
+    background: var(--primary-50);
 }
 .bankfleet-scheduled-queries-table__separeitor-actions{
     display:flex;
