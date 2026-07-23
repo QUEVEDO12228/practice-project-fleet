@@ -6,7 +6,6 @@
     color: var(--white);
     font-size: var(--fs-xs);
     margin-bottom: 12px;
-    border-top: solid 2px var(--secondary-400);
     padding-top: 12px;  
 
 }
@@ -24,13 +23,10 @@ SLIDER
 ==========================================================*/
 
 .bankfleet-section-card-top-offer__slider{
-
-    position:relative;
-
+    position: relative;
     width:100%;
 
     align-items:center;
-    border-bottom: solid 2px var(--secondary-400);
     padding-bottom: 12px;
 
 }
@@ -61,7 +57,7 @@ SLIDER
 ========================================================== */
 .bankfleet-section-card-top-offer__offer-card{
 
-    flex:0 0 calc((100% - 10px)/4);
+    flex:0 0 calc((100% - 10px)/5);
 
     min-width:0;
 
@@ -88,18 +84,19 @@ SLIDER
 /*==========================================================
 ARROWS
 ==========================================================*/
-.parkalia-section-card-top-offer__arrow{
+
+.bankfleet-section-card-top-offer__arrow{
     position:absolute;
     top:50%;
     transform:translateY(-50%);
     z-index:20;
 }
 
-.parkalia-section-card-top-offer__arrow--left{
+.bankfleet-section-card-top-offer__arrow--left{
     left:12px;
 }
 
-.parkalia-section-card-top-offer__arrow--right{
+.bankfleet-section-card-top-offer__arrow--right{
     right:12px;
 }
 /* 
@@ -175,7 +172,7 @@ ARROWS
 
     color: var(--white);
 
-    font-size: 8px;
+    font-size: 10px;
     background: 
     linear-gradient(
         135deg,
@@ -281,9 +278,9 @@ ARROWS
 
     flex-direction: column;
 
-    justify-content: flex-start;
+    justify-content: flex-end;
 
-    align-items: flex-start;
+    align-items: flex-end;
 
     gap: 2rem;
 
