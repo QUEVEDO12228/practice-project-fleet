@@ -29,8 +29,6 @@ SLIDER
 
     width:100%;
 
-    display:flex;
-
     align-items:center;
     border-bottom: solid 2px var(--secondary-400);
     padding-bottom: 12px;
@@ -90,23 +88,19 @@ SLIDER
 /*==========================================================
 ARROWS
 ==========================================================*/
-
-.bankfleet-section-card-top-offer__arrow--left{
-
-    left:-10px;
-
+.parkalia-section-card-top-offer__arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:20;
 }
 
-.bankfleet-section-card-top-offer__arrow--right{
-
-    right:0px;
-
+.parkalia-section-card-top-offer__arrow--left{
+    left:12px;
 }
 
-.bankfleet-section-card-top-offer__arrow-icon{
-
-    width:18px;
-
+.parkalia-section-card-top-offer__arrow--right{
+    right:12px;
 }
 /* 
 .bankfleet-section-card-top-offer__offer-card::before {
