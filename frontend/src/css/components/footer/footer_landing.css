@@ -453,13 +453,3 @@ RESPONSIVE
     }
 
 }
-
-.bankfleet-footer__letter {
-  /* display: inline-block; */
-  font-size: var(--fs-xxxs);
-  font-family: var(--font-primary-bold);
-  color: var(--white);
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: var(--secondary-400);
-   margin-right: 8px;
-}

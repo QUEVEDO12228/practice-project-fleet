@@ -273,13 +273,13 @@
 }
 .bankfleet-navbar__letter {
     display: inline-block;
-    margin-right: 8px;
-    font-size: var(--fs-xs);
+    margin-right: 6px;
+    font-size: var(--fs-sm);
     font-family: var(--font-primary-bold);
     color: var(--white)
 ;
     align-items: self-start;
-    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: var(--secondary-400);
 }
 .bankfleet-navbar-session__status {

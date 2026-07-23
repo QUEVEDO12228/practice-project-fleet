@@ -457,17 +457,3 @@ RESPONSIVE
     }
 
 }
-
-.bankfleet-navbar__letter {
-  display: inline-block;
-
-  font-size: var(--fs-xs);
-
-  font-family: var(--font-primary-bold);
-
-  color: var(--white);
-  align-items: self-start;
-
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: var(--secondary-400);
-}
