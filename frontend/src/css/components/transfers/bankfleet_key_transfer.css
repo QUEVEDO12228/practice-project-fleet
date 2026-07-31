@@ -10,7 +10,7 @@
     /* background: var(--primary-800); */
     /* border: 2px solid rgba(255,255,255,.08); */
     /* border-radius: var(--radius-xxl); */
-    padding: 24px;
+    padding-top: 24px;
     backdrop-filter: blur(60px);
     transition: var(--transition-normal);
 }

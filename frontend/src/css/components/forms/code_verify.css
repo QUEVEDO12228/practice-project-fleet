@@ -421,6 +421,6 @@
 .bankfleet-code-box {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  width: fit-content;
+  width: max-content;
+  gap: 22px;
 }

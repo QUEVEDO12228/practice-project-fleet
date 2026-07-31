@@ -1,165 +1,178 @@
- .bankfleet-sidebar-principal{
-    width: fit-content;
-    min-height: 100vh;
+.bankfleet-sidebar-principal{
+
+    flex:0 0 240px;
+
+    height:100%;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    scrollbar-width:thin;
 }
-.bankfleet-sidebar__link {
-    position: relative;
-    width: 200px;
-    color: var(--gray-200);
-    text-decoration: none;
-    transition: var(--transition-normal);
-    font-size: var(--fs-xxxs);
-    padding: 0px 12px;
-    z-index: 1;
+.bankfleet-sidebar-principal::-webkit-scrollbar{
+    width:8px;
 }
-.bankfleet-sidebar__link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0%;
-    height: 30px;
-    background: color-mix(in srgb, var(--secondary-500) 90%, transparent);
-    transition: var(--transition-normal);
-    border-radius: 10px;
-    z-index: -12;
-}
-.bankfleet-sidebar__link:hover::after {
-    width: 200px;
-}
-.bankfleet-sidebar__link--double {
-    position: relative;
-    width: 200px;
-    color: var(--gray-200);
-    text-decoration: none;
-    transition: var(--transition-normal);
-    font-size: var(--fs-xxxs);
-    padding: 0px 12px;
-    z-index: 1;
-}
-.bankfleet-sidebar__link--double::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0%;
-    height: 44px;
-    background: var(--secondary-500);
-    transition: var(--transition-normal);
-    border-radius: 10px;
-    z-index: -12;
-}
-.bankfleet-sidebar__link--double:hover::after {
-    width: 190px;
+.bankfleet-sidebar-principal__nav{
+
+    display:flex;
+    flex-direction:column;
+
+    padding: 0px 16px 0px 16px ;
+
+    gap:14px;
+
 }
 
-.bankfleet-sidebar-principal__logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-}
-.bankfleet-sidebar-principal__logo-image {
-    width: 42px;
-    height: 42px;
-}
-.bankfleet-sidebar-principal__nav {
-    display: flex;
-    flex-direction: column;
-    width: 236px;
-}
-.bankfleet-sidebar-principal__group {
-    border-bottom: 1px solid rgba(255,255,255,.06);
-    width: 200px;
-    padding-bottom: 8px;
-    padding-left: 1.2rem;
-}
-.bankfleet-sidebar-principal__menu-button {
-    width: 100%;
-    max-width: 200px;
-    display: flex;
-    align-items: center;
-    padding: 14px 16px;
-    border: none;
-    border-radius: 12px;
-    background: transparent;
-    color: var(--gray-50);
-    cursor: pointer;
-    font-size: var(--fs-xxxs);
-    margin-bottom: 1rem;
-}
-.bankfleet-sidebar-principal__menu-button:hover {
-    background: rgba(255,255,255,.05);
-    color: var(--white);
-    border-left: 6px solid var(--secondary-500);
-    border-right: 6px solid var(--secondary-500);
-}
-.bankfleet-sidebar-principal__menu-button.active {
-    background: var(--gray-700);
+/*==========================================
+    GROUP
+==========================================*/
 
-    color: var(--white);
-    border-left: 6px solid var(--secondary-500);
-    border-right: 6px solid var(--secondary-500);
+.bankfleet-sidebar-principal__group{
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
 }
-.bankfleet-sidebar-principal__submenu {
-    list-style: none;
-    margin-top: 8px;
-    display: none;
+
+/*==========================================
+    BUTTON
+==========================================*/
+
+.bankfleet-sidebar-principal__menu-button{
+
+    width:100%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:14px 16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:transparent;
+
+    color:var(--gray-100);
+
+    cursor:pointer;
+
+    transition:.30s;
+
+    font-size:var(--fs-xxxs);
+
+    font-weight:600;
+
 }
-.bankfleet-sidebar-principal__submenu.active {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0.8rem;
-    gap: 10px;
+
+.bankfleet-sidebar-principal__menu-button:hover{
+
+    box-shadow:
+    inset 0 0 0 1px var(--secondary-400);
+
 }
-.bankfleet-sidebar-principal__submenu li {
-    color: var(--gray-400);
-    font-size: var(--fs-xxxs);
-    cursor: pointer;
-    transition: .25s;
+
+.bankfleet-sidebar-principal__menu-button.active{
+
+    background:rgba(103,58,183,0.12);
+
+    color:var(--secondary-400);
+
+    border-left:4px solid var(--secondary-500);
+
+    box-shadow:
+    inset 0 0 0 1px rgba(103,58,183,0.70);
+    margin-bottom: 2px;
+
 }
-.bankfleet-sidebar-principal__submenu li:hover {
-    color: var(--secondary-300);
-    transform: translateX(4px);
+
+/*==========================================
+    SUBMENU
+==========================================*/
+
+.bankfleet-sidebar-principal__submenu{
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:4px;
+    padding-left:10px;
+
 }
-.bankfleet-sidebar-principal::-webkit-scrollbar {
-    width: 6px;
+
+.bankfleet-sidebar-principal__submenu.active{
+
+    display:flex;
+
 }
-.bankfleet-sidebar-principal::-webkit-scrollbar-thumb {
-    background:  rgba(255,255,255,.18);
-    border-radius: 20px;
+
+/*==========================================
+    LINKS
+==========================================*/
+
+.bankfleet-sidebar__link,
+.bankfleet-sidebar__link--double{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    min-height:38px;
+
+    padding:10px 14px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    color:var(--gray-300);
+
+    font-size:var(--fs-xxxxs);
+
+    transition:.25s;
+
+    overflow:hidden;
+
 }
-.bankfleet-sidebar-principal__search {
-    position: relative;
-    margin: 8px;
+
+.bankfleet-sidebar__link::before,
+.bankfleet-sidebar__link--double::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:3px;
+    height:100%;
+
+    background:var(--secondary-500);
+
+    transform:scaleY(0);
+
+    transition:.25s;
+
 }
-.bankfleet-sidebar-principal__search-icon {
-    position: absolute;
-    left: 14px;
-    top: 32%;
-    z-index: 1;
-    width: 16px;
-    height: 16px;
+
+.bankfleet-sidebar__link:hover,
+.bankfleet-sidebar__link--double:hover{
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    padding-left:22px;
+
 }
-.bankfleet-sidebar-principal__search-input {
-    width: 100%;
-    height: 44px;
-    padding:0 16px 0 42px;
-    box-sizing: border-box;
-    border:  1px solid rgba(255,255,255,.08);
-    border-radius: 14px;
-    background:  rgba(255,255,255,.04);
-    backdrop-filter: blur(12px);
-    color: var(--white);
-    font-size: var(--fs-xxxxs);
-    outline: none;
-    transition: .25s;
-    max-width: 196px;
-}
-.bankfleet-sidebar-principal__search-input::placeholder {
-    color: var(--gray-500);
-}
-.bankfleet-sidebar-principal__search-input:focus {
-    border-color: rgba(139,92,246,.45);
-    background:rgba(255,255,255,.06);
-    box-shadow: 0 0 0 4px rgba(139,92,246,.12);
+
+.bankfleet-sidebar__link:hover::before,
+.bankfleet-sidebar__link--double:hover::before{
+
+    transform:scaleY(1);
+
 }
