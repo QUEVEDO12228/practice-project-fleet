@@ -1,0 +1,115 @@
+<section class="bankfleet-security-page">
+
+    <div class="bankfleet-security-page__glow bankfleet-security-page__glow--left"></div>
+    <div class="bankfleet-security-page__glow bankfleet-security-page__glow--right"></div>
+    <section class="bankfleet-security">
+        <div class="bankfleet-profile__card">
+            <div class="bankfleet-profile__topbar">
+                <a href="javascript:history.back()" alt="Volver" class="bankfleet-btn-secondary bankfleet-transactions-table__btn-secondary">
+                    <img src="/frontend/public/assets/icons/icon_back.svg"alt=""class="bankfleet-btn-secondary__icon">
+                </a>
+                <h2 class="bankfleet-profile__title">Mi Perfil</h2>
+            </div>
+            <header class="bankfleet-profile__header">
+                <p class="bankfleet-profile__subtitle">Actualiza la información personal asociada a tu cuenta<strong class="bankfleet-profile__highlight">BANKFLEET</strong></p>
+            </header>
+            <form class="bankfleet-profile__form">
+                <div class="bankfleet-profile__row">
+                    <section class="bankfleet-avatar-editor">
+                        <div class="bankfleet-avatar-editor__preview">
+                            <img src="/frontend/public/assets/images/security-default.png"alt="Foto de perfil"class="bankfleet-avatar-editor__image">
+                            <label for="security-image"class="bankfleet-avatar-editor__overlay">
+                                <img src="/frontend/public/assets/icons/icon_camera_purple.svg"alt=""class="bankfleet-avatar-editor__icon">
+                            </label>
+                            <input type="file" id="security-image" class="bankfleet-avatar-editor__input" accept="image/*">
+                        </div>
+                        <div class="bankfleet-avatar-editor__content">
+                            <h2 class="bankfleet-avatar-editor__title">Foto de perfil</h2>
+                            <p class="bankfleet-avatar-editor__description">Actualiza tu imagen para personalizar tu cuenta BANKFLEET.</p>
+                        </div>
+                    </section>
+                    <div class="bankfleet-security__field">
+                        <label class="bankfleet-security__label">Nombre</label>
+                        <div class="bankfleet-security__input-wrapper">
+                            <img src="/frontend/public/assets/icons/icon_name_user.svg" alt="" class="bankfleet-security__input-icon">
+                            <input type="text" class="bankfleet-security__input" placeholder="Pepito">
+                        </div>
+                    </div>
+                    <div class="bankfleet-security__field">
+                        <label class="bankfleet-security__label">Apellidos</label>
+                        <div class="bankfleet-security__input-wrapper">
+                            <img src="/frontend/public/assets/icons/icon_name_user.svg" alt="" class="bankfleet-security__input-icon">
+                            <input type="text" class="bankfleet-security__input" placeholder="Pérez">
+                        </div>
+                    </div>
+                </div>
+                <div class="bankfleet-profile__row">
+                    <div class="bankfleet-security__field">
+                        <label class="bankfleet-security__label">Tipo de documento</label>
+                        <div class="bankfleet-security__input-wrapper">
+                            <img src="/frontend/public/assets/icons/icon_id.svg"alt=""class="bankfleet-security__input-icon">
+                            <select class="bankfleet-security__input">
+                                <option>CC</option><option>CE</option><option>TI</option><option>Pasaporte</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bankfleet-security__field">
+                        <label class="bankfleet-security__label">Número de documento </label>
+                        <div class="bankfleet-security__input-wrapper">
+                            <img src="/frontend/public/assets/icons/icon_id.svg" alt="" class="bankfleet-security__input-icon">
+                            <input type="text" class="bankfleet-security__input" placeholder="123456789">
+                        </div>
+                    </div>
+                    <div class="bankfleet-security__field">
+                        <label class="bankfleet-security__label">Teléfono</label>
+                        <div class="bankfleet-security__input-wrapper">
+                            <img src="/frontend/public/assets/icons/icon_phone.svg" alt="" class="bankfleet-security__input-icon">
+                            <input type="tel" class="bankfleet-security__input" placeholder="3001234567">
+                        </div>
+                    </div>
+                </div>
+                <div class="bankfleet-profile__row">
+                    <div class="bankfleet-security__field">
+                        <label class="bankfleet-security__label">Correo electrónico</label>
+                        <div class="bankfleet-security__input-wrapper">
+                            <img src="/frontend/public/assets/icons/icon_email.svg" alt="" class="bankfleet-security__input-icon">
+                            <input type="email" class="bankfleet-security__input" placeholder="correo@bankfleet.com">
+                        </div>
+                    </div>
+                    <div class="bankfleet-security__field">
+                        <label class="bankfleet-security__label">Ciudad</label>
+                        <div class="bankfleet-security__input-wrapper">
+                            <img src="/frontend/public/assets/icons/icon_ubication_purple.svg" alt="" class="bankfleet-security__input-icon">
+                            <input type="text" class="bankfleet-security__input" placeholder="Bogotá">
+                        </div>
+                    </div>
+                    <div class="bankfleet-security__field">
+                        <label class="bankfleet-security__label">Dirección</label>
+                        <div class="bankfleet-security__input-wrapper">
+                            <img src="/frontend/public/assets/icons/icon_ubication_purple.svg" alt="" class="bankfleet-security__input-icon">
+                            <input type="text" class="bankfleet-security__input" placeholder="Cra 00 #00-00">
+                        </div>
+                    </div>
+                </div>
+                <div class="bankfleet-security__status">
+                    <span class="bankfleet-security__status-badge">✓ Verificado</span>
+                    <span class="bankfleet-security__status-text">Tu identidad fue validada correctamente.</span>
+                </div>
+                <div class="bankfleet-security__actions">
+                     <div class="bankfleet-security__field-password">
+                        <a href="/frontend/src/html/pages/dashboard/vista_dashboard.html" class="bankfleet-btn-secondary">Editar Contraseña
+                            <img src="/frontend/public/assets/icons/icon_key_white.svg" alt="" class="bankfleet-btn-secondary__icon">
+                        </a>
+                    </div>
+                    <button type="submit" class="bankfleet-btn bankfleet-btn--primary bankfleet-btn--expand">
+                        <span class="bankfleet-btn__text">Guardar cambios</span>
+                        <img src="/frontend/public/assets/icons/icon_save_white.svg" alt="" class="bankfleet-btn__icon">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+</section>
+
+
+
