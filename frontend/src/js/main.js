@@ -17,6 +17,8 @@ import '/frontend/src/js/components/electronic payroll/filters/bankfleet_filter_
 import '/frontend/src/js/components/footer/footer.js';
 import '/frontend/src/js/components/footer/footer_landing.js';
 
+import '/frontend/src/js/components/user/bankfleet_profile_user.js';
+
 import '/frontend/src/js/components/forms/login.js';
 import '/frontend/src/js/components/forms/register_step1.js';
 import '/frontend/src/js/components/forms/register_step2.js';

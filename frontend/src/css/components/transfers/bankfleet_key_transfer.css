@@ -80,12 +80,10 @@
     height: fit-content;
     position: sticky;
     top: 24px;
-    /* background: var(--primary-800); */
-    /* border: 2px solid rgba(255,255,255,.08); */
-    /* border-radius: var(--radius-xxl); */
-    padding: 28px;
-    margin-right: var(--gap-lg);
-    margin-left: var(--gap-lg);
+    width: 100%;
+    /* margin-right: var(--gap-lg); */
+    /* margin-left: var(--gap-lg); */
+    padding-bottom: var(--gap-lg);
     backdrop-filter: blur(60px);
 }
 .bankfleet-transfer-key__actions{

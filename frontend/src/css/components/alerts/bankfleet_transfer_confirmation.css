@@ -19,7 +19,7 @@
     max-width: 468px;
     height: 200px;
     background: var(--primary-950);
-    border: 1px solid var(--secondary-300);
+    border-left: 4px solid var(--secondary-400);
     border-radius: var(--radius-xxl);
     padding: 20px;
     box-sizing: border-box;
@@ -55,7 +55,7 @@
 .bankfleet-transfer-confirmation__description{
     margin: 0;
     text-align: start;
-    color: var(--gray-400);
+    color: var(--gray-100);
     font-size: var(--fs-xxxxs);
     line-height: 1.8;
 }
@@ -150,11 +150,10 @@
     overflow: hidden;
 
     width: 100%;
-    max-width: 468px;
+    max-width: 420px;
     height: 300px;
     background: var(--primary-950);
-    border:
-        2px solid var(--secondary-200);
+    border-left:4px solid var(--secondary-400);
     border-radius: var(--radius-xxl);
     padding: 20px;
     box-sizing: border-box;
@@ -224,7 +223,7 @@
 .bankfleet-transfer-confirmation-token__bankfleet-code-box {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 14px;
   width: fit-content;
 
 }

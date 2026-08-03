@@ -69,7 +69,7 @@
 .bankfleet-transfer-bank__field{
     display:flex;
     flex-direction:column;
-    gap:8px;
+    gap:4px;
 }
 .bankfleet-transfer-bank__field--full{
     grid-column:1 / -1;
@@ -99,7 +99,7 @@
 }
 .bankfleet-transfer-bank__input--textarea{
     width:300px;
-    min-height:120px;
+    min-height:92px;
     padding:0 18px;
     border-radius:18px;
     border:1px solid rgba(255,255,255,.08);
