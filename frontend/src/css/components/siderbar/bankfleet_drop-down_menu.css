@@ -8,7 +8,6 @@
     transition:var(--transition-normal);
     z-index:999;
 }
-
 .bankfleet-menu-overlay--active{
     opacity:1;
     visibility:visible;

@@ -10,6 +10,9 @@ import '/frontend/src/js/components/electronic payroll/bankfleet_employee_create
 import '/frontend/src/js/components/electronic payroll/bankfleet_manage_employee.js';
 import '/frontend/src/js/components/electronic payroll/bankfleet_manage_employee1.js';
 import '/frontend/src/js/components/electronic payroll/bankfleet_money_payroll_payment.js';
+import '/frontend/src/js/components/electronic payroll/bankfleet_money_payroll_payment_step1.js';
+import '/frontend/src/js/components/electronic payroll/bankfleet_money_payroll_payment_step2.js';
+import '/frontend/src/js/components/electronic payroll/bankfleet_money_payroll_payment_step3.js';
 import '/frontend/src/js/components/electronic payroll/filters/bankfleet_filter_payrollpayment1.js';
 import '/frontend/src/js/components/electronic payroll/filters/bankfleet_filter_payrollpayment2.js';
 import '/frontend/src/js/components/electronic payroll/filters/bankfleet_filter_payrollpayment3.js';
@@ -72,3 +75,17 @@ import '/frontend/src/js/components/tables/bankfleet_scheduled_consultations_tra
 
 import '/frontend/src/js/components/transfers/alerts/bankfleet_transfer_confirmation.js';
 
+
+import '/frontend/src/js/components/authorization/bankfleet_authorization_history.js';
+import '/frontend/src/js/components/authorization/bankfleet_authorization_schemes.js';
+import '/frontend/src/js/components/authorization/bankfleet_manage_authorizations.js';
+import '/frontend/src/js/components/authorization/bankfleet_non_monetary_transactions.js';
+import '/frontend/src/js/components/authorization/bankfleet_security_and_authentication.js';
+import '/frontend/src/js/components/authorization/bankfleet_transactions_awaiting_approval.js';
+
+import ('/frontend/src/js/components/invest/bankfleet_certificates_of_deposit_\(cds\).js');
+import ('/frontend/src/js/components/invest/bankfleet_financial_education_and_analysis.js');
+import ('/frontend/src/js/components/invest/bankfleet_investment_funds_and_trusts.js');
+import ('/frontend/src/js/components/invest/bankfleet_robo_advisors.js');
+import ('/frontend/src/js/components/invest/bankfleet_stocks_and_etfs.js');
+import ('/frontend/src/js/components/invest/bankfleet_sustainable_investments\(esg\).js');

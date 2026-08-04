@@ -29,6 +29,14 @@
 @import url('./components/forms/forgot_password.css');
 @import url('./components/forms/reset_password.css');
 
+
+@import url('./components/authorization/bankfleet_authorization_history.css');
+@import url('./components/authorization/bankfleet_authorization_schemes.css');
+@import url('./components/authorization/bankfleet_manage_authorizations.css');
+@import url('./components/authorization/bankfleet_non_monetary_transactions.css');
+@import url('./components/authorization/bankfleet_security_and_authentication.css');
+@import url('./components/authorization/bankfleet_transactions_awaiting_approval.css');
+
 @import url('./components/heros/bankfleet_hero_index_landing.css');
 
 @import url('./components/cards/bankfleet_card_home.css');
@@ -41,6 +49,9 @@
 @import url('./components/electronic payroll/bankfleet_employee_create.css');
 @import url('./components/electronic payroll/bankfleet_manage_employee.css');
 @import url('./components/electronic payroll/bankfleet_money_payroll_payment.css');
+@import url('./components/electronic payroll/bankfleet_money_payroll_payment_step1.css');
+@import url('./components/electronic payroll/bankfleet_money_payroll_payment_step2.css');
+@import url('./components/electronic payroll/bankfleet_money_payroll_payment_step3.css');
 
 @import url('./pages/vista_home_client.css');
 @import url('./pages/view_bankfleet_key_transfer.css');
@@ -68,3 +79,11 @@
 @import url('./components/tables/bankfleet_global_table_filter.css');
 
 @import url('./components/alerts/bankfleet_transfer_confirmation.css');
+
+
+@import url('./components/invest/bankfleet_certificates_of_deposit_\(cds\).css');
+@import url('./components/invest/bankfleet_financial_education_and_analysis.css');
+@import url('./components/invest/bankfleet_investment_funds_and_trusts.css');
+@import url('./components/invest/bankfleet_robo_advisors.css');
+@import url('./components/invest/bankfleet_stocks_and_etfs.css');
+@import url('./components/invest/bankfleet_sustainable_investments\(esg\).css');
