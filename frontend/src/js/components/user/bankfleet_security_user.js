@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const BankfleetSecurityUserContainer = document.querySelector('.bankfleet-security-user.-container');
+  const BankfleetSecurityUserContainer = document.querySelector('.bankfleet-security-user-container');
   if (BankfleetSecurityUserContainer) {fetch("/frontend/src/html/components/user/bankfleet_security_user.html")
       .then(response => {if (!response.ok) throw new Error("Error al cargar bankfleet_security_user.html");
         return response.text();})

@@ -12,6 +12,10 @@
 
 @import url('./components/user/bankfleet_profile_user.css');
 @import url('./components/user/bankfleet_security_user.css');
+@import url('./components/user/bankfleet_administration_user.css');
+@import url('./components/user/bankfleet_help_center.css');
+@import url('./components/user/bankfleet_notification_user.css');
+@import url('./components/user/bankfleet_settings_user.css');
 
 
 @import url('./components/forms/login.css');
@@ -36,6 +40,7 @@
 @import url('./components/electronic payroll/bankfleet_dian.css');
 @import url('./components/electronic payroll/bankfleet_employee_create.css');
 @import url('./components/electronic payroll/bankfleet_manage_employee.css');
+@import url('./components/electronic payroll/bankfleet_money_payroll_payment.css');
 
 @import url('./pages/vista_home_client.css');
 @import url('./pages/view_bankfleet_key_transfer.css');
@@ -48,6 +53,7 @@
 @import url('./components/transfers/bankfleet_international_transfer.css');
 @import url('./components/transfers/bankfleet_transfer_frequent_contacts.css');
 @import url('./components/transfers/bankfleet_transfer_by_qr.css');
+@import url('./components/transfers/bankfleet_safety_and_special_features.css');
 
 
 
