@@ -143,11 +143,11 @@
     gap:12px;
     padding:12px;
     border-radius:var(--radius-md);
-    background:var(--tertiary-950);
-    border-left:4px solid var(--tertiary-400);
-    border-right:1px solid var(--tertiary-400);
-    border-top:1px solid var(--tertiary-400);
-    border-bottom:1px solid var(--tertiary-400);
+    background:var(--secondary-950);
+    border-left:4px solid var(--secondary-400);
+    border-right:1px solid var(--secondary-400);
+    border-top:1px solid var(--secondary-400);
+    border-bottom:1px solid var(--secondary-400);
 }
 .bankfleet-profile__status-badge{
     font-size:var(--fs-xxs);
