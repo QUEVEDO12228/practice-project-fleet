@@ -264,21 +264,21 @@
         transform: translateY(0) scale(1);
     }
 }
-@media (max-width: 768px){
-    .bankfleet-transfer-confirmation-token__actions{
-        flex-direction: column-reverse;
-    }
-    .bankfleet-transfer-confirmation-token__actions .bankfleet-btn,
-    .bankfleet-transfer-confirmation-token__actions .bankfleet-btn-secondary{
-        width: 100%;
-    }
-}
-@media (max-width: 480px){
-    .bankfleet-transfer-confirmation-token__card{
-        padding: 24px;
-    }
-    .bankfleet-transfer-confirmation-token__title{
-        font-size: var(--fs-xs);
-    }
 
+
+@media (max-width: 980px){
+    .bankfleet-transfer-confirmation-token{
+        padding: 0px;
+    }
+    .bankfleet-transfer-confirmation-token__card{
+    
+        border: none;
+    }
+    .bankfleet-transfer-confirmation-token__bankfleet-code-box {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        width: fit-content;
+
+    }   
 }

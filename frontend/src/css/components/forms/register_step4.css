@@ -52,12 +52,6 @@
   max-width:432px;
   padding:24px;
   border-radius:32px;
-  border:1px solid rgba(255,255,255,0.08);
-  backdrop-filter:blur(20px);
-}
-.bankfleet-register-step3__card:hover{
-    transform: translateY(-2px);
-    border-color:rgba(139,92,246,.35);
 }
 
 .bankfleet-register-step3__topbar{

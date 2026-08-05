@@ -1,199 +1,80 @@
 <section class="bankfleet-register-address-page">
-
-    <!-- GLOWS -->
     <div class="bankfleet-register-address-page__glow bankfleet-register-address-page__glow--left"></div>
     <div class="bankfleet-register-address-page__glow bankfleet-register-address-page__glow--right"></div>
-
     <div class="bankfleet-register-address-layout">
-
-        <!--========================================
-        LEFT
-        =========================================-->
         <section class="bankfleet-register-address">
-
             <div class="bankfleet-register-address__card">
-
                 <div class="bankfleet-register-address__topbar">
-                    <a href="/frontend/src/html/pages/auth/vista_register_step1.html" class="bankfleet-btn-secondary">
-                        <img src="/frontend/public/assets/icons/icon_back.svg"
-                             alt=""
-                             class="bankfleet-btn-secondary__icon">
+                    <a href="javascript:history.back()" class="bankfleet-btn-secondary">
+                        <img src="/frontend/public/assets/icons/icon_back.svg" class="bankfleet-btn-secondary__icon" alt="Volver">
                     </a>
                 </div>
-
                 <header class="bankfleet-register-address__header">
-
-                    <h2 class="bankfleet-register-address__title">
-                        Dirección de residencia
-                    </h2>
-
-                    <p class="bankfleet-register-address__subtitle">
-                        Completa la información de tu domicilio para continuar con
-                        <strong class="bankfleet-register-address__highlight">BANKFLEET</strong>
-                    </p>
-
+                    <h2 class="bankfleet-register-address__title">Dirección de residencia</h2>
+                    <p class="bankfleet-register-address__subtitle">Completa la información de tu domicilio para continuar con<strong class="bankfleet-register-address__highlight">BANKFLEET</strong></p>
                 </header>
-
                 <form class="bankfleet-register-address__form">
-
-                    <!-- PAIS -->
                     <div class="bankfleet-register-address__field">
-
-                        <label class="bankfleet-register-address__label">
-                            País
-                        </label>
-
+                        <label class="bankfleet-register-address__label">País</label>
                         <div class="bankfleet-register-address__input-wrapper">
-
-                            <img src="/frontend/public/assets/icons/icon_country.svg"
-                                 class="bankfleet-register-address__input-icon"
-                                 alt="">
-
+                            <img src="/frontend/public/assets/icons/icon_country_purple.svg"class="bankfleet-register-address__input-icon"alt="">
                             <select class="bankfleet-register-address__input">
-
-                                <option selected disabled>
-                                    Selecciona un país
-                                </option>
-
+                                <option selected disabled>Selecciona un país</option>
                                 <option>Colombia</option>
                                 <option>México</option>
                                 <option>Perú</option>
                                 <option>Chile</option>
                                 <option>Ecuador</option>
-
                             </select>
-
                         </div>
-
                     </div>
-
-                    <!-- DEPARTAMENTO -->
-
                     <div class="bankfleet-register-address__field">
-
-                        <label class="bankfleet-register-address__label">
-                            Departamento
-                        </label>
-
+                        <label class="bankfleet-register-address__label">Departamento</label>
                         <div class="bankfleet-register-address__input-wrapper">
-
-                            <img src="/frontend/public/assets/icons/icon_location.svg"
-                                 class="bankfleet-register-address__input-icon"
-                                 alt="">
-
-                            <input
-                                type="text"
-                                class="bankfleet-register-address__input"
-                                placeholder="Ej: Risaralda">
-
+                            <img src="/frontend/public/assets/icons/icon_map_purple.svg"class="bankfleet-register-address__input-icon"alt="">
+                            <input type="text" class="bankfleet-register-address__input" placeholder="Ej: Risaralda">
                         </div>
 
                     </div>
-
-                    <!-- CIUDAD -->
-
                     <div class="bankfleet-register-address__field">
-
-                        <label class="bankfleet-register-address__label">
-                            Ciudad
-                        </label>
-
+                        <label class="bankfleet-register-address__label">Ciudad</label>
                         <div class="bankfleet-register-address__input-wrapper">
-
-                            <img src="/frontend/public/assets/icons/icon_city.svg"
-                                 class="bankfleet-register-address__input-icon"
-                                 alt="">
-
-                            <input
-                                type="text"
-                                class="bankfleet-register-address__input"
-                                placeholder="Ej: Pereira">
-
+                            <img src="/frontend/public/assets/icons/icon_city_purple.svg" class="bankfleet-register-address__input-icon" alt="">
+                            <input type="text" class="bankfleet-register-address__input" placeholder="Ej: Pereira">
                         </div>
-
                     </div>
-
-                    <!-- DIRECCION -->
-
                     <div class="bankfleet-register-address__field">
-
-                        <label class="bankfleet-register-address__label">
-                            Dirección
-                        </label>
-
+                        <label class="bankfleet-register-address__label">Tipo Vía</label>
                         <div class="bankfleet-register-address__input-wrapper">
-
-                            <img src="/frontend/public/assets/icons/icon_home.svg"
-                                 class="bankfleet-register-address__input-icon"
-                                 alt="">
-
-                            <input
-                                type="text"
-                                class="bankfleet-register-address__input"
-                                placeholder="Ej: Calle 10 # 25 - 60">
-
+                            <img src="/frontend/public/assets/icons/icon_type_via_purple.svg"class="bankfleet-register-address__input-icon"alt="">
+                            <select class="bankfleet-register-address__input">
+                                <option selected disabled>Selecciona un país</option>
+                                <option>Carrera</option>
+                                <option>Calle</option>
+                                <option>Diagonal</option>
+                                <option>Trasversal</option>
+                                <option>Avenida</option>
+                            </select>
                         </div>
-
                     </div>
-
-                    
-
-                    <!-- BOTON -->
-
                     <div class="bankfleet-register-address__button-primary">
-
                         <button class="bankfleet-btn bankfleet-btn--primary bankfleet-btn--expand">
-
-                            <span class="bankfleet-btn__text">
-                                Siguiente
-                            </span>
-
-                            <img src="/frontend/public/assets/icons/icon_next-white.svg"
-                                 alt=""
-                                 class="bankfleet-btn__icon">
-
+                            <span class="bankfleet-btn__text">Siguiente</span>
+                            <img src="/frontend/public/assets/icons/icon_next-white.svg"alt=""class="bankfleet-btn__icon">
                         </button>
-
                     </div>
-
                 </form>
-
             </div>
-
         </section>
-
-        <!--========================================
-        RIGHT
-        =========================================-->
-
         <aside class="bankfleet-register-address-banner">
-
-            <img src="/frontend/public/assets/images/img_banking_address.jpg"
-                 alt="BANKFLEET"
-                 class="bankfleet-register-address-banner__image">
-
+            <img src="/frontend/public/assets/images/img_banking_address.jpg" alt="BANKFLEET" class="bankfleet-register-address-banner__image">
             <div class="bankfleet-register-address-banner__overlay"></div>
-
             <div class="bankfleet-register-address-banner__card">
-
-                <span class="bankfleet-register-address-banner__badge">
-                    ADDRESS VERIFICATION
-                </span>
-
-                <h2 class="bankfleet-register-address-banner__title">
-                    Tu ubicación también protege tu cuenta
-                </h2>
-
-                <p class="bankfleet-register-address-banner__text">
-                    Registramos tu dirección para cumplir con los requisitos
-                    regulatorios, prevenir fraude y ofrecerte una experiencia
-                    bancaria más segura dentro de BANKFLEET.
+                <span class="bankfleet-register-address-banner__badge">ADDRESS VERIFICATION</span>
+                <h2 class="bankfleet-register-address-banner__title">Tu ubicación también protege tu cuenta</h2>
+                <p class="bankfleet-register-address-banner__text"> Registramos tu dirección para cumplir con los requisitos regulatorios, prevenir fraude y ofrecerte una experiencia bancaria más segura dentro de BANKFLEET.
                 </p>
-
             </div>
-
         </aside>
-
     </div>
-
 </section>

@@ -46,14 +46,6 @@
     width: 100%;
     max-width: 456px;
     padding:24px;
-    border:2px solid rgba(255,255,255,0.20);
-    border-radius: 32px;
-    backdrop-filter: blur(24px);
-    box-shadow:0 20px 60px rgba(0,0,0,0.45);
-}
-.bankfleet-code-verify__card:hover{
-    transform: translateY(-2px);
-    border-color:rgba(139,92,246,.35);
 }
 .bankfleet-code-verify__topbar {
     position: absolute;
@@ -359,68 +351,34 @@
     line-height: 1.8;
     font-size: var(--fs-xxs);
 }
-@media (max-width: 1200px) {
-    .bankfleet-code-verify {
-        width: 50%;
-    }
-    .bankfleet-code-verify-banner {
-        width: 50%;
-    }
-}
-@media (max-width: 980px) {
-    .bankfleet-code-verify-layout {
-        flex-direction: column;
-    }
-    .bankfleet-code-verify,
-    .bankfleet-code-verify-banner {
-        width: 100%;
-    }
-    .bankfleet-code-verify {
-        min-height: 100vh;
-    }
-    .bankfleet-code-verify-banner {
-        min-height: 420px;
-    }
-}
-@media (max-width: 768px) {
-    .bankfleet-code-verify {
-        padding:120px var(--gap-lg) var(--gap-xl);
-    }
-    .bankfleet-code-verify__card {
-        padding: 32px;
-    }
-    .bankfleet-code-verify-banner__card {
-        left: 24px;
-        right: 24px;
-        bottom: 24px;
-        padding: 28px;
-    }
-    .bankfleet-code-verify-banner__title {
-        font-size: 3rem;
-    }
-}
-@media (max-width: 480px) {
-    .bankfleet-code-verify-banner {
-        display: none;
-    }
-    .bankfleet-code-verify {
-        width: 100%;
-    }
-    .bankfleet-code-verify__card {
-        padding: 24px;
-
-        border-radius: 24px;
-    }
-    .bankfleet-code-verify__title {
-        font-size: 2.6rem;
-    }
-    .bankfleet-code-verify__socials {
-        flex-direction: column;
-    }
-}
 .bankfleet-code-box {
   display: flex;
   justify-content: center;
   width: max-content;
   gap: 22px;
+}
+
+@media(max-width:980px){
+    .bankfleet-code-verify-layout{
+    flex-direction:column;
+    }
+
+    .bankfleet-code-verify,
+    .bankfleet-code-verify-banner{
+    width:100%;
+    }
+
+    .bankfleet-code-verify-banner{
+    min-height:400px;
+    }
+    .bankfleet-code-box{
+        gap:8px;
+    }
+    .bankfleet-code-verify__form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        /* padding: 2.4rem; */
+    }
 }
