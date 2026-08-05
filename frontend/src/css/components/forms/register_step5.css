@@ -1,4 +1,4 @@
-.bankfleet-offer-step5-page{
+.bankfleet-register-step4-page{
   min-height:100vh;
   display:flex;
   justify-content:center;
@@ -9,28 +9,28 @@
 }
 
 /* GLOWS */
-.bankfleet-offer-step5-glow{
+.bankfleet-register-step4-page__glow{
   position:absolute;
-  width:450px;
-  height:450px;
+  width:420px;
+  height:420px;
   border-radius:50%;
-  filter:blur(140px);
+  filter:blur(120px);
   opacity:.12;
 }
 
-.bankfleet-offer-step5-glow--left{
-  top:-180px;
-  left:-180px;
+.bankfleet-register-step4-page__glow--left{
+  top:-150px;
+  left:-150px;
   background:var(--secondary-500);
 }
 
-.bankfleet-offer-step5-glow--right{
-  bottom:-180px;
-  right:-180px;
+.bankfleet-register-step4-page__glow--right{
+  bottom:-150px;
+  right:-150px;
   background:var(--primary-500);
 }
 
-.bankfleet-offer-step5-layout{
+.bankfleet-register-step4-layout{
   width:100%;
   max-width:1600px;
   display:flex;
@@ -40,7 +40,7 @@
 }
 
 /* LEFT */
-.bankfleet-offer-step5{
+.bankfleet-register-step4{
   width:42%;
   display:flex;
   justify-content:center;
@@ -48,7 +48,7 @@
   padding:20px;
 }
 
-.bankfleet-offer-step5__card{
+.bankfleet-register-step4__card{
   width:100%;
   max-width:432px;
   padding:24px;
@@ -56,116 +56,185 @@
   border:1px solid rgba(255,255,255,0.08);
   backdrop-filter:blur(20px);
 }
-.bankfleet-offer-step5__card:hover{
+.bankfleet-register-step4__card:hover{
     transform: translateY(-2px);
     border-color:rgba(139,92,246,.35);
 }
 
-/* HEADER */
-.bankfleet-offer-step5__header{
-  text-align:center;
+
+.bankfleet-register-step4__topbar {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    z-index: 9999;
+}
+.bankfleet-register-step4__brand {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-md);
+    margin-bottom: var(--gap-lg);
+}
+.bankfleet-register-step4__brand-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 20px;
+    background:linear-gradient(135deg,var(--secondary-500),var(--primary-500));
+    color: var(--white);
+    font-size: var(--fs-sm);
+    font-family: var(--font-primary-bold);
+    box-shadow: 0 12px 30px rgba(139,92,246,0.3);
+}
+.bankfleet-register-step4__brand-title {
+    margin: 0;
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.bankfleet-register-step4__brand-subtitle {
+    color: var(--secondary-300);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+.bankfleet-register-step4__header {
+    margin-bottom: var(--gap-sm);
+    text-align: center;
+}
+.bankfleet-register-step4__title {
+    margin-bottom: var(--gap-xs);
+    color: var(--white);
+    font-size: 1.6rem;
+    font-family: var(--font-primary-bold);
+}
+.bankfleet-register-step4__subtitle {
+    color: var(--gray-300);
+    line-height: 1.8;
+    font-size: var(--fs-xxxs);
+}
+.bankfleet-register-step4__highlight {
+    color: var(--secondary-300);
+}
+
+/* CONTRACT */
+.bankfleet-register-step4__contract{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:14px;
+  border-radius:18px;
   margin-bottom:16px;
 }
 
-.bankfleet-offer-step5__title{
+.bankfleet-register-step4__contract h3{
   color:#fff;
-  font-size:1.6rem;
+  font-size:13px;
+  margin-bottom:8px;
+}
+
+.bankfleet-register-step4__contract p{
+  color:var(--gray-300);
+  font-size:11px;
+  line-height:1.6;
+}
+
+.bankfleet-register-step4__contract a{
+  display:inline-block;
+  margin-top:8px;
+  color:var(--secondary-300);
+  font-size:11px;
+  text-decoration:none;
+}
+
+/* CHECKS */
+.bankfleet-register-step4__check{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:10px;
+  font-size:12px;
+  color:var(--gray-200);
+  cursor:pointer;
+}
+
+.bankfleet-register-step4__check input{
+  display:none;
+}
+
+.bankfleet-register-step4__check span{
+  width:16px;
+  height:16px;
+  border:2px solid rgba(139,92,246,0.5);
+  border-radius:4px;
+  display:inline-block;
+  position:relative;
+}
+
+.bankfleet-register-step4__check input:checked + span{
+  background:var(--secondary-500);
+  border-color:var(--secondary-500);
+}
+
+.bankfleet-register-step4__check input:checked + span::after{
+  content:"";
+  position:absolute;
+  width:4px;
+  height:8px;
+  border:solid white;
+  border-width:0 2px 2px 0;
+  transform:rotate(45deg);
+  left:4px;
+  top:1px;
+}
+
+/* SIGNATURE */
+.bankfleet-register-step4__signature{
+  margin-top:14px;
+}
+
+.bankfleet-register-step4__signature p{
+  color:#fff;
+  font-size:12px;
   margin-bottom:6px;
 }
 
-.bankfleet-offer-step5__subtitle{
-  color:var(--gray-300);
-  font-size:12px;
-}
-
-/* AMOUNT CARD */
-.bankfleet-offer-step5__amount-card{
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(139,92,246,0.25);
-  border-radius:20px;
-  padding:18px;
-  text-align:center;
-  margin-bottom:18px;
-  box-shadow:0 0 30px rgba(139,92,246,0.15);
-}
-
-.bankfleet-offer-step5__badge{
-  font-size:10px;
-  color:var(--secondary-300);
-  background:rgba(139,92,246,0.15);
-  padding:6px 10px;
-  border-radius:999px;
-}
-
-.bankfleet-offer-step5__amount{
-  color:#fff;
-  font-size:2rem;
-  margin:10px 0;
-}
-
-.bankfleet-offer-step5__rate{
-  color:var(--gray-300);
-  font-size:12px;
-}
-
-.bankfleet-offer-step5__fee{
-  color:var(--gray-200);
-  font-size:12px;
-  margin-top:6px;
-}
-
-/* SLIDER */
-.bankfleet-offer-step5__slider{
-  margin-bottom:18px;
-}
-
-.bankfleet-offer-step5__slider label{
-  color:#fff;
-  font-size:12px;
-}
-
-.bankfleet-offer-step5__slider input[type="range"]{
-  width:100%;
-  margin-top:10px;
-  accent-color:var(--secondary-500);
-}
-
-.bankfleet-offer-step5__range-values{
+.bankfleet-register-step4__sign-box{
+  height:80px;
+  border:2px dashed rgba(255,255,255,0.2);
+  border-radius:16px;
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
+  align-items:center;
   color:var(--gray-400);
   font-size:11px;
+  cursor:pointer;
+  transition:.3s;
 }
 
-/* BENEFITS */
-.bankfleet-offer-step5__benefits{
-  margin-bottom:18px;
-  color:var(--gray-200);
-  font-size:12px;
-  line-height:1.8;
+.bankfleet-register-step4__sign-box:hover{
+  border-color:var(--secondary-400);
+  background:rgba(139,92,246,0.06);
 }
 
-/* ACTIONS */
-.bankfleet-offer-step5__actions{
-  display:flex;
-  justify-content: space-between;
-  gap:10px;
+/* BUTTON */
+.bankfleet-register-step4__button{
+  margin-top:16px;
 }
 
 /* RIGHT */
-.bankfleet-offer-step5-banner{
+.bankfleet-register-step4-banner{
   width:58%;
   position:relative;
-  background:url('/frontend/public/assets/img/loan.jpg') center/cover no-repeat;
+  background:url('/frontend/public/assets/img/legal.jpg') center/cover no-repeat;
 }
 
-.bankfleet-offer-step5-banner__overlay{
+.bankfleet-register-step4-banner__overlay{
   position:absolute;
   inset:0;
-  background:linear-gradient(0deg,rgba(0,0,0,.85),rgba(0,0,0,.25));
+  background:linear-gradient(0deg,rgba(0,0,0,.85),rgba(0,0,0,.2));
 }
 
-.bankfleet-offer-step5-banner__card{
+.bankfleet-register-step4-banner__card{
   position:absolute;
   left:60px;
   bottom:60px;
@@ -177,7 +246,7 @@
   backdrop-filter:blur(20px);
 }
 
-.bankfleet-offer-step5-banner__badge{
+.bankfleet-register-step4-banner__badge{
   font-size:10px;
   color:var(--secondary-300);
   background:rgba(139,92,246,0.15);
@@ -185,31 +254,35 @@
   border-radius:999px;
 }
 
-.bankfleet-offer-step5-banner__title{
+.bankfleet-register-step4-banner__title{
   color:#fff;
   font-size:2.5rem;
   margin-top:10px;
 }
 
-.bankfleet-offer-step5-banner__text{
+.bankfleet-register-step4-banner__text{
   color:var(--gray-300);
   font-size:13px;
   line-height:1.6;
   margin-top:10px;
 }
-
+.bankfleet-register-step4__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* RESPONSIVE */
 @media(max-width:980px){
-  .bankfleet-offer-step5-layout{
+  .bankfleet-register-step4-layout{
     flex-direction:column;
   }
 
-  .bankfleet-offer-step5,
-  .bankfleet-offer-step5-banner{
+  .bankfleet-register-step4,
+  .bankfleet-register-step4-banner{
     width:100%;
   }
 
-  .bankfleet-offer-step5-banner{
+  .bankfleet-register-step4-banner{
     min-height:400px;
   }
 }

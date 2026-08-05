@@ -1,83 +1,174 @@
-<section class="bankfleet-register-step3-page">
+<section class="bankfleet-register-address-page">
 
-  <div class="bankfleet-register-step3-page__glow bankfleet-register-step3-page__glow--left"></div>
-  <div class="bankfleet-register-step3-page__glow bankfleet-register-step3-page__glow--right"></div>
+    <!-- GLOWS -->
+    <div class="bankfleet-register-address-page__glow bankfleet-register-address-page__glow--left"></div>
+    <div class="bankfleet-register-address-page__glow bankfleet-register-address-page__glow--right"></div>
 
-  <div class="bankfleet-register-step3-layout">
+    <div class="bankfleet-register-address-layout">
 
-    <!-- LEFT -->
-    <section class="bankfleet-register-step3">
+        <!--========================================
+        LEFT
+        =========================================-->
+        <section class="bankfleet-register-address">
 
-      <div class="bankfleet-register-step3__card">
+            <div class="bankfleet-register-address__card">
 
-        <div class="bankfleet-register-step3__topbar">
-          <a href="/frontend/src/html/pages/auth/vista_register_step2.html" class="bankfleet-btn-secondary">
-              <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="bankfleet-btn-secondary__icon">
-          </a>
-        </div>
+                <div class="bankfleet-register-address__topbar">
+                    <a href="/frontend/src/html/pages/auth/vista_register_step1.html" class="bankfleet-btn-secondary">
+                        <img src="/frontend/public/assets/icons/icon_back.svg"
+                             alt=""
+                             class="bankfleet-btn-secondary__icon">
+                    </a>
+                </div>
 
-        <header class="bankfleet-register-step3__header">
-          <h2 class="bankfleet-register-step3__title">Verificación biométrica</h2>
-          <p class="bankfleet-register-step3__subtitle">
-            Toma una selfie para validar tu identidad
-          </p>
-        </header>
+                <header class="bankfleet-register-address__header">
 
-        <div class="bankfleet-register-step3__camera">
+                    <h2 class="bankfleet-register-address__title">
+                        Dirección de residencia
+                    </h2>
 
-          <div class="bankfleet-register-step3__frame">
-            <div class="bankfleet-register-step3__scan"></div>
+                    <p class="bankfleet-register-address__subtitle">
+                        Completa la información de tu domicilio para continuar con
+                        <strong class="bankfleet-register-address__highlight">BANKFLEET</strong>
+                    </p>
 
-            <div class="bankfleet-register-step3__face-circle">
-              <span>Coloca tu rostro aquí</span>
+                </header>
+
+                <form class="bankfleet-register-address__form">
+
+                    <!-- COMPLEMENTO -->
+
+                    <div class="bankfleet-register-address__field">
+
+                        <label class="bankfleet-register-address__label">
+                            Complemento (Opcional)
+                        </label>
+
+                        <div class="bankfleet-register-address__input-wrapper">
+
+                            <img src="/frontend/public/assets/icons/icon_building.svg"
+                                 class="bankfleet-register-address__input-icon"
+                                 alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-register-address__input"
+                                placeholder="Apto, Torre, Interior...">
+
+                        </div>
+
+                    </div>
+
+                    <!-- CODIGO POSTAL -->
+
+                    <div class="bankfleet-register-address__field">
+
+                        <label class="bankfleet-register-address__label">
+                            Código postal
+                        </label>
+
+                        <div class="bankfleet-register-address__input-wrapper">
+
+                            <img src="/frontend/public/assets/icons/icon_postal.svg"
+                                 class="bankfleet-register-address__input-icon"
+                                 alt="">
+
+                            <input
+                                type="text"
+                                class="bankfleet-register-address__input"
+                                placeholder="Ej: 660001">
+
+                        </div>
+
+                    </div>
+
+                    <!-- TIPO DE VIVIENDA -->
+
+                    <div class="bankfleet-register-address__field">
+
+                        <label class="bankfleet-register-address__label">
+                            Tipo de vivienda
+                        </label>
+
+                        <div class="bankfleet-register-address__input-wrapper">
+
+                            <img src="/frontend/public/assets/icons/icon_house.svg"
+                                 class="bankfleet-register-address__input-icon"
+                                 alt="">
+
+                            <select class="bankfleet-register-address__input">
+
+                                <option selected disabled>
+                                    Selecciona una opción
+                                </option>
+
+                                <option>Propia</option>
+                                <option>Arrendada</option>
+                                <option>Familiar</option>
+                                <option>Otra</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BOTON -->
+
+                    <div class="bankfleet-register-address__button-primary">
+
+                        <button class="bankfleet-btn bankfleet-btn--primary bankfleet-btn--expand">
+
+                            <span class="bankfleet-btn__text">
+                                Siguiente
+                            </span>
+
+                            <img src="/frontend/public/assets/icons/icon_next-white.svg"
+                                 alt=""
+                                 class="bankfleet-btn__icon">
+
+                        </button>
+
+                    </div>
+
+                </form>
+
             </div>
 
-          </div>
+        </section>
 
-          <p class="bankfleet-register-step3__status">
-            🔎 Detectando rostro...
-          </p>
+        <!--========================================
+        RIGHT
+        =========================================-->
 
-        </div>
+        <aside class="bankfleet-register-address-banner">
 
-        <div class="bankfleet-register-step3__tips">
-          <p>✔ Buena iluminación</p>
-          <p>✔ Mira directo a la cámara</p>
-          <p>✔ No uses accesorios</p>
-        </div>
+            <img src="/frontend/public/assets/images/img_banking_address.jpg"
+                 alt="BANKFLEET"
+                 class="bankfleet-register-address-banner__image">
 
-        <div class="bankfleet-register-step3__button">
-          <button class="bankfleet-btn bankfleet-btn--primary bankfleet-btn--expand">
-              <span class="bankfleet-btn__text">Capturar selfie</span>
-              <img src="/frontend/public/assets/icons/icon_next-white.svg" alt="" class="bankfleet-btn__icon">
-          </button>
-        </div>
+            <div class="bankfleet-register-address-banner__overlay"></div>
 
-      </div>
+            <div class="bankfleet-register-address-banner__card">
 
-    </section>
+                <span class="bankfleet-register-address-banner__badge">
+                    ADDRESS VERIFICATION
+                </span>
 
-    <!-- RIGHT -->
-    <aside class="bankfleet-register-step3-banner">
-      <img src="/frontend/public/assets/images/img_banking4.jpg" alt="BANKFLEET" class="bankfleet-register-step1-banner__image">
-      <div class="bankfleet-register-step3-banner__overlay"></div>
+                <h2 class="bankfleet-register-address-banner__title">
+                    Tu ubicación también protege tu cuenta
+                </h2>
 
-      <div class="bankfleet-register-step3-banner__card">
+                <p class="bankfleet-register-address-banner__text">
+                    Registramos tu dirección para cumplir con los requisitos
+                    regulatorios, prevenir fraude y ofrecerte una experiencia
+                    bancaria más segura dentro de BANKFLEET.
+                </p>
 
-        <span class="bankfleet-register-step3-banner__badge">AI BIOMETRIC</span>
+            </div>
 
-        <h2 class="bankfleet-register-step3-banner__title">
-          Seguridad avanzada
-        </h2>
+        </aside>
 
-        <p class="bankfleet-register-step3-banner__text">
-          Usamos reconocimiento facial y validación en tiempo real para proteger tu cuenta.
-        </p>
-
-      </div>
-
-    </aside>
-
-  </div>
+    </div>
 
 </section>

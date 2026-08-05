@@ -35,6 +35,8 @@ import '/frontend/src/js/components/forms/register_step3.js';
 import '/frontend/src/js/components/forms/register_step4.js';
 import '/frontend/src/js/components/forms/register_step5.js';
 import '/frontend/src/js/components/forms/register_step6.js';
+import '/frontend/src/js/components/forms/register_step7.js';
+import '/frontend/src/js/components/forms/register_step8.js';
 import '/frontend/src/js/components/forms/code_verify.js';
 import '/frontend/src/js/components/forms/forgot_password.js';
 import '/frontend/src/js/components/forms/reset_password.js';

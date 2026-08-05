@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded", function () {
 function initRegisterStep6() {
     const RegisterStep6Form = document.querySelector(".bankfleet-btn--primary");
     if (!RegisterStep6Form) {console.error("NO ENCONTRÉ BOTÓN SIGUIENTE");return;}
-    RegisterStep6Form.addEventListener("click", function (e) {e.preventDefault();window.location.href = "/frontend/src/html/pages/auth/vista_login.html";});
+    RegisterStep6Form.addEventListener("click", function (e) {e.preventDefault();window.location.href = "/frontend/src/html/pages/auth/view_register_step7.html";});
 }

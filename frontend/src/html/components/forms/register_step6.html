@@ -1,71 +1,106 @@
-<section class="bankfleet-register-step6-page">
-  <div class="bankfleet-register-step6-page__glow bankfleet-register-step6-page__glow--left"></div>
-  <div class="bankfleet-register-step6-page__glow bankfleet-register-step6-page__glow--right"></div>
-  <div class="bankfleet-register-step6-layout">
-    <section class="bankfleet-register-step6">
-      <div class="bankfleet-register-step6__card">
-        <div class="bankfleet-register-step6__topbar">
-          <a href="vista_register_step5.html"class="bankfleet-btn-secondary">
-            <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="bankfleet-btn-secondary__icon">
-          </a>
-        </div>
-        <header class="bankfleet-register-step6__header">
-          <h6 class="bankfleet-register-step6__title">Completa tu registro</h6>
-          <p class="bankfleet-register-step6__subtitle">Último paso para crear tu cuenta en<strong class="bankfleet-register-step6__highlight">BANKFLEET</strong></p>
+<section class="bankfleet-register-step4-page">
+
+  <div class="bankfleet-register-step4-page__glow bankfleet-register-step4-page__glow--left"></div>
+  <div class="bankfleet-register-step4-page__glow bankfleet-register-step4-page__glow--right"></div>
+
+  <div class="bankfleet-register-step4-layout">
+
+    <!-- LEFT -->
+    <section class="bankfleet-register-step4">
+
+      <div class="bankfleet-register-step4__card">
+
+        <div class="bankfleet-register-step4__topbar">
+            <a href="vista_forgot_password.html"class="bankfleet-btn-secondary">
+                <img src="/frontend/public/assets/icons/icon_back.svg" alt="" class="bankfleet-btn-secondary__icon">
+            </a>
+        </div>  
+        <header class="bankfleet-register-step4__header">
+            <h2 class="bankfleet-register-step4__title">Autorizaciones legales</h2>
+            <p class="bankfleet-register-step4__subtitle">Revisa y acepta los términos para continuar</p>
         </header>
-        <form class="bankfleet-register-step6__form">
-          <div class="bankfleet-register-step6__field">
-            <label class="bankfleet-register-step6__label">Foto de perfil</label>
-            <div class="bankfleet-register-step6__photo-upload">
-              <div class="bankfleet-register-step6__photo-preview">
-                <img src="/frontend/public/assets/icons/icon_user_placeholder.svg" alt="Foto de perfil" class="bankfleet-register-step6__photo-img">
-                <button type="button" class="bankfleet-register-step6__photo-btn"><img src="/frontend/public/assets/icons/icon_camera.svg" alt=""></button>
-              </div>
-              <input type="file" accept="image/*" class="bankfleet-register-step6__photo-input">
-              <p class="bankfleet-register-step6__photo-hint">JPG, PNG o WEBP. Máx 5MB</p>
-            </div>
+
+        <form class="bankfleet-register-step4__form">
+
+          <!-- CONTRACT BOX -->
+          <div class="bankfleet-register-step4__contract">
+
+            <h3>Contrato de apertura digital</h3>
+
+            <p>
+              Autorizo a BANKFLEET a realizar la verificación de identidad,
+              tratamiento de datos personales, validación en centrales de riesgo
+              y prevención de fraude conforme a la normativa vigente.
+            </p>
+
+            <a href="#">Ver documento completo</a>
+
           </div>
-          <div class="bankfleet-register-step6__field">
-            <label class="bankfleet-register-step6__label">Correo electrónico</label>
-            <div class="bankfleet-register-step6__input-wrapper">
-              <img src="/frontend/public/assets/icons/icon_email.svg" class="bankfleet-register-step6__input-icon" alt="">
-              <input type="email" class="bankfleet-register-step6__input" placeholder="correo@bankfleet.com">
+
+          <!-- CHECKS -->
+          <label class="bankfleet-register-step4__check">
+            <input type="checkbox">
+            <span></span>
+            Acepto términos y condiciones
+          </label>
+
+          <label class="bankfleet-register-step4__check">
+            <input type="checkbox">
+            <span></span>
+            Autorizo tratamiento de datos personales
+          </label>
+
+          <label class="bankfleet-register-step4__check">
+            <input type="checkbox">
+            <span></span>
+            Confirmo que la información es verídica
+          </label>
+
+          <!-- SIGN AREA -->
+          <div class="bankfleet-register-step4__signature">
+
+            <p>Firma electrónica</p>
+
+            <div class="bankfleet-register-step4__sign-box">
+              <span>Haz clic para firmar</span>
             </div>
+
           </div>
-          <div class="bankfleet-register-step6__field">
-            <label class="bankfleet-register-step6__label">Contraseña</label>
-            <div class="bankfleet-register-step6__input-wrapper">
-              <img src="/frontend/public/assets/icons/icon_password.svg" class="bankfleet-register-step6__input-icon" alt="">
-              <input type="password" class="bankfleet-register-step6__input bankfleet-register-step6__input--password" placeholder="********">
-              <button type="button" class="bankfleet-register-step6__toggle-password">
-                <img src="/frontend/public/assets/icons/icon_open-eye.svg" alt="">
-              </button>
-            </div>
-          </div>
-          <div class="bankfleet-register-step6__field">
-            <label class="bankfleet-register-step6__label">Confirmar contraseña</label>
-            <div class="bankfleet-register-step6__input-wrapper">
-              <img src="/frontend/public/assets/icons/icon_password.svg" class="bankfleet-register-step6__input-icon" alt="">
-              <input type="password" class="bankfleet-register-step6__input" placeholder="********">
-            </div>
-          </div>
-          <div class="bankfleet-register-step6__button-primary">
-            <button class="bankfleet-btn bankfleet-btn--primary bankfleet-btn--expand">
-              <span class="bankfleet-btn__text">Crear cuenta</span>
-              <img src="/frontend/public/assets/icons/icon_create.svg" alt="" class="bankfleet-btn__icon">
+
+          <div class="bankfleet-register-step4__button">
+          <button class="bankfleet-btn bankfleet-btn--primary bankfleet-btn--expand">
+              <span class="bankfleet-btn__text">Finalizar registro</span>
+              <img src="/frontend/public/assets/icons/icon_next-white.svg" alt="" class="bankfleet-btn__icon">
           </button>
           </div>
+
         </form>
+
       </div>
+
     </section>
-    <aside class="bankfleet-register-step6-banner">
-      <img src="/frontend/public/assets/images/img_banking7.webp" alt="BANKFLEET" class="bankfleet-register-step1-banner__image">
-      <div class="bankfleet-register-step6-banner__overlay"></div>
-      <div class="bankfleet-register-step6-banner__card">
-        <span class="bankfleet-register-step6-banner__badge">BANKFLEET SECURITY</span>
-        <h6 class="bankfleet-register-step6-banner__title">Seguridad avanzada</h6>
-        <p class="bankfleet-register-step6-banner__text">Protegemos tu cuenta con tecnología de última generación.</p>
+
+    <!-- RIGHT -->
+    <aside class="bankfleet-register-step4-banner">
+      <img src="/frontend/public/assets/images/img_banking6.jpg" alt="BANKFLEET" class="bankfleet-register-step1-banner__image">
+      <div class="bankfleet-register-step4-banner__overlay"></div>
+
+      <div class="bankfleet-register-step4-banner__card">
+
+        <span class="bankfleet-register-step4-banner__badge">LEGAL SECURITY</span>
+
+        <h2 class="bankfleet-register-step4-banner__title">
+          Protección legal
+        </h2>
+
+        <p class="bankfleet-register-step4-banner__text">
+          Cumplimos con normativas KYC y AML para proteger tu identidad y tu dinero.
+        </p>
+
       </div>
+
     </aside>
+
   </div>
+
 </section>

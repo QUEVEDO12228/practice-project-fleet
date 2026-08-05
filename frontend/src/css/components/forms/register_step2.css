@@ -1,197 +1,659 @@
-.bankfleet-register-step2-page{
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font-primary);
+/*=========================================================
+PAGE
+=========================================================*/
+
+.bankfleet-register-address-page{
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:var(--font-primary);
 }
 
-.bankfleet-register-step2-page__glow{
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    filter: blur(120px);
-    opacity: 0.12;
-    pointer-events: none;
-}
-.bankfleet-register-step2-page__glow--left{
-  top:-120px;
-  left:-120px;
-  background:var(--secondary-500);
+/*=========================================================
+GLOWS
+=========================================================*/
+
+.bankfleet-register-address-page__glow{
+    position:absolute;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    filter:blur(120px);
+    opacity:.12;
+    pointer-events:none;
 }
 
-.bankfleet-register-step2-page__glow--right{
-  bottom:-120px;
-  right:-120px;
-  background:var(--primary-500);
+.bankfleet-register-address-page__glow--left{
+    top:-120px;
+    left:-120px;
+    background:var(--secondary-500);
 }
 
-.bankfleet-register-step2-layout{
-  width:100%;
-  max-width:1600px;
-  display:flex;
-  min-height:100vh;
-  position:relative;
-  z-index:2;
+.bankfleet-register-address-page__glow--right{
+    right:-120px;
+    bottom:-120px;
+    background:var(--primary-500);
 }
 
-/* LEFT */
-.bankfleet-register-step2{
-  width:42%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:20px;
-}
+/*=========================================================
+LAYOUT
+=========================================================*/
 
-.bankfleet-register-step2__card{
-  width:100%;
-  max-width:422px;
-  padding:24px;
-  border-radius:32px;
-  border:1px solid rgba(255,255,255,0.08);
-  backdrop-filter:blur(20px);
-}
-.bankfleet-register-step2__card:hover{
-    transform: translateY(-2px);
-    border-color:rgba(139,92,246,.35);
-}
-
-.bankfleet-register-step2__topbar{
-  position:absolute;
-  top:10px;
-  left:10px;
-}
-
-.bankfleet-register-step2__header{
-  text-align:center;
-  margin-bottom:20px;
-}
-
-.bankfleet-register-step2__title{
-  color:#fff;
-  font-size:1.6rem;
-  margin-bottom:8px;
-}
-
-.bankfleet-register-step2__subtitle{
-  color:var(--gray-200);
-  font-size:12px;
-}
-
-/* UPLOAD */
-.bankfleet-register-step2__upload{
-  margin-bottom:18px;
-}
-
-.bankfleet-register-step2__label{
-  display:block;
-  color:#fff;
-  font-size:12px;
-  margin-bottom:6px;
-}
-
-.bankfleet-register-step2__dropzone{
-  height:140px;
-  border:2px dashed rgba(255,255,255,0.15);
-  border-radius:18px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:6px;
-  background:rgba(255,255,255,0.02);
-  transition:.2s;
-  cursor:pointer;
-}
-
-.bankfleet-register-step2__dropzone:hover{
-  border-color:var(--secondary-400);
-  background:rgba(129,92,246,0.06);
-}
-
-.bankfleet-register-step2__icon{
-  font-size:22px;
-}
-
-.bankfleet-register-step2__dropzone p{
-  color:#fff;
-  font-size:12px;
-}
-
-.bankfleet-register-step2__dropzone span{
-  color:var(--gray-400);
-  font-size:10px;
-}
-
-/* BUTTON */
-.bankfleet-register-step2__button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* RIGHT BANNER */
-.bankfleet-register-step2-banner{
-  width:58%;
-  position:relative;
-  background:url('/frontend/public/assets/img/kyc.jpg') center/cover no-repeat;
-  overflow:hidden;
-}
-
-.bankfleet-register-step2-banner__overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(0deg,rgba(0,0,0,.75),rgba(0,0,0,.2));
-}
-
-.bankfleet-register-step2-banner__card{
-  position:absolute;
-  left:60px;
-  bottom:60px;
-  max-width:420px;
-  padding:22px;
-  border-radius:24px;
-  background:rgba(255,255,255,0.06);
-  backdrop-filter:blur(20px);
-  border:1px solid rgba(255,255,255,0.08);
-}
-
-.bankfleet-register-step2-banner__badge{
-  font-size:10px;
-  color:var(--secondary-200);
-  background:rgba(129,92,246,0.15);
-  padding:6px 10px;
-  border-radius:999px;
-}
-
-.bankfleet-register-step2-banner__title{
-  color:#fff;
-  font-size:2.5rem;
-  margin-top:10px;
-}
-
-.bankfleet-register-step2-banner__text{
-  color:var(--gray-200);
-  font-size:12px;
-  line-height:1.6;
-  margin-top:10px;
-}
-
-/* RESPONSIVE */
-@media(max-width:980px){
-  .bankfleet-register-step2-layout{
-    flex-direction:column;
-  }
-
-  .bankfleet-register-step2,
-  .bankfleet-register-step2-banner{
+.bankfleet-register-address-layout{
+    position:relative;
+    z-index:2;
     width:100%;
-  }
+    max-width:1600px;
+    min-height:100vh;
+    display:flex;
+}
 
-  .bankfleet-register-step2-banner{
-    min-height:400px;
-  }
+/*=========================================================
+LEFT
+=========================================================*/
+
+.bankfleet-register-address{
+    position:relative;
+    width:42%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:var(--gap-xs);
+    box-sizing:border-box;
+}
+
+/*=========================================================
+CARD
+=========================================================*/
+
+.bankfleet-register-address__card{
+
+    width:100%;
+    max-width:432px;
+
+    padding:24px;
+
+    border-radius:32px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(24px);
+
+    transition:var(--transition-normal);
+
+}
+
+.bankfleet-register-address__card:hover{
+
+    transform:translateY(-2px);
+
+    border-color:rgba(139,92,246,.35);
+
+}
+
+/*=========================================================
+TOPBAR
+=========================================================*/
+
+.bankfleet-register-address__topbar{
+
+    position:absolute;
+
+    top:8px;
+
+    left:12px;
+
+    z-index:999;
+
+}
+
+/*=========================================================
+HEADER
+=========================================================*/
+
+.bankfleet-register-address__header{
+
+    text-align:center;
+
+    margin-bottom:var(--gap-sm);
+
+}
+
+.bankfleet-register-address__title{
+
+    color:var(--white);
+
+    font-size:1.6rem;
+
+    font-family:var(--font-primary-bold);
+
+    margin-bottom:var(--gap-xs);
+
+}
+
+.bankfleet-register-address__subtitle{
+
+    color:var(--gray-300);
+
+    font-size:var(--fs-xxxs);
+
+    line-height:1.8;
+
+}
+
+.bankfleet-register-address__highlight{
+
+    color:var(--secondary-300);
+
+}
+
+/*=========================================================
+FORM
+=========================================================*/
+
+.bankfleet-register-address__form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--gap-lg);
+
+}
+
+/*=========================================================
+FIELDS
+=========================================================*/
+
+.bankfleet-register-address__field{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+/*=========================================================
+LABEL
+=========================================================*/
+
+.bankfleet-register-address__label{
+
+    color:var(--white);
+
+    font-size:var(--fs-xxxxs);
+
+}
+
+/*=========================================================
+INPUT WRAPPER
+=========================================================*/
+
+.bankfleet-register-address__input-wrapper{
+
+    position:relative;
+
+}
+
+/*=========================================================
+ICON
+=========================================================*/
+
+.bankfleet-register-address__input-icon{
+
+    position:absolute;
+
+    left:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:20px;
+
+    height:20px;
+
+    z-index:2;
+
+}
+
+/*=========================================================
+INPUT
+=========================================================*/
+
+.bankfleet-register-address__input{
+
+    width:100%;
+
+    height:48px;
+
+    padding:0 48px;
+
+    box-sizing:border-box;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(10px);
+
+    outline:none;
+
+    color:var(--white);
+
+    font-size:var(--fs-xxxs);
+
+    transition:var(--transition-normal);
+
+}
+
+/*=========================================================
+PLACEHOLDER
+=========================================================*/
+
+.bankfleet-register-address__input::placeholder{
+
+    color:var(--gray-500);
+
+}
+
+/*=========================================================
+FOCUS
+=========================================================*/
+
+.bankfleet-register-address__input:focus{
+
+    border-color:rgba(139,92,246,.45);
+
+    background:rgba(255,255,255,.06);
+
+    box-shadow:0 0 0 4px rgba(139,92,246,.15);
+
+}
+
+/*=========================================================
+SELECT
+=========================================================*/
+
+.bankfleet-register-address__input[type="text"],
+.bankfleet-register-address__input[type="number"],
+.bankfleet-register-address__input[type="email"],
+.bankfleet-register-address__input[type="tel"],
+.bankfleet-register-address__input[type="password"],
+.bankfleet-register-address__input select{
+
+    appearance:none;
+
+    -webkit-appearance:none;
+
+    -moz-appearance:none;
+
+}
+
+/*=========================================================
+SELECT OPTION
+=========================================================*/
+
+.bankfleet-register-address__input option{
+
+    background:var(--primary-900);
+
+    color:var(--white);
+
+}
+
+/*=========================================================
+BUTTON CONTAINER
+=========================================================*/
+
+.bankfleet-register-address__button-primary{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:8px;
+
+}
+/*=========================================================
+RIGHT BANNER
+=========================================================*/
+
+.bankfleet-register-address-banner{
+    position:relative;
+    width:58%;
+    overflow:hidden;
+}
+
+/*=========================================================
+BANNER IMAGE
+=========================================================*/
+
+.bankfleet-register-address-banner__image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform 1.2s ease;
+}
+
+.bankfleet-register-address-banner:hover
+.bankfleet-register-address-banner__image{
+    transform:scale(1.05);
+}
+
+/*=========================================================
+OVERLAY
+=========================================================*/
+
+.bankfleet-register-address-banner__overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.72)
+    );
+}
+
+/*=========================================================
+GLASS CARD
+=========================================================*/
+
+.bankfleet-register-address-banner__card{
+
+    position:absolute;
+
+    left:60px;
+
+    bottom:60px;
+
+    z-index:2;
+
+    max-width:500px;
+
+    padding:40px;
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(20px);
+
+}
+
+/*=========================================================
+BADGE
+=========================================================*/
+
+.bankfleet-register-address-banner__badge{
+
+    display:inline-flex;
+
+    margin-bottom:var(--gap-md);
+
+    padding:8px 14px;
+
+    border-radius:var(--radius-full);
+
+    background:rgba(139,92,246,.14);
+
+    color:var(--secondary-300);
+
+    font-size:10px;
+
+    letter-spacing:1px;
+
+}
+
+/*=========================================================
+TITLE
+=========================================================*/
+
+.bankfleet-register-address-banner__title{
+
+    margin-bottom:var(--gap-md);
+
+    color:var(--white);
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+    font-family:var(--font-primary-bold);
+
+}
+
+/*=========================================================
+TEXT
+=========================================================*/
+
+.bankfleet-register-address-banner__text{
+
+    color:var(--gray-200);
+
+    font-size:var(--fs-xxs);
+
+    line-height:1.8;
+
+}
+
+/*=========================================================
+ANIMATIONS
+=========================================================*/
+
+.bankfleet-register-address__card,
+.bankfleet-register-address-banner__card{
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.bankfleet-register-address-banner__card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:rgba(139,92,246,.35);
+
+    box-shadow:0 20px 50px rgba(139,92,246,.18);
+
+}
+
+/*=========================================================
+INPUT HOVER
+=========================================================*/
+
+.bankfleet-register-address__input:hover{
+
+    border-color:rgba(255,255,255,.18);
+
+}
+
+/*=========================================================
+SELECT CURSOR
+=========================================================*/
+
+.bankfleet-register-address__input select,
+.bankfleet-register-address__input{
+
+    cursor:pointer;
+
+}
+
+/*=========================================================
+SCROLLBAR (Opcional)
+=========================================================*/
+
+.bankfleet-register-address__card::-webkit-scrollbar{
+    width:8px;
+}
+
+.bankfleet-register-address__card::-webkit-scrollbar-thumb{
+    background:rgba(139,92,246,.35);
+    border-radius:999px;
+}
+
+.bankfleet-register-address__card::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+/*=========================================================
+1200PX
+=========================================================*/
+
+@media (max-width:1200px){
+
+    .bankfleet-register-address{
+        width:50%;
+    }
+
+    .bankfleet-register-address-banner{
+        width:50%;
+    }
+
+}
+
+/*=========================================================
+980PX
+=========================================================*/
+
+@media (max-width:980px){
+
+    .bankfleet-register-address-layout{
+        flex-direction:column;
+    }
+
+    .bankfleet-register-address,
+    .bankfleet-register-address-banner{
+        width:100%;
+    }
+
+    .bankfleet-register-address{
+        min-height:100vh;
+    }
+
+    .bankfleet-register-address-banner{
+        min-height:420px;
+    }
+
+}
+
+/*=========================================================
+768PX
+=========================================================*/
+
+@media (max-width:768px){
+
+    .bankfleet-register-address{
+
+        padding:
+        120px
+        var(--gap-lg)
+        var(--gap-xl);
+
+    }
+
+    .bankfleet-register-address__card{
+
+        padding:32px;
+
+    }
+
+    .bankfleet-register-address-banner__card{
+
+        left:24px;
+        right:24px;
+        bottom:24px;
+
+        padding:28px;
+
+    }
+
+    .bankfleet-register-address-banner__title{
+
+        font-size:3rem;
+
+    }
+
+}
+
+/*=========================================================
+480PX
+=========================================================*/
+
+@media (max-width:480px){
+
+    .bankfleet-register-address-banner{
+
+        display:none;
+
+    }
+
+    .bankfleet-register-address{
+
+        width:100%;
+
+    }
+
+    .bankfleet-register-address__card{
+
+        padding:24px;
+
+        border-radius:24px;
+
+    }
+
+    .bankfleet-register-address__title{
+
+        font-size:2.6rem;
+
+    }
+
+    .bankfleet-register-address__form{
+
+        gap:18px;
+
+    }
+
+    .bankfleet-register-address__input{
+
+        height:46px;
+
+        font-size:11px;
+
+    }
+
+    .bankfleet-register-address-banner__title{
+
+        font-size:2.4rem;
+
+    }
+
+}
+
+/*=========================================================
+LARGE DESKTOP
+=========================================================*/
+
+@media (min-width:1700px){
+
+    .bankfleet-register-address-banner__card{
+
+        left:80px;
+
+        bottom:80px;
+
+    }
+
 }
