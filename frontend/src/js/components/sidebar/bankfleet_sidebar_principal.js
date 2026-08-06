@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch("/frontend/src/html/components/siderbars/bankfleet_sidebar_principal.html")
         .then(response => {if (!response.ok) {throw new Error("Error al cargar bankfleet_sidebar_principal.html");}return response.text();})
         .then(data => {sidebarPrimaryContainer.innerHTML = data;
-            initIndexSidebar(); initSidebarPrincipal(); ocultarOpcionActual();})
+            initIndexSidebar(); initSidebarPrincipal(); ocultarOpcionActual();initSidebarResponsive();})
         .catch(error => {console.error("Error cargando el componente:", error);});
 });
 function initIndexSidebar() {
@@ -53,4 +53,25 @@ function ocultarOpcionActual() {
                 const texto = link.textContent.trim();if (config.hideLinks.includes(texto)) {link.style.display = "none";}
             });
     }
+}
+function initSidebarResponsive(){
+
+    const menuButton = document.querySelector(".bankfleet-navbar__profile-user-trigger");
+
+    const sidebar = document.querySelector(".bankfleet-sidebar-principal");
+
+    if(!menuButton || !sidebar) return;
+
+    menuButton.addEventListener("click",()=>{
+
+        sidebar.classList.toggle("active");
+
+    });
+    const closeButton = document.querySelector(".bankfleet-sidebar-principal__close");
+        closeButton?.addEventListener("click",()=>{
+
+        sidebar.classList.remove("active");
+w
+    });
+
 }

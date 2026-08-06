@@ -76,3 +76,43 @@ button{
     flex: 1;
     min-height: 0;
 }
+@media (max-width:980px){
+
+    html,
+    body{
+        height:auto;
+        min-height:100vh;
+        overflow-x:hidden;
+        overflow-y:auto;
+    }
+
+    .body-login{
+        display:block;
+        min-height:auto;
+    }
+
+    .bankfleet-app{
+        height:auto;
+        min-height:100vh;
+        overflow:visible;
+    }
+
+    .bankfleet-app__body{
+        display:block;
+        height:auto;
+        min-height:auto;
+    }
+
+    .bankfleet-main-content{
+        width:100%;
+        min-width:100%;
+        min-height:auto;
+        overflow:visible;
+        padding:1.6rem;
+    }
+
+    .footer-client-home{
+        width:100%;
+    }
+
+}

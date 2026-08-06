@@ -166,36 +166,6 @@
     gap:var(--gap-lg);
     margin-top:8px;
 }
-    @media(max-width:900px){
-.bankfleet-profile-page{
-    height:auto;
-    overflow:auto;
-}
-.bankfleet-profile__card{
-    max-width:100%;
-}
-.bankfleet-profile__row{
-    flex-direction:column;
-}
-.bankfleet-profile__field{
-    min-width:100%;
-    max-width:100%;
-}
-.bankfleet-profile__input{
-    min-width:100%;
-    max-width:100%;
-}
-}
-    @media(max-width:576px){
-.bankfleet-profile__actions{
-    flex-direction:column;
-    align-items:stretch;
-}
-.bankfleet-profile__status{
-    flex-direction:column;
-    align-items:flex-start;
-}
-}
 .bankfleet-avatar-editor{
     display:flex;
     align-items:center;
@@ -267,30 +237,89 @@
     line-height:1.5;
     color:var(--white);
 }
-@media(max-width:768px){
-    .bankfleet-avatar-editor{
+@media (max-width:980px){
+
+    .bankfleet-profile-page{
+        align-items:flex-start;
+        padding: 0px;
+    }
+
+    .bankfleet-profile__card{
+        border-radius:2rem;
+    }
+
+    .bankfleet-profile__topbar{
         flex-direction:column;
         align-items:flex-start;
-        gap:var(--gap-lg);
+        gap:1.6rem;
     }
-    .bankfleet-avatar-editor__content{
+
+    .bankfleet-profile__title{
+        font-size:var(--fs-sm);
+    }
+
+    .bankfleet-profile__subtitle{
+        font-size:var(--fs-xs);
+    }
+
+    /* Todas las filas pasan a columna */
+    .bankfleet-profile__row{
+        flex-direction:column;
+        gap:1.6rem;
+    }
+
+    .bankfleet-profile__field{
+        min-width:100%;
+        max-width:100%;
         width:100%;
     }
-    .bankfleet-avatar-editor__actions{
-        width:100%;
-        margin-left:0;
+
+    .bankfleet-profile__field-password{
+        max-width:100%;
+        justify-content:center;
     }
-    .bankfleet-avatar-editor__actions .bankfleet-btn-secondary,
-    .bankfleet-avatar-editor__actions .bankfleet-btn{
-        flex:1;
+
+    .bankfleet-profile__input{
+        height:5rem;
+        font-size:var(--fs-xxxs);
     }
-}
-@media(max-width:480px){
-        .bankfleet-avatar-editor__actions{
-            flex-direction:column;
+
+    .bankfleet-avatar-editor{
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+
+        max-width:100%;
+
+        padding:2rem;
     }
-        .bankfleet-avatar-editor__actions .bankfleet-btn-secondary,
-        .bankfleet-avatar-editor__actions .bankfleet-btn{
-            width:100%;
+
+    .bankfleet-avatar-editor__preview{
+        width:10rem;
+        height:10rem;
     }
+
+    .bankfleet-avatar-editor__image{
+        width:9rem;
+        height:9rem;
+    }
+
+    /* Estado */
+
+    .bankfleet-profile__status{
+        flex-direction:column;
+        align-items:center;
+        gap:.8rem;
+    }
+    .bankfleet-profile__status-text{
+        text-align:center;
+    }
+
+    /* Botones */
+
+    .bankfleet-profile__actions{
+        flex-direction:column-reverse;
+        align-items:center;
+    }
+
 }
